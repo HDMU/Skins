@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "removing fullhd Skin"
+rm -rf /usr/local/share/enigma2/PLi-HD > /dev/null 2>&1
+rm -rf /usr/share/fonts/hd.ttf  > /dev/null 2>&1
+rm -rf /usr/share/fonts/hdi.ttf  > /dev/null 2>&1
+exit 0

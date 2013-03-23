@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "removing dmconcinnity Skin"
+rm -rf /usr/local/share/enigma2/DMConcinnity-HD > /dev/null 2>&1
+rm -rf /usr/share/fonts/HandelGotDBol.ttf > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtremeInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtendedServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/DMCHDServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/gChSelectExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/gRefString.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/CamInfo.pyo > /dev/null 2>&1
+exit 0

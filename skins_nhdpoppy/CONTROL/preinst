@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing nHDpoppy Skin ..."
+exit 0

@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-nobile
+Version: 0.26
+Description: HD Skin Nobile
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin Nobile
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

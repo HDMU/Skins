@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-yadshd
+Version: 1.0
+Description: HD Skin Yads HD
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD Skin Yads HD
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

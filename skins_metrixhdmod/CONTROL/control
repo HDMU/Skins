@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-metrixhdmod
+Version: 1.0
+Description: HD Skin MetrixMod
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin MetrixMod
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

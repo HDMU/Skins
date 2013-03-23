@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-blackbeauty-hd-mirco-standard
+Version: 1.00
+Description: HD Skin BlackBeauty HD Mirco Standard
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+Depends: skinpythonmvm
+OE: HD Skin BlackBeauty HD Mirco Standard
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

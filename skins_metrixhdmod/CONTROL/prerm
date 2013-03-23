@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "removing MetrixHDmod Skin"
+rm -rf /usr/local/share/enigma2/MetrixHD_MOD_HDMU > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixCaidDisplay.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtendedServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo3.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ServiceListRefString.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MetrixVolumeText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/SingleEpgList.pyo > /dev/null 2>&1
+exit 0

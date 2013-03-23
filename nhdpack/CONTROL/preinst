@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing nhdpack..."
+exit 0

@@ -1,0 +1,9 @@
+<!-- start of volume-thinhor.xml -->
+	<!--Volume ##### -->
+	<screen backgroundColor="dark" flags="wfNoBorder" name="Volume" position="center,30" size="818,12" title="Volume" zPosition="1">
+		<widget name="Volume" pixmap="Vali.HD.flex/pbar.png" position="2,2" size="814,8" transparent="1" zPosition="1" />
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="Mute" position="45,30" size="45,45" title="Mute" zPosition="10">
+		<ePixmap alphatest="on" pixmap="Vali.HD.flex/mute.png" position="0,0" size="45,45" zPosition="0" />
+	</screen>
+<!-- start of volume-thinhor.xml -->

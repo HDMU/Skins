@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing nHDpoppy Skin"
+rm -rf /usr/local/share/enigma2/nHDpoppy > /dev/null 2>&1
+exit 0

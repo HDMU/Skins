@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "removing HDMUModFull-Skin"
+exit 0

@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "removing files"
+rm -rf /usr/lib/enigma2/python/Components/Converter/mvmCaidDisplay.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/mvmCamdInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/mvmRefString.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/mvmCaids.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/mvmChNumber.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/mvmHDDfree.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/mvmMaxTemp.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/mvmvolumeText.pyo
+exit 0

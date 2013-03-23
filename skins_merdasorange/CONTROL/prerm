@@ -1,0 +1,17 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/Merdas-ORANGE-Skin-V7
+echo "removing merdas orange Skin"
+rm -r $PLUGINDIR > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/TS4allCaids.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/TSAhours.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/TSEventViewPicon.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/TSMaxTemp.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/TSNextEvent.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/rmEventName.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSCaidDisplay.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSCamdInfo.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSExtraSource.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSRefString.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSServiceNumber.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/TSSmartInfo.pyo > /dev/null 2>&1
+exit 0

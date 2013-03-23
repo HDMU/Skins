@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing RevolutionBlue Skin"
+rm -rf /usr/local/share/enigma2/RevolutionBlue > /dev/null 2>&1
+exit 0

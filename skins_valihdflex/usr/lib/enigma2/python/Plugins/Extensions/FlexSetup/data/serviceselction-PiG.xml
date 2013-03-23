@@ -1,0 +1,217 @@
+<!--PIG Screens ########## -->
+  <screen backgroundColor="backgroundNT" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="460,35" size="535,50" render="valioChSelTitle" source="Title" transparent="1" valign="center" zPosition="1" />
+	<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+		<convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="backgroundNT" colorEventProgressbarBorder="#555555" colorEventProgressbarBorderSelected="grey" colorServiceDescription="#DBB96E" foregroundColorServiceNotAvail="#00656565" itemHeight="30" name="list" picServiceEventProgressbar="Vali.HD.flex/minibar.png" position="460,105" scrollbarMode="showOnDemand" serviceInfoFont="Regular;21" serviceItemHeight="30" serviceNameFont="Regular;23" serviceNumberFont="Regular;23" size="750,480" />
+	<widget font="Regular;20" halign="left" position="366,308" render="Label" size="70,22" source="ServiceEvent" transparent="1" zPosition="2">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText" />
+	</widget>
+	<widget borderColor="gold" borderWidth="1" pixmap="Vali.HD.flex/progress.png" position="257,314" render="Progress" size="100,12" source="ServiceEvent" zPosition="2">
+		<convert type="EventTime">Progress</convert>
+	</widget>
+	<widget font="Regular;20" halign="right" position="178,308" render="Label" size="70,22" source="ServiceEvent" transparent="1" zPosition="2">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText" />
+	</widget>
+	<widget font="Regular;20" foregroundColor="secondFG" position="267,287" render="Label" size="80,22" source="ServiceEvent" transparent="1" zPosition="2" halign="center">
+		<convert type="EventTime">Remaining</convert>
+		<convert type="RemainingToText">NoSeconds</convert>
+	</widget>
+    <eLabel backgroundColor="darkgrey" position="460,590" size="750,2" />
+	<ePixmap alphatest="blend" pixmap="skin_default/icons/icon_event.png" position="460,609" size="15,10" />
+    <widget backgroundColor="backgroundNT" font="Regular;20" foregroundColor="foreground" position="70,360" render="Label" size="360,253" source="ServiceEvent" zPosition="1">
+		<convert type="valioEventDesc">Full</convert>
+	</widget>
+	<widget alphatest="blend" position="70,282" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="1">
+		<convert type="valioRefString">ServicelistRef</convert>
+	</widget>
+	<widget backgroundColor="backgroundNT" font="Regular;20" foregroundColor="secondFG" noWrap="1" position="485,600" render="valioNextEvent" size="725,24" source="ServiceEvent" transparent="1" valign="top" zPosition="3" />
+  </screen>
+  <screen backgroundColor="backgroundNT" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" foregroundColor="secondFG" position="460,35" size="535,50" render="Label" source="Service" transparent="1" valign="center" zPosition="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <widget itemHeight="30" name="list" position="460,105" scrollbarMode="showOnDemand" size="750,510" transparent="1" />
+    <widget backgroundColor="backgroundNT" font="Regular;20" foregroundColor="foreground" position="70,360" render="Label" size="360,253" source="Event" zPosition="1">
+      <convert type="valioEventDesc">Full</convert>
+    </widget>
+	<widget alphatest="blend" position="70,282" render="Picon" size="100,60" source="Event" transparent="1" zPosition="1">
+		<convert type="valioRefString">CurrentRef</convert>
+	</widget>
+  </screen>
+  <screen backgroundColor="backgroundNT" flags="wfNoBorder" name="EventView" position="0,0" size="1280,720" title="Eventview">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" foregroundColor="secondFG" name="channel" position="460,35" size="535,50" transparent="1" valign="center" zPosition="1" />
+    <widget font="Regular;22" foregroundColor="secondFG" name="datetime" position="70,510" size="250,26" transparent="1" />
+    <widget font="Regular;22" foregroundColor="secondFG" name="duration" position="70,540" size="250,26" transparent="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <widget font="Regular;24" name="epg_description" position="470,105" size="750,520" transparent="1" />
+	<widget alphatest="blend" position="70,282" render="Picon" size="100,60" source="Title" transparent="1" zPosition="1">
+		<convert type="valioRefString">CurrentRef</convert>
+	</widget>
+  </screen>
+  <screen backgroundColor="backgroundNT" flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Eventview">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" foregroundColor="secondFG" name="channel" position="460,35" size="535,50" transparent="1" valign="center" zPosition="1" />
+    <widget font="Regular;22" foregroundColor="secondFG" name="datetime" position="70,390" size="250,26" transparent="1" />
+    <widget font="Regular;22" foregroundColor="secondFG" name="duration" position="70,430" size="250,26" transparent="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <widget font="Regular;24" name="epg_description" position="470,105" size="750,520" transparent="1" />
+	<widget backgroundColor="backgroundNT" foregroundColor="grey" font="Regular;20" position="70,470" size="350,150" render="Label" source="Title" transparent="1" zPosition="1" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/images/blend.png" position="100,282" size="150,150" />
+  </screen>
+  <screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/images/clock.png" position="180,350" size="150,150" />
+    <widget backgroundColor="secondBG" font="Regular;24" position="460,35" size="535,50" render="valioTranslator" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <widget itemHeight="28" name="config" position="460,108" scrollbarMode="showOnDemand" size="750,504" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="canceltext" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="oktext" position="435,645" size="220,26" transparent="1" zPosition="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="Merlin_PGd" position="0,0" size="1280,720" title="Merlin Program Guide">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" position="460,35" size="535,50" render="Label" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <widget backgroundColor="backgroundNT" itemHeight="25" name="prg_list" position="70,280" scrollbarMode="showOnDemand" size="365,350" transparent="1" zPosition="4" />
+    <widget backgroundColor="backgroundNT" itemHeight="28" name="epg_list" position="460,108" scrollbarMode="showOnDemand" size="750,504" transparent="1" zPosition="4" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <eLabel backgroundColor="secondBG" font="Regular;22" position="145,645" size="220,26" text="Zap and exit" transparent="1" zPosition="2" />
+    <eLabel backgroundColor="secondBG" font="Regular;22" position="435,645" size="220,26" text="Add timer" transparent="1" zPosition="2" />
+    <eLabel backgroundColor="secondBG" font="Regular;22" position="725,645" size="220,26" text="Primetime" transparent="1" zPosition="2" />
+    <eLabel backgroundColor="secondBG" font="Regular;22" position="1015,645" size="220,26" text="Refresh EPG" transparent="1" zPosition="2" />
+  </screen>
+  <screen flags="wfNoBorder" name="ChannelContextMenu" position="0,0" size="1280,720" title="Channellist menu">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" position="460,35" size="535,50" render="Label" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+   <widget itemHeight="28" name="menu" position="570,118" scrollbarMode="showOnDemand" size="600,476" />
+    <ePixmap alphatest="blend" position="70,282" size="100,60" pixmap="Vali.HD.flex/picon_default.png" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+  </screen>
+  <screen flags="wfNoBorder" name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu">
+	<ePixmap alphatest="on" pixmap="Vali.HD.flex/bg.png" position="0,0" size="1280,720" zPosition="-1" />
+	<widget backgroundColor="secondBG" font="Regular;24" position="70,35" render="Label" size="850,50" source="Title" transparent="1" valign="center" zPosition="1" />
+	<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="940,35" render="Label" size="270,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+		<convert type="valioClockToText">DateTime</convert>
+	</widget>
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/images/setup.png" position="130,225" size="150,150" />
+	<widget itemHeight="28" name="config" position="400,108" scrollbarMode="showOnDemand" size="780,420" />
+	<eLabel backgroundColor="darkgrey" position="85,540" size="1110,2" />
+	<widget font="Regular;20" position="85,555" render="Label" size="1080,72" source="help" valign="center" halign="center" zPosition="3" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+	<ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+	<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+	<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+  </screen>
+  <screen backgroundColor="backgroundNT" flags="wfNoBorder" name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center">
+    <ePixmap alphatest="on" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+    <widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+    <widget backgroundColor="secondBG" font="Regular;24" position="460,35" size="535,50" render="Label" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="940,35" render="Label" size="270,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="valioClockToText">DateTime</convert>
+    </widget>
+    <widget name="wait" position="460,100" size="760,500" />
+    <widget CoolFont="Regular;20" CoolDirPos="770" CoolFolderSize="730" CoolMoviePos="30" CoolMovieSize="680" CoolDatePos="720" CoolTimePos="820" name="list" position="460,100" size="760,500" itemHeight="30" scrollbarMode="showNever" backgroundColor="backgroundNT" transparent="1" />
+	<widget source="Service" render="Label" position="45,285" size="240,24" font="Regular;22" halign="left" foregroundColor="secondFG" zPosition="1">
+		<convert type="EMCServiceTime">StartTime</convert>
+		<convert type="valioClockToText">Format:%a %d %m, %Y %H:%M</convert>
+	</widget>
+	<widget source="Service" render="Label" position="260,285" size="70,24" font="Regular;22" halign="left" foregroundColor="secondFG" zPosition="1">
+		<convert type="EMCServiceTime">EndTime</convert>
+		<convert type="EMCClockToText">Format:-%H:%M </convert>
+	</widget>
+	<widget source="Service" render="Label" position="335,285" size="100,24" font="Regular;22" halign="right" foregroundColor="secondFG" backgroundColor="backgroundNT" transparent="1">
+		<convert type="EMCServiceTime">Duration</convert>
+		<convert type="EMCClockToText">AsLength</convert>
+	</widget>
+	<widget source="Service" render="Label" position="45,310" size="410,22" font="Regular;20" foregroundColor="secondFG" backgroundColor="backgroundNT" zPosition="2" transparent="1" halign="center" >
+		<convert type="EMCMovieInfo">ShortDescription</convert>
+	</widget>
+	<widget backgroundColor="backgroundNT" source="Service" render="Label" position="45,345" size="410,230" font="Regular;20" transparent="1" halign="left" valign="top">
+		<convert type="EMCEventName">ExtendedDescription</convert>
+	</widget>
+	<widget backgroundColor="backgroundNT" source="Service" render="Label" position="45,590" size="345,22" halign="left" font="Regular;20" foregroundColor="secondFG" transparent="1">
+		<convert type="EMCMovieInfo">RecordServiceName</convert>
+	</widget>
+	<widget source="Service" render="Label" position="325,590" size="120,24" font="Regular;22" foregroundColor="secondFG" halign="right" backgroundColor="backgroundNT" transparent="1">
+			<convert type="EMCMovieInfo">FileSize</convert>
+	</widget>
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+    <ePixmap alphatest="blend" pixmap="Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+  </screen>

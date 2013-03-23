@@ -1,0 +1,25 @@
+#!/bin/sh
+echo "removing fullhd Skin"
+rm -rf /usr/local/share/enigma2/Full-HD > /dev/null 2>&1
+rm -rf /usr/bin/bitrate > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtremeInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo3.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtendedServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxCaidDisplay.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxClockToText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxExtraNumText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxHDstream.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxNextEvent.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxNextReference.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxNextTP.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxRendCaids.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxRendVolumeText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxRollName.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxWatches.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon_Next.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon_Prov.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon_Ref.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon_Sat.pyo  > /dev/null 2>&1
+exit 0

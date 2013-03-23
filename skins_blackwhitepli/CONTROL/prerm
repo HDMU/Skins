@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "removing BlackModern Skin"
+rm -rf /usr/local/share/enigma2/Black_White > /dev/null 2>&1
+rm -rf /usr/share/fonts/HandelGotDBol.ttf > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraTuner.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo3.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxCaidDisplay.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MaxTemp.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon2.pyo > /dev/null 2>&1
+exit 0

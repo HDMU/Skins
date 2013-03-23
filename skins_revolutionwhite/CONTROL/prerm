@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing RevolutionWhite Skin"
+rm -rf /usr/local/share/enigma2/RevolutionWhite > /dev/null 2>&1
+exit 0

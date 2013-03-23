@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "removing ValiHDflex Skin"
+rm -rf /usr/local/share/enigma2/Vali.HD.flex > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/valio* > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/valio* > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Sources/bitratecalc.so > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FlexSetup > /dev/null 2>&1
+exit 0

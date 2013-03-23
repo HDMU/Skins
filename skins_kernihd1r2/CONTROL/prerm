@@ -1,0 +1,5 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/Kerni-HD1R2
+rm -r $PLUGINDIR > /dev/null 2>&1
+echo "removing Kerni-HD1R2 Skin"
+exit 0

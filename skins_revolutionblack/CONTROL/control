@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-revolutionblack
+Version: 1.0
+Description: HD Skin Revolution Black
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin Revolution Black
+Depends: revolutionpack
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

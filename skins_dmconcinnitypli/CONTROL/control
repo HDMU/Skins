@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-dmconcinnitypli
+Version: 1.2
+Description: HD Skin DMConcinnity-HD
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin DMConcinnity-HD
+Depends: fontpack1
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "removing dreamtvhd Skin"
+rm -rf /usr/local/share/enigma2/dreamTV-HD > /dev/null 2>&1
+rm -rf /usr/bin/bitrate > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraTuner.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxCaidDisplay.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtremeInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxRendCaids.pyo > /dev/null 2>&1
+exit 0

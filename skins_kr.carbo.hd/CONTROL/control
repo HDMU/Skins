@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-kr.carbo.hd
+Version: 1.0
+Description: HD skin kr_carbo-hd by krauss
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD skin kr_carbo-hd by krauss
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

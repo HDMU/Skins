@@ -1,0 +1,9 @@
+Package: merdas
+Version: 1.0
+Description: merdas
+Section: system
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

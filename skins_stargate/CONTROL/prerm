@@ -1,0 +1,13 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/Mirco-Stargate-Edition-HD
+echo "removing stargate Skin"
+rm -r $PLUGINDIR > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/mvmvolumeText.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/mvmMaxTemp.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/mvmChNumber.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/mvmCaids.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/mvmHDDfree.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmRefString.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmCamdInfo.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmCaidDisplay.pyo > /dev/null 2>&1
+exit 0

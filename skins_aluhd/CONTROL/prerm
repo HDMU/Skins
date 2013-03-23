@@ -1,0 +1,5 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/BrushedAlu-HD
+echo "removing brushedaluhd Skin"
+rm -r $PLUGINDIR > /dev/null 2>&1
+exit 0

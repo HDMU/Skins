@@ -1,0 +1,14 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/Elgato-HD-Metal-Transp
+rm -rf $PLUGINDIR > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ELGClockToText.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ELGEventName.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtServiceInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtremeInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VtiEmuInfo.pyo
+echo "successfully removed"
+echo "syncing disk"
+sync
+exit 0

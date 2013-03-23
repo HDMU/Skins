@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing yads-hd Skin ..."
+exit 0

@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "removing scraletthdpli Skin"
+rm -rf /usr/local/share/enigma2/scarlett-hd > /dev/null 2>&1
+rm -rf /usr/share/fonts/Bania_digital.ttf  > /dev/null 2>&1
+rm -rf /usr/share/fonts/Bania_hd_goodtime.ttf  > /dev/null 2>&1
+rm -rf /usr/share/fonts/HandelGotDBol.ttf  > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtremeInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ChannelSelectionExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraTuner.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo3.pyo > /dev/null 2>&1
+exit 0

@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing files"
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon2.pyo
+exit 0

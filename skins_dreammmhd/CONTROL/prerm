@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "removing dreammmhd Skin"
+rm -rf /usr/local/share/enigma2/DreamMM-HD > /dev/null 2>&1
+rm -rf /usr/bin/bitrate > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ChannelSelectionExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtendedServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxCaidDisplay.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/TuxClockToText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TuxRendCaids.pyo > /dev/null 2>&1
+exit 0

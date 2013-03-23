@@ -1,0 +1,5 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/ghost-HD
+rm -r $PLUGINDIR > /dev/null 2>&1
+echo "removing ghost-HD Skin"
+exit 0

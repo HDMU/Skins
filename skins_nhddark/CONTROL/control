@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-nhddark
+Version: 1.0
+Description: HD Skin nHDdark
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin nHDdark
+Depends: nhdpack
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

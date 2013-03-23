@@ -1,0 +1,27 @@
+<!-- start of DMM-Buttons.xml -->
+		<!-- Red button (is recording possible?) -->
+		<widget source="RecordingPossible" render="Pixmap" pixmap="Vali.HD.flex/icons/red_line.png" position="90,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Red button, Hbbtv (only if record is not on red, for now) -->
+		<widget source="HbbtvApplication" render="Pixmap" pixmap="Vali.HD.flex/icons/red_line.png" position="90,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Green button (is subservices available?) -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Vali.HD.flex/icons/green_line.png" position="373,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Yellow button (is timeshift possible?) -->
+		<widget source="TimeshiftPossible" render="Pixmap" pixmap="Vali.HD.flex/icons/yellow_line.png" position="656,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Yellow button (used for audio on boxes with new rc?) -->
+		<widget source="ShowAudioOnYellow" render="Pixmap" pixmap="Vali.HD.flex/icons/yellow_line.png" position="656,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Blue button (is extensions available?) -->
+		<widget source="ExtensionsAvailable" render="Pixmap" pixmap="Vali.HD.flex/icons/blue_line.png" position="939,61" size="250,2" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+<!-- end of DMM-Buttons.xml -->

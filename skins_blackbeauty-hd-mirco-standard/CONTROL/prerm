@@ -1,0 +1,13 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/BlackBeauty-HD-Mirco-Standard
+rm -r $PLUGINDIR > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmCaidDisplay.pyo
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmCamdInfo.pyo
+rm -r /usr/lib/enigma2/python/Components/Converter/mvmRefString.pyo
+rm -r /usr/lib/enigma2/python/Components/renderer/mvmCaids.pyo
+rm -r /usr/lib/enigma2/python/Components/renderer/mvmChNumber.pyo
+rm -r /usr/lib/enigma2/python/Components/renderer/mvmHDDfree.pyo
+rm -r /usr/lib/enigma2/python/Components/renderer/mvmMaxTemp.pyo
+rm -r /usr/lib/enigma2/python/Components/renderer/mvmvolumeText.pyo
+echo "removing BlackBeauty-HD-Mirco-Standard Skin"
+exit 0

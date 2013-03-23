@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing nHDdark Skin"
+rm -rf /usr/local/share/enigma2/RevolutionSilver > /dev/null 2>&1
+exit 0

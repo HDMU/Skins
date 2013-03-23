@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing newenigma2-HD Skin"
+rm -rf /usr/local/share/enigma2/newnigma2-HD > /dev/null 2>&1
+exit 0

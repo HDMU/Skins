@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-valihdflex
+Version: 1.0
+Description: HD Skin Vali Flex
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD Skin Vali Flex
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

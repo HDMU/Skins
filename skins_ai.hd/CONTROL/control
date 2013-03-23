@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-ai.hd
+Version: 6.05
+Description: HD Skin Ai.hd
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD Skin Ai.hd
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

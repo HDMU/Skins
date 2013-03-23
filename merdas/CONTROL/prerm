@@ -1,0 +1,15 @@
+#!/bin/sh
+echo "removing files"
+rm -rf /usr/lib/enigma2/python/Components/Converter/rmEventName.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSCaidDisplay.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSCamdInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSExtraSource.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSRefString.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSServiceNumber.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/TSSmartInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TS4allCaids.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TSAhours.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TSEventViewPicon.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TSMaxTemp.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TSNextEvent.pyo
+exit 0

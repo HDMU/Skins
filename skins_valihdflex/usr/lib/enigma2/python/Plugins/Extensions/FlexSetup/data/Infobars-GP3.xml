@@ -1,0 +1,994 @@
+<!-- start infobars-gp3.xml -->
+	<!--InfoBarMAIN ##### -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,480" size="1280,240" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/infobar.png" position="0,-1" size="1333,240" zPosition="-1" />
+		<widget alphatest="blend" position="90,122" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="left" position="450,73" render="Label" size="370,30" source="global.gServiceInfos" transparent="1" zPosition="1">
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="95,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="95,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" position="235,120" render="Label" size="70,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" noWrap="1" position="310,120" render="Label" size="617,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="right" position="935,120" render="Label" size="130,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" position="235,153" render="Label" size="70,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" noWrap="1" position="310,153" render="Label" size="617,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" halign="right" position="935,153" render="Label" size="130,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="background" borderColor="darkgrey" borderWidth="2" pixmap="Vali.HD.flex/progress.png" position="205,82" render="Progress" size="100,12" source="session.Event_Now" transparent="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<ePixmap pixmap="Vali.HD.flex/icons/ico_dolby_off.png" position="920,76" size="57,20" zPosition="1" alphatest="blend" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="920,76" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="1040,77" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="1040,77" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_hd_on.png" position="1040,77" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="4">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_txt_on.png" position="990,75" render="Pixmap" size="40,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_crypt_on.png" position="310,79" render="Pixmap" size="24,20" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="greentransparent" font="Regular;18" foregroundColor="foreground" halign="center" position="338,76" render="FixedLabel" size="36,24" source="session.CurrentService" text="sub" valign="center" zPosition="2">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="redtransparent" font="Regular;18" foregroundColor="foreground" halign="center" position="165,76" render="FixedLabel" size="36,24" source="session.RecordState" text="rec" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- HbbTV icon -->
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_hbbtv_off.png" position="865,76" size="44,20" zPosition="1" />
+		<widget source="HbbtvApplication" render="Pixmap" pixmap="Vali.HD.flex/icons/ico_hbbtv_on.png" position="865,75" size="45,20" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">
+			</convert>
+		</widget>  
+		<widget backgroundColor="orange" position="1080,128" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,142" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,156" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,170" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,128" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,142" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget><widget backgroundColor="green" position="1080,156" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,170" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- DMM-Buttons.xml -->
+		<eLabel backgroundColor="darkgrey" position="90,192" size="1100,1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1096,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1097,120" render="Label" size="110,22" source="global.gSensorData1" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1097,142" render="Label" size="110,22" source="global.gSensorData2" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1097,164" render="Label" size="110,22" source="global.gSensorData3" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1097,198" render="Label" size="110,22" source="global.gSensorData4" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="423,198" render="Label" size="505,22" source="global.gSensorData7" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="309,198" render="Label" size="110,22" source="global.gSensorData6" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="935,198" render="Label" size="130,22" source="global.gSensorData8" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="90,198" render="Label" size="215,22" source="global.gSensorData5" transparent="1" />
+		<widget source="global.BGEvent" render="Label" position="827,77" size="32,22" font="Regular;18" backgroundColor="background" halign="center" foregroundColor="foreground" transparent="1" noWrap="1" zPosition="2" />
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="380,73" render="Label" size="65,30" source="global.gChannelNr" transparent="1" zPosition="3" />
+	</screen>
+	 <!--InfoBars ##### -->
+	<screen name="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,220" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/dvr.png" position="90,125" size="122,19" transparent="1" zPosition="1" />
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="center" position="240,110" render="Label" size="800,77" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="190,75" render="Label" size="140,25" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="90,153" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="153,153" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="90,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_hd_on.png" position="90,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="4">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="red" halign="right" position="68,78" render="FixedLabel" size="20,22" source="session.RecordState" text="R" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/mpslider.png" position="345,80" size="600,16" zPosition="3" />
+		<widget pointer="Vali.HD.flex/pointer.png:13,3" position="360,81" render="PositionGauge" size="570,14" source="session.CurrentService" zPosition="2">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="965,65" render="Label" size="121,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="958,88" render="Label" size="130,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,116" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,138" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,160" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<screen name="DVDPlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,220" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/dvr.png" position="90,125" size="122,19" transparent="1" zPosition="1" />
+		<widget backgroundColor="background" font="Regular;22" foregroundColor="foreground" halign="center" position="240,115" render="Label" size="800,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="190,75" render="Label" size="140,25" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="120,153" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="174,153" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="120,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="red" halign="right" position="68,78" render="FixedLabel" size="20,22" source="session.RecordState" text="R" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/mpslider.png" position="345,80" size="600,16" zPosition="3" />
+		<widget pointer="Vali.HD.flex/pointer.png:13,3" position="360,81" render="PositionGauge" size="570,14" source="session.CurrentService" zPosition="2">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="965,65" render="Label" size="121,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="958,88" render="Label" size="130,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_txt_on.png" position="65,151" render="Pixmap" size="40,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="background" font="Regular;20" halign="center" name="chapterLabel" position="240,140" size="800,22" transparent="1" />
+		<widget name="anglePix" position="390,165" size="26,16" pixmap="skin_default/icons/icon_view.png" alphatest="blend" />
+		<widget name="angleLabel" position="240,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" />
+		<widget name="audioLabel" position="565,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" halign="center" />
+		<widget name="subtitleLabel" position="860,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" halign="right" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,116" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,138" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,160" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<screen name="DVDPlayerExtended" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,220" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/dvr.png" position="90,125" size="122,19" transparent="1" zPosition="1" />
+		<widget backgroundColor="background" font="Regular;22" foregroundColor="foreground" halign="center" position="240,115" render="Label" size="800,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="190,75" render="Label" size="140,25" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="120,153" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="174,153" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="120,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="red" halign="right" position="68,78" render="FixedLabel" size="20,22" source="session.RecordState" text="R" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/mpslider.png" position="345,80" size="600,16" zPosition="3" />
+		<widget pointer="Vali.HD.flex/pointer.png:13,3" position="360,81" render="PositionGauge" size="570,14" source="session.CurrentService" zPosition="2">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="965,65" render="Label" size="121,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="958,88" render="Label" size="130,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_txt_on.png" position="65,151" render="Pixmap" size="40,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="background" font="Regular;20" halign="center" name="chapterLabel" position="240,140" size="800,22" transparent="1" />
+		<widget name="anglePix" position="390,165" size="26,16" pixmap="skin_default/icons/icon_view.png" alphatest="blend" />
+		<widget name="angleLabel" position="240,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" />
+		<widget name="audioLabel" position="565,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" halign="center" />
+		<widget name="subtitleLabel" position="860,162" size="180,20" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1" halign="right" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,116" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,138" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,160" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<screen name="MyTubePlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,220" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/dvr.png" position="90,125" size="122,19" transparent="1" zPosition="1" />
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="center" position="240,110" render="Label" size="800,77" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="190,75" render="Label" size="140,25" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="90,153" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="153,153" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="90,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_hd_on.png" position="90,153" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="4">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/mpslider.png" position="345,80" size="600,16" zPosition="3" />
+		<widget pointer="Vali.HD.flex/pointer.png:13,3" position="360,81" render="PositionGauge" size="570,14" source="session.CurrentService" zPosition="2">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="965,65" render="Label" size="121,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="958,88" render="Label" size="130,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;18" foregroundColor="grey" position="1110,117" render="valioSystem" size="110,70" source="session.CurrentService" transparent="1" zPosition="5" noWrap="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,116" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,138" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,160" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<screen name="RemotePlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,220" title="Partnerbox - RemotePlayer">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<widget font="Regular;24" halign="center" name="ServiceName" position="100,110" size="1080,72" transparent="1" valign="center" zPosition="2" />
+		<widget font="Regular;22" halign="left" name="DateTime" position="100,75" size="537,30" transparent="1" valign="top" zPosition="2" />
+		<widget font="Regular;22" halign="right" name="IP" position="639,75" size="541,30" transparent="1" valign="top" zPosition="2" />
+	</screen>
+	<screen name="RadioInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,512" size="1280,242" title="InfoBar">
+		<ePixmap alphatest="off" pixmap="Vali.HD.flex/osd.png" position="0,0" size="1280,220" zPosition="-1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/picon_default.png" position="90,122" size="100,60" />
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="center" position="380,73" render="Label" size="520,30" source="session.CurrentService" transparent="1" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,66" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,90" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" position="235,120" render="Label" size="70,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" noWrap="1" position="310,120" render="Label" size="600,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="right" position="920,120" render="Label" size="130,30" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" position="235,153" render="Label" size="70,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" noWrap="1" position="310,153" render="Label" size="600,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;24" foregroundColor="grey" halign="right" position="920,153" render="Label" size="130,30" source="session.Event_Next" transparent="1" zPosition="1">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="background" borderColor="darkgrey" borderWidth="2" pixmap="Vali.HD.flex/p-bar.png" position="235,84" render="Progress" size="54,10" source="session.Event_Now" transparent="0" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="1115,75" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_crypt_on.png" position="325,78" render="Pixmap" size="24,20" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="1040,77" size="40,21" zPosition="1" />
+		<widget backgroundColor="redtransparent" font="Regular;18" foregroundColor="foreground" halign="center" position="320,75" render="FixedLabel" size="36,24" source="session.RecordState" text="rec" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget backgroundColor="orange" position="1080,128" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,142" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,156" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="orange" position="1080,170" render="FixedLabel" size="8,8" source="session.TunerInfo" zPosition="2">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,128" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,142" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,156" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="green" position="1080,170" render="FixedLabel" size="8,8" source="session.FrontendInfo" zPosition="3">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget font="LCD;30" foregroundColor="secondFG" halign="center" position="0,0" render="Label" size="1280,60" source="RdsDecoder" transparent="1" valign="center" zPosition="5">
+			<convert type="RdsInfo">RadioText</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,76" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,116" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,138" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,160" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<screen name="MoviePlayerExtended" position="0,282" size="1280,440" backgroundColor="transparent" flags="wfNoBorder" title="Infobar">
+		<ePixmap position="0,200" zPosition="-1" size="1280,240" pixmap="Vali.HD.flex/infobar.png" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/dvr.png" position="90,325" size="122,19" transparent="1" zPosition="1" />
+		<widget backgroundColor="background" font="Regular;22" foregroundColor="foreground" halign="center" position="250,317" render="Label" size="780,50" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" position="90,266" render="Label" size="92,25" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;17" foregroundColor="foreground" position="90,290" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+			<convert type="valioClockToText">OnlyDate</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;24" foregroundColor="foreground" halign="right" position="190,275" render="Label" size="140,25" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="250,373" size="780,25" font="Regular;20" halign="center" backgroundColor="black" foregroundColor="yellow" transparent="1">
+		<convert type="MovieInfo">ShortDescription</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_off.png" position="90,373" size="40,21" zPosition="1" />
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_dolby_on.png" position="163,373" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_format_on.png" position="90,373" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget alphatest="blend" pixmap="Vali.HD.flex/icons/ico_hd_on.png" position="90,373" render="Pixmap" size="40,21" source="session.CurrentService" zPosition="4">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget backgroundColor="redtransparent" font="Regular;18" foregroundColor="foreground" halign="center" position="197,276" render="FixedLabel" size="36,24" source="session.RecordState" text="rec" valign="center" zPosition="3">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/mpslider.png" position="345,280" size="600,16" zPosition="3" />
+		<widget pointer="Vali.HD.flex/pointer.png:13,3" position="360,281" render="PositionGauge" size="570,14" source="session.CurrentService" zPosition="2">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="965,265" render="Label" size="121,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="958,288" render="Label" size="130,21" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" position="1092,276" render="Label" size="110,22" source="global.gSensorData0" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,316" render="Label" size="110,22" source="global.gSensorData9" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,338" render="Label" size="110,22" source="global.gSensorData10" transparent="1" />
+		<widget backgroundColor="secondBG" font="Regular;18" foregroundColor="grey" halign="left" position="1092,360" render="Label" size="110,22" source="global.gSensorData11" transparent="1" />
+	</screen>
+	<!-- GP3.2 ##### -->
+	<screen name="gDesktopHD" flags="wfNoBorder" position="0,0" size="1280,720" title="Blue Panel">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget source="label0" render="Label" position="505,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label1" render="Label" position="675,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label2" render="Label" position="845,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label3" render="Label" position="1015,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label4" render="Label" position="505,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label5" render="Label" position="675,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label6" render="Label" position="845,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label7" render="Label" position="1015,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label8" render="Label" position="505,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label9" render="Label" position="675,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label10" render="Label" position="845,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label11" render="Label" position="1015,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget name="icon0" position="530,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon1" position="700,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon2" position="870,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon3" position="1040,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon4" position="530,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon5" position="700,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon6" position="870,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon7" position="1040,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon8" position="530,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon9" position="700,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon10" position="870,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon11" position="1040,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon_sel0" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel1" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel2" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel3" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel4" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel5" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel6" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel7" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel8" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel9" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel10" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel11" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="deskinfobar" position="40,360" size="400,70" zPosition="1" transparent="1" />
+		<widget source="info" render="Label" position="40,420" size="400,48" font="Regular;20" halign="center" transparent="1" />
+		<widget name="hotkey" position="1110,645" size="50,50" zPosition="2" alphatest="blend" />
+		<ePixmap position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="gVDesktopHD" flags="wfNoBorder" position="0,0" size="1280,720" title="Blue Panel">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget source="label0" render="Label" position="505,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label1" render="Label" position="675,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label2" render="Label" position="845,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label3" render="Label" position="1015,230" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label4" render="Label" position="505,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label5" render="Label" position="675,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label6" render="Label" position="845,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label7" render="Label" position="1015,410" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label8" render="Label" position="505,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label9" render="Label" position="675,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label10" render="Label" position="845,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget source="label11" render="Label" position="1015,590" size="150,40" font="Regular;18" zPosition="2" halign="center" valign="center" transparent="1" />
+		<widget name="icon0" position="530,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon1" position="700,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon2" position="870,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon3" position="1040,115" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon4" position="530,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon5" position="700,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon6" position="870,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon7" position="1040,295" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon8" position="530,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon9" position="700,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon10" position="870,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon11" position="1040,475" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="icon_sel0" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel1" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel2" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel3" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,105" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel4" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel5" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel6" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel7" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,285" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel8" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="520,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel9" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="690,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel10" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="860,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="icon_sel11" pixmap="Vali.HD.flex/images/icon_desktopframe.png" position="1030,465" size="120,120" zPosition="3" alphatest="blend" />
+		<widget name="deskinfobar" position="40,360" size="400,70" zPosition="1" transparent="1" />
+		<widget source="info" render="Label" position="40,420" size="400,48" font="Regular;20" halign="center" transparent="1" />
+		<widget name="hotkey" position="1110,645" size="50,50" zPosition="2" alphatest="blend" />
+		<ePixmap position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" alphatest="blend" />
+		<widget name="vdesk0" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="610,641" size="18,16" zPosition="2" alphatest="blend" />
+		<widget name="vdesk1" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="630,641" size="18,16" zPosition="2" alphatest="blend" />
+		<widget name="vdesk2" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="650,641" size="18,16" zPosition="2" alphatest="blend" />
+		<widget name="vdesk3" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="610,660" size="18,16" zPosition="2" alphatest="blend" />
+		<widget name="vdesk4" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="630,660" size="18,16" zPosition="2" alphatest="blend" />
+		<widget name="vdesk5" pixmaps="/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green_off.png,/usr/lib/enigma2/python/Plugins/Bp/geminimain/images/buttons/button_green.png,Gemini_default/none.png" position="650,660" size="18,16" zPosition="2" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableListCover_gBrowser" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,485" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(105, 3), size=(550, 28), font=0, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(97, 97), png=1),
+						MultiContentEntryPixmapAlphaTest(pos=(60, 5), size=(40, 40), png=6),
+						MultiContentEntryPixmapAlphaTest(pos=(76, 0), size=(24, 24), png=2),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 95), size=(650, 2), png=4),
+						MultiContentEntryText(pos=(105, 33), size=(550, 59), font=1, flags=RT_WRAP, text=5),
+						],
+						"fonts": [gFont("Regular", 22),gFont("Regular", 17)], "itemHeight": 97 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="400,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList3Button" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,497" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 20), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 19)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList4Button" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,497" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 20), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 19)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="LabelRed" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="LabelGreen" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="LabelYellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget name="LabelBlue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList3Button_Cnetscan" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,470" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList3Button_CnetscanEntry" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,470" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList3Button_geminidreamnetcast" backgroundColor="backgroundNT" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,470" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList3Button_Automount" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,505" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="510,608" size="700,24" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableList2Lines" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget source="menu" render="Listbox" position="510,100" size="700,520" scrollbarMode="showOnDemand" enableWrapAround="on">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (70, 1), size = (520, 28), font=0, flags = RT_HALIGN_LEFT, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (48,48), png = 2),
+					MultiContentEntryText(pos = (70, 26), size = (520, 20), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (650, 2), png = 3),
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
+		<widget name="TextLabel" position="48,442" size="400,48" font="Regular;20" halign="center" transparent="1" />
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableListNoButton" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,520" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 20), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 19)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableListNoButton_InfoHardware" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,513" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="VariableListNoButton_MountPoints" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget enableWrapAround="1" source="menu" render="Listbox" position="510,100" size="700,513" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(2, 3), size=(650, 24), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(0, 0), png=1) ],
+						"fonts": [gFont("Regular", 20)], "itemHeight": 25 }
+			</convert>
+		</widget>
+		<widget name="PixmapRed" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="PixmapGreen" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="PixmapYellow" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/yellow.png" position="680,643" size="30,30" />
+		<widget name="PixmapBlue" alphatest="blend" pixmaps="Vali.HD.flex/grey.png,Vali.HD.flex/blue.png" position="970,643" size="30,30" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelRed" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelGreen" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelYellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;22" halign="left" name="LabelBlue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+		<widget name="PixmapMenu" position="1170,645" size="35,25" pixmap="Gemini_default/buttons/key_menu.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="Config2Button" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget name="config" position="510,100" size="700,478" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="TextLabel" position="510,585" size="400,48" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapGreen" alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="ButtonGreen" position="410,640" size="200,40" font="Regular;20" halign="center" backgroundColor="green" transparent="1" zPosition="2" />
+		<widget name="PixmapRed" alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="ButtonRed" position="140,640" size="200,40" font="Regular;20" halign="center" backgroundColor="red" transparent="1" zPosition="2" />
+		<widget name="PixmapIcon" position="189,327" size="100,100" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="Config2Button_Sensorfields" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget name="config" position="510,100" size="700,365" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="TextLabel" position="510,594" size="400,48" font="Regular;19" valign="center" noWrap="1" transparent="1" />
+		<widget name="PixmapGreen" alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<widget name="ButtonGreen" position="431,640" size="200,40" font="Regular;20" halign="left" backgroundColor="green" transparent="1" zPosition="2" />
+		<widget name="PixmapRed" alphatest="blend" pixmap="Vali.HD.flex/red.png" position="100,643" size="30,30" />
+		<widget name="ButtonRed" position="140,640" size="200,40" font="Regular;20" halign="left" backgroundColor="red" transparent="1" zPosition="2" />
+		<widget name="PixmapIcon" position="510,468" size="700,120" zPosition="2" transparent="1" alphatest="blend" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="RssLister" flags="wfNoBorder" position="0,0" size="1280,720" title="RSS Reader">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget name="label0" position="510,100" size="435,70" font="Regular;20" />
+		<widget name="label1" position="510,170" size="435,20" font="Regular;18" />
+		<widget name="label2" position="510,190" size="435,20" font="Regular;18" />
+		<widget name="pic" position="1000,107" size="160,100" alphatest="blend" transparent="1" />
+		<widget name="menu" position="510,218" size="700,355" scrollbarMode="showOnDemand" />
+		<widget name="desc" position="510,575" size="700,44" font="Regular;18" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="RssView" flags="wfNoBorder" position="0,0" size="1280,720" title="RSS Viewer">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget name="text" position="510,105" size="700,475" font="Regular;20" />
+		<widget name="blue" position="510,585" size="700,22" backgroundColor="background" font="Regular;18" noWrap="1" />
+		<widget name="blue2" position="510,607" size="700,22" backgroundColor="background" font="Regular;18" noWrap="1" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+	</screen>
+	<screen name="weatherskin_HD" flags="wfNoBorder" position="0,0" size="1280,720" title=" ">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget backgroundColor="transparent" position="38,37" render="Pig" size="400,225" source="session.VideoPicture" />
+		<widget name="mainline0" position="510,105" zPosition="1" size="590,30" font="Regular;25" noWrap="1" transparent="1" />
+		<widget name="mainline1" position="510,135" zPosition="1" size="590,30" font="Regular;25" noWrap="1" transparent="1" />
+		<ePixmap pixmap="Gemini_default/buttons/key_menu.png" position="1170,645" size="35,25" zPosition="2" alphatest="blend" />
+		<eLabel position="515,193" size="100,100" zPosition="1" backgroundColor="lcdBK" />
+		<!-- Icon0 bestimmt die Grosse aller Icons -->
+		<widget name="Icon0" position="515,195" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="Text0" position="635,195" zPosition="1" size="340,110" font="Regular;22" valign="center" transparent="1" noWrap="1" />
+		<widget name="PluginIcon" position="189,327" size="100,100" zPosition="1" alphatest="blend" />
+		<widget name="Icon1" position="520,333" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="Text1" position="495,453" zPosition="1" size="150,180" font="Regular;22" halign="center" transparent="1" />
+		<widget name="Icon2" position="685,330" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="Text2" position="660,453" zPosition="1" size="150,180" font="Regular;22" halign="center" transparent="1" />
+		<widget name="Icon3" position="850,331" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="Text3" position="825,453" zPosition="1" size="150,180" font="Regular;22" halign="center" transparent="1" />
+		<widget name="Icon4" position="1015,332" size="100,100" zPosition="2" alphatest="blend" />
+		<widget name="Text4" position="991,453" zPosition="1" size="150,180" font="Regular;22" halign="center" transparent="1" />
+		<ePixmap position="130,500" size="200,92" zPosition="2" pixmap="Vali.HD.flex/images/gp3.png" transparent="1" alphatest="blend" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="100,643" size="30,30" transparent="1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="390,643" size="30,30" transparent="1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="680,643" size="30,30" transparent="1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="970,643" size="30,30" transparent="1" />
+	</screen>
+	<screen name="ConfigSpinner" position="0,0" size="1280,720" title="" zPosition="1" flags="wfNoBorder" backgroundColor="backgroundNT">
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/bgnt.png" position="0,0" size="1280,720" zPosition="-1" />
+		<widget backgroundColor="darkgrey" font="Regular;22" position="460,35" render="Label" size="540,50" source="Title" transparent="1" valign="center" zPosition="1" />
+		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="1000,35" render="Label" size="210,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+			<convert type="valioClockToText">DateTime</convert>
+		</widget>
+		<widget name="Spinner" position="694,98" size="400,200" alphatest="blend" />
+		<widget name="config" position="475,299" size="730,293" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="100,643" size="30,30" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/green.png" position="390,643" size="30,30" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="680,643" size="30,30" />
+		<ePixmap alphatest="blend" pixmap="Vali.HD.flex/grey.png" position="970,643" size="30,30" />
+		<widget name="ButtonGreen" position="435,645" size="220,26" zPosition="1" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1" />
+		<ePixmap position="1095,645" size="35,25" zPosition="10" pixmap="Vali.HD.flex/skin_default/buttons/key_left.png" alphatest="blend" />
+		<ePixmap position="1135,645" size="35,25" zPosition="10" pixmap="Vali.HD.flex/skin_default/buttons/key_ok.png" alphatest="blend" />
+		<ePixmap position="1175,645" size="35,25" zPosition="10" pixmap="Vali.HD.flex/skin_default/buttons/key_right.png" alphatest="blend" />
+		<widget name="PixmapIcon" position="100,375" size="130,130" zPosition="2" alphatest="blend" />
+	</screen>
+<!-- end of infobars-gp3.xml -->

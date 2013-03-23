@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing brushedaluhd Skin ..."
+exit 0

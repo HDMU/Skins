@@ -1,0 +1,9 @@
+<!-- start of volume-digits.xml -->
+	<!--Volume ##### -->
+	<screen backgroundColor="selectedBG" flags="wfNoBorder" name="Volume" position="45,center" size="60,45" title="Volume" zPosition="1">
+		<widget backgroundColor="selectedBG" foregroundColor="selectedFG" font="LCD;36" halign="center" render="valioVolumeText" position="0,0" size="60,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="4"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="Mute" position="45,30" size="45,45" title="Mute" zPosition="10">
+		<ePixmap alphatest="on" pixmap="Vali.HD.flex/mute.png" position="0,0" size="45,45" zPosition="0" />
+	</screen>
+<!-- end of volume-digits.xml -->

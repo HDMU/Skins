@@ -1,0 +1,9 @@
+Package: skinpythonmvm
+Version: 1.0
+Description: skinpythonmvm
+Section: system
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

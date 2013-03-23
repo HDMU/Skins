@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing carbo hd Skin"
+rm -r usr/local/share/enigma2/kr_carbo-hd /dev/null 2>&1
+exit 0

@@ -1,0 +1,15 @@
+#!/bin/sh
+PLUGINDIR=/usr/local/share/enigma2/Ai.HD
+echo "removing ai.hd Skin"
+rm -r $PLUGINDIR > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Plugins/Extensions/AiHDcontroler > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendVolumeText.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendChNumber.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendVideoSize.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendMovieDirSize.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendMaxTemp.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Renderer/vhdRendNextEvent.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/vhdConvSmartInfo.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/vhdConvClockToText.pyo > /dev/null 2>&1
+rm -r /usr/lib/enigma2/python/Components/Converter/valiRefString.pyo > /dev/null 2>&1
+exit 0

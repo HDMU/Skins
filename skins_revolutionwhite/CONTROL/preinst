@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing RevolutionWhite Skin ..."
+exit 0

@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "removing CarbonNeonHD Skin"
+rm -rf /usr/local/share/enigma2/CarboNNeoNHDmod > /dev/null 2>&1
+rm -rf /usr/share/fonts/allruk.ttf > /dev/null 2>&1
+rm -rf /usr/share/fonts/Avante.ttf > /dev/null 2>&1
+rm -rf /usr/share/fonts/blue.ttf > /dev/null 2>&1
+rm -rf /usr/share/fonts/allru.ttf > /dev/null 2>&1
+rm -rf /usr/share/fonts/allruf.ttf > /dev/null 2>&1
+rm -rf /usr/bin/bitrate > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ChannelSelectionExtraInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/MoreInfo2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtraTuner.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/CamdInfo3.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/TranspService.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/vCutext.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/Picon2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerLcd1.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerLcd2.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/ValiXDMaxTemp.pyo > /dev/null 2>&1
+exit 0

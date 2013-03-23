@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-newinfintymod
+Version: 1.0
+Description: HD Skin NewInfintyMod
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD Skin NewInfintyMod
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

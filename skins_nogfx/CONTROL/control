@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-nogfx
+Version: 2.0
+Description: HD Skin NoGfx v2
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: sh4
+OE: HD Skin NoGfx v2
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

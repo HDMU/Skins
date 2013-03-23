@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "successfully removed"
+echo "syncing disk"
+sync
+exit 0

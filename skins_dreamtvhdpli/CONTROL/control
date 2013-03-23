@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-dreamtvhdpli
+Version: 1.0
+Description: HD Skin dreamTV-HD
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+Depends: bitrate,skinspicon2
+OE: HD Skin dreamTV-HD
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

@@ -1,0 +1,16 @@
+<skin>
+<!--Global ##### -->
+  <output id="0">
+    <resolution bpp="32" xres="1280" yres="720" />
+  </output>
+  <fonts>
+    <font filename="/usr/share/enigma2/Vali.HD.flex/hd.ttf" name="Regular" replacement="1" scale="100" />
+    <font filename="lcd.ttf" name="LCD" scale="100" />
+    <font filename="tuxtxt.ttf" name="Console" scale="100" />
+  </fonts>
+  <subtitles>
+    <sub font="Regular;32" foregroundColor="subtiCol" name="Subtitle_TTX" shadowColor="#08101010" shadowOffset="2,2" />
+    <sub font="Regular;32" foregroundColor="subtiCol" name="Subtitle_Regular" shadowColor="#08101010" shadowOffset="2,2" />
+    <sub font="Regular;32" foregroundColor="subtiCol" name="Subtitle_Bold" shadowColor="#08101010" shadowOffset="2,2" />
+    <sub font="Regular;32" foregroundColor="subtiCol" name="Subtitle_Italic" shadowColor="#08101010" shadowOffset="2,2" />
+  </subtitles>

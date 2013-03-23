@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-nhdred
+Version: 1.0
+Description: HD Skin nHDred
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin nHDred
+Depends: nhdpack
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

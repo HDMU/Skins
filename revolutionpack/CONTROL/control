@@ -1,0 +1,11 @@
+Package: revolutionpack
+Version: 1.0
+Description: revolutionpack
+Section: system
+Priority: optional
+Maintainer: macbest
+Architecture: sh4
+Depends: skinspicon2
+OE: HDMU
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

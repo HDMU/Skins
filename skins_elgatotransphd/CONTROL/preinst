@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "installing Elgato-HD-Metal-Transp Skin ..."
+exit 0

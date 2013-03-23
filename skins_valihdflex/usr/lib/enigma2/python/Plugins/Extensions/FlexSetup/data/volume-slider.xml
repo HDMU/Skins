@@ -1,0 +1,10 @@
+<!-- start of volume-slider.xml -->
+	<!--Volume ##### -->
+	<screen backgroundColor="selectedBG" flags="wfNoBorder" name="Volume" position="45,center" size="35,234" title="Volume" zPosition="1">
+		<widget name="Volume" orientation="orBottomToTop" pixmap="Vali.HD.flex/volumeslider.png" position="5,5" size="25,200" transparent="1" zPosition="1" />
+		<widget backgroundColor="selectedBG" font="Regular;22" halign="center" render="valioVolumeText" position="0,207" size="35,26" source="global.CurrentTime" transparent="1" zPosition="4"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="Mute" position="45,30" size="45,45" title="Mute" zPosition="10">
+		<ePixmap alphatest="on" pixmap="Vali.HD.flex/mute.png" position="0,0" size="45,45" zPosition="0" />
+	</screen>
+<!-- start of volume-slider.xml -->

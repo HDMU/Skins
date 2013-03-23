@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-carbonneonhd
+Version: 1.0
+Description: HD Skin CarbonNeonHD
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+OE: HD Skin CarbonNeonHD
+Depends: bitrate,skinspicon2
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

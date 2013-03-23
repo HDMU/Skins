@@ -1,0 +1,117 @@
+<!-- start of oled_off.xml -->
+	<!--OLED ##### -->
+	<windowstyle id="1" type="skinned">
+		<color color="lcdBK" name="Background" />
+		<color color="lcdWH" name="LabelForeground" />
+		<color color="lcdBK" name="ListboxBackground" />
+		<color color="lcdWH" name="ListboxForeground" />
+		<color color="lcdBK" name="ListboxSelectedBackground" />
+		<color color="lcdWH" name="ListboxSelectedForeground" />
+		<color color="lcdBK" name="ListboxMarkedBackground" />
+		<color color="lcdWH" name="ListboxMarkedForeground" />
+		<color color="lcdBK" name="ListboxMarkedAndSelectedBackground" />
+		<color color="lcdWH" name="ListboxMarkedAndSelectedForeground" />
+		<color color="lcdWH" name="WindowTitleForeground" />
+		<color color="lcdBK" name="WindowTitleBackground" />
+	</windowstyle>
+	<!--OLED Mono ##### -->
+        <screen name="ChannelSelection_summary"			position="0,0" size="132,64">
+		<widget source="parent.ServiceEvent" 	render="Label" 		position="6,3" 	  size="120,34" font="Regular;16" halign="center" valign="top" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel 			 										position="0,43"   size="132,1"  backgroundColor="white" />
+		<widget source="parent.ServiceEvent" 	render="Progress" 	position="68,51"  size="55,8"   borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="global.CurrentTime"  	render="Label" 		position="6,44"   size="58,18"  font="Regular;20" halign="left" valign="top">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
+	<screen name="InfoBarMoviePlayerSummary"		position="0,0" size="132,64">
+		<widget source="session.CurrentService" render="Label"      position="6,3"   size="120,34" font="Regular;16" halign="center" valign="top" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel 			 										position="0,43"  size="132,1"  backgroundColor="white" />
+		<widget source="session.CurrentService" render="Progress"   position="68,51" size="55,8" borderWidth="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="global.CurrentTime" 	render="Label" 		position="6,44"  size="58,20"  font="Regular;20" halign="left" valign="top">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" 	render="FixedLabel" text=" " 	position="6,44" zPosition="1" size="58,20">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+	<screen name="InfoBarSummary" 					position="0,0" size="132,64">
+		<widget source="session.CurrentService" render="Label" 		position="6,3" 	  size="120,34" font="Regular;16" halign="center" valign="top" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel 			 										position="0,43"   size="132,1"  backgroundColor="white" />
+		<widget source="session.Event_Now" 		render="Progress" 	position="68,51"  size="55,8"   borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="global.CurrentTime" 	render="Label" 		position="6,44"   size="58,20"  font="Regular;20" halign="left" valign="top">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" 	render="FixedLabel" text=" " 	position="6,44" zPosition="1" size="58,20">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+	<screen name="MediaPlayerLCDScreen" 			position="0,0" size="132,64">
+		<widget source="session.CurrentService" render="Label" position="6,3" size="120,34" font="Regular;16">
+			<convert type="ServiceName"></convert>
+		</widget>
+		<eLabel 			 position="6,37" size="120,1"  backgroundColor="white" />
+		<widget name="text1" position="6,38" size="120,13" font="Regular;13" valign="top" />
+		<widget name="text3" position="6,51" size="120,13" font="Regular;13" valign="top" />
+		<widget name="text4" position="0,0" size="0,0"/>
+	</screen>
+	<screen name="MenuSummary" 						position="0,0" size="132,64">
+		<widget source="parent.title" render="Label" position="6,0" size="120,32" font="Regular;14" halign="center" valign="center"/>
+		<widget source="parent.menu" render="Label" position="6,32" size="120,32" font="Regular;15" halign="center" valign="center">
+			<convert type="StringListSelection" />
+		</widget>
+	</screen>
+	<screen name="StandbySummary" 					position="0,0" size="132,64">
+		<widget source="global.CurrentTime" render="Label" position="6,4"  size="120,24" font="Regular;22" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="6,32" size="120,32" font="Regular;28" halign="center" valign="center">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="6,0" zPosition="1" size="120,64" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+	<!--OLED Color ##### -->
+	<screen name="StandbySummary" position="0,0" size="96,64" id="2">
+		<widget font="Regular;32" halign="center" position="0,0" render="Label" size="96,32" source="global.CurrentTime" valign="center">
+			<convert type="valioClockToText">Default</convert>
+		</widget>
+		<widget font="Regular;24" halign="center" position="0,32" render="Label" size="96,32" source="global.CurrentTime" valign="center">
+			<convert type="valioClockToText">Format:%a %d</convert>
+		</widget>
+	</screen>
+	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="96,64" id="2">
+		<widget font="Regular;24" halign="center" position="0,0" render="Label" size="96,32" source="session.CurrentService" valign="center">
+			<convert type="ServicePosition">Remaining,ShowHours</convert>
+		</widget>
+		<widget font="Regular;28" halign="center" position="0,32" render="Label" size="96,32" source="global.CurrentTime" valign="center">
+			<convert type="valioClockToText">Default</convert>
+		</widget>
+	</screen>
+	<screen name="InfoBarSummary" position="0,0" size="96,64" id="2">
+		<widget alphatest="off" position="-2,2" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="0">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+	</screen>
+	<screen name="ChannelSelection_summary" position="0,0" size="96,64" id="2">
+		<widget font="Regular;18" halign="center" position="0,0" render="Label" size="96,64" source="parent.ServiceEvent" valign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
+</skin>
+<!-- end of oled_off.xml -->

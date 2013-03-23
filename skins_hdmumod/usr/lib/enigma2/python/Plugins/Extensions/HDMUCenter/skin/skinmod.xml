@@ -1,0 +1,287 @@
+<skin>
+<!-- HDMUCenterSkin Release  v.3.0 -->
+	<output id="0">
+		<resolution xres="1280" yres="720" bpp="32"/>
+	</output>
+	<screen name="HDMU_MainMenu" position="0,0" size="1280,720" title="Home" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/hdmucenter.png" alphatest="blend" />
+		<eLabel text="HDMUCenter" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="260,162" size="640,438" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="transpBlack" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5,5), size = (635,40), flags = RT_HALIGN_CENTER, text = 0) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 40
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="HDMU_SoftcamControl" position="0,0" size="1280,720" title="SoftcamControl" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/softc.png" alphatest="blend" />
+		<widget source="menu" render="Listbox" zPosition="3" scrollbarMode="showOnDemand" transparent="1" position="260,162" size="640,60" halign="center" >
+			<convert type="StringList"/>
+		</widget>
+		<eLabel text="SoftcamControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="accam" zPosition="2" halign="center" valign="center" position="260,220" size="640,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<widget name="aucam" zPosition="2" halign="center" valign="center" position="260,250" size="640,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<widget name="ecm" zPosition="2" halign="left" position="270,282" size="630,240" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20"/>
+		<eLabel position="260,280" size="640,1" backgroundColor="grey" />
+		<eLabel position="260,522" size="640,1" backgroundColor="grey" />
+		<ePixmap pixmap="skin_default/buttons/key_red.png" position="300,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="300,570" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="605,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="605,570" size="35,35" alphatest="on" />
+		<widget name="red" position="345,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="green" position="345,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="yellow" position="645,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="blue" position="645,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+	</screen>
+	<screen name="HDMU_VideoControl" position="0,0" size="1280,720" title="Video Control" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/hdmucenter.png" alphatest="blend" />
+		<eLabel text="VideoControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="config" zPosition="2" position="270,162" size="620,330" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="300,570" size="35,25"  alphatest="blend" />
+		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="605,570" size="35,25"  alphatest="blend" />
+		<widget name="green" position="345,570" size="190,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="blue" position="650,570" size="190,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+	</screen>
+	<screen name="HDMU_OverclockControl" position="0,0" size="1280,720" title="OverclockControl" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/overcl.png" alphatest="blend" />
+		<eLabel text="OverclockControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="configlist" zPosition="2" scrollbarMode="showOnDemand" position="270,162" size="620,440" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<ePixmap position="275,570" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_green.png" alphatest="blend"/>
+		<ePixmap position="485,570" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_yellow.png" alphatest="blend"/>
+		<ePixmap position="695,570" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_blue.png" alphatest="blend"/>
+		<widget name="green" zPosition="2" halign="left" position="320,570" size="170,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+		<widget name="yellow" zPosition="2" halign="left" position="530,570" size="170,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+		<widget name="blue" zPosition="2" halign="left" position="740,570" size="170,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+		<ePixmap name="back" zPosition="2" position="485,295" size="216,216" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDMUCenter/skin/images/tachoback.png" alphatest="blend"/>
+		<widget name="current" zPosition="3" position="494,463" size="200,40" transparent="1" halign="center" valign="center" backgroundColor="#000" foregroundColor="white" font="Regular;22"/>
+		<widget name="img" zPosition="4" position="485,295" size="216,216" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDMUCenter/skin/images/tachomin.png" alphatest="blend"/>
+	</screen>
+	<screen name="HDMU_SystemControl" position="0,0" size="1280,720" title="SystemControl" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/sys.png" alphatest="blend" />
+		<eLabel text="SystemControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="config" zPosition="2" position="270,162" size="620,330" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<widget name="rtext" zPosition="2" position="270,520" size="630,25" transparent="1" halign="center" valign="center" foregroundColor="white" backgroundColor="black" font="Regular;22"/>
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="500,570" zPosition="2" size="35,25" alphatest="blend"/>
+		<widget name="green" zPosition="2" halign="left" position="545,570" size="150,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+	</screen>
+	<screen name="HDMU_SystemInfos" position="0,0" size="1280,720" title="SystemInfos" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/sysinfo.png" alphatest="blend" />
+		<eLabel text="SystemInfos" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<eLabel position="260,522" size="640,1" backgroundColor="grey" />
+		<widget name="text" zPosition="2" position="270,162" size="620,360" font="Regular;18" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="text3" zPosition="2" position="270,162" size="620,360" font="Regular;18" halign="left" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<widget name="text2" zPosition="2" position="270,162" size="620,360" font="Regular;18" halign="right" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" />
+		<ePixmap pixmap="skin_default/buttons/key_red.png" position="300,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="300,570" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="605,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="605,570" size="35,35" alphatest="on" />
+		<widget name="red" position="345,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="green" position="345,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="yellow" position="645,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="blue" position="645,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+	</screen>
+	<screen name="HDMU_ufsup" position="0,0" size="1280,720" title="ufsup" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<eLabel text="SystemInfos" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget source="menu" render="Listbox" transparent="1" zPosition="5" position="270,162" size="620,360">
+			<convert type="StringList"/>
+		</widget>
+	</screen>
+	<screen name="HDMU_OSDControl" position="0,0" size="1280,720" title="OSDControl" flags="wfNoBorder" backgroundColor="#000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/osdbg.png" transparent="1" />
+		<ePixmap position="570,650" zPosition="3" size="35,25" pixmap="skin_default/buttons/key_green.png" alphatest="blend"/>
+		<widget name="green" zPosition="2" halign="center" position="610,646" size="120,30" foregroundColor="white" valign="center" backgroundColor="black" font="Regular;20"/>
+		<widget name="top" zPosition="3" position="center,150" size="300,50" foregroundColor="white" backgroundColor="black" valign="center" halign="center" font="Regular;40"/>
+		<widget name="left" zPosition="3" position="200,center" size="300,50" foregroundColor="white" backgroundColor="black" valign="center" halign="center" font="Regular;40"/>
+		<widget name="right" zPosition="3" position="800,center" size="300,50" foregroundColor="white" backgroundColor="black" valign="center" halign="center" font="Regular;40"/>
+		<widget name="bottom" zPosition="3" position="center,510" size="300,50" foregroundColor="white" backgroundColor="black" valign="center" halign="center" font="Regular;40"/>
+	</screen>
+	<screen name="HDMU_VFDControl" position="0,0" size="1280,720" title="VFDControl" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png"  transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/hdmucenter.png" alphatest="blend" />
+		<eLabel text="VFDControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="config" zPosition="2" position="270,162" size="620,330" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<ePixmap zPosition="2" position="500,570" size="35,25" pixmap="skin_default/buttons/key_green.png" alphatest="blend"/>
+		<widget name="green" zPosition="2" position="545,570" size="190,30" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+	</screen>
+	<screen name="HDMU_DLNAServer" position="0,0" size="1280,720" title="DLNAServer" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/dlna.png" alphatest="blend" />
+		<eLabel text="DLNAServer" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="config" zPosition="2" position="270,205" size="620,360" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<eLabel position="260,200" size="640,1" backgroundColor="grey" />
+		<eLabel position="260,522" size="640,1" backgroundColor="grey" />
+		<ePixmap pixmap="skin_default/buttons/key_red.png" position="300,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="300,570" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="605,525" size="35,35" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="605,570" size="35,35" alphatest="on" />
+		<widget name="red" position="345,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="green" position="345,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="yellow" position="645,525" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="blue" position="645,570" size="220,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="status" position="270,164" size="165,30" zPosition="10" font="Regular;26" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1"/>
+		<widget name="statuspic" pixmaps="/usr/local/share/enigma2/HDMU_ModSkin/buttons/key_on.png,/usr/local/share/enigma2/HDMU_ModSkin/buttons/key_off.png" position="435,164" zPosition="10" size="35,35" transparent="1" alphatest="blend"/>
+	</screen>
+	<screen name="HDMU_OpenVPN" position="0,0" size="1280,720" title="OpenVPN" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/hdmucenter.png" alphatest="blend" />
+		<eLabel text="OpenVPN" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<ePixmap position="300,525" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_red.png" alphatest="blend"/>
+		<ePixmap position="300,570" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_green.png" alphatest="blend"/>
+		<ePixmap position="605,525" zPosition="2" size="35,25" pixmap="skin_default/buttons/key_yellow.png" alphatest="blend"/>	
+		<widget name="red" zPosition="2" halign="center" position="345,525" size="220,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20"/>
+		<widget name="green" zPosition="2" halign="center" position="345,570" size="220,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20"/>
+		<widget name="yellow" zPosition="2" halign="center" position="645,525" size="220,30" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20"/>
+		<widget name="status" position="270,164" size="165,30" zPosition="10" font="Regular;26" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1"/>
+		<widget name="statuspic" pixmaps="/usr/local/share/enigma2/HDMU_ModSkin/buttons/key_on.png,/usr/local/share/enigma2/HDMU_ModSkin/buttons/key_off.png" position="435,164" zPosition="10" size="35,35" transparent="1" alphatest="blend"/>
+	</screen>
+	<screen name="HDMU_SkinControl" position="0,0" size="1280,720" title="SystemControl" flags="wfNoBorder" backgroundColor="#ff000000">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="/usr/local/share/enigma2/HDMU_ModSkin/menu/menubg.png" transparent="1" />
+		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkin/menu/skinc.png" alphatest="blend" />
+		<eLabel text="SkinControl" position="260,110" size="640,40" font="Regular;28" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,479" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,506" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="925,533" size="112,22" font="Regular;18" backgroundColor="black" transparent="1" halign="center" valign="center">
+			<convert type="ClockToText">Format:%Y</convert>
+		</widget>
+		<widget name="config" zPosition="2" position="270,162" size="620,380" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22"/>
+		<widget name="rtext" zPosition="2" position="270,520" size="630,25" font="Regular;20" transparent="1" halign="center" valign="center"  foregroundColor="white" backgroundColor="black" />
+		<ePixmap pixmap="skin_default/buttons/key_green.png" zPosition="2" position="500,570" size="35,25" alphatest="blend"/>
+		<widget name="green" zPosition="2" position="545,570" size="190,30" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;24"/>
+	</screen>
+</skin>

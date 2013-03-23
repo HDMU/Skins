@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "removing Nobile HD Skin"
+rm -rf /usr/local/share/enigma2/Nobile
+exit 0

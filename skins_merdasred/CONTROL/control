@@ -1,0 +1,11 @@
+Package: enigma2-plugin-skins-merdasred
+Version: 1.0
+Description: Merdas-HD RED Skin V9
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: sh4
+Depends: merdas
+OE: Merdas-HD RED Skin V9
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com
