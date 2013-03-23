@@ -104,7 +104,7 @@
 		<color name="WindowTitleBackground" color="black" />
 	</windowstyle>
 	<screen name="InfoBar" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="HDMU_ModSkinfull/menu/infobar.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="HDMU_ModSkinfull/menu/infobarred.png" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="20,625" size="107,54" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -144,7 +144,7 @@
 		</widget>
 	</screen>	
 	<screen name="InfoBar_voll" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="HDMU_ModSkinfull/menu/infobar_voll.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="HDMU_ModSkinfull/menu/infobar_vollred.png" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="23,627" size="107,54" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -154,34 +154,34 @@
 		<widget source="session.CurrentService" render="Label" position="400,576" size="420,35" font="Regular;22" halign="center" backgroundColor="black" transparent="1" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="35,577" size="83,35" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="black" shadowColor="grey2" shadowOffset="-2,-1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="35,579" size="83,35" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="black" shadowColor="grey2" shadowOffset="-2,-1" zPosition="2">
 			<convert type="ServiceNumber">Number</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="198,526" size="140,84" backgroundColor="black" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="150,670" size="880,3" pixmap="HDMU_ModSkinfull/menu/progress_i.png" backgroundColor="black" transparent="1">
+		<widget source="session.Event_Now" render="Progress" position="154,667" size="870,3" pixmap="HDMU_ModSkinfull/menu/progress_i.png" backgroundColor="black" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="156,635" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="162,632" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="240,635" size="665,30" font="Regular;26" halign="left" valign="center" backgroundColor="black" transparent="1" >
+		<widget source="session.Event_Now" render="Label" position="240,632" size="665,30" font="Regular;26" halign="left" valign="center" backgroundColor="black" transparent="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="912,635" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="907,632" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="156,680" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="162,676" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="240,680" size="665,30" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="240,676" size="665,30" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="912,680" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="907,676" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
@@ -290,7 +290,7 @@
 		</widget>
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" title="SecondInfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-2" size="1280,720" pixmap="HDMU_ModSkinfull/menu/secondinfobar.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-2" size="1280,720" pixmap="HDMU_ModSkinfull/menu/secondinfobarred.png" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="23,627" size="107,54" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -431,7 +431,7 @@
 		</widget>
 	</screen>
 	<screen name="startscreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -446,7 +446,7 @@
 		<widget name="greentext" position="201,674" size="190,33" zPosition="1" font="Regular;20" halign="right" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget name="Cover" position="888,297" size="340,340" zPosition="4" backgroundColor="black" alphatest="blend" transparent="1" />
 		<eLabel text="Enhanced Movie Center" position="42,33" size="672,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
@@ -612,7 +612,7 @@
 		<widget name="freememory" position="403,279" size="140,180" valign="center" halign="center" zPosition="2" font="Regular;18" />
 	</screen>
 	<screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" alphatest="off" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" alphatest="off" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -711,7 +711,7 @@
 		<ePixmap pixmap="HDMU_ModSkinfull/icons/mute.png" position="0,0" size="60,288" />
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/main.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -736,7 +736,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" valign="center" borderWidth="1" borderColor="grey1" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="menu_information" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" borderWidth="0" borderColor="white">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/info.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -761,7 +761,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="menu_setup" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" borderWidth="0" borderColor="white">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/setup.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -786,7 +786,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/scan.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -811,7 +811,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="menu_system" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/system.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -836,7 +836,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="menu_harddisk" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/record.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -861,7 +861,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png"  transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png"  transparent="1" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/shutdown.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -886,7 +886,7 @@
 		<widget source="title" render="Label" position="260,114" size="640,40" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
 	</screen>
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" title="Software Manager" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -916,7 +916,7 @@
 		<widget source="key_red" render="Label" position="670,672" size="240,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  transparent="1" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -945,7 +945,7 @@
 		<widget name="menu" position="0,5" size="900,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular;20" />
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -992,7 +992,7 @@
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/epg.png" position="1145,668" size="70,35" alphatest="on" />
 	</screen>
 	<screen name="ChannelSelectiondreievent" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1037,7 +1037,7 @@
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/epg.png" position="1145,668" size="70,35" alphatest="on" />
 	</screen>
 	<screen name="ChannelSelectionRadio" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1061,7 +1061,7 @@
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/menu.png" position="65,654" size="70,35" alphatest="blend" />
 	</screen>
 	<screen name="MultiEPG_MV" position="0,0" size="1280,720" title="MultiEPG" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<eLabel text="Timeline EPG" position="42,33" size="672,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1" valign="left" />
 		<eLabel position="60,125" size="1160,2" zPosition="1" backgroundColor="grey" />
 		<eLabel position="900,86" size="1,574" backgroundColor="grey" />
@@ -1147,7 +1147,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		</applet>
 	</screen>
 	<screen name="CiSelection" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1160,7 +1160,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="entries" position="78,148" size="1140,480" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" font="Regular;20" />
 	</screen>
 	<screen name="MMIDialog" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1174,7 +1174,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="bottom" position="78,605" size="1130,20" font="Regular;18" halign="center" foregroundColor="black" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1189,7 +1189,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CIconfigMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1214,7 +1214,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="easyCIconfigMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1234,7 +1234,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="key_yellow" render="Label" position="837,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CAidSelect" position="0,0" size="1280,720" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1250,7 +1250,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="myProviderSelection" position="0,0" size="1280,720" title="Select provider to add..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1270,7 +1270,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="myChannelSelection" position="0,0" size="1280,720" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1290,7 +1290,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="Cleanup Wizard Setting`s" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1309,7 +1309,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="text" position="5,5" size="890,510" font="Regular;24" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" title="CrashlogAutoSubmit settings" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1327,7 +1327,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1364,7 +1364,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="Dishpixmap" pixmap="HDMU_ModSkinfull/skin_default/dish.png" position="0,0" size="130,160" alphatest="off" />
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
 		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,85" size="320,180"  zPosition="4" />-->
 		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
@@ -1398,7 +1398,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
 		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,85" size="320,180"  zPosition="4" />-->
 		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
@@ -1434,7 +1434,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1464,7 +1464,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="GraphMultiEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1502,7 +1502,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="HarddiskDriveSelection" position="0,0" size="1280,720" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1534,7 +1534,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="HarddiskDriveSetup" position="0,0" size="1280,720" title="Harddisk" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1564,7 +1564,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="HarddiskMountpointBrowser" position="0,0" size="1280,720" title="Select mountpoint" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1583,7 +1583,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="HarddiskWait" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1594,7 +1594,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="wait" position="78,102" size="1130,520" transparent="1" font="Regular;20" />
 	</screen>
 	<screen name="HelpMenu" position="0,0" size="1280,720" title="Help" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1615,7 +1615,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="input" position="10,60" size="580,25" font="Regular;20" />
 	</screen>
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" alphatest="off" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" alphatest="off" />
 		<ePixmap position="1040,460" size="70,35" zPosition="10" pixmap="HDMU_ModSkinfull/buttons/ok.png" transparent="1" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -1645,7 +1645,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		</widget>
 	</screen>
 	<screen name="LocationBox" position="0,0" size="1280,720" title="Location Box" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1725,7 +1725,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="menu" position="0,5" size="900,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular;20" />
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1768,7 +1768,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="NimSelection" position="0,0" size="1280,720" title="Choose Tuner" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<ePixmap position="605,654" size="70,35" zPosition="10" pixmap="HDMU_ModSkinfull/buttons/ok.png" transparent="1" alphatest="blend" />
 		<ePixmap position="930,500" size="200,200" pixmap="HDMU_ModSkinfull/menu/scanr.png" alphatest="blend" />
 		<ePixmap position="200,500" size="200,200" pixmap="HDMU_ModSkinfull/menu/scanl.png" alphatest="blend" />
@@ -1792,7 +1792,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<ePixmap position="605,654" size="70,35" zPosition="10" pixmap="HDMU_ModSkinfull/buttons/ok.png" transparent="1" alphatest="blend" />
 		<ePixmap position="930,500" size="200,200" pixmap="HDMU_ModSkinfull/menu/scanr.png" alphatest="blend" />
 		<ePixmap position="200,500" size="200,200" pixmap="HDMU_ModSkinfull/menu/scanl.png" alphatest="blend" />
@@ -1810,7 +1810,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="number" position="139,14" size="100,35" halign="center" font="Regular;30" backgroundColor="black" />
 	</screen>
 	<screen name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1821,7 +1821,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="78,100" size="1130,520" itemHeight="36" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" font="Regular;24" />
 	</screen>
 	<screen name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1832,7 +1832,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="servicelist" position="78,100" size="1130,520" itemHeight="36" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1843,7 +1843,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="78,100" size="1130,520" itemHeight="36" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" font="Regular;30" />
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubg.png" transparent="1" alphatest="blend" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/menubgred.png" transparent="1" alphatest="blend" />
 		<ePixmap position="942,240" size="80,218" pixmap="HDMU_ModSkinfull/menu/plugin.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="912,142" size="133,72" font="Digital;50" backgroundColor="black" transparent="1" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
@@ -1866,7 +1866,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="green" position="620,570" size="220,30" zPosition="1" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/ok.png" position="522,654" size="70,35" alphatest="blend" />
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/exit.png" position="688,654" size="70,35" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="1065,34" size="95,34" font="Digital;32" backgroundColor="black" transparent="1" halign="center" valign="center">
@@ -1880,7 +1880,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="text" position="0,0" size="0,0" />
 	</screen>
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" title="Recording paths..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1909,7 +1909,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="RtpText" position="100,71" size="1080,30" font="Regular;22" halign="right" noWrap="1" backgroundColor="black" shadowOffset="-2,-2" shadowColor="transpBlack" />
 	</screen>
 	<screen name="Satfinder" position="0,0" size="1280,720" title="Satfinder" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1950,7 +1950,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="HDMU_ModSkinfull/buttons/exit.png" position="605,674" size="70,35" alphatest="blend" />
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1972,7 +1972,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="introduction" position="60,674" size="815,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="ScanSimple" position="0,0" size="1280,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1993,7 +1993,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="footer" position="60,674" size="815,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="1280,720" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2024,7 +2024,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="servicelist" position="340,293" size="600,340" itemHeight="30" selectionDisabled="1" transparent="1" />
 	</screen>
 	<screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2046,7 +2046,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="constellation" render="Canvas" position="1020,363" size="200,256" correct_aspect="width" />
 	</screen>
 	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2074,7 +2074,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="Setup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2102,7 +2102,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2123,7 +2123,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2146,7 +2146,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<screen name="Subtitles" position="0,0" size="1280,720" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2168,7 +2168,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="ok" position="0,0" size="0,0" />
 	</screen>
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2196,7 +2196,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,30" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
 		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,85" size="320,180"  zPosition="4" />-->
 		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
@@ -2222,7 +2222,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="oktext" position="771,672" size="190,30" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TimerLog" position="0,0" size="1280,720" title="Timer log" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2243,7 +2243,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2265,7 +2265,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2311,7 +2311,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="436,166" size="260,30" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2334,7 +2334,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="Canvas" render="Canvas" position="280,70" size="720,576" />
 	</screen>
 	<screen name="VirtualKeyBoard" position="0,0" size="1280,720" zPosition="99" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2349,7 +2349,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="343,210" size="600,425" selectionDisabled="1" transparent="1" />
 	</screen>
 	<screen name="AutoTimerSettings" position="0,0" size="1280,720" title="AutoTimer Settings" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2368,7 +2368,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerEditor" position="0,0" size="1280,720" title="Edit AutoTimer" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2391,7 +2391,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" title="Edit AutoTimer Filters" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2414,7 +2414,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" title="Edit AutoTimer Services" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2437,7 +2437,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerImporter" position="0,0" size="1280,720" title="Import AutoTimer" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2458,7 +2458,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="1280,720" title="AutoTimer Overview" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2480,7 +2480,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AutoTimerPreview" position="0,0" size="1280,720" title="Preview AutoTimer" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2509,7 +2509,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CDInfo" position="0,0" size="1280,720" title="CDInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2530,7 +2530,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_blue" render="Label" position="837,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="ProjectSettings" position="0,0" size="1280,720" title="Collection settings" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2550,7 +2550,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="DVDMovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2592,7 +2592,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="DescriptionBorder" position="0,0" size="0,0" />
 	</screen>
 	<screen name="DVDToolbox" position="0,0" size="1280,720" title="DVD media toolbox" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2613,7 +2613,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="855,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TitleList" position="0,0" size="1280,720" title="DVD Tool" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2656,7 +2656,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2690,7 +2690,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="HDMU_ModSkinfull/icons/mp_buttons.png" position="914,586" size="260,32" alphatest="blend" />
 	</screen>
 	<screen name="TitleProperties" position="0,0" size="1280,720" title="Properties of current title" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2710,7 +2710,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="855,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2725,7 +2725,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="DVDPlayer" position="0,552" size="1280,170" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="1280,170" pixmap="HDMU_ModSkinfull/menu/infobar.png" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,170" pixmap="HDMU_ModSkinfull/menu/infobarred.png" />
 		<eLabel text="Audio:" position="249,11" size="60,30" font="Regular;18" backgroundColor="black" transparent="1" />
 		<widget name="audioLabel" position="309,11" size="70,30" font="Regular;18" foregroundColor="yellow" backgroundColor="black" transparent="1" />
 		<eLabel text="Subtitle" position="378,11" size="85,30" font="Regular;18" backgroundColor="black" transparent="1" />
@@ -2763,7 +2763,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="number" position="145,15" size="80,25" halign="right" font="Regular;22" />
 	</screen>
 	<screen name="EPGRefreshServiceEditor" position="0,0" size="1280,720" title="EPGRefresh Service" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2782,7 +2782,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" title="EPGRefresh Configuration" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png"  />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2803,7 +2803,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="FilebrowserConfigScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2818,7 +2818,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="FilebrowserScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2841,7 +2841,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="IMDB" position="0,0" size="1280,720" title="IMDB DETAIL`S PLUGIN" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2869,7 +2869,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2903,7 +2903,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="VKeyIcon" pixmap="HDMU_ModSkinfull/buttons/text.png" position="604,648" size="70,30" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2922,7 +2922,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,674" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" title="Nameserver Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2941,7 +2941,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="855,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" title="Select Network Adapter" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2974,7 +2974,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3024,7 +3024,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="855,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="373,90" size="2,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3058,7 +3058,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="915,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="WlanStatus" position="0,0" size="1280,720" title="Wireless Network State" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3088,7 +3088,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="AutoMountEdit" position="0,0" size="1280,720" title="MountEdit" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3105,7 +3105,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="AutoMountManager" position="0,0" size="1280,720" title="AutoMountManager" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3131,7 +3131,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="AutoMountView" position="0,0" size="1280,720" title="MountView" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3166,7 +3166,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" title="Network shares" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3201,7 +3201,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="UserDialog" position="0,0" size="1280,720" title="UserDialog" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3218,7 +3218,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="524,650" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="UserManager" position="0,0" size="1280,720" title="UserManager" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3245,7 +3245,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="picshow" position="0,0" size="1280,720" title="PicturePlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="5,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3267,7 +3267,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="Pic_Exif" position="0,0" size="1280,720" title="Info" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3290,7 +3290,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" title="Select files/folders to backup..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3308,7 +3308,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="837,674" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="PacketManager" position="0,0" size="1280,720" title="PacketManager" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3336,7 +3336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="PluginDetails" position="0,0" size="1280,720" title="Plugin details" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,155" size="4,485" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3357,7 +3357,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="divpic" position="0,0" size="0,0" />
 	</screen>
 	<screen name="PluginManager" position="0,0" size="1280,720" title="Plugin manager" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3395,7 +3395,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_blue" position="980,672" size="190,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" title="Plugin manager activity" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3423,7 +3423,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="PluginManagerHelp" position="0,0" size="1280,720" title="Plugin manager help" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3449,7 +3449,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
 	<screen name="RestoreMenu" position="0,0" size="1280,720" title="Restore Backups" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3467,7 +3467,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="837,674" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" title="Software Update..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -3483,7 +3483,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Software Update..." position="406,480" size="480,50" font="Regular; 34" halign="center" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="1280,720" title="Main Setup" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3498,7 +3498,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3526,7 +3526,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="342,390" size="870,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3549,7 +3549,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="70,390" size="1140,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3572,7 +3572,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="70,390" size="1140,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3595,7 +3595,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="70,390" size="1140,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3623,7 +3623,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="342,390" size="870,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3651,7 +3651,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3679,7 +3679,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="342,390" size="870,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3707,7 +3707,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="342,390" size="870,240" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1" font="Regular;22" />
 	</screen>
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbgred.png" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
