@@ -154,34 +154,34 @@
 		<widget source="session.CurrentService" render="Label" position="400,576" size="420,35" font="Regular;22" halign="center" backgroundColor="black" transparent="1" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="35,577" size="83,35" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="black" shadowColor="grey2" shadowOffset="-2,-1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="35,579" size="83,35" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="black" shadowColor="grey2" shadowOffset="-2,-1" zPosition="2">
 			<convert type="ServiceNumber">Number</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="198,526" size="140,84" backgroundColor="black" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="150,670" size="880,3" pixmap="HDMU_ModSkinfull/menu/progress_i.png" backgroundColor="black" transparent="1">
+		<widget source="session.Event_Now" render="Progress" position="154,667" size="870,3" pixmap="HDMU_ModSkinfull/menu/progress_i.png" backgroundColor="black" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="156,635" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="162,632" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="240,635" size="665,30" font="Regular;26" halign="left" valign="center" backgroundColor="black" transparent="1" >
+		<widget source="session.Event_Now" render="Label" position="240,632" size="665,30" font="Regular;26" halign="left" valign="center" backgroundColor="black" transparent="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="912,635" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="907,632" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="156,680" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="162,676" size="85,30" font="Regular;24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="240,680" size="665,30" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="240,676" size="665,30" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="912,680" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
+		<widget source="session.Event_Next" render="Label" position="907,676" size="110,30" font="Regular;24" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="grey1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
@@ -2725,7 +2725,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="734,672" size="190,33" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="DVDPlayer" position="0,552" size="1280,170" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="1280,170" pixmap="HDMU_ModSkinfull/menu/infobar.png" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,170" pixmap="HDMU_ModSkinfull/menu/infobarred.png" />
 		<eLabel text="Audio:" position="249,11" size="60,30" font="Regular;18" backgroundColor="black" transparent="1" />
 		<widget name="audioLabel" position="309,11" size="70,30" font="Regular;18" foregroundColor="yellow" backgroundColor="black" transparent="1" />
 		<eLabel text="Subtitle" position="378,11" size="85,30" font="Regular;18" backgroundColor="black" transparent="1" />

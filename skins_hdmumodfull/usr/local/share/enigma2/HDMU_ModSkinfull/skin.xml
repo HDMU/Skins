@@ -1366,7 +1366,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
 		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
-		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,85" size="320,180"  zPosition="4" />-->
+		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,90" size="320,180"  zPosition="4" />-->
 		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
 		<eLabel position="905,275" size="336,1" backgroundColor="grey" />
 		<eLabel position="900,86" size="1,574" backgroundColor="grey" />
@@ -1400,7 +1400,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
 		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
-		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,85" size="320,180"  zPosition="4" />-->
+		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="901,90" size="320,180"  zPosition="4" />-->
 		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
 		<eLabel position="905,275" size="336,1" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
