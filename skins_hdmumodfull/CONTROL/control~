@@ -1,9 +1,0 @@
-Package: enigma2-plugin-skins-hdmumodskin
-Version: 1.0
-Description: HDMU Mod Skin
-Section: skins
-Priority: optional
-Maintainer: HDMU
-Architecture: sh4
-Homepage: http://www.hdmedia-universe.com
-Source: http://www.hdmedia-universe.com
