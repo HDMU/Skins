@@ -1,3 +1,0 @@
-rename to listSelection.png and copy to MetrixHD/
-
-and copy correct color from entry in skin.xml file to color metrixAccent value
