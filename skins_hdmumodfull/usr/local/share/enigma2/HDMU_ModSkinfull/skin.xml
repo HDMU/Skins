@@ -560,7 +560,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget source="session.CurrentService" render="PositionGauge" position="155,665" size="760,8" zPosition="2" transparent="1">
-			<convert type="EMCServicePosition">Gauge</convert>
+			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 	</screen>
 	<screen name="EnhancedMovieCenterMenu" position="300,112" size="680,500" flags="wfBorder" backgroundColor="black" title="EMC" borderWidth="0" borderColor="black">
@@ -1755,7 +1755,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="Service" render="Label" position="1019,228" size="200,50" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget source="Service" render="Label" position="916,285" size="308,360" font="Regular;19" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="916,285" size="308,360" font="Regular;18" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/buttons/key_red.png" position="200,674" size="35,35" alphatest="blend" />
