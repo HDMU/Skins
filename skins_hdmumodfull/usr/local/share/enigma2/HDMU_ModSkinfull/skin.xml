@@ -447,7 +447,7 @@
 	</screen>
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png"  />
-		<widget name="Cover" position="888,297" size="340,340" zPosition="4" backgroundColor="black" alphatest="blend" transparent="1" />
+		<widget name="Cover" position="905,300" size="340,340" zPosition="4" backgroundColor="black" alphatest="blend" transparent="1" />
 		<eLabel text="Enhanced Movie Center" position="42,33" size="672,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
@@ -456,53 +456,54 @@
 			<convert type="ClockToText">Format:%A, %d. %B  %Y</convert>
 		</widget>
 		<widget source="Title" render="Label" position="58,100" size="778,40" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1" />
-		<eLabel position="58,145" size="820,2" backgroundColor="white" />
-		<widget name="list" position="58,155" size="820,355" itemHeight="30" CoolFont="Regular;23" CoolSelectFont="Regular;23" CoolDateFont="Regular;23" CoolMoviePos="35" CoolMovieSize="585" CoolFolderSize="550" CoolDatePos="1000" CoolDateWidth="110" CoolTitleColor="0" CoolDateColor="0" CoolProgressPos="1000" CoolBarPos="680" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="white" UnwatchedColor="white" WatchingColor="EMCWatching" FinishedColor="EMCFinished" RecordingColor="EMCRecording" BackColorSel="black" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="wait" position="58,255" size="820,30" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="gold" backgroundColor="black" transparent="1" />
-		<eLabel position="894,92" size="333,186" zPosition="2" backgroundColor="black" />
-		<widget source="session.VideoPicture" render="Pig" position="902,95" size="320,180" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="893,90" size="336,1" backgroundColor="grey" />
-		<eLabel position="893,280" size="336,1" backgroundColor="grey" />
-		<eLabel position="884,89" size="2,551" backgroundColor="grey" />
-		<eLabel position="58,515" size="820,2" backgroundColor="white" />
-		<widget source="Service" render="Label" position="58,513" size="778,44" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="gold">
+		<widget name="list" position="48,155" size="850,355" itemHeight="30" CoolFont="Regular;22" CoolSelectFont="Regular;22" CoolDateFont="Regular;22" CoolMoviePos="35" CoolMovieSize="550" CoolFolderSize="550" CoolDatePos="850" CoolDateWidth="150" CoolTitleColor="0" CoolDateColor="0" CoolProgressPos="1000" CoolBarPos="680" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="white" UnwatchedColor="white" WatchingColor="EMCWatching" FinishedColor="EMCFinished" RecordingColor="EMCRecording" BackColorSel="black" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="wait" position="48,255" size="850,30" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="gold" backgroundColor="black" transparent="1" />
+		<eLabel position="906,87" size="333,186" zPosition="2" backgroundColor="black" />
+		<!--ePixmap pixmap="HDMU_ModSkinfull/menu/minitv.png" position="912,90" size="320,180"  zPosition="4" />-->
+		<widget source="session.VideoPicture" render="Pig" position="912,90" size="320,180" zPosition="3" backgroundColor="unff000000" />
+		<eLabel position="905,275" size="336,1" backgroundColor="grey" />
+		<eLabel position="900,86" size="1,572" backgroundColor="grey" />
+		<eLabel position="48,145" size="850,2" backgroundColor="white" />
+		<eLabel position="48,515" size="850,2" backgroundColor="white" />
+		<eLabel position="37,662" size="1207,1" backgroundColor="grey" />
+		<widget source="Service" render="Label" position="58,520" size="778,30" font="Regular;26" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="gold">
 			<convert type="EMCEventName">Name</convert>
 		</widget>
-		<widget source="Service" render="Label" position="58,588" size="150,24" font="Regular;18" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="58,588" size="100,24" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EMCServiceTime">StartTime</convert>
 			<convert type="EMCClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Service" render="Label" position="212,588" size="160,24" font="Regular;18" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="165,588" size="160,24" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EMCServiceTime">EndTime</convert>
 			<convert type="EMCClockToText">Format:- %H:%M </convert>
 		</widget>
-		<widget source="Service" render="Label" position="380,588" size="150,24" font="Regular;18" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="380,588" size="150,24" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EMCServiceTime">Duration</convert>
 			<convert type="EMCClockToText">InMinutes</convert>
 		</widget>
-		<widget source="Service" render="Label" position="541,588" size="295,24" font="Regular;18" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="541,588" size="295,24" font="Regular;20" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget source="Service" render="Label" position="58,613" size="317,24" font="Regular;18" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="58,620" size="317,24" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EMCMovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="541,613" size="295,24" font="Regular;18" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="541,620" size="295,24" font="Regular;20" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EMCServiceTime">StartTime</convert>
 			<convert type="EMCClockToText">Date</convert>
 		</widget>
-		<widget source="Service" render="Label" position="58,560" size="778,24" font="Regular;18" halign="left" backgroundColor="black" transparent="1" valign="top">
+		<widget source="Service" render="Label" position="58,560" size="830,24" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top">
 			<convert type="EMCMovieInfo">ShortDescription</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/buttons/key_red.png" position="292,672" size="35,35" alphatest="blend" />
-		<ePixmap pixmap="skin_default/buttons/key_green.png" position="521,672" size="35,35" alphatest="blend" />
-		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="717,672" size="35,35" alphatest="blend" />
-		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="932,672" size="35,35" alphatest="blend" />
-		<widget name="key_red" position="107,674" size="180,33" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="black" transparent="1" />
-		<widget name="key_green" position="335,674" size="180,33" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="black" transparent="1" />
-		<widget name="key_yellow" position="756,674" size="180,33" zPosition="1" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1" />
-		<widget name="key_blue" position="971,674" size="180,33" zPosition="1" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1" />
-		<ePixmap pixmap="HDMU_ModSkinfull/buttons/menu.png" position="52,654" size="70,35" alphatest="blend" />
-		<ePixmap pixmap="HDMU_ModSkinfull/buttons/info.png" position="1158,654" size="70,35" alphatest="blend" />
+		<ePixmap pixmap="skin_default/buttons/key_red.png" position="200,674" size="35,35" alphatest="blend" />
+		<ePixmap pixmap="skin_default/buttons/key_green.png" position="447,674" size="35,35" alphatest="blend" />
+		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="694,674" size="35,35" alphatest="blend" />
+		<ePixmap pixmap="skin_default/buttons/key_blue.png" position="940,674" size="35,35" alphatest="blend" />
+		<widget name="key_red" position="240,672" size="250,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="key_green" position="487,672" size="250,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="key_yellow" position="734,672" size="250,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="key_blue" position="980,672" size="250,33" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+		<ePixmap pixmap="HDMU_ModSkinfull/buttons/menu.png" position="65,668" size="70,35" alphatest="blend" />
+		<ePixmap pixmap="HDMU_ModSkinfull/buttons/epg.png" position="1145,668" size="70,35" alphatest="blend" />
 	</screen>
 	<screen name="EMCMediaCenter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="HDMU_ModSkinfull/menu/moviebar.png" alphatest="off" transparent="1" />
@@ -1050,6 +1051,7 @@
 		<eLabel position="900,86" size="1,574" backgroundColor="grey" />
 		<widget name="list" position="78,142" size="1130,485" scrollbarMode="showNever" colorServiceDescription="white" colorServiceDescriptionSelected="gold" picServiceEventProgressbar="HDMU_ModSkinfull/menu/progcl.png" colorEventProgressbar="gold" colorEventProgressbarSelected="gold" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="white" foregroundColorServiceNotAvail="#777777" serviceItemHeight="30" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Regular;26" transparent="1" itemHeight="50" />
 		<eLabel position="60,628" size="1160,2" backgroundColor="grey" />
+		<eLabel position="37,662" size="1207,1" backgroundColor="grey" />
 		<ePixmap pixmap="skin_default/buttons/key_red.png" position="200,674" size="35,35" alphatest="blend" />
 		<ePixmap pixmap="skin_default/buttons/key_green.png" position="447,674" size="35,35" alphatest="blend" />
 		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="694,674" size="35,35" alphatest="blend" />
@@ -1280,6 +1282,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel text="Select Service" position="42,33" size="672,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1" valign="center" />
 		<widget name="list" position="78,100" size="1140,500" itemHeight="30" scrollbarMode="showNever" backgroundColor="black" transparent="1" />
 		<widget source="introduction" render="Label" position="60,600" size="1160,26" font="Regular;20" halign="center" backgroundColor="black" transparent="1" />
+		<eLabel position="37,662" size="1207,1" backgroundColor="grey" />
 		<ePixmap pixmap="skin_default/buttons/key_red.png" position="200,674" size="35,35" alphatest="blend" />
 		<ePixmap pixmap="skin_default/buttons/key_green.png" position="447,674" size="35,35" alphatest="blend" />
 		<ePixmap pixmap="skin_default/buttons/key_yellow.png" position="694,674" size="35,35" alphatest="blend" />
@@ -2112,6 +2115,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Channel Selection" position="95,32" size="570,34" font="Regular;26" halign="left" backgroundColor="black" transparent="1" valign="center" />
 		<widget source="Title" render="Label" position="60,102" size="1160,35" font="Regular;22" backgroundColor="black" transparent="1" />
 		<eLabel position="60,142" size="1160,2" backgroundColor="grey" />
+		<eLabel position="37,662" size="1207,1" backgroundColor="grey" />
 		<widget name="list" position="60,148" size="1160,480" scrollbarMode="showOnDemand" colorServiceDescription="aqua" colorServiceDescriptionSelected="gold" picServiceEventProgressbar="HDMU_ModSkinfull/menu/progcl.png" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="white" foregroundColorServiceNotAvail="#777777" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" transparent="1" itemHeight="30" />
 		<ePixmap pixmap="skin_default/buttons/key_red.png" position="200,674" size="35,35" alphatest="blend" />
 		<ePixmap pixmap="skin_default/buttons/key_green.png" position="447,674" size="35,35" alphatest="blend" />
@@ -3268,7 +3272,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="Pic_Exif" position="0,0" size="1280,720" title="Info" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="HDMU_ModSkinfull/menu/fullbg.png" />
-		<eLabel position="360,90" size="4,548" backgroundColor="grey" />
 		<widget source="global.CurrentTime" render="Label" position="734,23" size="110,50" font="Digital;42" backgroundColor="black" transparent="1" halign="center" valign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -3276,16 +3279,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%A, %d. %B  %Y</convert>
 		</widget>
 		<eLabel text="Exif Info" position="42,33" size="672,32" font="Regular;28" halign="center" backgroundColor="black" transparent="1" valign="center" />
-		<widget source="menu" render="Listbox" position="374,120" size="850,470" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="black" transparent="1">
+		<widget source="menu" render="Listbox" position="140,100" size="1000,544" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [  
-					MultiContentEntryText(pos = (10, 5), size = (850, 30), flags = RT_HALIGN_CENTER, text = 0), 
-					MultiContentEntryText(pos = (360, 7), size = (810, 30), flags = RT_HALIGN_CENTER, text = 1)], 
+					MultiContentEntryText(pos = (10, 5), size = (650, 30), flags = RT_HALIGN_CENTER, text = 0), 
+					MultiContentEntryText(pos = (360, 7), size = (450, 30), flags = RT_HALIGN_CENTER, text = 1)], 
 					"fonts": [gFont("Regular", 22)], 
 					"itemHeight": 34 
 				}
 			</convert>
 		</widget>
+		<eLabel position="37,662" size="1207,1" backgroundColor="grey" />
 		<ePixmap pixmap="skin_default/buttons/key_red.png" position="580,674" size="35,35" alphatest="blend" />
 		<widget source="key_red" render="Label" position="620,672" size="190,33" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" />
 	</screen>
