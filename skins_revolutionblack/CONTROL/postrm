@@ -1,4 +1,5 @@
 #!/bin/sh
+mv /usr/local/share/enigma2/HDMUSkin/menu/menubg.png.original /usr/local/share/enigma2/HDMUSkin/menu/menubg.png
 echo "successfully removed"
 echo "syncing disk"
 sync
