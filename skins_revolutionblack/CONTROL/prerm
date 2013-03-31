@@ -1,4 +1,6 @@
 #!/bin/sh
 echo "removing RevolutionBlack Skin"
-rm -rf /usr/local/share/enigma2/RevolutionBlack > /dev/null 2>&1
+rm -rf /usr/local/share/enigma2/RevolutionBlack2 > /dev/null 2>&1
+rm /usr/local/share/enigma2/HDMUSkin/menu/menubg.png > /dev/null 2>&1
+mv /usr/local/share/enigma2/HDMUSkin/menu/menubg.png.original /usr/local/share/enigma2/HDMUSkin/menu/menubg.png
 exit 0

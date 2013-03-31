@@ -1,3 +1,4 @@
 #!/bin/sh
-echo "installing Revolutionblue Skin ..."
+echo "installing Revolutionblue2 Skin ..."
+mv /usr/local/share/enigma2/HDMUSkin/menu/menubg.png /usr/local/share/enigma2/HDMUSkin/menu/menubg.png.original
 exit 0
