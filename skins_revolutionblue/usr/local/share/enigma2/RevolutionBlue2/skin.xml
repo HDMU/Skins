@@ -1,5 +1,5 @@
 <skin>
-	<!-- RevolutionBlue2 for HDMUTeam design by JKM73 V.2.0.1 -->
+	<!-- RevolutionBlue2 for HDMUTeam design by JKM73 V.2.0.2 -->
 	<output id="0">
 	<resolution xres="1280" yres="720" bpp="32" />
 	</output>
@@ -144,13 +144,13 @@
 		<widget source="global.CurrentTime" render="Label" position="741,2" size="350,25" font="Regular;18" halign="right" backgroundColor="dark" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_dolby_off.png" position="273,622" size="60,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_dolby_on.png" position="272,621" size="62,22" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_dolby_off.png" position="276,622" size="60,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_dolby_on.png" position="274,621" size="62,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="233,622" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="233,622" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="233,621" size="42,22" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="233,621" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -158,23 +158,21 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_rec_on.png" position="819,689" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="68,625" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="72,621" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="68,625" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="72,621" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_txt_off.png" position="336,622" size="40,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_txt_on.png" position="335,621" size="42,22" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_txt_on.png" position="336,621" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_crypt_off.png" position="381,622" size="30,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_crypt_on.png" position="380,621" size="32,22" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_crypt_on.png" position="378,621" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -271,7 +269,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ratio.png" position="101,620" size="129,24" zPosition="3" alphatest="blend" />
+		<ePixmap pixmap="RevolutionBlue2/icons/ratio.png" position="104,620" size="129,24" zPosition="3" alphatest="blend" />
 		<widget source="session.CurrentService" render="Label" position="103,622" size="55,20" font="Regular;19" zPosition="5" halign="right" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
@@ -299,33 +297,31 @@
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="946,538" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="946,538" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="944,537" size="42,22" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="944,537" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_txt_off.png" position="992,538" size="40,20" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_txt_on.png" position="991,537" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="1043,538" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="1039,537" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="1043,538" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="1039,537" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_crypt_off.png" position="1078,538" size="30,20" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_crypt_on.png" position="1077,537" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_rec_off.png" position="1110,528" size="32,32" zPosition="1" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_rec_on.png" position="1110,528" size="32,32" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_rec_off.png" position="1110,530" size="32,32" zPosition="1" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_rec_on.png" position="1110,530" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
@@ -501,17 +497,17 @@
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="340,92" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="340,92" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="340,92" size="42,22" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="340,92" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="299,92" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="299,92" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="299,92" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="299,92" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
@@ -616,22 +612,22 @@
 		<widget source="global.CurrentTime" render="Label" position="809,7" size="120,30" font="LCD;26" halign="right" backgroundColor="black" foregroundColor="white" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_dolby_off.png" position="1032,30" size="60,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_dolby_on.png" position="1031,29" size="62,22" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_dolby_off.png" position="1032,31" size="60,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_dolby_on.png" position="1031,30" size="62,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="990,29" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="990,29" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="990,30" size="42,22" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="990,30" size="42,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="954,30" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="954,30" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="954,30" size="29,20" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="954,30" size="32,22" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
@@ -676,9 +672,9 @@
 		<eLabel text="Select a movie" position="30,14" size="800,43" font="Regular;35" backgroundColor="black" transparent="1" />
 		<widget source="Title" render="Label" position="50,100" size="730,54" font="Regular;23" backgroundColor="black" transparent="1" />
 		<eLabel position="50,157" size="730,3" backgroundColor="g1" />
-		<widget name="list" position="50,165" size="730,415" scrollbarMode="showOnDemand" transparent="1" />
-		<eLabel position="50,585" size="730,3" backgroundColor="g1" />
-		<widget name="freeDiskSpace" position="50,591" size="730,25" font="Regular;20" valign="center" backgroundColor="black" transparent="1" />
+		<widget name="list" position="50,165" size="730,422" scrollbarMode="showOnDemand" transparent="1" />
+		<eLabel position="50,592" size="730,3" backgroundColor="g1" />
+		<widget name="freeDiskSpace" position="50,600" size="730,25" font="Regular;20" valign="center" backgroundColor="black" transparent="1" />
 		<widget source="Service" render="Label" position="800,370" size="430, 50" font="Regular;22" foregroundColor="g1" backgroundColor="black" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
@@ -692,7 +688,7 @@
 		<widget source="Service" render="Label" position="1130,430" size="100, 24" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget source="Service" render="Label" position="800,456" size="430,160" font="Regular;18" foregroundColor="grey2" backgroundColor="black" transparent="1">
+		<widget source="Service" render="Label" position="800,456" size="430,170" font="Regular;18" foregroundColor="grey2" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="0,0" size="0,0" />
@@ -746,7 +742,6 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -827,7 +822,6 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -856,7 +850,6 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -913,7 +906,6 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<ePixmap position="70,113" size="256,256" pixmap="RevolutionBlue2/menu/scan.png" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -935,7 +927,6 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1024,7 +1015,6 @@
     <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
     <eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
     <widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-    <ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1057,7 +1047,6 @@
     <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlue2/menu/back1.png" />
     <eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
     <widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-    <ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1615,27 +1604,25 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="1077,415" size="36,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="1077,415" size="36,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="RevolutionBlue2/icons/ico_format_off.png" position="1085,414" size="42,22" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_format_on.png" position="1085,414" size="42,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="RevolutionBlue2/icons/ico_txt_off.png" position="1004,415" size="40,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_txt_on.png" position="1003,414" size="42,22" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_txt_on.png" position="1005,414" size="42,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="1043,415" size="29,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_sd_on.png" position="1050,414" size="32,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">0,720</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="1043,415" size="29,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_hd_on.png" position="1050,414" size="32,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="RevolutionBlue2/icons/ico_crypt_off.png" position="971,415" size="30,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="RevolutionBlue2/icons/ico_crypt_on.png" position="970,414" size="32,22" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
