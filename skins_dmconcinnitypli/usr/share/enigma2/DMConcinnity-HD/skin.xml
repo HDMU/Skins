@@ -725,7 +725,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="DMConcinnity-HD/menu/bmc.png" position="26,141" size="250,297">
-      <convert type="MenuEntryCompare">dmc_mainmenu</convert>
+      <convert type="MenuEntryCompare">dhdmumc_mainmenu</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="DMConcinnity-HD/menu/power.png" position="26,141" size="250,297">
