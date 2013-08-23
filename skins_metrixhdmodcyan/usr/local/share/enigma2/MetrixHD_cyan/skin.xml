@@ -373,10 +373,10 @@
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetrixHD_cyan/icons/subtitle_off.png" position="741,96" size="50,27" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/subtitle_on.png" position="741,96" size="50,27" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">SubservicesAvailable</convert>
-			<convert type="ConditionalShowHide" />
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_crypt_off.png" position="741,96" size="28,26" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_crypt_on.png" position="741,96" size="28,26" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">IsCrypted</convert>
+		<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="1145,110" size="74,23" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
@@ -1097,7 +1097,7 @@
 	</screen>
 	<screen name="ChoiceBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" alphatest="on" />
-		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="SetrixHDBold;26" halign="right" backgroundColor="background20" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,30" font="SetrixHDBold;26" halign="right" backgroundColor="background20" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="SetrixHDBold; 20" halign="right" backgroundColor="background20" transparent="1">
