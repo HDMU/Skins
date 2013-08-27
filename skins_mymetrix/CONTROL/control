@@ -4,6 +4,6 @@ Description: MyMetrix skin
 Section: skins
 Priority: optional
 Maintainer: XXX
-Architecture: all
+Architecture: sh4
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
