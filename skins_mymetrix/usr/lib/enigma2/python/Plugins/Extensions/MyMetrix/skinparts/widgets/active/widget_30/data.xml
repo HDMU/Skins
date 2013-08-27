@@ -1,0 +1,27 @@
+<skinpartwidget screenname="SecondInfoBar">
+    <!-- /* HEALTH WIDGET -->
+    <eLabel text="SNR" position="71,528" size="53,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" valign="top" foregroundColor="metrixForeground" halign="right" />
+    <widget source="session.FrontendStatus" render="Label" position="388,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixForeground" valign="top">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" position="131,540" size="250,5" zPosition="100" pixmap="%METRIX:PROGRESSBAR:COLOR:WHITE%" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel text="AGC" position="466,528" size="60,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" valign="top" foregroundColor="metrixForeground" halign="right" />
+    <widget source="session.FrontendStatus" render="Label" position="787,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixForeground" valign="top">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" position="531,540" size="250,5" zPosition="1" pixmap="%METRIX:PROGRESSBAR:COLOR:WHITE%" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel position="131,542" size="250,1" backgroundColor="metrixForeground" />
+    <eLabel position="531,542" size="250,1" backgroundColor="metrixForeground" />
+    <widget source="session.CurrentService" render="Label" font="Regular; 20" position="871,527" size="140,33" halign="right" backgroundColor="metrixBackground2" transparent="1" noWrap="1" foregroundColor="metrixAccent1">
+      <convert type="VtiInfo">TempInfo</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" font="Regular; 20" position="1027,527" size="167,33" halign="right" backgroundColor="metrixBackground2" transparent="1" noWrap="1" foregroundColor="metrixAccent1">
+      <convert type="VtiInfo">FanInfo</convert>
+    </widget>
+    <eLabel name="HealthWidgetBG" position="64,525" size="1150,35" backgroundColor="metrixBackground2" zPosition="-20" />
+    <!-- HEALTH WIDGET */ -->
+</skinpartwidget>  

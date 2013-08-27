@@ -1,0 +1,9 @@
+Package: enigma2-plugin-skins-mymetrix
+Version: 2.0.14full
+Description: MyMetrix skin
+Section: skins
+Priority: optional
+Maintainer: XXX
+Architecture: mipsel
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

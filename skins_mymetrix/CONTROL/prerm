@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "removing files"
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/MyMetrix
+rm -rf /usr/lib/enigma2/python/Components/Converter/Metrix*
+rm -rf /usr/share/enigma2/MetrixHD
+exit 0
+
