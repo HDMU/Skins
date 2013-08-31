@@ -243,7 +243,7 @@
 		<convert type="EventTime">Remaining</convert>
 		<convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget source="session.Event_Now" render="Progress" pixmap="MetrixHD/p_bar.png" position="288,605" size="962,5" zPosition="7" transparent="1">
+	<widget source="session.Event_Now" render="Progress" pixmap="MetrixHD_MOD_HDMU/p_bar.png" position="288,605" size="962,5" zPosition="7" transparent="1">
 		<convert type="EventTime">Progress</convert>
 	</widget>
 	<widget source="session.Event_Next" render="Label" position="285,615" size="82,34" font="Regular; 24" halign="left" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top">
