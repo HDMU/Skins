@@ -6,5 +6,6 @@ Priority: optional
 Maintainer: xxx
 Architecture: sh4
 OE: HD Skin MetrixModGreen
+Depends: metrixhd
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

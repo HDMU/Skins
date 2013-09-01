@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "removing files"
+exit 0
