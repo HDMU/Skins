@@ -2,7 +2,7 @@
 echo "successfully installed"
 echo "syncing disk"
 sync
-if [ `cat /etc/motd | grep HDMU | wc -l` -eq 0 ]; then
+if [ ! -e /usr/lib/enigma2/python/Plugins/Extensions/HDMUCenter ]; then
 	rm -rf /usr/emu/
 	rm -rf /usr/keys/
 	rm -rf /usr/lib/enigma2/python/Plugins/Extensions/*
