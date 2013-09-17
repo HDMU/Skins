@@ -22,7 +22,7 @@
 		<color name="green" value="#00389416" />
 		<color name="grey" value="#00bbbbbb" />
 		<color name="grey2" value="#00aaaaaa" />
-		<color name="metrixAccent" value="#000090e6" />
+		<color name="metrixAccent" value="#00294a6b" />
 		<color name="metrixBlue" value="#00149baf" />
 		<color name="metrixCyan" value="#00149baf" />
 		<color name="metrixGreen" value="#0070ad11" />
@@ -165,7 +165,7 @@
 	<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="1145,110" size="74,23" zPosition="2" alphatest="blend">
 		<convert type="ConditionalShowHide">Blink</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Picon" position="44,567" zPosition="0" size="200,113" transparent="1" alphatest="blend">
+	<widget source="session.CurrentService" render="Picon" position="44,567" zPosition="0" size="220,132" transparent="1" alphatest="blend">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1100,643" size="73,26" font="SetrixHD; 20" foregroundColor="white" backgroundColor="background20" transparent="1" halign="left" valign="center">
@@ -286,7 +286,7 @@
 	<widget source="session.CurrentService" render="Label" position="7,432" size="170,130" font="SetrixHD; 100" foregroundColor="metrixPreTrans" backgroundColor="metrixPreTrans2" transparent="1" zPosition="2" halign="right">
 		<convert type="ServiceNumber">Number</convert>
 	</widget>
-	<ePixmap name="infobar-background" position="center,552" size="1280,170" pixmap="MetrixHD_cyan/infobar-black.png" zPosition="-2" />
+	<eLabel name="infobar-background" position="center,552" size="1280,170" zPosition="-2" />
 </screen>
 	<screen name="RadioInfoBar" position="center,520" size="1280,200" title="Radio" zPosition="-9" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel name="new eLabel" position="0,0" zPosition="-2" size="1280,200" backgroundColor="background20" alphatest="on" />
@@ -322,109 +322,109 @@
 		</widget>
 	</screen>
 	<screen name="SecondInfoBar" position="center,center" size="1280,720" backgroundColor="background90" flags="wfNoBorder">
-	<eLabel name="new eLabel" position="167,140" zPosition="-1" size="464,390" backgroundColor="background20" alphatest="on" />
-	<eLabel name="new eLabel" position="632,168" zPosition="0" size="503,338" backgroundColor="metrixAccent" alphatest="on" transparent="0" />
-	<eLabel name="new eLabel" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
-	<eLabel name="new eLabel" position="center,40" zPosition="-1" size="330,86" backgroundColor="background40" alphatest="on" />
-	<widget source="session.CurrentService" render="Label" position="center,42" size="325,45" font="SetrixHD; 28" valign="center" noWrap="1" backgroundColor="background40" transparent="1" zPosition="0" halign="center" foregroundColor="metrixAccent">
-		<convert type="ServiceName">Name</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%e. %B</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%A</convert>
-	</widget>
-	<eLabel name="new eLabel" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
-	<widget source="session.Event_Now" render="Label" position="187,150" size="430,325" font="SetrixHDBold; 20" zPosition="1" backgroundColor="metrixPreBlack" foregroundColor="white" transparent="1" halign="right" text="This is A Test">
-		<convert type="EventName">ExtendedDescription</convert>
-	</widget>
-	<widget source="session.Event_Next" render="Label" position="645,172" size="469,276" font="SetrixHDBold; 20" zPosition="1" backgroundColor="metrixAccent" transparent="1" foregroundColor="foreground" text="A Blue Test">
-		<convert type="EventName">ExtendedDescription</convert>
-	</widget>
-	<widget source="session.Event_Now" render="Label" position="189,487" size="430,30" font="SetrixHDBold; 25" halign="right" backgroundColor="metrixPreBlack" transparent="1" valign="center" zPosition="1" foregroundColor="metrixAccent">
-		<convert type="EventName">Name</convert>
-	</widget>
-	<widget source="session.Event_Next" render="Label" position="645,460" size="469,35" font="SetrixHDBold; 25" halign="left" backgroundColor="metrixAccent" transparent="1" valign="center" zPosition="1" foregroundColor="foreground">
-		<convert type="EventName">Name</convert>
-	</widget>
-	<ePixmap name="infobar-background" position="center,552" size="1280,170" pixmap="MetrixHD_cyan/infobar-black.png" zPosition="-2" />
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_dolby_off.png" position="547,96" size="66,24" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_dolby_on.png" position="547,96" size="66,24" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">IsMultichannel</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_format_off.png" position="490,95" size="43,27" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_format_on.png" position="490,95" size="43,27" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">IsWidescreen</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_txt_off.png" position="694,96" size="43,27" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_txt_on.png" position="694,96" size="43,27" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">HasTelext</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_hd_off.png" position="625,96" size="50,28" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_hd_on.png" position="625,96" size="50,28" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">VideoWidth</convert>
-		<convert type="ValueRange">721,1980</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_crypt_off.png" position="741,96" size="28,26" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_crypt_on.png" position="741,96" size="28,26" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">IsCrypted</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="1145,110" size="74,23" zPosition="2" alphatest="blend">
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Picon" position="44,567" zPosition="4" size="200,113" transparent="1" alphatest="blend">
-		<convert type="ServiceName">Reference</convert>
-	</widget>
-	<widget source="session.Event_Now" render="Label" position="1090,552" size="75,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<eLabel text="-" position="1168,552" size="15,30" font="SetrixHD; 22" halign="center" backgroundColor="background" transparent="1" />
-	<widget source="session.Event_Now" render="Label" position="1176,552" size="75,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
-		<convert type="EventTime">EndTime</convert>
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="session.Event_Now" render="Label" position="285,550" size="788,56" font="SetrixHD; 40" halign="left" backgroundColor="background20" transparent="1" noWrap="1">
-		<convert type="EventName">Name</convert>
-	</widget>
-	<widget source="session.Event_Now" render="Label" position="1137,577" size="113,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
-		<convert type="EventTime">Remaining</convert>
-		<convert type="RemainingToText">InMinutes</convert>
-	</widget>
-	<widget source="session.Event_Now" render="Progress" pixmap="MetrixHD/p_bar.png" position="288,605" size="962,5" zPosition="7" transparent="1">
-		<convert type="EventTime">Progress</convert>
-	</widget>
-	<widget source="session.Event_Next" render="Label" position="285,615" size="82,34" font="Regular; 24" halign="left" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<eLabel text="-" position="367,615" size="15,34" font="Regular; 25" halign="center" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top" />
-	<widget source="session.Event_Next" render="Label" position="383,615" size="88,34" font="Regular; 24" halign="center" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top">
-		<convert type="EventTime">EndTime</convert>
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="session.Event_Next" render="Label" position="473,615" size="635,34" font="Regular; 24" halign="left" backgroundColor="background20" transparent="1" foregroundColor="un808888" valign="top">
-		<convert type="EventName">Name</convert>
-	</widget>
-	<widget source="session.Event_Next" render="Label" position="1137,616" size="113,30" font="Regular; 20" halign="right" backgroundColor="background20" foregroundColor="un808888" transparent="1">
-		<convert type="EventTime">Duration</convert>
-		<convert type="ClockToText">InMinutes</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="650,649" size="600,20" font="Regular; 16" halign="right" zPosition="5" backgroundColor="background20" transparent="1" text="Test 123" foregroundColor="foreground" valign="center" noWrap="1">
-		<convert type="MetrixCaidDisplay">Default</convert>
-	</widget>
-	<eLabel name="new eLabel" position="288,607" size="962,1" backgroundColor="grey" foregroundColor="grey" />
-	<eLabel name="new eLabel" position="center,90" size="322,1" backgroundColor="grey" foregroundColor="grey" />
-</screen>
+		<eLabel name="new eLabel" position="167,140" zPosition="-1" size="464,390" backgroundColor="background20" alphatest="on" />
+		<eLabel name="new eLabel" position="632,168" zPosition="0" size="503,338" backgroundColor="metrixAccent" alphatest="on" transparent="0" />
+		<eLabel name="new eLabel" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
+		<eLabel name="new eLabel" position="center,40" zPosition="-1" size="330,86" backgroundColor="background40" alphatest="on" />
+		<widget source="session.CurrentService" render="Label" position="center,42" size="325,45" font="SetrixHD; 28" valign="center" noWrap="1" backgroundColor="background40" transparent="1" zPosition="0" halign="center" foregroundColor="metrixAccent">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%e. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<eLabel name="new eLabel" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
+		<widget source="session.Event_Now" render="Label" position="187,150" size="430,325" font="SetrixHDBold; 20" zPosition="1" backgroundColor="metrixPreBlack" foregroundColor="white" transparent="1" halign="right" text="This is A Test">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="645,172" size="469,276" font="SetrixHDBold; 20" zPosition="1" backgroundColor="metrixAccent" transparent="1" foregroundColor="foreground" text="A Blue Test">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="189,487" size="430,30" font="SetrixHDBold; 25" halign="right" backgroundColor="metrixPreBlack" transparent="1" valign="center" zPosition="1" foregroundColor="metrixAccent">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="645,460" size="469,35" font="SetrixHDBold; 25" halign="left" backgroundColor="metrixAccent" transparent="1" valign="center" zPosition="1" foregroundColor="foreground">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<ePixmap name="infobar-background" position="center,552" size="1280,170" pixmap="MetrixHD_cyan/infobar-black.png" zPosition="-2" />
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_dolby_off.png" position="547,96" size="66,24" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_dolby_on.png" position="547,96" size="66,24" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_format_off.png" position="490,95" size="43,27" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_format_on.png" position="490,95" size="43,27" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_txt_off.png" position="694,96" size="43,27" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_txt_on.png" position="694,96" size="43,27" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_hd_off.png" position="625,96" size="50,28" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_hd_on.png" position="625,96" size="50,28" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_crypt_off.png" position="741,96" size="28,26" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_crypt_on.png" position="741,96" size="28,26" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="1145,110" size="74,23" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Picon" position="44,567" zPosition="4" size="200,113" transparent="1" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1090,552" size="75,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel text="-" position="1168,552" size="15,30" font="SetrixHD; 22" halign="center" backgroundColor="background" transparent="1" />
+		<widget source="session.Event_Now" render="Label" position="1176,552" size="75,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="285,550" size="788,56" font="SetrixHD; 40" halign="left" backgroundColor="background20" transparent="1" noWrap="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="1137,577" size="113,30" font="Regular; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" pixmap="MetrixHD/p_bar.png" position="288,605" size="962,5" zPosition="7" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="285,615" size="82,34" font="Regular; 24" halign="left" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel text="-" position="367,615" size="15,34" font="Regular; 25" halign="center" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top" />
+		<widget source="session.Event_Next" render="Label" position="383,615" size="88,34" font="Regular; 24" halign="center" backgroundColor="background" foregroundColor="un808888" transparent="1" noWrap="1" valign="top">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="473,615" size="635,34" font="Regular; 24" halign="left" backgroundColor="background20" transparent="1" foregroundColor="un808888" valign="top">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="1137,616" size="113,30" font="Regular; 20" halign="right" backgroundColor="background20" foregroundColor="un808888" transparent="1">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="650,649" size="600,20" font="Regular; 16" halign="right" zPosition="5" backgroundColor="background20" transparent="1" text="Test 123" foregroundColor="foreground" valign="center" noWrap="1">
+			<convert type="MetrixCaidDisplay">Default</convert>
+		</widget>
+		<eLabel name="new eLabel" position="288,607" size="962,1" backgroundColor="grey" foregroundColor="grey" />
+		<eLabel name="new eLabel" position="center,90" size="322,1" backgroundColor="grey" foregroundColor="grey" />
+	</screen>
 	<screen name="Volume" position="49,57" size="320,70" title="Volume" backgroundColor="transparent2" flags="wfNoBorder" zPosition="100">
 		<ePixmap pixmap="MetrixHD_cyan/icons/sound/volume.png" position="1,1" size="320,70" backgroundColor="background20" zPosition="-2" />
 		<eLabel position="70,36" size="170,1" backgroundColor="white" foregroundColor="white" zPosition="4" />
@@ -851,10 +851,10 @@
 		<widget source="global.CurrentTime" render="Label" position="214,596" size="210,80" font="SetrixHD; 55" halign="left" backgroundColor="backtop" transparent="1" valign="top" foregroundColor="foreground">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="45,630" size="148,29" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="45,630" size="148,29" font="SetrixHDBold; 18" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="68,609" size="125,30" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,609" size="125,30" font="SetrixHDBold; 18" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
 	</screen>
@@ -909,10 +909,10 @@
 	<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
 		<convert type="ClockToText">Default</convert>
 	</widget>
-	<widget source="global.CurrentTime" render="Label" position="907,45" size="148,29" font="Regular; 23" halign="right" backgroundColor="metrixAccent" transparent="1">
+	<widget source="global.CurrentTime" render="Label" position="916,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
 		<convert type="ClockToText">Format:%e. %B</convert>
 	</widget>
-	<widget source="global.CurrentTime" render="Label" position="922,68" size="137,30" font="Regular; 23" halign="right" backgroundColor="metrixAccent" transparent="1">
+	<widget source="global.CurrentTime" render="Label" position="927,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
 		<convert type="ClockToText">Format:%A</convert>
 	</widget>
 	<eLabel name="new eLabel" position="150,670" size="980,1" backgroundColor="grey" foregroundColor="grey" zPosition="-1" />
@@ -1019,28 +1019,31 @@
 		<widget name="menu" position="656,61" size="390,550" zPosition="3" itemHeight="35" scrollbarMode="showNever" enableWrapAround="1" transparent="1" selectionPixmap="MetrixHD_cyan/listSelection.png" alphatest="on" />
 		<ePixmap position="310,85" size="256,256" pixmap="MetrixHD_cyan/icons/service_info.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="ChannelSelection" position="center,center" size="1280,720" title="Channel Selection" backgroundColor="background90" flags="wfNoBorder">
-		<eLabel name="new eLabel" position="53,51" zPosition="-11" size="339,96" backgroundColor="background20" alphatest="on" />
-		<widget source="Title" render="Label" position="542,58" size="672,60" font="SetrixHD; 26" backgroundColor="background20" transparent="1" halign="left" valign="center" />
+	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="background90" flags="wfNoBorder">
+		<eLabel name="new eLabel" position="53,19" zPosition="-11" size="339,132" backgroundColor="background20" alphatest="on" />
+		<widget source="Title" render="Label" position="542,58" size="672,60" font="SetrixHDBold; 22" backgroundColor="background20" transparent="1" halign="left" valign="center" />
 		<widget name="list" position="433,134" size="779,485" scrollbarMode="showOnDemand" colorServiceDescription="un808888" colorServiceDescriptionSelected="white" colorEventProgressbarBorder="metrixAccent" colorEventProgressbar="metrixAccent" colorEventProgressbarBorderSelected="white" foregroundColorServiceNotAvail="darkgrey" serviceItemHeight="35" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHDBold;26" serviceInfoFont="Regular;23" transparent="1" backgroundColor="background20" selectionPixmap="MetrixHD_cyan/listSelection.png" itemHeight="50" />
-		<widget source="ServiceEvent" render="Label" position="63,58" size="317,58" font="SetrixHD; 22" backgroundColor="background20" transparent="0" valign="center" halign="center" foregroundColor="foreground">
+		<widget source="ServiceEvent" render="Label" position="67,157" size="317,40" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" valign="center" halign="center" foregroundColor="foreground" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="53,114" size="70,26" font="SetrixHD; 22" backgroundColor="background20" transparent="0" halign="right" valign="top">
+		<widget source="ServiceEvent" render="Label" position="313,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" halign="right" valign="top">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="322,114" size="70,26" font="SetrixHD; 22" backgroundColor="background20" transparent="0" valign="top" halign="left">
+		<widget source="ServiceEvent" render="Picon" position="115,20" zPosition="0" size="220,132" transparent="1" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="63,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" valign="top" halign="left">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<eLabel position="130,130" size="185,1" backgroundColor="grey" foregroundColor="grey" />
+		<eLabel position="132,208" size="180,1" backgroundColor="grey" foregroundColor="grey" />
 		<eLabel position="433,129" size="779,1" backgroundColor="grey" foregroundColor="grey" />
-		<widget source="ServiceEvent" render="Progress" pixmap="MetrixHD_cyan/p_bar.png" position="130,128" size="185,5" transparent="1" zPosition="1">
+		<widget source="ServiceEvent" render="Progress" pixmap="MetrixHD_cyan/p_bar1.png" position="132,206" size="180,5" transparent="1" zPosition="1" backgroundColor="dark">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="64,156" size="317,357" font="SetrixHDBold; 19" backgroundColor="metrixAccent" transparent="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="64,221" size="320,318" font="SetrixHDBold; 18" backgroundColor="dark" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="MetrixHD_cyan/buttons/key_menu2.png" position="1108,631" size="81,40" alphatest="blend" />
@@ -1053,23 +1056,22 @@
 		<widget name="key_green" position="603,641" size="90,24" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="748,641" size="90,24" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="893,641" size="90,24" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<eLabel name="ClockWidget" position="53,600" size="151,70" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
-		<ePixmap position="204,600" zPosition="-1" size="189,70" pixmap="MetrixHD_cyan/back.png" borderWidth="0" borderColor="transparent" transparent="0" />
-		<widget source="global.CurrentTime" render="Label" position="214,596" size="210,80" font="SetrixHD; 55" halign="left" backgroundColor="backtop" transparent="1" valign="top" foregroundColor="foreground">
+		<eLabel name="ClockWidget" position="53,614" size="151,55" zPosition="-1" backgroundColor="background20" foregroundColor="metrixPreTrans3" />
+		<ePixmap position="204,614" zPosition="-1" size="189,55" pixmap="MetrixHD_cyan/back.png" borderWidth="0" borderColor="transparent" transparent="0" />
+		<widget source="global.CurrentTime" render="Label" position="209,611" size="210,80" font="SetrixHD; 40" halign="left" backgroundColor="backtop" transparent="1" valign="top" foregroundColor="foreground">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="45,630" size="148,29" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="45,640" size="148,29" font="Regular; 18" halign="right" backgroundColor="background20" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="68,609" size="125,30" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,619" size="125,30" font="Regular; 18" halign="right" backgroundColor="background20" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<eLabel name="new eLabel" position="418,51" zPosition="-11" size="809,620" backgroundColor="background20" alphatest="on" />
-		<widget source="ServiceEvent" render="NextEvent" position="64,526" size="317,60" halign="left" valign="center" foregroundColor="metrixAccent" backgroundColor="background20" transparent="1" font="SetrixHDBold; 21">
-</widget>
+		<eLabel name="new eLabel" position="418,36" zPosition="-11" size="809,635" backgroundColor="background20" alphatest="on" />
+		<widget source="ServiceEvent" render="NextEvent" position="64,544" size="317,60" halign="left" valign="center" foregroundColor="white" backgroundColor="dark" transparent="1" font="SetrixHDBold; 21">
+		</widget>
 		<eLabel position="433,624" size="779,1" backgroundColor="grey" foregroundColor="grey" />
-		<eLabel name="new eLabel" position="53,153" size="339,364" backgroundColor="metrixAccent" zPosition="-1" />
-		<eLabel name="new eLabel" position="53,522" size="339,72" zPosition="-1" />
+		<eLabel name="new eLabel" position="53,153" size="339,455" backgroundColor="dark" zPosition="-1" />
 	</screen>
 	<screen name="ChannelSelectionRadio" position="0,0" size="1280,720" title="Radio Channel Selection" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="center,20" zPosition="-10" size="1240,505" backgroundColor="background20" alphatest="on" />
@@ -1331,7 +1333,7 @@
 	<screen name="EventView" position="0,0" size="1280,720" title="Eventview" backgroundColor="background90" flags="wfNoBorder">
 		<eLabel text="Event View" position="70,67" size="305,43" font="SetrixHD;35" backgroundColor="background20" transparent="1" />
 		<eLabel name="new eLabel" position="53,51" zPosition="-11" size="339,526" backgroundColor="background20" alphatest="on" />
-		<eLabel name="new eLabel" position="418,51" zPosition="-11" size="809,620" backgroundColor="background20" alphatest="on" />
+		<eLabel name="new eLabel" position="418,20" zPosition="-11" size="809,651" backgroundColor="background20" alphatest="on" />
 		<widget source="session.CurrentService" render="Label" position="58,180" size="329,87" font="SetrixHDBold; 31" backgroundColor="transpBlack" transparent="1" valign="center" halign="center" foregroundColor="metrixAccent">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1768,67 +1770,67 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="menu" position="14,196" size="350,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 	</screen>
 	<screen name="MoviePlayer" position="0,0" size="1283,723" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-	<ePixmap position="0,570" zPosition="-2" size="1281,150" pixmap="MetrixHD_cyan/back.png" />
-	<widget source="session.CurrentService" render="Label" position="174,581" size="892,56" font="SetrixHDBold; 40" valign="top" noWrap="1" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
-		<convert type="ServiceName">Name</convert>
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_dolby_off.png" position="1087,616" size="64,23" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_dolby_on.png" position="1087,616" size="64,23" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">IsMultichannel</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<widget source="session.CurrentService" render="Label" font="Regular; 20" position="1102,581" size="60,25" halign="right" foregroundColor="grey" backgroundColor="background20" transparent="1">
-		<convert type="ServiceInfo">VideoWidth</convert>
-	</widget>
-	<eLabel text="x" font="Regular; 20" position="1164,581" size="15,25" halign="center" foregroundColor="grey2" backgroundColor="background20" transparent="1" />
-	<widget source="session.CurrentService" render="Label" font="Regular; 20" position="1181,581" size="55,25" halign="left" foregroundColor="grey" backgroundColor="background20" transparent="1">
-		<convert type="ServiceInfo">VideoHeight</convert>
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_format_off.png" position="1156,615" size="41,26" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_format_on.png" position="1156,615" size="41,26" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">IsWidescreen</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<ePixmap pixmap="MetrixHD_cyan/icons/ico_hd_off.png" position="1203,616" size="49,24" zPosition="1" alphatest="blend" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_hd_on.png" position="1203,616" size="49,24" zPosition="2" alphatest="blend">
-		<convert type="ServiceInfo">VideoWidth</convert>
-		<convert type="ValueRange">721,1980</convert>
-		<convert type="ConditionalShowHide" />
-	</widget>
-	<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="57,40" size="74,23" zPosition="2" alphatest="blend">
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="40,656" size="100,28" font="Regular; 24" halign="right" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1">
-		<convert type="ServicePosition">Position</convert>
-	</widget>
-	<widget source="session.CurrentService" render="PositionGauge" position="150,666" size="980,9" transparent="1">
-		<convert type="ServicePosition">Gauge</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Progress" position="150,669" size="980,3" backgroundColor="white" borderWidth="0" transparent="1">
-		<convert type="ServicePosition">Position</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="1138,657" size="100,28" font="Regular; 24" halign="left" valign="center" backgroundColor="background20" transparent="1">
-		<convert type="ServicePosition">Remaining</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="28,581" size="137,56" font="SetrixHDBold; 40" halign="right" valign="top" backgroundColor="background20" transparent="1" foregroundColor="darkgrey">
-		<convert type="ServicePosition">Length</convert>
-	</widget>
-	<eLabel name="ClockWidgetDark" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
-	<eLabel name="ClockWidget" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
-	<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%e. %B</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%A</convert>
-	</widget>
-	<eLabel name="new eLabel" position="150,670" size="980,1" backgroundColor="grey" foregroundColor="grey" zPosition="-1" />
-	<widget source="session.CurrentService" render="Label" position="43,447" size="1280,130" font="SetrixHD; 100" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" zPosition="-80" halign="left" foregroundColor="metrixPreTrans">
-		<convert type="ServiceName">Name</convert>
-	</widget>
-</screen>
+		<ePixmap position="0,570" zPosition="-2" size="1281,150" pixmap="MetrixHD_cyan/back.png" />
+		<widget source="session.CurrentService" render="Label" position="174,581" size="892,56" font="SetrixHDBold; 40" valign="top" noWrap="1" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_dolby_off.png" position="1087,616" size="64,23" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_dolby_on.png" position="1087,616" size="64,23" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular; 20" position="1102,581" size="60,25" halign="right" foregroundColor="grey" backgroundColor="background20" transparent="1">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" font="Regular; 20" position="1164,581" size="15,25" halign="center" foregroundColor="grey2" backgroundColor="background20" transparent="1" />
+		<widget source="session.CurrentService" render="Label" font="Regular; 20" position="1181,581" size="55,25" halign="left" foregroundColor="grey" backgroundColor="background20" transparent="1">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_format_off.png" position="1156,615" size="41,26" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_format_on.png" position="1156,615" size="41,26" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="MetrixHD_cyan/icons/ico_hd_off.png" position="1203,616" size="49,24" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_hd_on.png" position="1203,616" size="49,24" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_cyan/icons/ico_rec_on.png" position="57,40" size="74,23" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="40,656" size="100,28" font="Regular; 24" halign="right" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="150,666" size="980,9" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="150,669" size="980,3" backgroundColor="white" borderWidth="0" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1138,657" size="100,28" font="Regular; 24" halign="left" valign="center" backgroundColor="background20" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="28,581" size="137,56" font="SetrixHDBold; 40" halign="right" valign="top" backgroundColor="background20" transparent="1" foregroundColor="darkgrey">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<eLabel name="ClockWidgetDark" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
+		<eLabel name="ClockWidget" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
+		<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%e. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<eLabel name="new eLabel" position="150,670" size="980,1" backgroundColor="grey" foregroundColor="grey" zPosition="-1" />
+		<widget source="session.CurrentService" render="Label" position="43,447" size="1280,130" font="SetrixHD; 100" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" zPosition="-80" halign="left" foregroundColor="metrixPreTrans">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="background90">
 		<ePixmap position="51,51" zPosition="-10" size="340,541" pixmap="MetrixHD_cyan/back.png" />
 		<eLabel text="Select a movie" position="10,562" size="1273,296" font="SetrixHD; 145" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
@@ -1865,10 +1867,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="209,596" size="210,80" font="SetrixHD; 55" halign="left" backgroundColor="backtop" transparent="1" valign="top" foregroundColor="foreground">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="45,630" size="148,29" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="45,630" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="68,609" size="125,30" font="Regular; 23" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,609" size="125,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" foregroundColor="foreground" transparent="1" valign="top">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
 		<eLabel name="new eLabel" position="96,537" size="250,1" backgroundColor="grey" foregroundColor="grey" zPosition="3" />
@@ -2340,10 +2342,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="432,402" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="273,415" size="148,29" font="Regular; 23" halign="right" backgroundColor="metrixAccent" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="273,415" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="284,438" size="137,30" font="Regular; 23" halign="right" backgroundColor="metrixAccent" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="284,438" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
 		<eLabel text="Choose your Skin" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-50" />
@@ -3154,42 +3156,42 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_cyan/icons/dvd.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="DVDPlayer" position="0,0" size="1310,723" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-	<widget source="session.CurrentService" render="Label" position="168,573" size="739,36" font="Regular;30" valign="top" noWrap="1" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
-		<convert type="ServiceName">Name</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="35,647" size="100,28" font="Regular;24" halign="center" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1">
-		<convert type="ServicePosition">Position</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Progress" position="281,655" size="800,12" backgroundColor="background20" borderWidth="2" borderColor="grey" transparent="1">
-		<convert type="ServicePosition">Position</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="1144,647" size="100,28" font="Regular;24" halign="center" valign="center" backgroundColor="background20" transparent="1">
-		<convert type="ServicePosition">Remaining</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="907,679" size="150,24" font="Regular;20" halign="center" valign="center" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
-		<convert type="ServicePosition">Length</convert>
-	</widget>
-	<widget name="chapterLabel" position="330,612" size="333,22" font="Regular;18" foregroundColor="foreground" backgroundColor="background20" transparent="1" />
-	<widget name="audioLabel" position="168,612" size="161,22" font="Regular;18" foregroundColor="foreground" backgroundColor="background20" transparent="1" />
-	<widget name="subtitleLabel" position="664,612" size="242,22" font="Regular;18" foregroundColor="transparent" backgroundColor="background20" transparent="1" />
-	<ePixmap position="0,570" zPosition="-2" size="1314,150" pixmap="MetrixHD_cyan/back.png" />
-	<eLabel name="ClockWidgetDark" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
-	<eLabel name="ClockWidget" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
-	<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%e. %B</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
-		<convert type="ClockToText">Format:%A</convert>
-	</widget>
-	<eLabel name="new eLabel" position="150,670" size="980,1" backgroundColor="grey" foregroundColor="grey" zPosition="-1" />
-	<eLabel name="new eLabel" position="849,679" size="57,24" text="length:" foregroundColor="metrixAccent" />
-<widget source="session.CurrentService" render="Label" position="43,447" size="1280,130" font="SetrixHD; 100" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" zPosition="-80" halign="left" foregroundColor="metrixPreTrans">
-		<convert type="ServiceName">Name</convert>
-	</widget>
-</screen>
+		<widget source="session.CurrentService" render="Label" position="168,573" size="739,36" font="Regular;30" valign="top" noWrap="1" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="35,647" size="100,28" font="Regular;24" halign="center" valign="center" backgroundColor="background20" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="281,655" size="800,12" backgroundColor="background20" borderWidth="2" borderColor="grey" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1144,647" size="100,28" font="Regular;24" halign="center" valign="center" backgroundColor="background20" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="907,679" size="150,24" font="Regular;20" halign="center" valign="center" backgroundColor="background20" transparent="1" foregroundColor="metrixAccent">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget name="chapterLabel" position="330,612" size="333,22" font="Regular;18" foregroundColor="foreground" backgroundColor="background20" transparent="1" />
+		<widget name="audioLabel" position="168,612" size="161,22" font="Regular;18" foregroundColor="foreground" backgroundColor="background20" transparent="1" />
+		<widget name="subtitleLabel" position="664,612" size="242,22" font="Regular;18" foregroundColor="transparent" backgroundColor="background20" transparent="1" />
+		<ePixmap position="0,570" zPosition="-2" size="1314,150" pixmap="MetrixHD_cyan/back.png" />
+		<eLabel name="ClockWidgetDark" position="1070,38" zPosition="-1" size="148,65" backgroundColor="background20" alphatest="on" transparent="0" />
+		<eLabel name="ClockWidget" position="936,38" size="134,65" zPosition="-1" backgroundColor="metrixAccent" foregroundColor="metrixPreTrans3" />
+		<widget source="global.CurrentTime" render="Label" position="1079,32" size="210,65" font="SetrixHD; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="914,68" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%e. %B</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="923,45" size="137,30" font="Regular; 18" halign="right" backgroundColor="metrixAccent" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<eLabel name="new eLabel" position="150,670" size="980,1" backgroundColor="grey" foregroundColor="grey" zPosition="-1" />
+		<eLabel name="new eLabel" position="849,679" size="57,24" text="length:" foregroundColor="metrixAccent" />
+		<widget source="session.CurrentService" render="Label" position="43,447" size="1280,130" font="SetrixHD; 100" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" zPosition="-80" halign="left" foregroundColor="metrixPreTrans">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
 	<screen name="ChapterZap" position="500,600" size="280,60" title="Chapter">
 		<widget name="chapter" position="35,15" size="110,25" font="Regular;23" />
 		<widget name="number" position="145,15" size="80,25" halign="right" font="Regular;23" />
