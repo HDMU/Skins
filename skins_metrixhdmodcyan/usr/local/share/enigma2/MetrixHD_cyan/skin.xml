@@ -1026,7 +1026,7 @@
 		<widget source="ServiceEvent" render="Label" position="67,157" size="317,40" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" valign="center" halign="center" foregroundColor="foreground" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="313,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" halign="right" valign="top">
+		<widget source="ServiceEvent" render="Label" position="63,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" halign="right" valign="top">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
@@ -1034,7 +1034,7 @@
 		<widget source="ServiceEvent" render="Picon" position="115,20" zPosition="0" size="220,132" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="63,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" valign="top" halign="left">
+		<widget source="ServiceEvent" render="Label" position="313,194" size="70,26" font="SetrixHDBold; 22" backgroundColor="dark" transparent="0" valign="top" halign="left">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
