@@ -6106,4 +6106,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="MetrixHD_cyan/buttons/key_exit2.png" alphatest="on" position="838,577" size="81,40" zPosition="3" transparent="1" />
 		<ePixmap pixmap="MetrixHD_cyan/buttons/key_ok3.png" alphatest="on" position="745,577" size="81,40" zPosition="3" transparent="1" />
 	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="265,200" size="750,200" zPosition="10">
+		<widget font="Arial; 145" foregroundColor="metrixForeground" halign="center" name="state" position="0,0" size="750,200" transparent="1" valign="center" text="||" />
+	</screen>
 </skin>
