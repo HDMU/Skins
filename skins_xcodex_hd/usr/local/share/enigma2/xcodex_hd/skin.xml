@@ -329,7 +329,7 @@
             <convert type="ClockToText">Default</convert>
         </widget>
 
-        <widget source="session.Event_Now" render="Label" position="400,12" size="500,35" font="Regular;35" noWrap="1" foregroundColor="yellow"  backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" >
+        <widget source="session.Event_Now" render="Label" position="400,12" size="600,35" font="Regular;35" noWrap="1" foregroundColor="yellow"  backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" >
             <convert type="EventName">Name</convert>
         </widget>
 
