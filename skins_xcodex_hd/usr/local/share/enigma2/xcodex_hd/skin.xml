@@ -1,35 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
     <!--  Skin:  xcodex hd by xcodex hdmu(c)2013     -->
     <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
     <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
-
-
-    <!-- Head for Image resolution -->
+    <!--  HD 1280x720 -->
     <output id="0">
         <resolution xres="1280" yres="720" bpp="32" />
     </output>
-
     <!-- Colors (#AARRGGBB) -->
     <colors>
-        <color name="white"        value="#ffffff" />
-        <color name="black"        value="#000000" />
-        <color name="dark"         value="#25062748" />
-        <color name="menu"         value="#25000000" />
-        <color name="red"         value="#f23d21" />
-        <color name="purple"         value="#FF247F" />
-        <color name="green"         value="#389416" />
-        <color name="blue"         value="#0064c7" />
-        <color name="yellow"         value="#FFFC00" />
-        <color name="transparent"     value="#ffffffff" />
-        <color name="transpBlack"     value="#80000000" />
-        <color name="transpWhite"     value="#80ffffff" />
-        <color name="background"     value="#251C1C1C" />
-        <color name="foreground"     value="#ffffff" />
-        <color name="foreyellow"     value="#d49930" />
-        <color name="cyan"           value="#09cdf1" />
+        <color name="white" value="#ffffff" />
+        <color name="black" value="#000000" />
+        <color name="dark" value="#25062748" />
+        <color name="menu" value="#25000000" />
+        <color name="red" value="#f23d21" />
+        <color name="purple" value="#FF247F" />
+        <color name="green" value="#389416" />
+        <color name="blue" value="#0064c7" />
+        <color name="yellow" value="#FFFC00" />
+        <color name="transparent" value="#ffffffff" />
+        <color name="transpBlack" value="#80000000" />
+        <color name="transpWhite" value="#80ffffff" />
+        <color name="background" value="#251C1C1C" />
+        <color name="foreground" value="#ffffff" />
+        <color name="foreyellow" value="#d49930" />
+        <color name="cyan" value="#09cdf1" />
     </colors>
-
-
     <!-- Main screen colors (id=0 Framebuffer) -->
     <windowstyle type="skinned" id="0">
         <title offset="33,14" font="Regular;23" />
@@ -46,355 +42,413 @@
         <color name="WindowTitleForeground" color="#ffffff" />
         <color name="WindowTitleBackground" color="#251E1E1E" />
     </windowstyle>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_mainmenu" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_information" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_shutdown" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_harddisk" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_network" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_setup" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-         <screen backgroundColor="background" flags="wfBorder" name="menu_system" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-
-        <screen backgroundColor="background" flags="wfBorder" name="menu_scan" position="0,0" size="440,720" title="Main menu">
-            <eLabel backgroundColor="background" position="0,0" size="440,120" zPosition="0" />
-            <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
-
-           <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
-           <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
-               <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}
-               </convert>
-           </widget>
-        </screen>
-        
-       <!-- Volume -->
-       <screen name="Volume" title="Volume" position="80,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-         <widget name="Volume" pixmap="xcodex_hd/img/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
-         <ePixmap pixmap="xcodex_hd/img/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4"></ePixmap>
-       </screen>
-
-       <screen name="Mute" title="Mute" position="center,45" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-         <ePixmap pixmap="xcodex_hd/img/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"></ePixmap>
-       </screen>
-       
-       <!-- TV Channel -->
-       <screen flags="wfBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
-       <widget backgroundColor="secondBG" font="Regular;24" halign="left" source="Title" render="Label" position="62,20" size="900,35" transparent="1" />
-       <widget source="session.VideoPicture" render="Pig" position="825,490" zPosition="3" size="320,180" backgroundColor="transparent" />
-       <eLabel backgroundColor="red" position="35,693" size="136,3" zPosition="0" />
-       <eLabel backgroundColor="green" position="197,693" size="136,3" zPosition="0" />
-       <eLabel backgroundColor="blue" position="center,60" size="1280,2" zPosition="0" />
-       <eLabel backgroundColor="yellow" position="384,693" size="136,3" zPosition="0" />
-       <eLabel backgroundColor="blue" position="545,693" size="136,3" zPosition="0" />
-       <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_red" position="33,658" size="140,40" transparent="1" valign="center" zPosition="2" />
-       <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_green" position="195,658" size="140,40" transparent="1" valign="center" zPosition="2" />
-       <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_yellow" position="382,658" size="140,40" transparent="1" valign="center" zPosition="2" />
-       <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_blue" position="543,658" size="140,40" transparent="1" valign="center" zPosition="2" />
-       <widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="33,80" scrollbarMode="showOnDemand" size="650,562" />
-       <widget font="Regular;20" halign="left" position="1017,24" render="Label" size="246,26" source="global.CurrentTime" transparent="1" zPosition="2">
-       <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
-       </widget>
-
-       <widget font="Regular;18" position="738,99" render="Label" size="480,285" source="ServiceEvent">
-       <convert type="EventName">ExtendedDescription</convert>
-       </widget>
-
-       <widget font="Regular;20" halign="left" position="739,70" render="Label" size="75,25" source="ServiceEvent">
-       <convert type="EventTime">StartTime</convert>
-       <convert type="ClockToText" />
-       </widget>
-
-      <widget backgroundColor="purple" position="817,80" render="Progress" size="100,6" source="ServiceEvent" zPosition="1">
-      <convert type="EventTime">Progress</convert>
-      </widget>
-
-      <widget font="Regular;20" position="924,70" render="Label" size="100,25" source="ServiceEvent">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-      </widget>
-
-      <eLabel text="Next Event:" position="738,389" size="480,115" font="Regular;20" halign="left" transparent="1" valign="top" foregroundColor="purple" />
-      <widget source="ServiceEvent" render="HDMUEpgList" position="741,411" size="475,90" font="Regular;18" noWrap="1" transparent="1" />
-      </screen>
-
-     <!-- Radio Channel -->
-     <screen flags="wfBorder" name="ChannelSelectionRadio" position="0,0" size="1280,720" title="Channel Selection">
-     <widget backgroundColor="secondBG" font="Regular;20" halign="center" name="favonly" position="33,20" size="650,35" transparent="1" />
-     <widget source="session.VideoPicture" render="Pig" position="743,427" zPosition="3" size="470,260" backgroundColor="transparent" />
-     <eLabel backgroundColor="red" position="35,663" size="136,3" zPosition="0" />
-     <eLabel backgroundColor="green" position="197,663" size="136,3" zPosition="0" />
-     <eLabel backgroundColor="blue" position="center,60" size="1280,2" zPosition="0" />
-     <eLabel backgroundColor="yellow" position="384,663" size="136,3" zPosition="0" />
-     <eLabel backgroundColor="blue" position="545,663" size="136,3" zPosition="0" />
-     <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_red" position="33,628" size="140,40" transparent="1" valign="center" zPosition="2" />
-     <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_green" position="195,628" size="140,40" transparent="1" valign="center" zPosition="2" />
-     <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_yellow" position="382,628" size="140,40" transparent="1" valign="center" zPosition="2" />
-     <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_blue" position="543,628" size="140,40" transparent="1" valign="center" zPosition="2" />
-     <widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="33,74" scrollbarMode="showOnDemand" size="650,550" />
-     <widget font="Regular;17" halign="left" position="1017,24" render="Label" size="246,26" source="global.CurrentTime" transparent="1" zPosition="2">
-        <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
-     </widget>
-     <widget font="Regular;17" position="738,99" render="Label" size="480,270" source="ServiceEvent">
-        <convert type="EventName">ExtendedDescription</convert>
-     </widget>
-     <widget font="Regular;14" halign="left" position="739,70" render="Label" size="75,25" source="ServiceEvent">
-        <convert type="EventTime">StartTime</convert>
-        <convert type="ClockToText" />
-     </widget>
-     <widget backgroundColor="un858585" position="817,80" render="Progress" size="100,6" source="ServiceEvent" zPosition="1">
-        <convert type="EventTime">Progress</convert>
-     </widget>
-     <widget font="Regular; 16" position="924,70" render="Label" size="100,25" source="ServiceEvent">
-        <convert type="EventTime">Remaining</convert>
-        <convert type="RemainingToText">InMinutes</convert>
-     </widget>
-     </screen>
-    
-    <!-- Main infobar -->
-    <screen name="InfoBar" flags="wfNoBorder" position="0,520" size="1280,200" title="InfoBar" backgroundColor="background" >
-
-    <!-- Channellogo (Picon) -->
-    <widget source="session.CurrentService" render="Picon"     position="150,95" size="110,70" zPosition="1">
-            <convert type="ServiceName">Reference</convert>
-    </widget>
-
-    <!-- Service name -->
-    <widget source="session.CurrentService" render="Label"     position="25,8" size="360,50" font="Regular;50" valign="center" noWrap="1" backgroundColor="background" foregroundColor="purple" shadowColor="black" shadowOffset="-3,-3" transparent="1">
-            <convert type="ServiceName">Name</convert>
-    </widget>
-
-    <!-- Time -->
-    <widget source="global.CurrentTime" render="Label" position="1080,12" size="200,35" font="Regular;35" foregroundColor="white" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" >
-            <convert type="ClockToText">WithSeconds</convert>
-    </widget>
-
-    <!-- Date -->
-    <widget source="global.CurrentTime" render="Label" position="1000,45" size="240,18" font="Regular;18" foregroundColor="white" backgroundColor="background" shadowColor="black" shadowOffset="-1,-1" halign="right" noWrap="1" transparent="1" >
-            <convert type="ClockToText">Date</convert>
-    </widget>
-
-    <!-- Progressbar (current event duration) -->
-    <ePixmap pixmap="xcodex_hd/infobar/progress_bg.png" position="400,80" zPosition="0" size="800,8" transparent="1" alphatest="on" />
-    <widget source="session.Event_Now" render="Progress" pixmap="xcodex_hd/infobar/progress.png" position="400,80" zPosition="1" size="800,8" transparent="1" >
-            <convert type="EventTime">Progress</convert>
-    </widget>
-
-    <!-- Service provider -->
-    <widget source="session.CurrentService" render="Label" position="25,55" size="300,25" font="Regular;25" valign="center" noWrap="1" backgroundColor="background" foregroundColor="yellow" shadowColor="black" shadowOffset="-1,-1" transparent="1" >
-            <convert type="ServiceName">Provider</convert>
-    </widget>
-
-                <!-- Tuner Info -->
-                <eLabel text="A" position="25,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
-                <eLabel text="B" position="45,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
-                <eLabel text="C" position="65,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
-                <eLabel text="D" position="85,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
-
-
-                <widget source="session.TunerInfo" render="FixedLabel" text="A" position="25,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
-                         <convert type="TunerInfo">TunerUseMask</convert>
-                         <convert type="ValueBitTest">1</convert>
-                         <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.TunerInfo" render="FixedLabel" text="B" position="45,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="TunerInfo">TunerUseMask</convert>
-                        <convert type="ValueBitTest">2</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.TunerInfo" render="FixedLabel" text="C" position="65,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
-                         <convert type="TunerInfo">TunerUseMask</convert>
-                         <convert type="ValueBitTest">4</convert>
-                         <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.TunerInfo" render="FixedLabel" text="D" position="85,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="TunerInfo">TunerUseMask</convert>
-                        <convert type="ValueBitTest">8</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="25,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="FrontendInfo">NUMBER</convert>
-                        <convert type="ValueRange">0,0</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="45,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="FrontendInfo">NUMBER</convert>
-                        <convert type="ValueRange">1,1</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="65,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="FrontendInfo">NUMBER</convert>
-                        <convert type="ValueRange">2,2</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="85,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
-                        <convert type="FrontendInfo">NUMBER</convert>
-                        <convert type="ValueRange">3,3</convert>
-                        <convert type="ConditionalShowHide" />
-                </widget>
-
-                <!-- Event (now) -->
-
-        <widget source="session.Event_Now" render="Label" position="400,45" size="60,22" font="Regular;20" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" >
+    <screen backgroundColor="background" flags="wfBorder" name="menu_mainmenu" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_information" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_shutdown" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_harddisk" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_network" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_setup" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_system" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="menu_scan" position="0,0" size="440,720" title="Main menu">
+        <eLabel backgroundColor="secondBG" position="0,0" size="440,120" zPosition="0" />
+        <eLabel backgroundColor="white" position="0,120" size="440,3" zPosition="1" />
+        <widget font="Regular;35" foregroundColor="purple" halign="left" position="30,53" render="Label" size="390,62" source="title" transparent="1" zPosition="3" />
+        <widget enableWrapAround="True" position="40,155" render="Listbox" scrollbarMode="showOnDemand" size="370,480" source="menu" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">{"template": [ MultiContentEntryText(pos = (5, 4), size = (370, 35), flags = RT_HALIGN_LEFT, text = 0) ],"fonts": [gFont("Regular", 24)],"itemHeight": 35}</convert>
+        </widget>
+    </screen>
+    <!-- Volume -->
+    <screen name="Volume" title="Volume" position="80,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+        <widget name="Volume" pixmap="xcodex_hd/img/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1" />
+        <ePixmap pixmap="xcodex_hd/img/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4" />
+    </screen>
+    <screen name="Mute" title="Mute" position="center,45" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+        <ePixmap pixmap="xcodex_hd/img/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0" />
+    </screen>
+    <!-- TV Channel -->
+    <screen flags="wfBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+        <widget backgroundColor="secondBG" font="Regular;24" halign="left" source="Title" render="Label" position="62,20" size="900,35" transparent="1" />
+        <widget source="session.VideoPicture" render="Pig" position="825,490" zPosition="3" size="320,180" backgroundColor="transparent" />
+        <eLabel backgroundColor="red" position="35,693" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="green" position="197,693" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="center,60" size="1280,2" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="384,693" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="545,693" size="136,3" zPosition="0" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_red" position="33,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_green" position="195,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_yellow" position="382,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_blue" position="543,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="33,80" scrollbarMode="showOnDemand" size="650,562" />
+        <widget font="Regular;20" halign="left" position="1017,24" render="Label" size="246,26" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+        <widget font="Regular;18" position="738,99" render="Label" size="480,285" source="ServiceEvent">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+        <widget font="Regular;20" halign="left" position="739,70" render="Label" size="75,25" source="ServiceEvent">
             <convert type="EventTime">StartTime</convert>
-            <convert type="ClockToText">Default</convert>
+            <convert type="ClockToText" />
         </widget>
-
-        <eLabel text="-" position="445,45" size="20,40" font="Regular;20" halign="center" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-
-        <widget source="session.Event_Now" render="Label" position="460,45" size="150,22" font="Regular;20" halign="left" foregroundColor="yellow"  backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
-            <convert type="EventTime">EndTime</convert>
-            <convert type="ClockToText">Default</convert>
+        <widget backgroundColor="purple" position="817,80" render="Progress" size="100,6" source="ServiceEvent" zPosition="1">
+            <convert type="EventTime">Progress</convert>
         </widget>
-
-        <widget source="session.Event_Now" render="Label" position="400,12" size="600,35" font="Regular;35" noWrap="1" foregroundColor="yellow"  backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" >
-            <convert type="EventName">Name</convert>
-        </widget>
-
-        <widget source="session.Event_Now" render="Label" position="500,45" size="90,22" font="Regular;20" foregroundColor="yellow"  backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" halign="right" transparent="1" >
+        <widget font="Regular;20" position="924,70" render="Label" size="100,25" source="ServiceEvent">
             <convert type="EventTime">Remaining</convert>
             <convert type="RemainingToText">InMinutes</convert>
         </widget>
-
-                <!-- Event (next) -->
-        <widget source="session.Event_Next" render="Label" position="400,120" size="60,22" font="Regular;20" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1" >
+        <eLabel text="Next Event:" position="738,389" size="480,115" font="Regular;20" halign="left" transparent="1" valign="top" foregroundColor="purple" />
+        <widget source="ServiceEvent" render="HDMUEpgList" position="741,411" size="475,90" font="Regular;18" noWrap="1" transparent="1" />
+    </screen>
+    <!-- Radio Channel -->
+    <screen flags="wfBorder" name="ChannelSelectionRadio" position="0,0" size="1280,720" title="Channel Selection">
+        <widget backgroundColor="secondBG" font="Regular;20" halign="center" name="favonly" position="33,20" size="650,35" transparent="1" />
+        <widget source="session.VideoPicture" render="Pig" position="743,427" zPosition="3" size="470,260" backgroundColor="transparent" />
+        <eLabel backgroundColor="red" position="35,663" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="green" position="197,663" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="center,60" size="1280,2" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="384,663" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="545,663" size="136,3" zPosition="0" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_red" position="33,628" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_green" position="195,628" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_yellow" position="382,628" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_blue" position="543,628" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="33,74" scrollbarMode="showOnDemand" size="650,550" />
+        <widget font="Regular;17" halign="left" position="1017,24" render="Label" size="246,26" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+        <widget font="Regular;17" position="738,99" render="Label" size="480,270" source="ServiceEvent">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+        <widget font="Regular;14" halign="left" position="739,70" render="Label" size="75,25" source="ServiceEvent">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText" />
+        </widget>
+        <widget backgroundColor="un858585" position="817,80" render="Progress" size="100,6" source="ServiceEvent" zPosition="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+        <widget font="Regular; 16" position="924,70" render="Label" size="100,25" source="ServiceEvent">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">InMinutes</convert>
+        </widget>
+    </screen>
+    <!-- Main infobar -->
+    <screen name="InfoBar" flags="wfNoBorder" position="0,520" size="1280,200" title="InfoBar" backgroundColor="background">
+        <!-- Channellogo (Picon) -->
+        <widget source="session.CurrentService" render="Picon" position="150,90" size="110,70" zPosition="1">
+            <convert type="ServiceName">Reference</convert>
+        </widget>
+        <!-- Service name -->
+        <widget source="session.CurrentService" render="Label" position="25,8" size="360,50" font="Regular;50" valign="center" noWrap="1" backgroundColor="background" foregroundColor="purple" shadowColor="black" shadowOffset="-3,-3" transparent="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+        <!-- Time -->
+        <widget source="global.CurrentTime" render="Label" position="1080,12" size="200,35" font="Regular;35" foregroundColor="white" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2">
+            <convert type="ClockToText">WithSeconds</convert>
+        </widget>
+        <!-- Date -->
+        <widget source="global.CurrentTime" render="Label" position="1000,45" size="240,18" font="Regular;18" foregroundColor="white" backgroundColor="background" shadowColor="black" shadowOffset="-1,-1" halign="right" noWrap="1" transparent="1">
+            <convert type="ClockToText">Date</convert>
+        </widget>
+        <!-- Progressbar (current event duration) -->
+        <ePixmap pixmap="xcodex_hd/infobar/progress_bg.png" position="400,80" zPosition="0" size="800,8" transparent="1" alphatest="on" />
+        <widget source="session.Event_Now" render="Progress" pixmap="xcodex_hd/infobar/progress.png" position="400,80" zPosition="1" size="800,8" transparent="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+        <!-- Service provider -->
+        <widget source="session.CurrentService" render="Label" position="25,55" size="300,25" font="Regular;25" valign="center" noWrap="1" backgroundColor="background" foregroundColor="yellow" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+            <convert type="ServiceName">Provider</convert>
+        </widget>
+        <!-- Tuner Info -->
+        <eLabel text="A" position="25,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
+        <eLabel text="B" position="45,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
+        <eLabel text="C" position="65,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
+        <eLabel text="D" position="85,180" zPosition="1" size="20,20" font="Regular;16" halign="center" backgroundColor="purple" transparent="1" valign="bottom" />
+        <widget source="session.TunerInfo" render="FixedLabel" text="A" position="25,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="TunerInfo">TunerUseMask</convert>
+            <convert type="ValueBitTest">1</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.TunerInfo" render="FixedLabel" text="B" position="45,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="TunerInfo">TunerUseMask</convert>
+            <convert type="ValueBitTest">2</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.TunerInfo" render="FixedLabel" text="C" position="65,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="TunerInfo">TunerUseMask</convert>
+            <convert type="ValueBitTest">4</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.TunerInfo" render="FixedLabel" text="D" position="85,180" zPosition="2" size="20,20" font="Regular;16" halign="center" foregroundColor="white" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="TunerInfo">TunerUseMask</convert>
+            <convert type="ValueBitTest">8</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="25,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="FrontendInfo">NUMBER</convert>
+            <convert type="ValueRange">0,0</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="45,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="FrontendInfo">NUMBER</convert>
+            <convert type="ValueRange">1,1</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="65,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="FrontendInfo">NUMBER</convert>
+            <convert type="ValueRange">2,2</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="85,180" zPosition="3" size="20,20" font="Regular;16" halign="center" foregroundColor="purple" backgroundColor="secondBG" transparent="1" valign="bottom">
+            <convert type="FrontendInfo">NUMBER</convert>
+            <convert type="ValueRange">3,3</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <!-- Event (now) -->
+        <widget source="session.Event_Now" render="Label" position="400,45" size="60,22" font="Regular;20" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
-
+        <eLabel text="-" position="445,45" size="20,40" font="Regular;20" halign="center" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+        <widget source="session.Event_Now" render="Label" position="460,45" size="150,22" font="Regular;20" halign="left" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="400,12" size="600,35" font="Regular;35" noWrap="1" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="500,45" size="90,22" font="Regular;20" foregroundColor="yellow" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" halign="right" transparent="1">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">InMinutes</convert>
+        </widget>
+        <!-- Event (next) -->
+        <widget source="session.Event_Next" render="Label" position="400,120" size="60,22" font="Regular;20" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
         <eLabel text="-" position="445,120" size="20,40" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1" />
-
         <widget source="session.Event_Now" render="Label" position="460,120" size="60,22" font="Regular;20" halign="left" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1">
             <convert type="EventTime">EndTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
-
-        <widget source="session.Event_Next" render="Label" position="400,100" size="400,22" font="Regular;20" noWrap="1" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1" >
+        <widget source="session.Event_Next" render="Label" position="400,100" size="400,22" font="Regular;20" noWrap="1" backgroundColor="background" foregroundColor="#c3c3c9" transparent="1">
             <convert type="EventName">Name</convert>
         </widget>
-
-        <widget source="session.Event_Next" render="Label" position="500,120" size="90,22" font="Regular;20" backgroundColor="background" foregroundColor="#c3c3c9" halign="right" transparent="1" >
+        <widget source="session.Event_Next" render="Label" position="500,120" size="90,22" font="Regular;20" backgroundColor="background" foregroundColor="#c3c3c9" halign="right" transparent="1">
             <convert type="EventTime">Duration</convert>
             <convert type="ClockToText">InMinutes</convert>
         </widget>
-
-                <!-- Signal Quality -->
+        <!-- Signal Quality -->
         <eLabel text="SNR" position="125,182" size="40,20" font="Regular;16" zPosition="2" backgroundColor="background" shadowColor="black" shadowOffset="-1,-1" transparent="1" />
-
-
-
-        <widget source="session.FrontendStatus" render="Label" position="160,182" size="40,20" font="Regular;16" backgroundColor="background" shadowColor="black" shadowOffset="-1,-1" transparent="1" >
+        <widget source="session.FrontendStatus" render="Label" position="160,182" size="40,20" font="Regular;16" backgroundColor="background" shadowColor="black" shadowOffset="-1,-1" transparent="1">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-
-                <!-- DTS etc. -->
-                <eLabel backgroundColor="secondBG" font="Regular;16" foregroundColor="white" position="400,180" size="400,20" text="TXT  |  DD  | 16:9  |  HDTV  |  CRYPT  " zPosition="3" />
-                    <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="400,180" render="FixedLabel" size="60,20" source="session.CurrentService" text="TXT" transparent="1" zPosition="5">
-                    <convert type="ServiceInfo">HasTelext</convert>
-                    <convert type="ConditionalShowHide" />
-                    </widget>
-
-                    <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="449,180" render="FixedLabel" size="40,20" source="session.CurrentService" text="DD" transparent="1" zPosition="5">
-                    <convert type="ServiceInfo">IsMultichannel</convert>
-                    <convert type="ConditionalShowHide" />
-                    </widget>
-
-                    <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="485,180" render="FixedLabel" size="40,20" source="session.CurrentService" text="16:9" transparent="1" zPosition="5">
-                    <convert type="ServiceInfo">IsWidescreen</convert>
-                    <convert type="ConditionalShowHide" />
-                    </widget>
-
-                    <widget backgroundColor="background" foregroundColor="purple"  font="Regular;16" halign="left" position="533,180" render="FixedLabel" size="50,20" source="session.CurrentService" text="HDTV" transparent="1" zPosition="5">
-                   <convert type="ServiceInfo">VideoWidth</convert>
-                   <convert type="ValueRange">721,1980</convert>
-                   <convert type="ConditionalShowHide" />
-                   </widget>
-
-                   <widget backgroundColor="background" foregroundColor="cyan" font="Regular;16" halign="left" position="592,180" render="FixedLabel" size="70,19" source="session.CurrentService" text="CRYPT" transparent="1" zPosition="5">
-                   <convert type="ServiceInfo">IsCrypted</convert>
-                   <convert type="ConditionalShowHide" />
-                   </widget>
+        <!-- DTS etc. -->
+        <eLabel backgroundColor="background" font="Regular;16" foregroundColor="white" position="400,180" size="300,20" text="TXT  |  DD  | 16:9  |  HDTV  |  CRYPT  " zPosition="3" />
+        <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="400,180" render="FixedLabel" size="60,20" source="session.CurrentService" text="TXT" transparent="1" zPosition="5">
+            <convert type="ServiceInfo">HasTelext</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="449,180" render="FixedLabel" size="40,20" source="session.CurrentService" text="DD" transparent="1" zPosition="5">
+            <convert type="ServiceInfo">IsMultichannel</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="485,180" render="FixedLabel" size="40,20" source="session.CurrentService" text="16:9" transparent="1" zPosition="5">
+            <convert type="ServiceInfo">IsWidescreen</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget backgroundColor="background" foregroundColor="purple" font="Regular;16" halign="left" position="533,180" render="FixedLabel" size="50,20" source="session.CurrentService" text="HDTV" transparent="1" zPosition="5">
+            <convert type="ServiceInfo">VideoWidth</convert>
+            <convert type="ValueRange">721,1980</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget backgroundColor="background" foregroundColor="cyan" font="Regular;16" halign="left" position="592,180" render="FixedLabel" size="70,19" source="session.CurrentService" text="CRYPT" transparent="1" zPosition="5">
+            <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="PluginBrowser" position="0,0" size="700,720" title="Plugin browser">
+        <eLabel backgroundColor="secondBG" position="0,0" size="700,77" zPosition="0" />
+        <eLabel backgroundColor="background" font="Regular;28" foregroundColor="purple" halign="center" position="19,23" size="600,47" text="Plugin browser" transparent="1" valign="center" zPosition="3" />
+        <widget name="list" position="20,85" scrollbarMode="showOnDemand" size="600,500" />
+      
+        <eLabel backgroundColor="red" position="35,700" size="136,3" zPosition="0" />
+        <eLabel backgroundColor="green" position="197,700" size="136,3" zPosition="0" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_red" position="33,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="selectedBG" font="Regular;20" halign="center" name="key_green" position="195,658" size="140,40" transparent="1" valign="center" zPosition="2" />
+    </screen>
+    <screen flags="wfBorder" name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser">
+        <eLabel backgroundColor="purple" position="0,35" size="1000,2" zPosition="5" />
+        <eLabel font="Regular;20" halign="left" position="12,6" size="600,26" text="DVD File Browser" transparent="1" zPosition="2" />
+        <widget name="filelist" position="11,45" scrollbarMode="showOnDemand" size="980,530" />
+        <widget font="Regular;20" foregroundColor="grey" halign="right" position="645,6" render="Label" size="346,26" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+    </screen>
+    <screen flags="wfBorder" backgroundColor="background" name="MovieSelection" position="0,0" size="1280,720" title="Select a movie">
+        <eLabel backgroundColor="secondBG" position="0,0" size="1280,60" zPosition="-1" />
+        <eLabel backgroundColor="secondBG" position="0,590" size="1280,130" zPosition="-1" />
+        <eLabel backgroundColor="un40a0aa0" position="0,58" size="1280,2" zPosition="0" />
+        <eLabel backgroundColor="un40a0aa0" position="0,588" size="1280,2" zPosition="0" />
+        <eLabel backgroundColor="red" position="12,655" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="green" position="212,655" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="412,655" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="612,655" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="grey" position="812,730" size="156,3" zPosition="0" />
+        <widget font="Regular;20" halign="center" name="key_red" position="10,670" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;20" halign="center" name="key_green" position="210,670" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;20" halign="center" name="key_yellow" position="410,670" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;20" halign="center" name="key_blue" position="610,670" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <eLabel backgroundColor="secondBG" font="Regular;35" foregroundColor="purple" position="10,20" size="300,35" text="Movies" zPosition="3" />
+        <widget name="list" position="50,60" scrollbarMode="showOnDemand" size="1180,400" zPosition="2" />
+        <widget font="Regular;20" name="waitingtext" position="0,60" size="1280,400" zPosition="4" />
+        <widget font="Regular;20" halign="center" name="freeDiskSpace" position="850,588" size="300,22" valign="center" zPosition="4" />
+        <widget font="Regular;20" halign="left" position="0,460" render="Label" size="1280,45" source="Service" zPosition="1">
+            <convert type="MovieInfo">ShortDescription</convert>
+        </widget>
+        <widget font="Regular;20" halign="right" position="907,564" render="Label" size="285,24" source="Service" zPosition="1">
+            <convert type="MovieInfo">RecordServiceName</convert>
+        </widget>
+        <widget font="Regular;20" halign="right" position="907,517" render="Label" size="285,24" source="Service" zPosition="1">
+            <convert type="ServiceTime">Duration</convert>
+            <convert type="ClockToText">AsLength</convert>
+        </widget>
+        <widget font="Regular;15" position="0,505" render="Label" size="1280,120" source="Service" zPosition="1">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+        <widget font="Regular;24" foregroundColor="cyan" halign="right" position="970,20" render="Label" size="300,30" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+    </screen>
+    <screen flags="wfBorder" name="GraphMultiEPG" backgroundColor="background" position="0,0" size="1280,720" title="Electronic Program Guide">
+        <eLabel backgroundColor="secondBG" position="0,0" size="1280,150" zPosition="-1" />
+        <widget name="timeline_text" font="Regular;18" position="50,164" size="1200,25" transparent="1" zPosition="1" />
+        <widget name="list" position="50,190" scrollbarMode="showOnDemand" size="1200,450" transparent="1" zPosition="1" />
+        <widget font="Regular;30" noWrap="1" foregroundColor="purple" position="50,0" render="Label" size="1200,35" source="Event" transparent="1" zPosition="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget font="Regular;20" position="50,32" render="Label" size="60,22" source="Event" transparent="1" zPosition="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText" />
+        </widget>
+        <widget source="Event" render="Label" position="50,60" size="1200,75" font="Regular;16" transparent="1">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+        <widget font="Regular;20" position="112,32" render="Label" size="70,22" source="Event" transparent="1" zPosition="1">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Format:- %H:%M</convert>
+        </widget>
+        <widget font="Regular;20" noWrap="1" position="184,32" render="Label" size="450,26" source="Event" transparent="1" zPosition="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:(%A)</convert>
+        </widget>
+        <eLabel backgroundColor="red" position="52,670" size="156,3" zPosition="0" />
+        <widget font="Regular;20" halign="center" name="key_red" position="50,670" size="160,40" transparent="1" valign="center" zPosition="2" />
+    </screen>
+    <screen flags="wfBorder" name="EPGSelection" backgroundColor="background" position="0,0" size="1280,720" title="EPG Selection">
+        <eLabel backgroundColor="secondBG" position="0,0" size="1280,60" zPosition="0" />
+        <eLabel backgroundColor="background" position="0,0" size="1280,60" zPosition="-1" />
+        <eLabel backgroundColor="background" position="0,521" size="1280,55" zPosition="-1" />
+        <eLabel backgroundColor="purple" position="0,60" size="1280,1" zPosition="0" />
+        <eLabel backgroundColor="cyan" position="0,521" size="1280,1" zPosition="0" />
+        <eLabel backgroundColor="green" position="93,565" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="309,565" size="156,3" zPosition="0" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_green" position="91,530" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_yellow" position="307,530" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="secondBG" font="Regular;21" halign="left" position="50,22" render="Label" size="800,30" source="Service" transparent="1" zPosition="3">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+        <widget name="list" position="50,74" scrollbarMode="showOnDemand" size="1200,425" />
+        <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="950,22" render="Label" size="296,30" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+    </screen>
+    <screen flags="wfBorder" name="EPGSelectionMulti" backgroundColor="background" position="0,0" size="1280,720" title="EPG Selection">
+        <eLabel backgroundColor="secondBG" position="0,0" size="1280,60" zPosition="0" />
+        <eLabel backgroundColor="secondBG" position="0,527" size="1280,48" zPosition="-1" />
+        <eLabel backgroundColor="purple" position="0,640" size="1280,1" zPosition="0" />
+        <eLabel backgroundColor="cyan" position="0,60" size="1280,1" zPosition="0" />
+        <eLabel backgroundColor="red" position="93,685" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="green" position="309,685" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="532,685" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="768,685" size="156,3" zPosition="0" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_red" position="91,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_green" position="307,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_yellow" position="530,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_blue" position="766,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget name="list" position="50,99" scrollbarMode="showOnDemand" size="1200,500" />
+        <eLabel text="MultiEPG" halign="left" position="49,31" size="400,30" font="Regular;22" backgroundColor="secondBG" transparent="1" />
+        <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="950,31" render="Label" size="296,30" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+    </screen>
+    <screen backgroundColor="background" flags="wfBorder" name="EventView" position="0,0" size="1280,720" title="Eventview">
+        <eLabel backgroundColor="background" position="0,0" size="1280,720" zPosition="-3" />
+        <eLabel backgroundColor="secondBG" position="0,0" size="1280,33" zPosition="0" />
+        <eLabel backgroundColor="purple" position="0,34" size="1280,1" zPosition="0" />
+        <eLabel backgroundColor="green" position="40,685" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="yellow" position="217,685" size="156,3" zPosition="0" />
+        <eLabel backgroundColor="blue" position="394,685" size="156,3" zPosition="0" />
+        <widget font="Regular;18" halign="center" name="key_green" position="38,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;18" halign="center" name="key_yellow" position="215,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;18" halign="center" name="key_blue" position="390,650" size="160,40" transparent="1" valign="center" zPosition="2" />
+        <widget font="Regular;20" halign="right" position="950,4" render="Label" size="296,26" source="global.CurrentTime" transparent="1" zPosition="2">
+            <convert type="ClockToText">Format:%A %d.%b  %H:%M</convert>
+        </widget>
+        <widget backgroundColor="secondBG" font="Regular;21" halign="left" position="20,4" render="Label" size="550,26" source="Service" transparent="1" zPosition="3">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+        
+        <widget backgroundColor="background" font="Regular;22" name="epg_description" position="20,50" size="1200,500" transparent="1" />
+        <widget backgroundColor="background" font="Regular;18" halign="right" name="datetime" position="950,678" size="172,40" />
+        <widget backgroundColor="background" font="Regular;18" halign="right" name="duration" position="1150,678" size="70,40" />
     </screen>
 </skin>
