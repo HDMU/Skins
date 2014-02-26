@@ -1,10 +1,9 @@
-Package: enigma2-plugin-skins-xcodex_hd
+Package: enigma2-plugin-skins-xcodex.hd
 Version: 1.0
 Description: xcodex hd skin
 Section: skins
 Priority: optional
 Maintainer: xcodex
 Architecture: sh4
-OE: xcodex hd 1.0
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
