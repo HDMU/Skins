@@ -6,6 +6,5 @@ Priority: optional
 Maintainer: xxx
 Architecture: sh4
 Depends: skinpythonmvm
-OE: Mirco-Stargate-Edition-HD Skin
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

@@ -6,6 +6,5 @@ Priority: optional
 Maintainer: xxx
 Architecture: sh4
 Depends: merdas
-OE: Skin Merdas Azure Eye
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

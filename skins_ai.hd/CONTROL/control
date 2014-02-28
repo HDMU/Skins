@@ -5,6 +5,5 @@ Section: skins
 Priority: optional
 Maintainer: XXX
 Architecture: sh4
-OE: HD Skin Ai.hd
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

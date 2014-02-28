@@ -5,6 +5,5 @@ Section: skins
 Priority: optional
 Maintainer: xxx
 Architecture: sh4
-OE: HD Skin newnigma2-HD
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

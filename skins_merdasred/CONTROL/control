@@ -6,6 +6,5 @@ Priority: optional
 Maintainer: xxx
 Architecture: sh4
 Depends: merdas
-OE: Merdas-HD RED Skin V9
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

@@ -5,6 +5,5 @@ Section: system
 Priority: optional
 Maintainer: suchmich1983
 Architecture: sh4
-OE: HDMU
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
