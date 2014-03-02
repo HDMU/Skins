@@ -4,8 +4,8 @@
     <resolution bpp="32" xres="1280" yres="720" />
   </output>
   <fonts>
-    <font filename="/usr/share/enigma2/NoGfxBlueBlue/menu/valis_enigma.ttf" is_replacement="1" name="Regular" scale="100" />
-    <font filename="/usr/share/enigma2/NoGfxBlueBlue/menu/monospac.ttf" name="Console" scale="100" />
+    <font filename="/usr/share/enigma2/NoGfxBlue/menu/valis_enigma.ttf" is_replacement="1" name="Regular" scale="100" />
+    <font filename="/usr/share/enigma2/NoGfxBlue/menu/monospac.ttf" name="Console" scale="100" />
   </fonts>
   <colors>
     <color name="background" value="#42000000" />
@@ -96,12 +96,12 @@
     <color color="un0" name="WindowTitleBackground" />
   </windowstyle>
   <screen flags="wfNoBorder" name="Volume" position="540,30" size="200,35" title="Volume">
-    <ePixmap pixmap="NoGfxBlueBlue/menu/vol.png" position="0,0" size="200,35" zPosition="2" />
-    <widget name="Volume" pixmap="NoGfxBlueBlue/menu/v_bar.png" position="38,9" size="158,15" transparent="1" zPosition="3" />
+    <ePixmap pixmap="NoGfx/Blue/menu/vol.png" position="0,0" size="200,35" zPosition="2" />
+    <widget name="Volume" pixmap="NoGfxBlue/menu/v_bar.png" position="38,9" size="158,15" transparent="1" zPosition="3" />
     <widget render="VolumeText" source="global.CurrentTime" position="0,0" size="32,35" zPosition="4" font="Regular;20" halign="center" valign="center" foregroundColor="white" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
   </screen>
   <screen flags="wfNoBorder" name="Mute" position="617,30" size="45,45" title="Mute" zPosition="10">
-    <ePixmap pixmap="NoGfxBlueBlue/menu/mute.png" position="0,0" size="45,45" />
+    <ePixmap pixmap="NoGfxBlue/menu/mute.png" position="0,0" size="45,45" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,505" size="1280,220" title="InfoBar">
     <eLabel backgroundColor="secondBG" font="Regular;12" foregroundColor="un666666" position="47,196" size="252,19" text="TXT  |  DD  |  16:9  |  HDTV  |  OPT  |  CRYPT" zPosition="3" />
@@ -115,7 +115,7 @@
     <widget backgroundColor="secondBG" font="Regular;22" foregroundColor="white" halign="right" position="1126,68" render="Label" size="97,32" source="global.CurrentTime" transparent="1" zPosition="3">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget pixmap="NoGfxBlueBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
+    <widget pixmap="NoGfxBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="236,69" size="80,30" font="Regular;26" halign="center" transparent="1" backgroundColor="secondBG" shadowColor="grey" shadowOffset="-2,-1" zPosition="2">
@@ -269,7 +269,7 @@
     <widget backgroundColor="secondBG" font="Regular;22" foregroundColor="white" halign="right" position="1126,68" render="Label" size="97,32" source="global.CurrentTime" transparent="1" zPosition="3">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget pixmap="NoGfxBlueBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
+    <widget pixmap="NoGfxBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="236,69" size="80,30" font="Regular;26" halign="center" transparent="1" backgroundColor="secondBG" shadowColor="grey" shadowOffset="-2,-1" zPosition="2">
@@ -404,7 +404,7 @@
     <eLabel backgroundColor="secondBG" position="0,8" size="152,130" zPosition="1" />
     <eLabel backgroundColor="secondBG" position="872,8" size="152,130" zPosition="1" />
     <eLabel backgroundColor="un444444a" position="330,24" size="526,4" zPosition="2" />
-    <ePixmap alphatest="on" pixmap="NoGfxBlueBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
+    <ePixmap alphatest="on" pixmap="NoGfxBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
     <widget backgroundColor="secondBG" font="Regular;30" foregroundColor="secondFG" halign="right" position="20,58" render="Label" size="90,32" source="global.CurrentTime" transparent="1" zPosition="3">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -414,7 +414,7 @@
     <widget backgroundColor="secondBG" font="Regular;16" foregroundColor="secondFG" halign="center" position="30,91" render="Label" size="120,22" source="global.CurrentTime" transparent="1" zPosition="3">
       <convert type="ClockToText">Format:%a %d. %b</convert>
     </widget>
-    <widget backgroundColor="un444444a" pointer="NoGfxBlueBlue/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
+    <widget backgroundColor="un444444a" pointer="NoGfxBlue/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" halign="center" position="30,10" render="Label" size="120,30" source="session.CurrentService" transparent="1" zPosition="3">
@@ -431,7 +431,7 @@
     <eLabel backgroundColor="secondBG" position="0,8" size="152,130" zPosition="1" />
     <eLabel backgroundColor="secondBG" position="872,8" size="152,130" zPosition="1" />
     <eLabel backgroundColor="un444444a" position="330,24" size="526,4" zPosition="2" />
-    <ePixmap alphatest="on" pixmap="NoGfxBlueBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
+    <ePixmap alphatest="on" pixmap="NoGfxBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
     <widget backgroundColor="secondBG" font="Regular;30" foregroundColor="secondFG" halign="right" position="20,58" render="Label" size="90,32" source="global.CurrentTime" transparent="1" zPosition="3">
       <convert type="ClockToText">Default</convert>
     </widget>
