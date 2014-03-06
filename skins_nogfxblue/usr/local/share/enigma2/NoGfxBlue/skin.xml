@@ -254,7 +254,7 @@
     <widget source="session.CurrentService" render="Label" font="Regular;12" position="663,196" size="360,19" halign="left" zPosition="1" backgroundColor="secondBG" foregroundColor="grey" transparent="1" noWrap="1">
       <convert type="HDMUCaidDisplay">Default</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;13" foregroundColor="red" halign="left" position="300,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
+    <widget backgroundColor="secondBG" font="Regular;12" foregroundColor="red" halign="left" position="275,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -396,7 +396,7 @@
     <widget source="session.CurrentService" render="Label" font="Regular;12" position="663,196" size="360,19" halign="left" zPosition="1" backgroundColor="secondBG" foregroundColor="grey" transparent="1" noWrap="1">
       <convert type="HDMUCaidDisplay">Default</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;13" foregroundColor="red" halign="left" position="300,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
+    <widget backgroundColor="secondBG" font="Regular;12" foregroundColor="red" halign="left" position="275,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -602,7 +602,7 @@
     <widget font="Regular;19" foregroundColor="secondFG" position="341,192" render="Label" size="720,24" source="RdsDecoder" zPosition="8">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;13" foregroundColor="red" halign="left" position="300,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
+    <widget backgroundColor="secondBG" font="Regular;12" foregroundColor="red" halign="left" position="275,196" render="FixedLabel" size="40,19" source="session.RecordState" text="REC" transparent="1" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
