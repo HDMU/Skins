@@ -4,8 +4,8 @@
 	<resolution bpp="32" xres="1280" yres="720" />
 	</output>
 		<fonts>
-		<font filename="/usr/share/enigma2/NoGfx/menu/valis_enigma.ttf" is_replacement="1" name="Regular" scale="100" />
-		<font filename="/usr/share/enigma2/NoGfx/menu/monospac.ttf" name="Console" scale="100" />
+		<font filename="/usr/share/enigma2/NoGfxBlue/menu/valis_enigma.ttf" is_replacement="1" name="Regular" scale="100" />
+		<font filename="/usr/share/enigma2/NoGfxBlue/menu/monospac.ttf" name="Console" scale="100" />
 		</fonts>
 	<colors>
 		<color name="background" value="#42000000" />
@@ -65,20 +65,20 @@
 		<color color="white" name="WindowTitleForeground" />
 		<color color="un40f0f0f" name="WindowTitleBackground" />
 	<borderset name="bsWindow">
-		<pixmap filename="NoGfx/menu/oben_links.png" pos="bpTopLeft" />
-		<pixmap filename="NoGfx/menu/oben.png" pos="bpTop" />
-		<pixmap filename="NoGfx/menu/oben_rechts.png" pos="bpTopRight" />
-		<pixmap filename="NoGfx/menu/links.png" pos="bpLeft" />
-		<pixmap filename="NoGfx/menu/rechts.png" pos="bpRight" />
-		<pixmap filename="NoGfx/menu/unten_links.png" pos="bpBottomLeft" />
-		<pixmap filename="NoGfx/menu/unten.png" pos="bpBottom" />
-		<pixmap filename="NoGfx/menu/unten_rechts.png" pos="bpBottomRight" />
+		<pixmap filename="NoGfxBlue/menu/oben_links.png" pos="bpTopLeft" />
+		<pixmap filename="NoGfxBlue/menu/oben.png" pos="bpTop" />
+		<pixmap filename="NoGfxBlue/menu/oben_rechts.png" pos="bpTopRight" />
+		<pixmap filename="NoGfxBlue/menu/links.png" pos="bpLeft" />
+		<pixmap filename="NoGfxBlue/menu/rechts.png" pos="bpRight" />
+		<pixmap filename="NoGfxBlue/menu/unten_links.png" pos="bpBottomLeft" />
+		<pixmap filename="NoGfxBlue/menu/unten.png" pos="bpBottom" />
+		<pixmap filename="NoGfxBlue/menu/unten_rechts.png" pos="bpBottomRight" />
 	</borderset>
 	<borderset name="bsListboxEntry">
-		<pixmap filename="NoGfx/menu/line.png" pos="bpTop" />
-		<pixmap filename="NoGfx/menu/line2.png" pos="bpLeft" />
-		<pixmap filename="NoGfx/menu/line2.png" pos="bpRight" />
-		<pixmap filename="NoGfx/menu/line.png" pos="bpBottom" />
+		<pixmap filename="NoGfxBlue/menu/line.png" pos="bpTop" />
+		<pixmap filename="NoGfxBlue/menu/line2.png" pos="bpLeft" />
+		<pixmap filename="NoGfxBlue/menu/line2.png" pos="bpRight" />
+		<pixmap filename="NoGfxBlue/menu/line.png" pos="bpBottom" />
 	</borderset>
 	</windowstyle>
 	<windowstyle id="1" type="skinned">
@@ -96,15 +96,15 @@
 		<color color="un0" name="WindowTitleBackground" />
 	</windowstyle>
 	<screen flags="wfNoBorder" name="Volume" position="540,30" size="200,35" title="Volume">
-		<ePixmap pixmap="NoGfx/menu/vol.png" position="0,0" size="200,35" zPosition="2" />
-		<widget name="Volume" pixmap="NoGfx/menu/v_bar.png" position="38,9" size="158,15" transparent="1" zPosition="3" />
+		<ePixmap pixmap="NoGfxBlue/menu/vol.png" position="0,0" size="200,35" zPosition="2" />
+		<widget name="Volume" pixmap="NoGfxBlue/menu/v_bar.png" position="38,9" size="158,15" transparent="1" zPosition="3" />
 		<widget render="VolumeText" source="global.CurrentTime" position="0,0" size="32,35" zPosition="4" font="Regular;20" halign="center" valign="center" foregroundColor="white" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="Mute" position="617,30" size="45,45" title="Mute" zPosition="10">
-		<ePixmap pixmap="NoGfx/menu/mute.png" position="0,0" size="45,45" />
+		<ePixmap pixmap="NoGfxBlue/menu/mute.png" position="0,0" size="45,45" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,490" size="1280,220" title="InfoBar">
-		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfx/menu/infobar.png" />
+		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfxBlue/menu/infobar.png" />
 		<eLabel backgroundColor="secondBG" font="Regular;12" foregroundColor="un666666" position="47,196" size="252,19" text="TXT  |  DD  |  16:9  |  HDTV  |  OPT  |  CRYPT" zPosition="3" />
 		<eLabel backgroundColor="secondBG" font="Regular;20" position="306,155" size="11,30" text="-" zPosition="3" halign="center" />
 		<eLabel backgroundColor="secondBG" font="Regular;20" position="306,106" size="11,30" text="-" zPosition="3" halign="center" />
@@ -116,7 +116,7 @@
 		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="white" halign="right" position="1126,68" render="Label" size="97,32" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget pixmap="NoGfx/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
+		<widget pixmap="NoGfxBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="236,69" size="80,30" font="Regular;26" halign="center" transparent="1" backgroundColor="secondBG" shadowColor="grey" shadowOffset="-2,-1" zPosition="2">
@@ -260,7 +260,7 @@
 		</widget>
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,490" size="1280,220" title="Second InfoBar">
-		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfx/menu/infobar.png" />
+		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfxBlue/menu/infobar.png" />
 		<eLabel backgroundColor="secondBG" font="Regular;12" foregroundColor="un666666" position="47,196" size="252,19" text="TXT  |  DD  |  16:9  |  HDTV  |  OPT  |  CRYPT" zPosition="3" />
 		<eLabel backgroundColor="secondBG" font="Regular;20" position="306,106" size="11,25" text="-" zPosition="3" halign="center" />
 		<eLabel backgroundColor="secondBG" position="0,103" size="1280,86" zPosition="0" />
@@ -271,7 +271,7 @@
 		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="white" halign="right" position="1126,68" render="Label" size="97,32" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget pixmap="NoGfx/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
+		<widget pixmap="NoGfxBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="236,69" size="80,30" font="Regular;26" halign="center" transparent="1" backgroundColor="secondBG" shadowColor="grey" shadowOffset="-2,-1" zPosition="2">
@@ -406,7 +406,7 @@
 		<eLabel backgroundColor="secondBG" position="0,8" size="152,130" zPosition="1" />
 		<eLabel backgroundColor="secondBG" position="872,8" size="152,130" zPosition="1" />
 		<eLabel backgroundColor="un444444a" position="330,24" size="526,4" zPosition="2" />
-		<ePixmap alphatest="on" pixmap="NoGfx/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="NoGfxBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;30" foregroundColor="secondFG" halign="right" position="20,58" render="Label" size="90,32" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -416,7 +416,7 @@
 		<widget backgroundColor="secondBG" font="Regular;16" foregroundColor="secondFG" halign="center" position="30,91" render="Label" size="120,22" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Format:%a %d. %b</convert>
 		</widget>
-		<widget backgroundColor="un444444a" pointer="NoGfx/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget backgroundColor="un444444a" pointer="NoGfxBlue/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" halign="center" position="30,10" render="Label" size="120,30" source="session.CurrentService" transparent="1" zPosition="3">
@@ -433,7 +433,7 @@
 		<eLabel backgroundColor="secondBG" position="0,8" size="152,130" zPosition="1" />
 		<eLabel backgroundColor="secondBG" position="872,8" size="152,130" zPosition="1" />
 		<eLabel backgroundColor="un444444a" position="330,24" size="526,4" zPosition="2" />
-		<ePixmap alphatest="on" pixmap="NoGfx/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="NoGfxBlue/menu/dvr.png" position="165,15" size="150,20" transparent="1" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;30" foregroundColor="secondFG" halign="right" position="20,58" render="Label" size="90,32" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -443,7 +443,7 @@
 		<widget backgroundColor="secondBG" font="Regular;16" foregroundColor="secondFG" halign="center" position="30,91" render="Label" size="120,22" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Format:%a %d. %b</convert>
 		</widget>
-		<widget backgroundColor="un444444a" pointer="NoGfx/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget backgroundColor="un444444a" pointer="NoGfxBlue/menu/position_pointer.png:572,0" position="330,19" render="PositionGauge" size="526,10" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="foreground" halign="center" position="30,10" render="Label" size="120,30" source="session.CurrentService" transparent="1" zPosition="3">
@@ -457,7 +457,7 @@
 		</widget>
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RadioInfoBar" position="0,490" size="1280,220" title="InfoBar">
-		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfx/menu/infobar.png" />
+		<ePixmap position="0,0" zPosition="-2" size="1280,220" pixmap="NoGfxBlue/menu/infobar.png" />
 		<eLabel backgroundColor="secondBG" font="Regular;12" foregroundColor="un666666" position="47,196" size="252,19" text="TXT  |  DD  |  16:9  |  HDTV  |  OPT  |  CRYPT" zPosition="3" />
 		<eLabel backgroundColor="secondBG" font="Regular;20" position="306,155" size="11,30" text="-" zPosition="3" halign="center" />
 		<eLabel backgroundColor="secondBG" font="Regular;20" position="306,106" size="11,30" text="-" zPosition="3" halign="center" />
@@ -469,7 +469,7 @@
 		<widget backgroundColor="secondBG" font="Regular;22" foregroundColor="white" halign="right" position="1126,68" render="Label" size="97,32" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget pixmap="NoGfx/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
+		<widget pixmap="NoGfxBlue/menu/picon_default.png" position="67,118" render="Picon" size="100,60" source="session.CurrentService" zPosition="7">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="236,69" size="80,30" font="Regular;26" halign="center" transparent="1" backgroundColor="secondBG" shadowColor="grey" shadowOffset="-2,-1" zPosition="2">
@@ -830,8 +830,8 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel backgroundColor="secondBG" position="0,0" size="640,77" zPosition="0" />
 		<eLabel backgroundColor="secondBG" font="Regular;28" foregroundColor="secondFG" halign="center" position="19,23" size="600,47" text="Plugin browser" transparent="1" valign="center" zPosition="3" />
 		<widget name="list" position="20,85" scrollbarMode="showOnDemand" size="600,500" />
-		<ePixmap alphatest="on" name="bg_red" pixmap="NoGfx/menu/red.png" position="166,600" size="35,25" transparent="1" zPosition="2" />
-		<ePixmap alphatest="on" name="bg_green" pixmap="NoGfx/menu/green.png" position="166,660" size="35,25" transparent="1" zPosition="2" />
+		<ePixmap alphatest="on" name="bg_red" pixmap="NoGfxBlue/menu/red.png" position="166,600" size="35,25" transparent="1" zPosition="2" />
+		<ePixmap alphatest="on" name="bg_green" pixmap="NoGfxBlue/menu/green.png" position="166,660" size="35,25" transparent="1" zPosition="2" />
 		<widget backgroundColor="un7c1c1c" font="Regular;20" halign="left" name="red" position="207,600" size="300,30" transparent="1" zPosition="2" />
 		<widget backgroundColor="un266926" font="Regular;20" halign="left" name="green" position="207,660" size="300,30" transparent="1" zPosition="2" />
 	</screen>
@@ -968,13 +968,13 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel backgroundColor="blue" position="0,406" size="1000,1" zPosition="3" />
 		<eLabel backgroundColor="blue" position="0,460" size="1000,1" zPosition="3" />
 		<eLabel backgroundColor="blue" position="0,514" size="1000,1" zPosition="3" />
-		<widget name="timeline0" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget name="timeline1" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget name="timeline2" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget name="timeline3" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget name="timeline4" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget name="timeline5" pixmap="NoGfx/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
-		<widget alphatest="on" name="timeline_now" pixmap="NoGfx/menu/timeline-now.png" position="50,190" size="1,374" zPosition="2" />
+		<widget name="timeline0" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget name="timeline1" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget name="timeline2" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget name="timeline3" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget name="timeline4" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget name="timeline5" pixmap="NoGfxBlue/menu/timeline.png" position="50,190" size="2,374" zPosition="2" />
+		<widget alphatest="on" name="timeline_now" pixmap="NoGfxBlue/menu/timeline-now.png" position="50,190" size="1,374" zPosition="2" />
 		<widget font="Regular;24" noWrap="1" position="50,0" render="Label" size="807,30" source="Event" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1051,9 +1051,9 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_green" position="307,530" size="160,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_yellow" position="550,530" size="160,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_blue" position="766,530" size="160,40" transparent="1" valign="center" zPosition="2" />
-		<widget alphatest="on" name="now_button_sel" pixmap="NoGfx/menu/epg_now.png" position="660,65" size="310,25" zPosition="1" />
-		<widget alphatest="on" name="next_button_sel" pixmap="NoGfx/menu/epg_next.png" position="660,65" size="310,25" zPosition="1" />
-		<widget alphatest="on" name="more_button_sel" pixmap="NoGfx/menu/epg_more.png" position="660,65" size="310,25" zPosition="1" />
+		<widget alphatest="on" name="now_button_sel" pixmap="NoGfxBlue/menu/epg_now.png" position="660,65" size="310,25" zPosition="1" />
+		<widget alphatest="on" name="next_button_sel" pixmap="NoGfxBlue/menu/epg_next.png" position="660,65" size="310,25" zPosition="1" />
+		<widget alphatest="on" name="more_button_sel" pixmap="NoGfxBlue/menu/epg_more.png" position="660,65" size="310,25" zPosition="1" />
 		<widget name="list" position="50,99" scrollbarMode="showOnDemand" size="924,427" />
 		<eLabel text="MultiEPG" halign="left" position="49,31" size="400,30" font="Regular;22" backgroundColor="secondBG" transparent="1" />
 		<widget backgroundColor="secondBG" font="Regular;20" halign="right" position="678,31" render="Label" size="296,30" source="global.CurrentTime" transparent="1" zPosition="2">
@@ -1091,10 +1091,10 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		</widget>
 	</screen>
 	<screen flags="wfBorder" name="TimerLog" position="128,72" size="1024,576" title="Timer log">
-		<ePixmap alphatest="on" name="red" pixmap="NoGfx/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="green" pixmap="NoGfx/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="yellow" pixmap="NoGfx/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="blue" pixmap="NoGfx/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="red" pixmap="NoGfxBlue/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="green" pixmap="NoGfxBlue/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="yellow" pixmap="NoGfxBlue/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="blue" pixmap="NoGfxBlue/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_red" position="47,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_green" position="187,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="secondBG" font="Regular;18" halign="center" name="key_yellow" position="327,52" size="140,40" transparent="1" valign="center" zPosition="2" />
@@ -1108,10 +1108,10 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel backgroundColor="blue" position="48,370" size="924,2" zPosition="5" />
 	</screen>
 	<screen flags="wfBorder" name="TimerSanityConflict" position="128,72" size="1024,576" title="Timer sanity error">
-		<ePixmap alphatest="on" name="red" pixmap="NoGfx/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="green" pixmap="NoGfx/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="yellow" pixmap="NoGfx/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="blue" pixmap="NoGfx/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="red" pixmap="NoGfxBlue/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="green" pixmap="NoGfxBlue/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="yellow" pixmap="NoGfxBlue/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="blue" pixmap="NoGfxBlue/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
 		<widget backgroundColor="un7c1c1c" font="Regular;18" halign="center" name="key_red" position="47,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="un266926" font="Regular;18" halign="center" name="key_green" position="187,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="un8c5900" font="Regular;18" halign="center" name="key_yellow" position="327,52" size="140,40" transparent="1" valign="center" zPosition="2" />
@@ -1125,10 +1125,10 @@ self.instance.move(ePoint((1024-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel backgroundColor="blue" position="48,95" size="924,2" zPosition="5" />
 	</screen>
 	<screen name="picshow" position="128,72" size="1024,576" title="PicturePlayer">
-		<ePixmap alphatest="on" name="red" pixmap="NoGfx/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="green" pixmap="NoGfx/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="yellow" pixmap="NoGfx/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
-		<ePixmap alphatest="on" name="blue" pixmap="NoGfx/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="red" pixmap="NoGfxBlue/menu/key-red.png" position="47,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="green" pixmap="NoGfxBlue/menu/key-green.png" position="187,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="yellow" pixmap="NoGfxBlue/menu/key-yellow.png" position="327,52" size="140,40" transparent="1" />
+		<ePixmap alphatest="on" name="blue" pixmap="NoGfxBlue/menu/key-blue.png" position="467,52" size="140,40" transparent="1" />
 		<widget backgroundColor="un7c1c1c" font="Regular;18" halign="center" name="key_red" position="47,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="un266926" font="Regular;18" halign="center" name="key_green" position="187,52" size="140,40" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="un8c5900" font="Regular;18" halign="center" name="key_yellow" position="327,52" size="140,40" transparent="1" valign="center" zPosition="2" />
