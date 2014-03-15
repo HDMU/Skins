@@ -2018,9 +2018,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 	</screen>
 	<screen name="NumberZapWithName" position="200,21" size="1050,830" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="servicenumber" position="323,283" size="387,172" font="Regular; 150" halign="right" backgroundColor="background" transparent="1" valign="center" foregroundColor="metrixPreBlack2" text="5" zPosition="-1" />
-		<widget name="servicename" position="186,267" size="500,80" font="Regular; 50" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="servicebouquet" position="185,358" size="396,53" font="Regular; 28" halign="left" backgroundColor="background" transparent="1" />
+		<widget source="channel" render="Label" position="323,283" size="387,172" font="Regular; 150" halign="right" backgroundColor="background" transparent="1" valign="center" foregroundColor="metrixPreBlack2" text="5" zPosition="-1" />
+		<widget source="number" render="Label" position="186,267" size="500,80" font="Regular; 50" halign="left" backgroundColor="background" transparent="1" />
+		<widget source="servicebouquet" render="Label" position="185,358" size="396,53" font="Regular; 28" halign="left" backgroundColor="background" transparent="1" />
 		<eLabel position="161,244" size="550,181" backgroundColor="background" zPosition="-5" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="120,490" size="604,125" backgroundColor="grey" flags="wfNoBorder" zPosition="8">
