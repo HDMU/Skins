@@ -2012,9 +2012,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD_HDMU/icons/setup.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="NumberZap" position="center,center" size="250,60" title="QuickZap" backgroundColor="background20">
-		<widget name="channel" position="25,10" size="100,28" font="Regular;24" backgroundColor="background20" />
-		<widget name="number" position="125,10" size="100,28" halign="right" font="Regular;24" backgroundColor="background20" />
-		<widget name="servicename" position="20,38" size="210,34" backgroundColor="background20" font="Regular; 22" halign="center">
+		<widget source="channel" render="Label" position="25,10" size="100,28" font="Regular;24" backgroundColor="background20" />
+		<widget source="number" render="Label" position="125,10" size="100,28" halign="right" font="Regular;24" backgroundColor="background20" />
+		<widget source="servicename" render="Label" position="20,38" size="210,34" backgroundColor="background20" font="Regular; 22" halign="center">
 		</widget>
 	</screen>
 	<screen name="NumberZapWithName" position="200,21" size="1050,830" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
