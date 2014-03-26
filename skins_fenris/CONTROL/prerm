@@ -1,0 +1,24 @@
+#!/bin/sh
+echo "removing fenrisHD Skin"
+rm -rf /usr/local/share/enigma2/FenrisHD > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/ExtendedServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/fenrisServiceEndTime.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/SmartInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VAudioInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VExtraNumText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VNetSpeedInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VServiceInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VServiceOrbitalPosition.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/VWeather.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/NextEvent.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/NextEvents.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/PositionGauge.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerCharLCD.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerCharLCDLong.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VReference.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VRunningText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VtiEmuInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VVolumeText.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VWatches.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/VWeatherUpdater.pyo > /dev/null 2>&1
+exit 0
