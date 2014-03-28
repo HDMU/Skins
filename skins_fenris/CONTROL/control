@@ -1,9 +1,0 @@
-Package: enigma2-plugin-skins-fenris
-Version: 1.1.3
-Description: HD Skin fenris
-Section: skins
-Priority: optional
-Maintainer: xxx
-Architecture: sh4
-Homepage: http://www.hdmedia-universe.com
-Source: http://www.hdmedia-universe.com
