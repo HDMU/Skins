@@ -10,7 +10,6 @@ rm -rf /usr/lib/enigma2/python/Components/Converter/VNetSpeedInfo.pyo > /dev/nul
 rm -rf /usr/lib/enigma2/python/Components/Converter/VServiceInfo.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Converter/VServiceOrbitalPosition.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Converter/VWeather.pyo > /dev/null 2>&1
-rm -rf /usr/lib/enigma2/python/Components/Renderer/NextEvent.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/NextEvents.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PositionGauge.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerCharLCD.pyo > /dev/null 2>&1
