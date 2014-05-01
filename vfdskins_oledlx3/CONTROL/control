@@ -1,9 +1,0 @@
-Package: enigma2-plugin-vfdskins-oledlx3
-Version: 1.1.3
-Description: oled skins lx3
-Section: vfdskins
-Priority: optional
-Maintainer: xxx
-Architecture: mips
-Homepage: http://www.hdmedia-universe.com
-Source: http://www.hdmedia-universe.com

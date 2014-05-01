@@ -1,5 +1,0 @@
-#!/bin/sh
-echo "removing oled skins lx3"
-rm -rf /usr/share/enigma2/display/hdmu > /dev/null 2>&1
-rm -rf /usr/share/enigma2/display/hdmu1picon > /dev/null 2>&1
-exit 0
