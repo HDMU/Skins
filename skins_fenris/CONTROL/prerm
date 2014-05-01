@@ -12,8 +12,6 @@ rm -rf /usr/lib/enigma2/python/Components/Converter/VServiceOrbitalPosition.pyo 
 rm -rf /usr/lib/enigma2/python/Components/Converter/VWeather.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/NextEvents.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PositionGauge.pyo > /dev/null 2>&1
-rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerCharLCD.pyo > /dev/null 2>&1
-rm -rf /usr/lib/enigma2/python/Components/Renderer/RollerCharLCDLong.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/VReference.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/VRunningText.pyo > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/VtiEmuInfo.pyo > /dev/null 2>&1
