@@ -163,7 +163,7 @@
     <widget alphatest="blend" position="15,575" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;36" halign="left" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="273,565" render="VRunningText" size="623,50" source="session.Event_Now" transparent="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;36" halign="left" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="273,565" render="HDMURunningText" size="623,50" source="session.Event_Now" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" font="Regular; 24" halign="right" position="900,573" render="Label" size="120,40" source="session.Event_Now" transparent="1" valign="bottom" zPosition="1">
@@ -182,7 +182,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground2" font="Regular; 26" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="439,672" render="VRunningText" size="472,40" source="session.Event_Next" transparent="1" valign="top">
+    <widget backgroundColor="fenrisBackground2" font="Regular; 26" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="439,672" render="HDMURunningText" size="472,40" source="session.Event_Next" transparent="1" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground2" font="Regular; 22" foregroundColor="fenrisAccent1" halign="right" position="913,676" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
@@ -367,16 +367,16 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 32" halign="left" noWrap="1" options="movetype=running,startpoint=0,startdelay=3500,oneshot=1,step=2,steptime=50,always=0,noWrap" position="85,77" render="VRunningText" size="725,55" source="session.Event_Now" transparent="1" valign="bottom" zPosition="2">
+    <widget backgroundColor="fenrisBackground" font="Regular; 32" halign="left" noWrap="1" options="movetype=running,startpoint=0,startdelay=3500,oneshot=1,step=2,steptime=50,always=0,noWrap" position="85,77" render="HDMURunningText" size="725,55" source="session.Event_Now" transparent="1" valign="bottom" zPosition="2">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground2" font="Regular; 25" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,startdelay=3500,oneshot=1,step=2,steptime=50,always=0,noWrap" position="85,439" render="VRunningText" size="725,40" source="session.Event_Next" transparent="1" valign="bottom" zPosition="2">
+    <widget backgroundColor="fenrisBackground2" font="Regular; 25" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,startdelay=3500,oneshot=1,step=2,steptime=50,always=0,noWrap" position="85,439" render="HDMURunningText" size="725,40" source="session.Event_Next" transparent="1" valign="bottom" zPosition="2">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 22" foregroundColor="fenrisForeground" halign="left" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="85,128" render="VRunningText" size="1138,248" source="session.Event_Now" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 22" foregroundColor="fenrisForeground" halign="left" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="85,128" render="HDMURunningText" size="1138,248" source="session.Event_Now" transparent="1" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground2" font="Regular; 20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="85,481" render="VRunningText" size="1138,161" source="session.Event_Next" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground2" font="Regular; 20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="85,481" render="HDMURunningText" size="1138,161" source="session.Event_Next" transparent="1" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="fenrisBackground" font="Regular; 26" name="jetzt" position="60,70" size="1189,356" transparent="0" valign="top" zPosition="-10" />
@@ -442,7 +442,7 @@
     </widget>
     <!--  Channel INFO */ -->
     <!-- /* CHANNEL NAME  -->
-    <widget backgroundColor="fenrisBackground" font="Regular; 30" foregroundColor="fenrisAccent1" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=5,startdelay=3500,always=0" position="260,670" render="VRunningText" size="530,50" source="session.CurrentService" transparent="1" valign="top" zPosition="2">
+    <widget backgroundColor="fenrisBackground" font="Regular; 30" foregroundColor="fenrisAccent1" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=5,startdelay=3500,always=0" position="260,670" render="HDMURunningText" size="530,50" source="session.CurrentService" transparent="1" valign="top" zPosition="2">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!--  CHANNEL NAME */ -->
@@ -1446,13 +1446,13 @@
     <!--Uhr */-->
     <widget backgroundColor="fenrisBackground" font="Regular; 26" foregroundColor="fenrisAccent1" halign="left" position="583,12" render="Label" size="656,45" source="Title" transparent="1" valign="center" noWrap="1" />
     <widget backgroundColor="fenrisBackground" colorEventProgressbarBorder="fenrisSelection" colorEventProgressbarBorderSelected="fenrisForeground" colorServiceDescription="fenrisAccent1" colorServiceDescriptionSelected="fenrisForeground" colorServiceRecording="fenrisRed" foregroundColorServiceNotAvail="fenrisDeepGrey" itemHeight="50" name="list" position="425,79" scrollbarMode="showNever" serviceInfoFont="Regular;22" serviceItemHeight="35" serviceNameFont="Regular;24" serviceNumberFont="Regular;24" size="816,564" transparent="1" />
-    <widget backgroundColor="fenrisBackground" font="RegularLight; 25" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=5000,always=0" position="40,77" render="VRunningText" size="362,40" source="ServiceEvent" transparent="1" valign="bottom" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="RegularLight; 25" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=5000,always=0" position="40,77" render="HDMURunningText" size="362,40" source="ServiceEvent" transparent="1" valign="bottom" zPosition="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="NextEvents" position="40,497" size="362,146" noWrap="1" font="Regular;19" foregroundColor="fenrisAccent1" backgroundColor="fenrisBackground" transparent="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 19" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="40,125" render="VRunningText" size="362,346" source="ServiceEvent" transparent="1" valign="top">
+    <widget backgroundColor="fenrisBackground" font="Regular; 19" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="40,125" render="HDMURunningText" size="362,346" source="ServiceEvent" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
@@ -1533,7 +1533,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhrzeit/Datum */-->
-    <widget backgroundColor="fenrisBackground" font="RegularLight; 40" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="265,597" render="VRunningText" size="619,56" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="RegularLight; 40" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="265,597" render="HDMURunningText" size="619,56" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="FenrisHD/icons/dvd_logo.png" position="26,581" size="211,132" zPosition="1" />
@@ -1593,7 +1593,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" itemHeight="30" name="list" position="44,127" scrollbarMode="showOnDemand" size="718,511" transparent="1" zPosition="3" />
-    <widget backgroundColor="fenrisBackground" font="RegularLight; 22" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="795,125" render="VRunningText" size="442,500" source="Event" transparent="1" valign="top">
+    <widget backgroundColor="fenrisBackground" font="RegularLight; 22" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="795,125" render="HDMURunningText" size="442,500" source="Event" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
@@ -1650,7 +1650,7 @@
     <widget alphatest="blend" position="45,450" render="Picon" size="100,60" source="Service" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="763,457" render="VRunningText" size="479,186" source="Event" transparent="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=10000,wrap,always=0" position="763,457" render="HDMURunningText" size="479,186" source="Event" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="45,518" size="685,125" transparent="1" />
@@ -1772,7 +1772,7 @@
     <widget backgroundColor="fenrisBackground" font="Regular; 22" halign="center" name="more_text" position="370,87" size="150,30" text="MORE" transparent="1" zPosition="10" />
     <widget font="Regular; 22" halign="right" name="date" position="960,87" size="250,30" transparent="1" valign="center" />
     <widget backgroundColor="fenrisBackground" itemHeight="30" name="list" position="50,142" scrollbarMode="showOnDemand" size="1180,360" transparent="1" />
-    <widget backgroundColor="fenrisBackground" font="RegularLight; 22" foregroundColor="fenrisForeground" halign="left" position="50,528" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" size="1180,117" source="Event" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="RegularLight; 22" foregroundColor="fenrisForeground" halign="left" position="50,528" render="HDMURunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" size="1180,117" source="Event" transparent="1" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
@@ -1885,10 +1885,10 @@
     <widget backgroundColor="fenrisBackground" font="Regular; 26" position="421,12" render="Label" size="815,45" source="Title" transparent="1" foregroundColor="fenrisAccent1" />
     <widget name="list" position="45,80" scrollbarMode="showOnDemand" enableWrapAround="1" size="1190,351" transparent="1" />
     <widget backgroundColor="fenrisBackground" font="Regular; 17" halign="right" name="freeDiskSpace" position="900,620" size="330,24" transparent="1" valign="center" />
-    <widget backgroundColor="fenrisBackground" font="Regular; 20" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="710,465" render="VRunningText" size="500,30" source="Service" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 20" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="710,465" render="HDMURunningText" size="500,30" source="Service" transparent="1" zPosition="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 30" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="70,460" render="VRunningText" size="590,40" source="Service" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 30" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="70,460" render="HDMURunningText" size="590,40" source="Service" transparent="1" zPosition="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" font="Regular; 17" halign="right" position="118,620" render="Label" size="70,24" source="Service" transparent="1" zPosition="1">
@@ -1898,7 +1898,7 @@
     <widget backgroundColor="fenrisBackground" font="Regular; 17" halign="right" position="611,620" render="Label" size="100, 24" source="Service" transparent="1" zPosition="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 19" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=50,startdelay=10000,wrap,always=0" position="70,510" render="VRunningText" size="1140,100" source="Service" transparent="1" valign="top">
+    <widget backgroundColor="fenrisBackground" font="Regular; 19" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=50,startdelay=10000,wrap,always=0" position="70,510" render="HDMURunningText" size="1140,100" source="Service" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="fenrisBackground" font="Regular; 17" halign="left" position="50,620" size="100,24" text="Laufzeit:" transparent="1" valign="center" zPosition="1" />
@@ -1949,7 +1949,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhrzeit/Datum */-->
-    <widget backgroundColor="fenrisBackground" font="Regular; 36" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="273,600" render="VRunningText" size="730,50" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 36" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="273,600" render="HDMURunningText" size="730,50" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="FenrisHD/icons/movie_logo.png" position="15,582" size="220,132" zPosition="1" />
@@ -2970,7 +2970,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Uhr */-->
     <widget backgroundColor="fenrisBackground" font="Regular; 26" halign="center" position="433,12" render="Label" size="800,45" source="Title" transparent="1" foregroundColor="fenrisAccent1" />
     <widget name="timerlist" position="429,80" scrollbarMode="showOnDemand" size="805,560" transparent="1" />
-    <widget backgroundColor="fenrisBackground" font="RegularLight; 30" halign="left" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="42,153" render="VRunningText" size="360,50" source="Event" transparent="1" valign="bottom">
+    <widget backgroundColor="fenrisBackground" font="RegularLight; 30" halign="left" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=3500,always=0" position="42,153" render="HDMURunningText" size="360,50" source="Event" transparent="1" valign="bottom">
       <convert type="EventName">Name</convert>
     </widget>
     <eLabel backgroundColor="fenrisBackground" font="Regular; 17" halign="left" position="260,85" size="45,25" text="von" transparent="1" valign="bottom" zPosition="1" />
@@ -2986,7 +2986,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular; 20" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,direction=top,steptime=75,repeat=5,startdelay=7500,wrap,always=0" position="42,218" render="VRunningText" size="360,422" source="Event" transparent="1" valign="top">
+    <widget backgroundColor="fenrisBackground" font="Regular; 20" foregroundColor="fenrisAccent1" halign="left" options="movetype=running,startpoint=0,direction=top,steptime=75,repeat=5,startdelay=7500,wrap,always=0" position="42,218" render="HDMURunningText" size="360,422" source="Event" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget alphatest="blend" position="45,81" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
@@ -6089,7 +6089,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="fenrisBackground" font="Regular; 24" foregroundColor="fenrisAccent1" halign="left" position="630,55" render="Label" size="600,30" source="Event" transparent="1" zPosition="3">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="VRunningText" shadowColor="#000000" size="790,185" source="Event" transparent="1" valign="top" zPosition="3">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="HDMURunningText" shadowColor="#000000" size="790,185" source="Event" transparent="1" valign="top" zPosition="3">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" foregroundColor="fenrisForeground" name="timeline_text" position="5,285" size="1230,30" transparent="1" />
@@ -6189,7 +6189,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" halign="left" position="40,684" render="Label" size="240,30" source="Title" transparent="1" zPosition="3" />
-    <widget backgroundColor="fenrisBackground" font="Regular;18" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=200,repeat=5,startdelay=10000,wrap,always=0" position="40,602" render="VRunningText" shadowColor="#000000" size="1200,75" source="Event" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;18" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=200,repeat=5,startdelay=10000,wrap,always=0" position="40,602" render="HDMURunningText" shadowColor="#000000" size="1200,75" source="Event" transparent="1" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="FenrisHD/buttons/key_red.png" position="270,683" size="30,40" />
@@ -6232,7 +6232,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="fenrisBackground" font="Regular; 24" foregroundColor="foreground" halign="left" position="630,55" render="Label" shadowColor="#00605f5e" size="600,30" source="Event" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="VRunningText" shadowColor="#00605f5e" size="790,185" source="Event" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="HDMURunningText" shadowColor="#00605f5e" size="790,185" source="Event" transparent="1" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget CoolCurrentCol="fenrisForeground" CoolBackColorSel="fenrisSelection" CoolBarColor="fenrisAccent1" CoolBarHPos="5" CoolBarHigh="18" CoolBarPos="260" CoolBarSize="150" CoolDurationPos="1085" CoolDurationColor="fenrisAccent1" CoolDurationSize="105" CoolEventColor="fenrisAccent1" CoolEventFont="Regular;22" CoolEventHPos="2" CoolEventPos="430" CoolEventSize="645" CoolFont="Regular;22" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolServiceColor="fenrisAccent1" CoolServiceFont="Regular;22" CoolServiceHPos="2" CoolServicePos="5" CoolServiceSize="245" CoolTimeHPos="2" CoolTimePos="265" CoolTimeSize="150" backgroundColor="fenrisBackground" foregroundColor="fenrisForeground" itemHeight="28" name="list" position="40,305" size="1200,365" transparent="1" zPosition="25" />
@@ -6277,7 +6277,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="fenrisBackground" font="Regular; 24" foregroundColor="fenrisAccent1" halign="left" position="630,55" render="Label" size="600,30" source="Event" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="VRunningText" shadowColor="#000000" size="790,185" source="Event" transparent="0" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="450,95" render="HDMURunningText" shadowColor="#000000" size="790,185" source="Event" transparent="0" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" name="timeline_text" position="5,285" size="1230,30" transparent="1" />
@@ -6336,7 +6336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="background" font="Regular;24" halign="left" position="50,445" render="Label" shadowColor="#444444" size="1190,30" source="Event" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="50,480" render="VRunningText" shadowColor="#00605f5e" size="1190,185" source="Event" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="50,480" render="HDMURunningText" shadowColor="#00605f5e" size="1190,185" source="Event" transparent="1" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget CoolBackColorSel="fenrisSelection" CoolBackColor="fenrisBackground" CoolDayColor="fenrisAccent1" CoolDayPos="0" CoolDaySize="50" CoolEventColor="fenrisAccent1" CoolEventFont="Regular;22" CoolEventPos="150" CoolFont="Regular;22" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTimeColor="fenrisAccent1" CoolTimePos="70" CoolTimeSize="70" backgroundColor="fenrisBackground" foregroundColor="fenrisForeground" itemHeight="28" name="list" position="440,60" size="800,365" transparent="1" zPosition="25" />
@@ -6392,7 +6392,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" halign="left" position="40,684" render="Label" size="240,30" source="Title" transparent="1" zPosition="3" />
-    <widget backgroundColor="fenrisBackground" font="Regular; 18" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=200,repeat=5,startdelay=10000,wrap,always=0" position="40,602" render="VRunningText" shadowColor="#000000" size="1200,75" source="Event" transparent="1" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 18" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=200,repeat=5,startdelay=10000,wrap,always=0" position="40,602" render="HDMURunningText" shadowColor="#000000" size="1200,75" source="Event" transparent="1" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="FenrisHD/buttons/key_red.png" position="270,683" size="30,40" />
@@ -6438,7 +6438,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget pixmap="FenrisHD/colors/fenris/Bar.png" position="153,305" render="Progress" size="250,4" source="Event" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="40,353" render="VRunningText" shadowColor="#00605f5e" size="480,184" source="Event" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular;20" foregroundColor="fenrisAccent1" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" position="40,353" render="HDMURunningText" shadowColor="#00605f5e" size="480,184" source="Event" transparent="1" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget CoolBackColorSel="fenrisSelection" CoolBar="0" CoolBarColor="fenrisAccent1" CoolCurrentCol="fenrisForeground" CoolDurationColor="fenrisAccent1" CoolDurationPos="650" CoolDurationSize="40" CoolEventColor="fenrisAccent1" CoolEventFont="Regular;18" CoolEventHPos="3" CoolEventPos="240" CoolEventSize="320" CoolFont="Regular;22" CoolMarkerHPos="1" CoolMarkerPicHPos="2" CoolMarkerPicPos="2" CoolMarkerPos="140" CoolPico="28" CoolPicoHPos="1" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolServiceColor="fenrisAccent1" CoolServiceFont="Regular;21" CoolServiceHPos="1" CoolServicePos="1" CoolServiceSize="230" CoolTime="1" CoolTimeHPos="3" CoolTimePos="580" CoolTimeSize="130" CoolTunerCol="fenrisAccent1" backgroundColor="fenrisBackground" foregroundColor="fenrisForeground" itemHeight="28" name="list" position="540,70" size="700,589" transparent="1" zPosition="25" />
@@ -6518,7 +6518,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhrzeit/Datum */-->
-    <widget backgroundColor="fenrisBackground" font="Regular; 36" noWrap="1" position="270,583" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" size="750,56" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <widget backgroundColor="fenrisBackground" font="Regular; 36" noWrap="1" position="270,583" render="HDMURunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" size="750,56" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="fenrisBackground" font="Regular; 18" halign="left" position="766,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="fenrisAccent1">
@@ -6633,7 +6633,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Service" render="Label" position="320,99" size="152,30" font="Regular; 18" halign="center" backgroundColor="fenrisBackground" transparent="1" text="8956 MB" foregroundColor="fenrisAccent1">
       <convert type="EMCMovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,always=0,startdelay=10000,wrap" position="38,353" size="432,295" font="Regular; 23" foregroundColor="fenrisForeground" backgroundColor="fenrisBackground" transparent="1" halign="left" valign="top">
+    <widget source="Service" render="HDMURunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,always=0,startdelay=10000,wrap" position="38,353" size="432,295" font="Regular; 23" foregroundColor="fenrisForeground" backgroundColor="fenrisBackground" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="38,99" size="280,30" font="Regular; 18" foregroundColor="fenrisAccent1" halign="left" backgroundColor="fenrisBackground" transparent="1" text="Donnerstag September 28, 2013">
