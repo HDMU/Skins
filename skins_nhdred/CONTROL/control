@@ -4,7 +4,7 @@ Description: HD Skin nHDred
 Section: skins
 Priority: optional
 Maintainer: xxx
-Architecture: sh4
+Architecture: all
 Depends: nhdpack
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

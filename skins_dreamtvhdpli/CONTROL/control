@@ -4,7 +4,7 @@ Description: HD Skin dreamTV-HD
 Section: skins
 Priority: optional
 Maintainer: xxx
-Architecture: sh4
+Architecture: all
 Depends: bitrate,skinspicon2
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

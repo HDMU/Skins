@@ -4,7 +4,7 @@ Description: Merdas-HD Orange Skin V7
 Section: skins
 Priority: optional
 Maintainer: xxx
-Architecture: sh4
+Architecture: all
 Depends: merdas
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

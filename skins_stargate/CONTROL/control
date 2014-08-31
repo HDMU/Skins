@@ -4,7 +4,7 @@ Description: Mirco-Stargate-Edition-HD Skin
 Section: skins
 Priority: optional
 Maintainer: xxx
-Architecture: sh4
+Architecture: all
 Depends: skinpythonmvm
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

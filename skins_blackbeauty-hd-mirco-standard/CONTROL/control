@@ -4,7 +4,7 @@ Description: HD Skin BlackBeauty HD Mirco Standard
 Section: skins
 Priority: optional
 Maintainer: XXX
-Architecture: sh4
+Architecture: all
 Depends: skinpythonmvm
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com

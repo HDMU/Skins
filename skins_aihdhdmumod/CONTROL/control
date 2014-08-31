@@ -4,7 +4,7 @@ Description: HD Skin AiHD HDMU Mod by JMk73
 Section: skins
 Priority: optional
 Maintainer: XXX
-Architecture: sh4
+Architecture: all
 OE: HD Skin AiHD HDMU Mod by JMk73
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
