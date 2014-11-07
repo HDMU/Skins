@@ -1,9 +1,9 @@
-Package: enigma2-plugin-vfdskins-oledlx3
+Package: enigma2-plugin-vfdskins
 Version: 1.1.3
-Description: oled skins lx3
+Description: oled skins lx3 mutant nemesis
 Section: vfdskins
 Priority: optional
 Maintainer: xxx
-Architecture: xpeedlx3
+Architecture: all
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
