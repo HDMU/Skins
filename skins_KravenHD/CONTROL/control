@@ -1,0 +1,9 @@
+Package: enigma2-plugin-skins-KravenHD
+Version: 5.4.9.0.2
+Description: HD Skin KravenHD
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: all
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

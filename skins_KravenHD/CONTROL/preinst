@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "installing KravenHD Skin ..."
+cd /tmp
+opkg install --force-depends *.ipk
+exit 0
