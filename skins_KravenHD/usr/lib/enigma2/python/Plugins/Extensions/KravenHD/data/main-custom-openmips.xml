@@ -112,6 +112,12 @@
 
 <!-- OSD3DSetupScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD 3D Setup">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
   <widget name="config" backgroundColor="BackgroundKraven" position="79,115" zPosition="-8" size="728,540" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,695" size="200,5" />
   <eLabel font="Regular; 20" foregroundColor="white" backgroundColor="KravenBackground" halign="left" position="105,670" size="240,24" text="Cancel" transparent="1" />
@@ -556,4 +562,3 @@
 </screen>
 
 <!-- main-custom-openmips */ -->
-

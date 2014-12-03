@@ -1,5 +1,6 @@
 <!-- plugins -->
 
+
 <!-- ********** AutoBouquetsMaker ********** -->
 
 <!-- AutoBouquetsMaker -->
@@ -243,6 +244,12 @@
 <!-- AutoTimerSettings -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerSettings" position="0,0" size="1280,720" title="AutoTimer Settings">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,115" size="700,450" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,572" size="700,2" />
     <widget backgroundColor="KravenBackground" font="RegularLight;20" position="70,577" render="Label" size="700,50" source="help" transparent="1" />
@@ -259,6 +266,12 @@
 <!-- AutoTimerEditor -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerEditor" position="0,0" size="1280,720" title="Edit AutoTimer">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" enableWrapAround="1" scrollbarMode="showOnDemand" itemHeight="30" name="config" position="70,115" size="700,450" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,572" size="700,2" />
     <widget backgroundColor="KravenBackground" font="RegularLight;20" position="70,577" render="Label" size="700,50" source="help" transparent="1" />
@@ -279,6 +292,12 @@
 <!-- AutoTimerFilterEditor -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerFilterEditor" position="0,0" size="1280,720" title="Edit AutoTimer Filters">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="71,115" size="700,510" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
@@ -298,6 +317,12 @@
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerServiceEditor" position="0,0" size="1280,720" title="Edit AutoTimer Services">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
     <widget backgroundColor="KravenBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,115" size="700,510" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="680,665" size="200,5" />
@@ -316,6 +341,12 @@
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerImporter" position="0,0" size="1280,720" title="Import AutoTimer">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
     <widget backgroundColor="KravenBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="list" position="70,115" size="700,510" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="680,665" size="200,5" />
@@ -334,6 +365,12 @@
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerOverview" position="0,0" size="1280,720" title="AutoTimer Overview">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
     <widget backgroundColor="KravenBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="entries" position="70,115" size="700,510" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="680,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="975,665" size="200,5" />
@@ -348,6 +385,12 @@
   
 <!-- AutoTimerPreview -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerPreview" position="0,0" size="1280,720" title="Preview AutoTimer">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
     <widget backgroundColor="KravenBackground" enableWrapAround="1" position="70,115" render="Listbox" size="700,510" source="timerlist" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -432,6 +475,12 @@
 <!-- CDInfo -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" title="CDInfo">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="CD Info" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget font="RegularLight;21" position="70,120" render="Label" size="700,50" source="info" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,190" size="700,2" />
     <widget itemHeight="30" name="config" position="70,200" size="700,300" transparent="1" />
@@ -990,6 +1039,12 @@
 <!-- CutListEditor -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Cutlist editor" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenForeground" position="70,130" size="700,381" zPosition="1" />
   <eLabel backgroundColor="unff000000" position="72,132" size="696,377" zPosition="3" />
   <widget name="Video" position="72,132" size="696,377" zPosition="-10" />
@@ -1356,6 +1411,12 @@
 <!-- IMDB -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="IMDB" position="0,0" size="1280,720" title="IMDb Details Plugin">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="IMDb Details" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget itemHeight="30" name="menu" position="70,220" size="700,360" transparent="1" />
     <widget font="RegularLight;25" name="title" position=" 70,120" size="490,28" transparent="1" valign="center" />
     <widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="560,115" size="210,21" zPosition="2" />
@@ -1470,6 +1531,12 @@
 <!-- EPGRefreshServiceEditor -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGRefreshServiceEditor" position="0,0" size="1280,720" title="Edit Services to refresh">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,115" size="700,510" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
@@ -1488,6 +1555,12 @@
 <!-- EPGRefreshConfiguration -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGRefreshConfiguration" position="0,0" size="1280,720" title="Configure EPGRefresh">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,115" size="700,450" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,572" size="700,2" />
     <widget backgroundColor="KravenBackground" font="RegularLight;20" position="70,577" render="Label" size="700,50" source="help" transparent="1" />
@@ -1511,6 +1584,12 @@
 <!-- FilebrowserConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserConfigScreen" position="0,0" size="1280,720" title="">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,115" size="700,510" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
@@ -1525,6 +1604,12 @@
 <!-- FilebrowserScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserScreen" position="0,0" size="1280,720" title="">
     <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" itemHeight="30" name="list_left" position=" 70,115" size="550,510" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line510.png" position="639,115" size="  2,510" />
     <widget backgroundColor="KravenBackground" itemHeight="30" name="list_right" position="660,115" size="550,510" transparent="1" />
@@ -2091,6 +2176,12 @@
 <!-- MediaPlayer -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1280,720" title="MediaPlayer" transparent="0">
   <eLabel backgroundColor="KravenBackground" font="RegularLight; 22" position="432,280" size="500,40" text="Playlist" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenAccent1" foregroundColor="KravenAccent1" name="new eLabel" position="71,412" size="300,1" zPosition="-1" />
   <widget backgroundColor="KravenBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="25" name="filelist" position="430,107" size="782,167" transparent="1" />
   <widget alphatest="blend" name="coverArt" pixmap="KravenHD/icons/media.png" position="96,67" size="256,256" transparent="1" />
@@ -2138,6 +2229,12 @@
 <!-- DirectoryBrowser -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="DirectoryBrowser" position="0,0" size="1280,720" title="Directorybrowser">
   <widget name="filelist" position="70,120" scrollbarMode="showNever" size="710,490" transparent="1" zPosition="3" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
   <eLabel font="Regular; 20" halign="left" position="105,637" size="250,28" text="Cancel" transparent="1" valign="top" />
@@ -2152,6 +2249,12 @@
 <!-- MediaPlayerSettings -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="MediaPlayerSettings" position="0,0" size="1280,720" title="Edit Settings">
   <widget name="config" position="70,120" scrollbarMode="showNever" size="710,490" transparent="1" zPosition="3" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
   <eLabel font="Regular; 20" halign="left" position="105,637" size="250,28" text="Cancel" transparent="1" valign="top" />
@@ -2486,6 +2589,12 @@
 <!-- MovieEpgSetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieEpgSetup" position="0,0" size="1280,720" title="MovieEpg Setup">
   <widget backgroundColor="KravenBackground" enableWrapAround="1" name="config" position="70,120" size="700,400" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,530" size="700,2" />
   <widget backgroundColor="KravenBackground" font="RegularLight;20" position="70,540" render="Label" size="700,88" source="help" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
@@ -2820,7 +2929,7 @@
       <convert type="ClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="KravenBackground" font="Regular; 17" foregroundColor="white" halign="left" noWrap="1" position="956,30" size="10,25" text=", " transparent="1" valign="top" zPosition="5" />
-    <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="white" halign="right" position="830,30" render="Label" size="125,25" source="global.CurrentTime" transparent="1"/>
+    <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="white" halign="right" position="830,30" render="Label" size="125,25" source="global.CurrentTime" transparent="1" />
       <convert type="ClockToText">Format:%A</convert>
     <widget source="Title" render="Label" position="60,20" size="650,35" font="Regular; 30" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
     <widget name="config" zPosition="2" position="40,80" size="600,50" backgroundColor="transparent" scrollbarMode="showNever" transparent="1" />
@@ -2982,6 +3091,12 @@
 <!-- OMBManagerList -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="OMBManagerList" position="0,0" size="1280,720" title="OMBManagerList">
   <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <widget source="list" render="Listbox" position="71,98" size="728,561" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
   <convert type="StringList" />
 </widget>
@@ -2989,10 +3104,10 @@
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,695" size="200,5" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="680,695" size="200,5" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="975,695" size="200,5" />
-  <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="105,670" render="Label" size="240,24" source="key_red" transparent="1" zPosition="1" />
-  <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="395,670" render="Label" size="240,24" source="key_green" transparent="1" zPosition="1" />
-  <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="685,670" render="Label" size="240,24" source="key_yellow" transparent="1" zPosition="1" />
-  <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="975,670" render="Label" size="260,24" source="key_blue" transparent="1" zPosition="1" />
+  <widget name="key_red" backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="105,670"  size="240,24"  transparent="1" zPosition="1" />
+  <widget name="key_green" backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="395,671"  size="240,24"  transparent="1" zPosition="1" />
+  <widget name="key_yellow" backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="685,670"  size="240,24"  transparent="1" zPosition="1" />
+  <widget name="key_blue" backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="975,670"  size="260,24"  transparent="1" zPosition="1" />
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="883,211" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
@@ -3005,6 +3120,12 @@
 <!-- OpenWebifConfig -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="OpenWebifConfig" position="0,0" size="1280,720" title="OpenWebif Configuration">
     <widget font="RegularLight;24" halign="center" name="lab1" position="70,120" size="710,60" transparent="1" valign="top" zPosition="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget name="config" position="70,200" size="710,410" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" name="key_red" position="105,640" size="240,24" transparent="1" valign="center" zPosition="1" />
@@ -3055,6 +3176,12 @@
 <!-- OscamInfoConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="OscamInfoConfigScreen" position="0,0" size="1280,720" title="Oscam Info Setup">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" source="Title" rende="Label" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget itemHeight="30" name="config" position="70,112" size="800,240" transparent="1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="390,665" size="200,5" />
@@ -3187,6 +3314,12 @@
 <!-- picshow -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="picshow" position="0,0" size="1280,720" title="PicturePlayer">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="PicturePlayer" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget alphatest="blend" name="thn" position="802,117" size="426,240" zPosition="4" />
     <widget backgroundColor="KravenBackground" font="RegularLight;22" position="800,380" render="Label" size="430,240" source="label" transparent="1" />
     <widget backgroundColor="KravenBackground" itemHeight="30" name="filelist" position="70,110" size="700,510" transparent="1" />
@@ -3206,6 +3339,12 @@
 <!-- Pic_Exif -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="Pic_Exif" position="0,0" size="1280,720" title="Info">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Exif Info" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget backgroundColor="KravenBackground" position="70,120" render="Listbox" selectionDisabled="1" size="700,490" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -3285,6 +3424,12 @@
 <!-- VlcMediaListScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="VlcMediaListScreen" position="0,0" size="1280,720" title="">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,40" text="VLC Video Player" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <eLabel backgroundColor="KravenBackground" font="RegularLight;26" halign="center" position="830,120" size="410,29" text="Vlc-Media file overview" transparent="1" />
     <widget backgroundColor="KravenBackground" font="RegularLight;22" halign="center" position="830,160" render="Label" size="410,72" source="Title" transparent="1" />
     <widget alphatest="blend" name="filelist_button_sel" pixmap="KravenHD/bar/p_bar153.png" position="80,138" size="150,5" zPosition="3" />
@@ -3313,6 +3458,12 @@
 <!-- VlcServerListScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="VlcServerListScreen" position="0,0" size="1280,720" title="">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,40" text="VLC Video Player" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <eLabel backgroundColor="KravenBackground" font="RegularLight;26" halign="center" position="830,120" size="410,29" text="Select a VLC-Server Profile" transparent="1" />
     <widget font="RegularLight;20" name="serverlabel" position="70,115" size="720,25" transparent="1" />
     <eLabel backgroundColor="KravenAccent1" position="70,143" size="720,464" zPosition="1" />
@@ -3335,6 +3486,12 @@
 <!-- VlcServerConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="VlcServerConfigScreen" position="0,0" size="1280,720" title="">
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,40" text="VLC Video Player" transparent="1" />
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <eLabel backgroundColor="KravenBackground" font="RegularLight;26" halign="center" position="830,120" size="410,29" text="Edit VLC Server" transparent="1" />
     <widget enableWrapAround="1" name="config" position="70,120" size="730,490" transparent="1" />
     <ePixmap alphatest="blend" name="red" pixmap="KravenHD/buttons/key_red1.png" position="99,665" size="200,5" />
@@ -3352,6 +3509,12 @@
 
 <!-- BrowserLauncher -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="BrowserLauncher" position="0,0" size="1280,720" title="Web Browser">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="288,665" size="200,5" />
     <widget font="RegularLight;20" halign="left" position="105,639" render="Label" size="100,25" source="key_red" transparent="1" valign="center" zPosition="1" />
@@ -3371,6 +3534,12 @@
 
 <!-- WeatherPluginEntriesListConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="WeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="WeatherPlugin: List of Entries" transparent="1" />
     <widget backgroundColor="KravenBackground" font="RegularLight;24" position=" 70,115" render="Label" size="150,28" source="city" transparent="1" />
     <widget backgroundColor="KravenBackground" font="RegularLight;24" position="225,115" render="Label" size="500,28" source="language" transparent="1" />
@@ -3392,6 +3561,12 @@
 
 <!-- WeatherPluginEntryConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="WeatherPluginEntryConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="WeatherPlugin: Edit Entry" transparent="1" />
   <widget backgroundColor="KravenBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,114" size="710,510" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
@@ -3408,6 +3583,12 @@
 
 <!-- WeatherPlugin -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="WeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Weather Plugin" transparent="1" />
   <widget backgroundColor="KravenBackground" font="RegularLight;24" position=" 70,150" render="Label" size="400,27" source="caption" transparent="1" />
   <widget backgroundColor="KravenBackground" font="RegularLight;24" position=" 70,190" render="Label" size="400,27" source="currentTemp" transparent="1" />
@@ -3475,7 +3656,7 @@
   <widget backgroundColor="BackgroundKraven" font="Regular;18" foregroundColor="white" name="help" position="18,80" size="690,510" transparent="1" zPosition="3" />
   <widget backgroundColor="BackgroundKraven" foregroundColor="white" name="info" position="18,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="3" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 28" foregroundColor="white" halign="center" name="playtext" position="18,609" size="1252,40" transparent="1" valign="center" zPosition="2" />
-  <widget backgroundColor="BackgroundKraven" font="Regular; 28" foregroundColor="white" halign="center" source="playtext" renderer="Label" position="18,609" size="1252,40" transparent="1" valign="center" zPosition="2" />
+  <widget source="playtext" render="Label" backgroundColor="BackgroundKraven" font="Regular; 28" foregroundColor="white" halign="center" position="18,609" size="1252,40" transparent="1" valign="center" zPosition="2" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 20" halign="left" name="key_red" position="60,670" size="220,24" transparent="1" zPosition="1" valign="top" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 20" halign="left" name="key_green" position="300,670" size="220,24" transparent="1" zPosition="1" valign="top" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 20" halign="left" name="key_yellow" position="540,670" size="220,24" transparent="1" zPosition="1" valign="top" />
@@ -3796,6 +3977,12 @@
 
 <!-- WebIfConfigScreen -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="WebIfConfigScreen" position="0,0" size="1280,720" title="Main Setup">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Webinterface" transparent="1" />
   <widget itemHeight="30" name="config" position="70,130" size="700,480" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
@@ -3813,6 +4000,12 @@
 
 <!-- YouTubePlayerConfig -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubePlayerConfig" position="0,0" size="1280,710" title="YouTubePlayer Config">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <widget name="title" position="65,125" size="800,38" zPosition="3" halign="left" foregroundColor="white" backgroundColor="KravenBackground" font="Bold; 35" transparent="1" />
   <widget name="list" position="65,188" size="800,450" backgroundColor="KravenBackground" transparent="1" />
   <widget source="Title" render="Label" position="64,36" size="800,38" font="Regular; 30" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" halign="left" />
@@ -3824,6 +4017,12 @@
 
 <!-- YoutubeTVWindow -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <widget name="information" position="60,124" size="800,450" backgroundColor="KravenBackground" transparent="1" />
   <widget source="Title" render="Label" position="64,36" size="800,38" font="Regular; 30" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" halign="left" />
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="931,162" size="300,280" alphatest="blend" />
@@ -3840,6 +4039,12 @@
 
 <!-- YoutubeTVSettings -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="YoutubeTVSettings" position="0,0" size="1280,720" title="YouTube TV Settings">
+<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" source="Title" rende="Label" transparent="1" />
   <widget itemHeight="30" name="config" position="70,130" size="700,480" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
@@ -3851,5 +4056,6 @@
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
   <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
 </screen>
+
 
 <!-- plugins */ -->

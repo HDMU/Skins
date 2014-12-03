@@ -6,7 +6,7 @@
   <widget alphatest="blend" position="24,543" render="KravenXPicon" size="400,170" source="session.CurrentService" transparent="1" zPosition="4">
   <convert type="ServiceName">Reference</convert>
 </widget>
-  <widget font="Regular;30" halign="left" noWrap="1" position="438,615" render="Label" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+  <widget font="Regular;30" halign="left" noWrap="1" position="438,615" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="913,620" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
@@ -25,7 +25,7 @@
   <convert type="ClockToText">Default</convert>
 </widget>
   <eLabel backgroundColor="KravenAccent1" foregroundColor="KravenAccent1" name="new eLabel" position="438,660" size="581,1" />
-<widget font="Regular; 30" foregroundColor="blue2" halign="left" position="510,666" render="Label" size="437,42" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+<widget font="Regular; 30" foregroundColor="blue2" halign="left" position="510,666" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="437,42" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
   <convert type="EventName">Name</convert>
 </widget>
 <!-- /* InfoBar ZZ3 -->

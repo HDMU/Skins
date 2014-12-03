@@ -248,7 +248,8 @@ config.plugins.KravenHD.VolumeStyle = ConfigSelection(default="volume-classic", 
 config.plugins.KravenHD.SecondInfobarStyle = ConfigSelection(default="secondinfobar-style-xpicon", choices = [
 				("secondinfobar-style-zpicon", _("ZPicons")),
 				("secondinfobar-style-xpicon", _("XPicons")),
-				("secondinfobar-style-zzpicon", _("ZZPicons"))
+				("secondinfobar-style-zzpicon", _("ZZPicons")),
+				("secondinfobar-style-zzzpicon", _("ZZZPicons"))
 				])
 				
 config.plugins.KravenHD.NumberZapExtStyle = ConfigSelection(default="numberzapext-none", choices = [
@@ -264,6 +265,7 @@ config.plugins.KravenHD.ChannelSelectionStyle = ConfigSelection(default="channel
 				("channelselection-style-zpicon", _("ZPicons")),
 				("channelselection-style-xpicon", _("XPicons")),
 				("channelselection-style-zzpicon", _("ZZPicons")),
+				("channelselection-style-zzzpicon", _("ZZZPicons")),
 				("channelselection-style-nobile", _("Nobile")),
 				("channelselection-style-nobile2", _("Nobile 2")),
 				("channelselection-style-nobile-minitv", _("Nobile MiniTV")),
@@ -286,7 +288,8 @@ config.plugins.KravenHD.InfobarStyle = ConfigSelection(default="infobar-style-x3
 				("infobar-style-x3", _("X3")),
 				("infobar-style-zz1", _("ZZ1")),
 				("infobar-style-zz2", _("ZZ2")),
-				("infobar-style-zz3", _("ZZ3"))
+				("infobar-style-zz3", _("ZZ3")),
+				("infobar-style-zzz1", _("ZZZ1"))
 				])	
 
 config.plugins.KravenHD.InfobarShowChannelname = ConfigSelection(default="infobar-channelname-none", choices = [
@@ -300,7 +303,9 @@ config.plugins.KravenHD.InfobarShowChannelname = ConfigSelection(default="infoba
 				("infobar-channelname-zz1", _("Name for ZZ1 Infobar")),
 				("infobar-channelname-number-zz1", _("Name and Number for ZZ1 Infobar")),	
                 ("infobar-channelname-zz2", _("Name for ZZ2+ZZ3 Infobar")),
-				("infobar-channelname-number-zz2", _("Name and Number for ZZ2+ZZ3 Infobar"))
+				("infobar-channelname-number-zz2", _("Name and Number for ZZ2+ZZ3 Infobar")),
+				("infobar-channelname-zzz1", _("Name for ZZZ1 Infobar")),
+				("infobar-channelname-number-zzz1", _("Name and Number for ZZZ1 Infobar"))
 				])				
 
 config.plugins.KravenHD.InfobarWeatherWidget = ConfigSelection(default="infobar-weather-none", choices = [
@@ -335,6 +340,7 @@ config.plugins.KravenHD.InfobarECMInfo = ConfigSelection(default="infobar-ecminf
 				("infobar-ecminfo-x2", _("for X2+X3 Infobar")),	
 				("infobar-ecminfo-zz1", _("for ZZ1 Infobar")),
 				("infobar-ecminfo-zz2", _("for ZZ2+ZZ3 Infobar")),
+				("infobar-ecminfo-zzz1", _("for ZZZ1 Infobar")),
 				("infobar-ecminfo-none", _("Off"))				
                 ])
 #######################################################################
@@ -347,10 +353,8 @@ class KravenHD(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="foreground" backgroundColor="KravenPreBlack2" halign="left" position="643,667" size="250,24" text="Reboot" transparent="1" />
   <widget name="config" position="29,79" scrollbarMode="showOnDemand" size="590,567" transparent="1" />
   <eLabel position="20,20" size="348,43" text="KravenHD" font="Regular; 35" valign="center" transparent="1" backgroundColor="KravenPreBlack2" />
-  <eLabel position="738,20" size="349,43" text="Version: 5.4.9.0.2" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
+  <eLabel position="738,20" size="349,43" text="Version: 5.4.9.1" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
   <widget name="helperimage" position="635,173" size="550,309" zPosition="1" backgroundColor="KravenPreBlack2" />
-  
-  
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
   <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />

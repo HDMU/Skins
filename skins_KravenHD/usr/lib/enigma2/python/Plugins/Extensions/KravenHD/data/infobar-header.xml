@@ -22,7 +22,7 @@
   <widget alphatest="blend" position="19,580" render="KravenXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget  font="Regular;30" halign="left" noWrap="1" position="439,615" render="Label"  size="472,40" source="session.Event_Now">
+  <widget  font="Regular;30" halign="left" noWrap="1" position="439,615" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1"  size="472,40" source="session.Event_Now">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="913,620" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
@@ -41,7 +41,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget  font="Regular; 30" foregroundColor="blue2" halign="left" position="439,666" render="Label"  size="472,40" source="session.Event_Next" valign="top">
+  <widget  font="Regular; 30" foregroundColor="blue2" halign="left" position="439,666" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1"  size="472,40" source="session.Event_Next" valign="top">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" valign="center" halign="right" position="913,671" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">

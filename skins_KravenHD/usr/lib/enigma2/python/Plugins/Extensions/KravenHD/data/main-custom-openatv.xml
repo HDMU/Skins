@@ -3,7 +3,7 @@
 <!-- ********** openATV ********** -->
 
 <!-- About -->
-<screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
+<screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
     <widget backgroundColor="KravenBackground" font="Regular; 43" halign="center" position="988,463" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
@@ -446,9 +446,16 @@
 
 <!-- HarddiskSelection -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSelection" position="0,0" size="1280,720" title="Select HDD">
+ <ePixmap pixmap="KravenHD/icons/Logo.png" position="908,147" size="300,280" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Select HDD" transparent="1" />
   <widget itemHeight="30" name="hddlist" position="70,130" size="700,275" transparent="1" />
-  <ePixmap pixmap="KravenHD/icons/Logo.png" position="893,132" size="300,280" alphatest="blend" />
+  
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
   <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
@@ -456,13 +463,19 @@
 
 <!-- HarddiskSetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk">
+  <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
   <eLabel backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" size="800,43" text="Harddisk Setup" transparent="1" />
   <widget font="RegularLight;23" name="model" position="70,150" size="700,25" transparent="1" />
   <widget font="RegularLight;23" name="capacity" position="70,200" size="700,25" transparent="1" />
   <widget font="RegularLight;23" name="bus" position="70,250" size="700,25" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="100,665" size="200,5" />
   <widget backgroundColor="KravenBackground" font="RegularLight;20" name="initializetext" position="110,640" size="240,24" transparent="1" zPosition="1" />
-  <ePixmap pixmap="KravenHD/icons/Logo.png" position="917,50" size="300,280" alphatest="blend" />
+  <ePixmap pixmap="KravenHD/icons/Logo.png" position="910,94" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
   <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
@@ -470,6 +483,12 @@
 
 <!-- HarddiskWait -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskWait" position="0,0" size="1280,720">
+  <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
   <widget backgroundColor="KravenBackground" font="RegularLight;35" position="70,47" render="Label" size="800,43" source="Title" transparent="1" />
   <widget name="wait" position="70,130" size="700,275" transparent="1" />
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="888,129" size="300,280" alphatest="blend" />
@@ -480,6 +499,13 @@
 
 <!-- DriverManagerFile -->
 <screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1280,720" title="Select file to execute" transparent="0" backgroundColor="transparent">
+ <ePixmap pixmap="KravenHD/icons/Logo.png" position="908,147" size="300,280" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
   <widget backgroundColor="KravenBackground" font="RegularLight;32" position="70,47" render="Label" size="800,43" source="title" transparent="1" />
   <widget backgroundColor="KravenBackground" font="RegularLight;23" name="driverfile" position="70,115" size="700,28" transparent="1" />
   <ePixmap alphatest="blend" pixmap="KravenHD/line/line700.png" position="70,155" size="700,2" />
@@ -497,4 +523,3 @@
 
 
 <!-- main-custom-openatv */ -->
-

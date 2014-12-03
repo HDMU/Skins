@@ -6,7 +6,7 @@
   <widget alphatest="blend" position="19,580" render="KravenXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Regular;30" halign="left" noWrap="1" position="439,580" render="Label" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+  <widget font="Regular;30" halign="left" noWrap="1" position="439,580" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="913,585" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
@@ -25,7 +25,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 30" foregroundColor="blue2" halign="left" position="439,672" render="Label" size="472,40" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+  <widget font="Regular; 30" foregroundColor="blue2" halign="left" position="439,672" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" valign="center" halign="right" position="913,677" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
@@ -113,19 +113,20 @@
   <widget source="session.FrontendStatus" render="Label" position="1104,694" size="50,22" font="Regular; 19" transparent="1" foregroundColor="Kraven" backgroundColor="KravenBackground" zPosition="3">
   <convert type="FrontendInfo">SNR</convert>
 </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbs.png" position="1037,696" size="115,22" transparent="1" halign="center" valign="center" zPosition="2">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbs.png" position="1037,696" size="120,22" transparent="1" halign="center" valign="center" zPosition="2">
   <convert type="FrontendInfo">TYPE</convert>
   <convert type="ValueRange">0,0</convert>
   <convert type="ConditionalShowHide" />
 </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbc.png" position="1037,696" size="115,22" transparent="1" halign="center" valign="center" zPosition="2">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbc.png" position="1037,696" size="120,22" transparent="1" halign="center" valign="center" zPosition="2">
   <convert type="FrontendInfo">TYPE</convert>
   <convert type="ValueRange">1,1</convert>
   <convert type="ConditionalShowHide" />
 </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbt.png" position="1037,696" size="115,22" transparent="1" halign="center" valign="center" zPosition="2">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbt.png" position="1037,696" size="120,22" transparent="1" halign="center" valign="center" zPosition="2">
   <convert type="FrontendInfo">TYPE</convert>
   <convert type="ValueRange">2,2</convert>
   <convert type="ConditionalShowHide" />
 </widget>
+
 <!-- /* InfoBar X1 -->

@@ -24,7 +24,7 @@
   <widget source="session.CurrentService" render="Label" position="274,592" size="655,20" font="Regular;16" halign="left" foregroundColor="blue2" backgroundColor="black" transparent="1" zPosition="1" alphatest="blend">
     <convert type="KravenMyCaidDisplay">Default</convert>
   </widget>
-  <widget font="Regular;30" halign="left" noWrap="1" position="439,615" render="Label" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+  <widget font="Regular;30" halign="left" noWrap="1" position="439,615" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="914,620" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
@@ -43,7 +43,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 30" foregroundColor="blue2" halign="left" position="439,667" render="Label" size="472,40" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
+  <widget font="Regular; 30" foregroundColor="blue2" halign="left" position="439,667" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" valign="center" halign="right" position="914,671" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
@@ -97,7 +97,7 @@
   <widget backgroundColor="KravenBackground" font="Regular; 15" foregroundColor="white" render="Label" position="204,34" size="80,25" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" noWrap="1">
     <convert type="MSNWeather">temperature_heigh_low,day2</convert>
   </widget>
-  <widget source="session.FrontendStatus" render="Label" position="1232,21" size="50,22" font="Regular; 19" transparent="1" foregroundColor="Kraven" backgroundColor="KravenBackground" zPosition="3">
+  <widget source="session.FrontendStatus" render="Label" position="1225,21" size="50,22" font="Regular; 19" transparent="1" foregroundColor="Kraven" backgroundColor="KravenBackground" zPosition="3">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
   <widget alphatest="blend" render="MSNWeatherPixmap" position="288,9" size="50,50" source="session.MSNWeather" transparent="1" zPosition="5">
@@ -112,17 +112,17 @@
   <widget backgroundColor="KravenBackground" font="Regular; 20" foregroundColor="blue2" render="Label" position="345,9" size="40,25" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" noWrap="1">
     <convert type="MSNWeather">weekshortday,day3</convert>
   </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbt.png" position="1165,23" size="115,22" transparent="1" halign="center" valign="center">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbt.png" position="1158,23" size="120,22" transparent="1" halign="center" valign="center">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">2,2</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbc.png" position="1165,23" size="115,22" transparent="1" halign="center" valign="center">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbc.png" position="1158,23" size="120,22" transparent="1" halign="center" valign="center">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">1,1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbs.png" position="1165,23" size="115,22" transparent="1" halign="center" valign="center">
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="KravenHD/buttons/dvbs.png" position="1158,22" size="120,22" transparent="1" halign="center" valign="center">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">0,0</convert>
     <convert type="ConditionalShowHide" />
@@ -136,11 +136,11 @@
   <widget alphatest="blend" render="MSNWeatherPixmap" position="430,9" size="50,50" source="session.MSNWeather" transparent="1" zPosition="5">
     <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/KravenHD/Wettericons/,png</convert>
   </widget>
-  <eLabel text="x" position="1093,21" size="15,22" zPosition="3" font="Regular; 19" halign="center" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1" />
-  <widget source="session.CurrentService" render="Label" zPosition="3" position="1108,21" size="50,22" font="Regular; 19" halign="left" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1">
+  <eLabel text="x" position="1090,21" size="15,22" zPosition="3" font="Regular; 19" halign="center" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="1105,21" size="50,22" font="Regular; 19" halign="left" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1">
     <convert type="KravenServiceInfo">VideoHeight</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" zPosition="3" position="1043,21" size="50,22" font="Regular; 19" halign="right" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1">
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="1040,21" size="50,22" font="Regular; 19" halign="right" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1">
     <convert type="KravenServiceInfo">VideoWidth</convert>
   </widget>
   <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/c_on.png" position="988,23" zPosition="2" size="20,22" backgroundColor="black" transparent="1" valign="center">
@@ -153,7 +153,7 @@
     <convert type="ValueBitTest">2</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <ePixmap pixmap="KravenHD/icons/aufloesung.png" position="1043,23" size="112,22" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="KravenHD/icons/aufloesung.png" position="1040,23" size="112,22" zPosition="1" alphatest="blend" />
   <ePixmap pixmap="KravenHD/buttons/a_off.png" position="938,23" size="20,22" zPosition="1" alphatest="blend" />
   <ePixmap pixmap="KravenHD/buttons/b_off.png" position="963,23" size="20,22" zPosition="1" alphatest="blend" />
   <ePixmap pixmap="KravenHD/buttons/c_off.png" position="988,23" size="20,22" zPosition="1" alphatest="blend" />
