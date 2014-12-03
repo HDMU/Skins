@@ -4,8 +4,8 @@ rm -rf /usr/share/enigma2/KravenHD > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Converter/kraven* > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/KravenHD > /dev/null 2>&1
 rm -rf /usr/lib/enigma2/python/Components/Renderer/kraven > /dev/null 2>&1
-opkg remove enigma2-plugin-extensions-weatherplugin_1.0_hdmu_all.ipk
-opkg remove enigma2-plugin-skincomponents-extnumberzap_1.0_hdmu_all.ipk
-opkg remove enigma2-plugin-skincomponents-weathercomponent_1.0_hdmu_all.ipk
-opkg remove enigma2-plugin-systemplugins-weathercomponenthandler_1.0_hdmu_all.ipk
+opkg remove enigma2-plugin-extensions-weatherplugin_1.0_hdmu_all.ipk > /dev/null 2>&1
+opkg remove enigma2-plugin-skincomponents-extnumberzap_1.0_hdmu_all.ipk > /dev/null 2>&1
+opkg remove enigma2-plugin-skincomponents-weathercomponent_1.0_hdmu_all.ipk > /dev/null 2>&1
+opkg remove enigma2-plugin-systemplugins-weathercomponenthandler_1.0_hdmu_all.ipk > /dev/null 2>&1
 exit 0
