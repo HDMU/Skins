@@ -1,5 +1,8 @@
 #!/bin/sh
 echo "installing KravenHD Skin ..."
 cd /tmp
-opkg install --force-depends *.ipk
+opkg install enigma2-plugin-extensions-weatherplugin_1.0_hdmu_all.ipk
+opkg install enigma2-plugin-skincomponents-extnumberzap_1.0_hdmu_all.ipk
+opkg install enigma2-plugin-skincomponents-weathercomponent_1.0_hdmu_all.ipk
+opkg install enigma2-plugin-systemplugins-weathercomponenthandler_1.0_hdmu_all.ipk
 exit 0
