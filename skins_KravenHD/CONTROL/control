@@ -5,6 +5,6 @@ Section: skins
 Priority: optional
 Maintainer: xxx
 Architecture: all
-Depends: infos-weatherplugin, infos-weathercomponent, system-weathercomponenthandler, system-numberzapext
+Depends: 
 Homepage: http://www.hdmedia-universe.com
 Source: http://www.hdmedia-universe.com
