@@ -58,7 +58,7 @@
 <widget source="Service" render="Picon" position="664,2" size="70,42" transparent="0" zPosition="2" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-<ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+<ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 </screen>
   <!-- ChannelSelection Nobile */-->

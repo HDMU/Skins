@@ -35,8 +35,8 @@
     <widget backgroundColor="KravenBackground" font="RegularLight; 24" position="70,560" render="Label" size="700,65" source="hddA" transparent="1" />
     <ePixmap pixmap="KravenHD/icons/Logo.png" position="922,130" size="300,280" alphatest="blend" />
     <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-    <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-    <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+    <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+    <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   </screen>
  
  
@@ -59,8 +59,8 @@
     <ePixmap pixmap="KravenHD/icons/Logo.png" position="622,126" size="300,280" alphatest="blend" />
     <ePixmap position="70,572" size="70,30" pixmap="KravenHD/buttons/key_info.png" alphatest="blend" />
     <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-    <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-    <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+    <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+    <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   </screen>
   
 <!-- About Team -->
@@ -73,8 +73,8 @@
     <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
   </widget>
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   <widget name="about" position="54,66" size="800,577" font="Regular; 19" backgroundColor="KravenBackground" transparent="1" halign="center" />
   <widget source="Title" render="Label" font="Regular; 35" position="919,154" size="256,43" transparent="1" halign="CENTER" valign="center" zPosition="1" foregroundColor="white" backgroundColor="KravenBackground" />
 </screen>
@@ -103,8 +103,8 @@
  
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="907,211" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   <widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" foregroundColor="white" backgroundColor="KravenBackground" />
 </screen>
 
@@ -130,8 +130,8 @@
   <ePixmap pixmap="KravenHD/buttons/key_red1.png" position="100,662" size="200,5" alphatest="blend" />
   <widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="KravenBackground" foregroundColor="white" transparent="1" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 <widget source="menu" render="Listbox" position="796,414" size="477,264" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="white" transparent="1">
   <convert type="TemplatedMultiContent">
 				{"template": [
@@ -157,8 +157,8 @@
  
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="907,211" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   <widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" foregroundColor="white" backgroundColor="KravenBackground" />
 <widget name="text1" position="451,321" size="320,260" zPosition="2" font="Regular;17" foregroundColor="white" />
 <widget name="cam" zPosition="2" position="130,271" size="310,21" font="Regular;18" halign="left" foregroundColor="white" />
@@ -179,8 +179,8 @@
     <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
   </widget>
 <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 <widget source="list" render="Listbox" position="88,137" size="755,420" scrollbarMode="showOnDemand">
   <convert type="TemplatedMultiContent">
 				{"template": [
@@ -214,8 +214,8 @@
     <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
   </widget>
 <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 </screen>
 
 
@@ -237,8 +237,8 @@
   <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="395,670" render="Label" size="240,24" source="key_green" transparent="1" zPosition="1" />
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="877,95" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 </screen>
 
 
@@ -260,8 +260,8 @@
   <widget backgroundColor="KravenBackground" font="RegularLight;20" halign="left" position="395,670" render="Label" size="240,24" source="key_green" transparent="1" zPosition="1" />
   <ePixmap pixmap="KravenHD/icons/Logo.png" position="877,95" size="300,280" alphatest="blend" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
 </screen>
 
 

@@ -1,6 +1,6 @@
 <!-- InfoBar -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1280,725" title="InfoBar">
-  <ePixmap position="0,505" size="1280,220" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" transparent="1" />
+  <ePixmap position="0,505" size="1280,220" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" transparent="1" />
   <eLabel backgroundColor="KravenBackground" position="0,718" size="1284,7" transparent="0" zPosition="-5" />
   <widget backgroundColor="KravenBackground" font="Regular; 43" halign="center" position="1058,587" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
     <convert type="ClockToText">Format:%H</convert>

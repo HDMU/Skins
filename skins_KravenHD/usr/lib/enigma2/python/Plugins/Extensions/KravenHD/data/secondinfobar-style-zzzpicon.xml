@@ -1,6 +1,6 @@
 <!--/* SecondInfoBar -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,720" title="InfoBar">
-  <ePixmap position="0,473" size="1280,291" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" />
+  <ePixmap position="0,473" size="1280,291" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
   <widget alphatest="blend" position="17,474" render="KravenXPicon" size="400,240" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
@@ -69,12 +69,12 @@
   <widget source="session.CurrentService" render="Label" position="610,688" size="50,22" font="Regular; 19" halign="left" backgroundColor="KravenBackground" foregroundColor="Kraven" transparent="1" zPosition="3">
     <convert type="KravenServiceInfo">VideoHeight</convert>
   </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/c_on.png" position="494,690" zPosition="2" size="20,22" backgroundColor="black" transparent="1" valign="center">
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/c_on.png" position="494,690" zPosition="2" size="20,22" alphatest="blend" valign="center">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">4</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/b_on.png" position="469,690" zPosition="2" size="20,22" backgroundColor="black" transparent="1" valign="center">
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/b_on.png" position="469,690" zPosition="2" size="20,22" alphatest="blend" valign="center">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">2</convert>
     <convert type="ConditionalShowHide" />
@@ -83,12 +83,12 @@
   <ePixmap pixmap="KravenHD/buttons/b_off.png" position="469,690" size="20,22" zPosition="1" alphatest="blend" />
   <ePixmap pixmap="KravenHD/buttons/c_off.png" position="494,690" size="20,22" zPosition="1" alphatest="blend" />
   <ePixmap pixmap="KravenHD/buttons/d_off.png" position="519,690" size="20,22" zPosition="1" alphatest="blend" />
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/a_on.png" position="444,690" zPosition="2" size="20,22" backgroundColor="black" transparent="1" valign="center">
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/a_on.png" position="444,690" zPosition="2" size="20,22" alphatest="blend" valign="center">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/d_on.png" position="519,690" zPosition="2" size="20,22" backgroundColor="black" transparent="1" valign="center">
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="KravenHD/buttons/d_on.png" position="519,690" zPosition="2" size="20,22" alphatest="blend" valign="center">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">8</convert>
     <convert type="ConditionalShowHide" />
@@ -120,7 +120,7 @@
     <convert type="KravenMyCaidDisplay">Default</convert>
   </widget>
 <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-<ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
+<ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
 <widget backgroundColor="KravenBackground" font="Regular; 32" halign="left" noWrap="1" position="21,9" foregroundColor="blue2" render="Label" size="1242,55" source="session.Event_Now" transparent="1" valign="bottom">
     <convert type="EventName">Name</convert>
   </widget>

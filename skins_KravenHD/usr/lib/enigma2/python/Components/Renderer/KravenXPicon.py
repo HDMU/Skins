@@ -36,6 +36,7 @@ class KravenXPicon(Renderer):
 				pos = sname.rfind(':')
 				if pos != -1:
 					sname = sname[:pos].rstrip(':').replace(':','_')
+					sname = sname.split("_http")[0]
 				pngname = self.nameCache.get(sname, "")
 				if pngname == "":
 					pngname = self.findPicon(sname)
@@ -60,6 +61,7 @@ class KravenXPicon(Renderer):
 							pngname = resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/picon_default.png")
 					self.nameCache["default"] = pngname
 			if self.pngname != pngname:
+				self.instance.setScale(1)
 				self.instance.setPixmapFromFile(pngname)
 				self.pngname = pngname
 

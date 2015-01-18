@@ -72,6 +72,6 @@
   <widget alphatest="blend" position="21,585" render="KravenXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
   <convert type="ServiceName">Reference</convert>
 </widget>
- <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-<ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" /> 
+ <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+<ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" /> 
 </screen>

@@ -55,7 +55,7 @@
     <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line368.png" position="39,545" size="368,1" />
     <ePixmap alphatest="blend" pixmap="KravenHD/line/line368.png" position="39,152" size="368,1" />
-	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-<ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/infobar.png"  alphatest="blend" />
+	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+<ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png"  alphatest="blend" />
   </screen>
 <!-- ChannelSelection NoPicon */-->

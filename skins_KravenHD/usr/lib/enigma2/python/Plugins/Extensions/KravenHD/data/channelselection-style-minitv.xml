@@ -54,7 +54,7 @@
     <eLabel position="90,122" size="410,1" backgroundColor="KravenAccent1" foregroundColor="KravenAccent1" />
     <widget source="ServiceEvent" render="KravenSingleEpgList" position="42,586" size="505,80" font="Regular;19" backgroundColor="transparent" foregroundColor="blue2" transparent="1">
     </widget>
-	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/infobar_oben.png" alphatest="blend" />
-<ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/infobar.png" alphatest="blend" /> />
+	<ePixmap position="0,0" size="1280,149" zPosition="-7" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+<ePixmap position="0,555" size="1280,170" zPosition="-7" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" /> />
   </screen>
   <!-- ChannelSelection MiniTV */-->
