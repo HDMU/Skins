@@ -7,40 +7,40 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular;30" halign="left" noWrap="1" position="439,615" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
-    <convert type="EventName">Name</convert>
+    <convert type="KravenEventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="913,620" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">Remaining</convert>
-    <convert type="RemainingToText">InMinutes</convert>
+    <convert type="KravenEventTime">Remaining</convert>
+    <convert type="KravenRemainingToText">InMinutes</convert>
   </widget>
   <widget position="273,658" render="Progress" size="746,5" source="session.Event_Now" transparent="1" zPosition="7" pixmap="KravenHD/bar/p_bar750.png">
-    <convert type="EventTime">Progress</convert>
+    <convert type="KravenEventTime">Progress</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" noWrap="1" position="253,620" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Default</convert>
+    <convert type="KravenEventTime">StartTime</convert>
+    <convert type="KravenClockToText">Default</convert>
   </widget>
   <eLabel backgroundColor="KravenBackground" font="Regular; 20" halign="center" noWrap="1" position="325,620" size="40,35" text="bis" transparent="1" valign="center" zPosition="1" />
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="left" noWrap="1" position="367,620" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Default</convert>
+    <convert type="KravenEventTime">EndTime</convert>
+    <convert type="KravenClockToText">Default</convert>
   </widget>
   <widget font="Regular; 30" foregroundColor="blue2" halign="left" position="439,666" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Next" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="1">
-    <convert type="EventName">Name</convert>
+    <convert type="KravenEventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" valign="center" halign="right" position="913,671" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
-    <convert type="EventTime">Duration</convert>
-    <convert type="ClockToText">InMinutes</convert>
+    <convert type="KravenEventTime">Duration</convert>
+    <convert type="KravenClockToText">InMinutes</convert>
   </widget>
   <eLabel backgroundColor="KravenAccent1" foregroundColor="KravenAccent1" name="new eLabel" position="273,660" size="746,1" />
   <screen name="CronTimers" position="0,0" size="1280,720" title="CronManager" flags="wfNoBorder" backgroundColor="KravenBackground">
     <widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" zPosition="1" foregroundColor="white" backgroundColor="KravenBackground" />
     <ePixmap pixmap="KravenHD/icons/crontimers.png" position="921,230" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="KravenClockToText">Default</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+      <convert type="KravenClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
     <widget source="list" render="Listbox" position="71,145" size="799,450" transparent="1" backgroundColorSelected="KravenBackground" foregroundColorSelected="KravenAccent1">
       <convert type="StringList" />
@@ -60,12 +60,12 @@
     <widget name="lab2" position="299,108" size="150,24" font="Regular;20" valign="center" transparent="1" />
   </screen>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" halign="left" noWrap="1" position="367,671" render="Label" size="70,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Default</convert>
+    <convert type="KravenEventTime">EndTime</convert>
+    <convert type="KravenClockToText">Default</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" foregroundColor="blue2" halign="right" noWrap="1" position="253,671" render="Label" size="70,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Default</convert>
+    <convert type="KravenEventTime">StartTime</convert>
+    <convert type="KravenClockToText">Default</convert>
   </widget>
 <eLabel backgroundColor="KravenBackground" font="Regular; 20" halign="center" foregroundColor="blue2" noWrap="1" position="325,671" size="40,35" text="bis" transparent="1" valign="center" zPosition="1" />
 

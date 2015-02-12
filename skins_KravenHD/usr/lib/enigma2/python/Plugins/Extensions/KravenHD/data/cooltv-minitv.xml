@@ -8,22 +8,22 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular;28" halign="center" position="20,274" render="Label" shadowColor="#000000" size="424,36" source="Service" transparent="1" zPosition="3">
       <convert type="ServiceName">Name</convert>
@@ -34,11 +34,11 @@
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular;26" foregroundColor="white" halign="right" position="122,347" render="Label" shadowColor="#000000" size="100,30" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular;26" foregroundColor="white" halign="left" position="228,347" render="Label" shadowColor="#000000" size="100,30" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular;24" foregroundColor="blue2" halign="center" position="15,386" render="Label" size="434,30" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -68,33 +68,33 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular;30" foregroundColor="white" position="450,70" render="Label" shadowColor="#00605f5e" size="400,40" source="Service" transparent="1" zPosition="3">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="450,115" render="Label" shadowColor="#00605f5e" size="100,32" source="Event" transparent="1" zPosition="3">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="518,115" render="Label" shadowColor="#00605f5e" size="100,32" source="Event" transparent="1" zPosition="3">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="620,115" render="Label" shadowColor="#00605f5e" size="150,32" source="Event" transparent="1" zPosition="3">
       <convert type="EventTime">Remaining</convert>
@@ -123,22 +123,22 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" name="date" position="1060,670" size="180,30" transparent="1" />
     <widget backgroundColor="BackgroundKraven" name="timeline_text" position="5,70" size="1230,30" transparent="1" />
@@ -152,11 +152,11 @@
     <widget alphatest="on" name="timeline_now" pixmap="KravenHD/epg/timelineCooltv.png" position="0,95" size="3,420" zPosition="2" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="39,524" render="Label" shadowColor="#000000" size="80,30" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="102,524" render="Label" shadowColor="#000000" size="100,30" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="blue2" halign="left" position="219,524" render="Label" size="1055,30" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -181,30 +181,30 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="450,63" render="Label" shadowColor="#000000" size="80,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="519,63" render="Label" shadowColor="#000000" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="630,63" foregroundColor="blue2" render="Label" size="600,36" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -240,30 +240,30 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="450,63" render="Label" shadowColor="#000000" size="80,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="519,63" render="Label" shadowColor="#000000" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="630,63" foregroundColor="blue2" render="Label" size="600,36" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -289,30 +289,30 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="450,63" render="Label" shadowColor="#000000" size="80,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="519,63" render="Label" shadowColor="#000000" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="630,63" foregroundColor="blue2" render="Label" size="600,36" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -340,30 +340,30 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="450,63" render="Label" shadowColor="#000000" size="80,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="519,63" render="Label" shadowColor="#000000" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="left" position="630,63" foregroundColor="blue2" render="Label" size="600,36" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -399,22 +399,22 @@
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
     <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
+      <convert type="KravenClockToText">Format:%H</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
+      <convert type="KravenClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
+      <convert type="KravenClockToText">Format:%S</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
+      <convert type="KravenClockToText">Format:%d. %B</convert>
     </widget>
     <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="KravenClockToText">Format:%A</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" name="date" position="1060,670" size="180,30" transparent="1" />
     <widget backgroundColor="BackgroundKraven" foregroundColor="white" name="timeline_text" position="4,65" size="1250,30" transparent="1" />
@@ -428,11 +428,11 @@
     <widget alphatest="on" name="timeline_now" pixmap="KravenHD/epg/timelineCooltv.png" position="0,92" size="3,423" zPosition="2" />
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="22,524" render="Label" shadowColor="#000000" size="80,30" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="KravenClockToText">Format:%H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="85,524" render="Label" shadowColor="#000000" size="100,30" source="Event" transparent="1">
       <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
+      <convert type="KravenClockToText">Format:- %H:%M</convert>
     </widget>
     <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="blue2" halign="left" position="202,524" render="Label" size="1055,30" source="Event" transparent="1">
       <convert type="KravenEventName">Name</convert>
@@ -461,34 +461,34 @@
   <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
   <!-- /*Uhr-->
   <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1090,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-    <convert type="ClockToText">Format:%H</convert>
+    <convert type="KravenClockToText">Format:%H</convert>
   </widget>
   <eLabel backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1134,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 34" halign="center" position="1142,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-    <convert type="ClockToText">Format:%M</convert>
+    <convert type="KravenClockToText">Format:%M</convert>
   </widget>
   <eLabel backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1186,26" size="12,30" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 26" halign="center" position="1192,26" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-    <convert type="ClockToText">Format:%S</convert>
+    <convert type="KravenClockToText">Format:%S</convert>
   </widget>
   <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" position="928,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%d. %B</convert>
+    <convert type="KravenClockToText">Format:%d. %B</convert>
   </widget>
   <eLabel backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="left" noWrap="1" position="917,24" size="15,33" text=", " transparent="1" valign="top" zPosition="5" />
   <widget backgroundColor="BackgroundKraven" font="Regular; 24" foregroundColor="white" halign="right" position="751,24" render="Label" size="162,33" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
+    <convert type="KravenClockToText">Format:%A</convert>
   </widget>
   <!--Uhr */-->
   <widget backgroundColor="BackgroundKraven" font="Regular;22" halign="right" position="15,273" render="Label" shadowColor="#00605f5e" size="80,30" source="Event" transparent="1">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
+    <convert type="KravenClockToText">Format:%H:%M</convert>
   </widget>
   <widget foregroundColor="blue2" position="108,286" render="Progress" size="248,4" source="Event" transparent="0" zPosition="2" backgroundColor="BackgroundKraven">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="BackgroundKraven" font="Regular;22" halign="left" position="370,273" render="Label" shadowColor="#00605f5e" size="80,30" source="Event" transparent="1">
     <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
+    <convert type="KravenClockToText">Format:%H:%M</convert>
   </widget>
   <widget backgroundColor="BackgroundKraven" font="Regular;24" foregroundColor="blue2" halign="center" position="15,309" render="Label" size="434,30" source="Event" transparent="1">
     <convert type="KravenEventName">Name</convert>

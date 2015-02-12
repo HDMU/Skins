@@ -4,7 +4,7 @@ from Components.Element import cached
 from time import localtime
 import re
 
-class Kraveng16ServiceNameEventNobile(Converter, object):
+class KravenServiceNameEventNobile(Converter, object):
     NAMEVENT = 0
     NEXTEVENT = 1
     STARTTIME = 2

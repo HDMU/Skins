@@ -8,13 +8,15 @@ msgstr ""
 "Project-Id-Version: MyKravenHD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-04 18:44+0100\n"
-"PO-Revision-Date: 2014-12-04 18:45+0100\n"
-"Last-Translator: mike99 <mike99@gmx.net>\n"
+"PO-Revision-Date: 2015-02-07 13:06+0100\n"
+"Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
 "Language-Team: kraven & mike99\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
 
 #: plugin.py:73
 msgid "Atemio4You"
@@ -586,12 +588,10 @@ msgid "Name and Number for ZZ2+ZZ3 Infobar"
 msgstr "Name und Nummer für ZZ2+ZZ3 Infobar"
 
 #: plugin.py:307
-#, fuzzy
 msgid "Name for ZZZ1 Infobar"
 msgstr "Name für ZZZ1 Infobar"
 
 #: plugin.py:308
-#, fuzzy
 msgid "Name and Number for ZZZ1 Infobar"
 msgstr "Name und Nummer für ZZZ1 Infobar"
 
@@ -628,7 +628,6 @@ msgid "Big"
 msgstr "Groß"
 
 #: plugin.py:332
-#, fuzzy
 msgid "Small"
 msgstr "Klein"
 
@@ -653,15 +652,12 @@ msgid "for ZZ2+ZZ3 Infobar"
 msgstr "Für ZZ2+ZZ3 Infobar"
 
 #: plugin.py:342
-#, fuzzy
 msgid "for ZZZ1 Infobar"
 msgstr "Für ZZZ1 Infobar"
 
 #: plugin.py:380
-#, fuzzy
 msgid "----------------------------- Image  --------------------------------"
-msgstr ""
-"----------------------------- Allgemein  ------------------------------"
+msgstr "----------------------------- Allgemein  ------------------------------"
 
 #: plugin.py:381
 msgid "Image"
@@ -669,8 +665,7 @@ msgstr ""
 
 #: plugin.py:382
 msgid "----------------------------- Color  --------------------------------"
-msgstr ""
-"----------------------------- Farbe  -----------------------------------"
+msgstr "----------------------------- Farbe  -----------------------------------"
 
 #: plugin.py:383
 msgid "Font"
@@ -682,7 +677,7 @@ msgstr "Auswahlbalken"
 
 #: plugin.py:385
 msgid "Progress-/Volumebar"
-msgstr "Fortschritts-/Läutstärkebalken"
+msgstr "Fortschritts-/Lautstärkebalken"
 
 #: plugin.py:386
 msgid "Background-/Transparency"
@@ -690,8 +685,7 @@ msgstr "Hintergrund-/Transparenz"
 
 #: plugin.py:387
 msgid "----------------------------- General  --------------------------------"
-msgstr ""
-"----------------------------- Allgemein  ------------------------------"
+msgstr "----------------------------- Allgemein  ------------------------------"
 
 #: plugin.py:388
 msgid "Channel Selection"
@@ -730,7 +724,6 @@ msgid "Sat Info"
 msgstr "Sat-Informationen"
 
 #: plugin.py:397
-#, fuzzy
 msgid "System Info"
 msgstr "System-Informationen"
 
@@ -748,7 +741,7 @@ msgstr "Wetter"
 
 #: plugin.py:443
 msgid "Do you really want to reboot now?"
-msgstr "Wollen Sie jetzt neu Starten?"
+msgstr "Wollen Sie jetzt neu starten?"
 
 #: plugin.py:444 plugin.py:592
 msgid "Restart GUI"
@@ -760,7 +753,7 @@ msgstr ""
 
 #: plugin.py:588
 msgid "Error creating Skin!"
-msgstr "Fehler beim erstellen des Skin!"
+msgstr "Fehler beim Erstellen des Skin!"
 
 #: plugin.py:591
 msgid ""

@@ -7,22 +7,22 @@
   <convert type="ServiceName">Reference</convert>
 </widget>
   <widget font="Regular;30" halign="left" noWrap="1" position="438,615" render="KravenRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="472,40" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1">
-    <convert type="EventName">Name</convert>
+    <convert type="KravenEventName">Name</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" position="913,620" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-    <convert type="EventTime">Remaining</convert>
-    <convert type="RemainingToText">InMinutes</convert>
+    <convert type="KravenEventTime">Remaining</convert>
+    <convert type="KravenRemainingToText">InMinutes</convert>
   </widget>
   <widget position="438,658" render="Progress" size="581,5" source="session.Event_Now" transparent="1" zPosition="7" pixmap="KravenHD/bar/p_bar581.png">
-    <convert type="EventTime">Progress</convert>
+    <convert type="KravenEventTime">Progress</convert>
   </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="left" noWrap="1" position="438,666" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-  <convert type="EventTime">StartTime</convert>
-  <convert type="ClockToText">Default</convert>
+  <convert type="KravenEventTime">StartTime</convert>
+  <convert type="KravenClockToText">Default</convert>
 </widget>
   <widget backgroundColor="KravenBackground" font="Regular; 22" halign="right" noWrap="1" position="949,666" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-  <convert type="EventTime">EndTime</convert>
-  <convert type="ClockToText">Default</convert>
+  <convert type="KravenEventTime">EndTime</convert>
+  <convert type="KravenClockToText">Default</convert>
 </widget>
   <eLabel backgroundColor="KravenAccent1" foregroundColor="KravenAccent1" name="new eLabel" position="438,660" size="581,1" />
   <widget alphatest="blend" pixmap="KravenHD/icons/ico_format_on.png" position="735,673" render="Pixmap" size="43,22" source="session.CurrentService" zPosition="2">
