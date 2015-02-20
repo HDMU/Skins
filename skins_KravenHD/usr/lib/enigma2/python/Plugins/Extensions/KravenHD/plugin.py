@@ -314,17 +314,27 @@ config.plugins.KravenHD.InfobarStyle = ConfigSelection(default="infobar-style-x3
 config.plugins.KravenHD.InfobarShowChannelname = ConfigSelection(default="infobar-channelname-none", choices = [
 				("infobar-channelname-none", _("Off")),	
 				("infobar-channelname-z1", _("Name for Z1+Z2 Infobar")),
-                ("infobar-channelname-number-z1", _("Name and Number for Z1+Z2 Infobar")),				
+				("infobar-channelname-small-z1", _("Name small for Z1+Z2 Infobar")),
+                ("infobar-channelname-number-z1", _("Name and Number for Z1+Z2 Infobar")),	
+                ("infobar-channelname-number-small-z1", _("Name and Number small for Z1+Z2 Infobar")),				
 				("infobar-channelname-x1", _("Name for X1 Infobar")),
+				("infobar-channelname-small-x1", _("Name small for X1 Infobar")),
 				("infobar-channelname-number-x1", _("Name and Number for X1 Infobar")),	
-				("infobar-channelname-x2", _("Name for X2+X3 Infobar")),				
-				("infobar-channelname-number-x2", _("Name and Number for X2+X3 Infobar")),				
+				("infobar-channelname-number-small-x1", _("Name and Number small for X1 Infobar")),	
+				("infobar-channelname-x2", _("Name for X2+X3 Infobar")),
+                ("infobar-channelname-small-x2", _("Name small for X2+X3 Infobar")),				
+				("infobar-channelname-number-x2", _("Name and Number for X2+X3 Infobar")),	
+                ("infobar-channelname-number-small-x2", _("Name and Number small for X2+X3 Infobar")),				
 				("infobar-channelname-zz1", _("Name for ZZ1 Infobar")),
+				("infobar-channelname-small-zz1", _("Name small for ZZ1 Infobar")),
 				("infobar-channelname-number-zz1", _("Name and Number for ZZ1 Infobar")),	
+				("infobar-channelname-number-small-zz1", _("Name and Number small for ZZ1 Infobar")),
                 ("infobar-channelname-zz2", _("Name for ZZ2+ZZ3 Infobar")),
 				("infobar-channelname-number-zz2", _("Name and Number for ZZ2+ZZ3 Infobar")),
 				("infobar-channelname-zz4", _("Name for ZZ4 Infobar")),
+				("infobar-channelname-small-zz4", _("Name small for ZZ4 Infobar")),
 				("infobar-channelname-number-zz4", _("Name and Number for ZZ4 Infobar")),
+				("infobar-channelname-number-small-zz4", _("Name and Number small for ZZ4 Infobar")),
 				("infobar-channelname-zzz1", _("Name for ZZZ1 Infobar")),
 				("infobar-channelname-number-zzz1", _("Name and Number for ZZZ1 Infobar"))
 				])				
@@ -383,7 +393,7 @@ class KravenHD(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="foreground" backgroundColor="KravenPreBlack2" halign="left" position="643,667" size="250,24" text="Reboot" transparent="1" />
   <widget name="config" position="29,14" scrollbarMode="showOnDemand" size="590,632" transparent="1" />
   <eLabel position="738,15" size="349,43" text="KravenHD" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="KravenPreBlack2" />
-  <eLabel position="738,58" size="349,43" text="Version: 5.5" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
+  <eLabel position="738,58" size="349,43" text="Version: 5.7" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
   <widget name="helperimage" position="635,173" size="550,309" zPosition="1" backgroundColor="KravenPreBlack2" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
