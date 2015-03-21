@@ -1,0 +1,72 @@
+
+ <!-- /* main-custom-hdmu -->
+
+
+<!-- About -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
+    <widget backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="988,463" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="SevenHDClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="1045,463" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="1055,463" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="SevenHDClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="SevenBackground" font="Regular; 32" halign="center" position="1111,477" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="SevenBackground" font="Regular; 32" halign="center" position="1121,477" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="SevenHDClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="SevenBackground" font="Regular; 18" foregroundColor="SevenFont1" halign="center" position="978,563" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="SevenHDClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget backgroundColor="SevenBackground" font="Regular; 18" foregroundColor="SevenFont1" halign="center" position="978,538" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="SevenHDClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,71" render="Label" size="700,40" source="EnigmaVersion" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,111" render="Label" size="700,40" source="ImageVersion" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,151" render="Label" size="700,40" source="FPVersion" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,191" render="Label" size="700,40" source="TunerHeader" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,231" render="Label" size="700,40" source="Tuner0" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,271" render="Label" size="700,40" source="Tuner1" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,311" render="Label" size="700,40" source="Tuner2" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,351" render="Label" size="700,40" source="Tuner3" transparent="1" />
+    <eLabel backgroundColor="SevenBackground" font="Regular2; 26" position="69,441" size="700,40" text="Support for Image: " transparent="1" />
+    <eLabel backgroundColor="SevenBackground" font="Regular2; 26" position="69,480" size="700,40" text="www.hdmedia-universe.com" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,520" render="Label" size="700,40" source="HDDHeader" transparent="1" />
+    <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,560" render="Label" size="700,65" source="hddA" transparent="1" />
+    
+    <eLabel backgroundColor="SevenBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+<ePixmap pixmap="skin_default/icons/plilogo-fs8.png" position="1015,637" size="143,75" alphatest="on" />
+  </screen>
+  
+  
+  
+<!-- HotkeySetup -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HotkeySetup" position="0,0" size="1280,720" title="Tasteneinstellungen">
+  <widget name="list" position="40,99" size="385,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="white" enableWrapAround="1" backgroundColor="SevenBackground" zPosition="-8" />
+  <widget name="choosen" position="428,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="SevenFont1" backgroundColor="SevenBackground" zPosition="-8" />
+  <widget name="description" position="938,227" size="302,250" font="Regular2; 16" foregroundColor="SevenFont2" valign="center" halign="center" backgroundColor="SevenBackground" zPosition="-8" />
+<panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+<panel name="template_menu_right" />
+</screen>
+
+
+<!-- ButtonSetupSelect -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ButtonSetupSelect" position="0,0" size="1280,720" title="Tasteneinstellungen">
+  <widget name="list" position="43,99" size="385,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="white" enableWrapAround="1" backgroundColor="SevenBackground" zPosition="-8" />
+  <widget name="choosen" position="430,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="SevenFont1" backgroundColor="SevenBackground" zPosition="-8" />
+  <widget name="description" position="938,227" size="302,250" font="Regular2; 16" foregroundColor="SevenFont2" valign="center" halign="center" backgroundColor="SevenBackground" zPosition="-8" />
+<panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+<panel name="template_menu_right" />
+</screen>
+
+
+<!-- LED_GigaSetup -->
+<screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
+<widget name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+<panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+<!-- main-custom-hdmu */ -->
+

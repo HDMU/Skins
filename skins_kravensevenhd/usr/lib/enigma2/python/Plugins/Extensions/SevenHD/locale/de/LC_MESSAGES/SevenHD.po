@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kraven <kravenhd@web.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SevenHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-19 16:55+0100\n"
+"PO-Revision-Date: 2015-03-19 16:58+0100\n"
+"Last-Translator: mike99 <mike99@mail.to>\n"
+"Language-Team: kraven & mike99\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: plugin.py:71
+msgid "Atemio4You"
+msgstr ""
+
+#: plugin.py:72
+msgid "HDMU"
+msgstr ""
+
+#: plugin.py:73
+msgid "openATV"
+msgstr ""
+
+#: plugin.py:74
+msgid "openHDF"
+msgstr ""
+
+#: plugin.py:75
+msgid "openMIPS"
+msgstr ""
+
+#: plugin.py:79
+msgid "low"
+msgstr "niedrig"
+
+#: plugin.py:80
+msgid "medium"
+msgstr "mittel"
+
+#: plugin.py:81
+msgid "high"
+msgstr "hoch"
+
+#: plugin.py:85 plugin.py:104 plugin.py:123 plugin.py:142 plugin.py:161
+#: plugin.py:180 plugin.py:200 plugin.py:219 plugin.py:238
+msgid "Amber"
+msgstr ""
+
+#: plugin.py:86 plugin.py:105 plugin.py:124 plugin.py:143 plugin.py:162
+#: plugin.py:181 plugin.py:201 plugin.py:220 plugin.py:239 plugin.py:269
+msgid "Black"
+msgstr "Schwarz"
+
+#: plugin.py:87 plugin.py:106 plugin.py:125 plugin.py:144 plugin.py:163
+#: plugin.py:182 plugin.py:202 plugin.py:221 plugin.py:240
+msgid "Blue"
+msgstr "Blau"
+
+#: plugin.py:88 plugin.py:107 plugin.py:126 plugin.py:145 plugin.py:164
+#: plugin.py:183 plugin.py:203 plugin.py:222 plugin.py:241
+msgid "Brown"
+msgstr "Braun"
+
+#: plugin.py:89 plugin.py:108 plugin.py:127 plugin.py:146 plugin.py:165
+#: plugin.py:184 plugin.py:204 plugin.py:223 plugin.py:242
+msgid "Cobalt"
+msgstr ""
+
+#: plugin.py:90 plugin.py:109 plugin.py:128 plugin.py:147 plugin.py:166
+#: plugin.py:185 plugin.py:205 plugin.py:224 plugin.py:243
+msgid "Cyan"
+msgstr ""
+
+#: plugin.py:91 plugin.py:110 plugin.py:129 plugin.py:148 plugin.py:167
+#: plugin.py:186 plugin.py:206 plugin.py:225 plugin.py:244
+msgid "Grey"
+msgstr "Grau"
+
+#: plugin.py:92 plugin.py:111 plugin.py:130 plugin.py:149 plugin.py:168
+#: plugin.py:187 plugin.py:207 plugin.py:226 plugin.py:245
+msgid "Green"
+msgstr "Grün"
+
+#: plugin.py:93 plugin.py:112 plugin.py:131 plugin.py:150 plugin.py:169
+#: plugin.py:188 plugin.py:208 plugin.py:227 plugin.py:246
+msgid "Medium Blue"
+msgstr "Mittel Blau"
+
+#: plugin.py:94 plugin.py:113 plugin.py:132 plugin.py:151 plugin.py:170
+#: plugin.py:189 plugin.py:209 plugin.py:228 plugin.py:247
+msgid "Orange"
+msgstr ""
+
+#: plugin.py:95 plugin.py:114 plugin.py:133 plugin.py:152 plugin.py:171
+#: plugin.py:190 plugin.py:210 plugin.py:229 plugin.py:248
+msgid "Pink"
+msgstr ""
+
+#: plugin.py:96 plugin.py:115 plugin.py:134 plugin.py:153 plugin.py:172
+#: plugin.py:191 plugin.py:211 plugin.py:230 plugin.py:249
+msgid "Red"
+msgstr "Rot"
+
+#: plugin.py:97 plugin.py:116 plugin.py:135 plugin.py:154 plugin.py:173
+#: plugin.py:192 plugin.py:212 plugin.py:231 plugin.py:250
+msgid "Steel"
+msgstr ""
+
+#: plugin.py:98 plugin.py:117 plugin.py:136 plugin.py:155 plugin.py:174
+#: plugin.py:193 plugin.py:213 plugin.py:232 plugin.py:251
+msgid "Violet"
+msgstr ""
+
+#: plugin.py:99 plugin.py:118 plugin.py:137 plugin.py:156 plugin.py:175
+#: plugin.py:194 plugin.py:214 plugin.py:233 plugin.py:252
+msgid "Yellow"
+msgstr "Gelb"
+
+#: plugin.py:100 plugin.py:119 plugin.py:138 plugin.py:157 plugin.py:176
+#: plugin.py:195 plugin.py:215 plugin.py:234 plugin.py:253 plugin.py:268
+msgid "White"
+msgstr "Weiß"
+
+#: plugin.py:196
+msgid "Off"
+msgstr "Aus"
+
+#: plugin.py:257
+msgid "Original"
+msgstr ""
+
+#: plugin.py:258 plugin.py:264
+msgid "XPicon"
+msgstr ""
+
+#: plugin.py:262
+msgid "Two Columns"
+msgstr "zwei Spalten"
+
+#: plugin.py:263
+msgid "Three Columns"
+msgstr "drei Spalten"
+
+#: plugin.py:273
+msgid "Standard"
+msgstr ""
+
+#: plugin.py:274
+msgid "with Seconds"
+msgstr "mit Sekunden"
+
+#: plugin.py:275
+msgid "Analog"
+msgstr ""
+
+#: plugin.py:276 plugin.py:346
+msgid "Weather"
+msgstr "Wetter"
+
+#: plugin.py:329
+msgid "______________________ System __________________________________"
+msgstr ""
+
+#: plugin.py:330
+msgid "Image"
+msgstr ""
+
+#: plugin.py:331
+msgid "______________________ Colors __________________________________"
+msgstr "______________________ Farben __________________________________"
+
+#: plugin.py:332
+msgid "Background Transparency"
+msgstr "Hintergrund Transparenz"
+
+#: plugin.py:333
+msgid "Background"
+msgstr "Hintergrund"
+
+#: plugin.py:334
+msgid "Border"
+msgstr "Rahmen"
+
+#: plugin.py:335
+msgid "Line"
+msgstr "Linie"
+
+#: plugin.py:336
+msgid "Listselection"
+msgstr "Auswahlbalken"
+
+#: plugin.py:337
+msgid "Listselection Border"
+msgstr "Auswahlbalken Rahmen"
+
+#: plugin.py:338
+msgid "Progress-/Volumebar"
+msgstr "Fortschritts-/Lautstärkebalken"
+
+#: plugin.py:339
+msgid "Font 1"
+msgstr "Schrift 1"
+
+#: plugin.py:340
+msgid "Font 2"
+msgstr "Schrift 2"
+
+#: plugin.py:341
+msgid "Button Text"
+msgstr ""
+
+#: plugin.py:342
+msgid "Button Style"
+msgstr ""
+
+#: plugin.py:343
+msgid "______________________ Infobar __________________________________"
+msgstr ""
+
+#: plugin.py:344 plugin.py:348
+msgid "Style"
+msgstr ""
+
+#: plugin.py:345
+msgid "Clock"
+msgstr "Uhr"
+
+#: plugin.py:347
+msgid "______________________ ChannelSelection __________________________________"
+msgstr "______________________ Kanalliste ________________________________________"
+
+#: plugin.py:405
+msgid "Do you really want to reboot now?"
+msgstr "Wollen Sie jetzt neu starten?"
+
+#: plugin.py:406 plugin.py:503
+msgid "Restart GUI"
+msgstr "GUI neu starten"
+
+#: plugin.py:409
+msgid "Information"
+msgstr ""
+
+#: plugin.py:499
+msgid "Error creating Skin!"
+msgstr "Fehler beim Erstellen des Skin!"
+
+#: plugin.py:502
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Zur Übernahme der Oberfläche muss die GUI\n"
+"neu gestartet werden. Jetzt neu starten?"
+
+#: plugin.py:552
+msgid "Configuration tool for SevenHD"
+msgstr "Konfigurationstool für SevenHD"
+
+#~ msgid "Clock Standard"
+#~ msgstr "Standard Uhr"
+
+#~ msgid "Clock Standard + Weather"
+#~ msgstr "Standard Uhr und Wetter"
+
+#~ msgid "Clock with Seconds"
+#~ msgstr "Uhr mit Sekunden"
+
+#~ msgid "Clock with Seconds + Weather"
+#~ msgstr "Uhr mit Sekunden und Wetter"
+
+#~ msgid "Clock with Weather"
+#~ msgstr "Uhr mit Wetter"
+
+#~ msgid "Clock with Weather + Weather"
+#~ msgstr "Uhr mit Wetter/Wetter"
+
+#~ msgid "Clock Analog"
+#~ msgstr "Analog Uhr"
+
+#~ msgid "Clock Analog + Weather"
+#~ msgstr "Analog Uhr und Wetter"

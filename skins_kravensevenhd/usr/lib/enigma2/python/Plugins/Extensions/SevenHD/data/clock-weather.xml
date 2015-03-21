@@ -1,0 +1,17 @@
+ 
+ <!-- Clock Weather */-->
+ <widget alphatest="blend" render="MSNWeatherPixmap" position="1105,543" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SevenHD/Wettericons/,png</convert>
+</widget>
+<widget noWrap="1" backgroundColor="SevenBackground" foregroundColor="SevenFont1" font="Regular2; 24" render="Label" position="1165,543" size="44,34" source="session.MSNWeather" transparent="1" zPosition="12" halign="left">
+  <convert type="MSNWeather">temperature_current</convert>
+</widget>
+<widget source="global.CurrentTime" position="1089,607" size="148,45" font="Regular2; 40" render="Label" halign="center" zPosition="12" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1">
+    <convert type="SevenHDClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1089,657" size="148,25" font="Regular; 20" render="Label" halign="center" zPosition="12" backgroundColor="SevenBackground" foregroundColor="SevenFont2" transparent="1">
+    <convert type="SevenHDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <!-- Clock Weather */-->
+  
+  

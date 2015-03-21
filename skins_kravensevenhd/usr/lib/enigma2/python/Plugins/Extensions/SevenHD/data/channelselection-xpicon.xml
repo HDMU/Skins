@@ -1,0 +1,52 @@
+
+ <!-- /* ChannelSelection XPicon-->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+  <widget backgroundColor="SevenBackground" font="Regular2; 34" foregroundColor="SevenFont2" halign="left" position="18,12" render="Label" size="815,45" source="Title" transparent="1" valign="center" noWrap="1" />
+  <widget backgroundColor="SevenBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="SevenFont1" colorEventProgressbarBorder="SevenLine" colorEventProgressbarBorderSelected="SevenLine" colorServiceDescription="SevenFont2" colorServiceDescriptionSelected="SevenFont2" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+  <widget source="ServiceEvent" render="SevenHDSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="SevenFont2" backgroundColor="SevenBackground" transparent="1">
+  </widget>
+  <widget alphatest="blend" position="965,104" render="SevenHDXPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="4">
+    <convert type="SevenHDRefString">ServicelistRef</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="891,250" size="362,3" borderWidth="0" backgroundColor="SevenBackground" foregroundColor="SevenProgress" transparent="1" zPosition="1">
+    <convert type="SevenHDEventTime">Progress</convert>
+  </widget>
+  <eLabel position="891,251" size="362,1" backgroundColor="SevenProgress" foregroundColor="SevenProgress" />
+  <widget font="Regular; 22" foregroundColor="SevenFont1" position="891,259" render="Label" size="362,291" source="ServiceEvent" valign="top" backgroundColor="SevenBackground" zPosition="-8">
+    <convert type="SevenHDEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <widget font="Regular2; 30" foregroundColor="SevenFont2" position="891,53" halign="center" render="Label" size="362,40" source="ServiceEvent" backgroundColor="SevenBackground" zPosition="-8" valign="left">
+    <convert type="SevenHDEventName">Name</convert>
+  </widget>
+  <eLabel backgroundColor="SevenBackground" position="876,5" size="394,711" transparent="0" zPosition="-9" />
+  <eLabel backgroundColor="SevenBackground" position="6,5" size="841,711" transparent="0" zPosition="-9" />
+  <ePixmap pixmap="SevenHD/buttons/key_red1.png" position="26,668" size="32,32" backgroundColor="SevenBackground" alphatest="on" />
+  <ePixmap pixmap="SevenHD/buttons/key_green1.png" position="227,668" size="32,32" backgroundColor="SevenBackground" alphatest="on" />
+  <ePixmap pixmap="SevenHD/buttons/key_yellow1.png" position="427,668" size="32,32" backgroundColor="SevenBackground" alphatest="on" />
+  <ePixmap pixmap="SevenHD/buttons/key_blue1.png" position="627,668" size="34,34" backgroundColor="SevenBackground" alphatest="on" />
+  <widget font="Regular2; 20" halign="left" name="key_red" position="63,672" size="150,24" backgroundColor="SevenBackground" foregroundColor="SevenButtonText" transparent="1" zPosition="1" />
+  <widget font="Regular2; 20" halign="left" name="key_green" position="263,672" size="150,24" backgroundColor="SevenBackground" foregroundColor="SevenButtonText" transparent="1" zPosition="1" />
+  <widget font="Regular2; 20" halign="left" name="key_yellow" position="463,672" size="150,24" backgroundColor="SevenBackground" foregroundColor="SevenButtonText" transparent="1" zPosition="1" />
+  <widget font="Regular2; 20" halign="left" name="key_blue" position="663,672" size="150,24" backgroundColor="SevenBackground" foregroundColor="SevenButtonText" transparent="1" zPosition="1" />
+  <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="SevenBackground" transparent="1" valign="center" foregroundColor="SevenFont1">
+    <convert type="SevenHDClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="SevenLine" position="891,673" size="362,2" zPosition="2" />
+  <eLabel backgroundColor="SevenLine" position="891,555" size="362,2" zPosition="2" />
+  <eLabel backgroundColor="SevenLine" position="17,655" size="816,2" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="5,5" size="843,2" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="5,715" size="843,2" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="875,715" size="395,2" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="875,5" size="395,2" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="875,5" size="2,711" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="5,5" size="2,711" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="847,5" size="2,712" zPosition="2" />
+  <eLabel backgroundColor="SevenBorder" position="1269,5" size="2,712" zPosition="2" />
+  <eLabel backgroundColor="SevenLine" position="17,65" size="816,2" zPosition="2" />
+  <widget backgroundColor="SevenBackground" font="Regular;22" foregroundColor="SevenFont1" position="891,680" render="Label" size="362,32" source="ServiceEvent" transparent="1" zPosition="5">
+    <convert type="SevenHDNextEvents">PrimeTime,noDuration</convert>
+  </widget>
+</screen>
+  <!-- /* ChannelSelection XPicon -->
+  
+  
