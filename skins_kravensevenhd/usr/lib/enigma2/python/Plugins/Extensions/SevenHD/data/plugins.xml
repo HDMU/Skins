@@ -1872,5 +1872,27 @@
     </widget>
     <panel name="template_menu_left" />
   </screen>
+  
+  <!-- ********** VPS ********** -->
+<!-- vpsCheck -->
+<screen name="VPS_check_PDC_Screen" position="0,0" size="1280,720" title="VPS-Plugin" backgroundColor="transparent" flags="wfNoBorder">
+	<widget source="infotext" render="Label" backgroundColor="SevenBackground" font="Regular;22" foregroundColor="SevenFont1" position="70,80" size="708,120" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+
+<!-- vpsConfiguration -->
+<screen name="VPS_Setup" title="VPS-Plugin" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <widget name="config" backgroundColor="SevenBackground" font="Regular;22" foregroundColor="SevenFont1" itemHeight="30" position="70,80" size="708,180" transparent="1" />
+    <widget render="Label" backgroundColor="KravenBackground" font="Regular2;22" foregroundColor="SevenFont2" position="70,350" size="708,200" source="help" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
+</screen>
+
+<!-- vpsInfo -->
+<screen name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information" backgroundColor="transparent" flags="wfNoBorder">
+	<widget name="text" position="70,80" size="708,520" backgroundColor="SevenBackground" font="Regular;22" foregroundColor="SevenFont1" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+
 <!-- plugins -->
 

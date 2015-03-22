@@ -2517,6 +2517,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="text" position="0,622" size="1280,160" font="Regular2; 21" foregroundColor="white" transparent="1" halign="center" backgroundColor="SevenBackground" />
 </screen>
   <!-- Volume */-->
+   <!-- SoftwareManagerInfo -->
+<screen name="SoftwareManagerInfo" position="center,center" size="1280,720" title="SoftwareManager information" flags="wfNoBorder" backgroundColor="transparent">
+	<widget source="list" render="Listbox" position="70,80" size="708,390" scrollbarMode="showOnDemand" selectionDisabled="0">
+	  <convert type="TemplatedMultiContent">
+			{"template": [
+						MultiContentEntryText(pos = (5, 0), size = (540, 26), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
+						],
+						"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
+						"itemHeight": 26
+						}
+	  </convert>
+	</widget>
+	<widget source="introduction" render="Label" position="70,585" size="708,30" zPosition="10" font="Regular2;22" ForegroundColor="SevenFont2" halign="center" valign="center" backgroundColor="SevenBackground" transparent="1" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
   <!-- Main */ -->
   
   
