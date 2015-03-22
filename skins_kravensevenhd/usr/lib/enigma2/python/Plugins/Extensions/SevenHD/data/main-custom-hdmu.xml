@@ -3,24 +3,7 @@
 
 
 <!-- About -->
-<screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
-    <widget backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="988,463" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="SevenHDClockToText">Format:%H</convert>
-    </widget>
-    <eLabel backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="1045,463" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
-    <widget backgroundColor="SevenBackground" font="Regular; 43" halign="center" position="1055,463" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="SevenHDClockToText">Format:%M</convert>
-    </widget>
-    <eLabel backgroundColor="SevenBackground" font="Regular; 32" halign="center" position="1111,477" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
-    <widget backgroundColor="SevenBackground" font="Regular; 32" halign="center" position="1121,477" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="SevenHDClockToText">Format:%S</convert>
-    </widget>
-    <widget backgroundColor="SevenBackground" font="Regular; 18" foregroundColor="SevenFont1" halign="center" position="978,563" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="SevenHDClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="SevenBackground" font="Regular; 18" foregroundColor="SevenFont1" halign="center" position="978,538" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="SevenHDClockToText">Format:%A</convert>
-    </widget>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
     <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,71" render="Label" size="700,40" source="EnigmaVersion" transparent="1" />
     <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,111" render="Label" size="700,40" source="ImageVersion" transparent="1" />
     <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,151" render="Label" size="700,40" source="FPVersion" transparent="1" />
@@ -33,9 +16,8 @@
     <eLabel backgroundColor="SevenBackground" font="Regular2; 26" position="69,480" size="700,40" text="www.hdmedia-universe.com" transparent="1" />
     <widget backgroundColor="SevenBackground" font="Regular2; 26" position="70,520" render="Label" size="700,40" source="HDDHeader" transparent="1" />
     <widget backgroundColor="SevenBackground" font="Regular2; 24" position="70,560" render="Label" size="700,65" source="hddA" transparent="1" />
-    
-    <eLabel backgroundColor="SevenBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
 <ePixmap pixmap="skin_default/icons/plilogo-fs8.png" position="1015,637" size="143,75" alphatest="on" />
+<panel name="template_menu_left" />
   </screen>
   
   

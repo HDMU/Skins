@@ -33,14 +33,14 @@
   </screen>
   
   
- <!-- Devices --> 
+  <!-- Devices -->
   <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="TunerHeader" render="Label" position="70,121" size="458,36" font="Regular2; 20" transparent="1" zPosition="1" foregroundColor="SevenFont2" />
-    <widget source="nims" render="Label" position="70,163" size="458,108" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
-    <widget source="HDDHeader" render="Label" position="70,275" size="458,36" font="Regular2; 20" transparent="1" zPosition="1" foregroundColor="SevenFont2" />
-    <widget source="hdd" render="Label" position="70,315" size="458,112" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
-    <widget source="MountsHeader" render="Label" position="70,431" size="458,36" font="Regular2; 20" transparent="1" zPosition="1" foregroundColor="SevenFont2" />
-    <widget source="mounts" render="Label" position="70,471" size="458,143" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="TunerHeader" render="Label" position="70,121" size="458,36" font="Regular2; 20" backgroundColor="SevenBackground" transparent="1" zPosition="1" foregroundColor="SevenFont2" />
+    <widget source="nims" render="Label" position="70,163" size="458,108" font="Regular;18" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="HDDHeader" render="Label" position="70,275" size="458,36" font="Regular2; 20" transparent="1" zPosition="1" backgroundColor="SevenBackground" foregroundColor="SevenFont2" />
+    <widget source="hdd" render="Label" position="70,315" size="458,112" font="Regular;18" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="MountsHeader" render="Label" position="70,431" size="458,36" font="Regular2; 20" transparent="1" zPosition="1" backgroundColor="SevenBackground" foregroundColor="SevenFont2" />
+    <widget source="mounts" render="Label" position="70,471" size="458,143" font="Regular;18" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" zPosition="1" enableWrapAround="0" />
     <widget source="global.CurrentTime" render="SevenHDEGclock" position="665,135" borderColor="SevenFont1" zPosition="4" size="80,80" transparent="1">
       <convert type="SevenHDEGAnalogic">Hours</convert>
     </widget>
@@ -135,11 +135,11 @@
 
 <!-- Softwarepanel -->
 <screen name="SoftwarePanel" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <widget source="list" render="Listbox" position="70,80" size="708,540" backgroundColor="SevenBackground" itemHeight="50" alphatest="blend" transparent="1">
+  <widget source="list" render="Listbox" position="70,90" size="708,520" backgroundColor="SevenBackground" itemHeight="50" alphatest="blend" transparent="1">
     <convert type="TemplatedMultiContent">
 			{"template": [
-					MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryText(pos = (6, 2), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (6, 28), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 					MultiContentEntryPixmapAlphaTest(pos = (605, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
 					MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
 				],
@@ -148,18 +148,18 @@
 			}
 		</convert>
   </widget>
-  <widget name="packagetext" position="918,391" size="250,30" zPosition="1" font="Regular2; 25" halign="right" transparent="1" foregroundColor="SevenFont2" />
-  <widget name="packagenr" position="1181,391" size="50,30" zPosition="1" font="Regular2; 25" halign="right" transparent="1" foregroundColor="SevenFont2" />
-  <widget name="feedstatusRED" position="997,557" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
-  <widget name="feedstatusYELLOW" position="997,587" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
-  <widget name="feedstatusGREEN" position="997,617" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+  <widget name="packagetext" position="918,391" size="250,30" zPosition="1" font="Regular2; 25" halign="right" transparent="1" backgroundColor="SevenBackground" foregroundColor="SevenFont2" />
+  <widget name="packagenr" position="1181,391" size="50,30" zPosition="1" font="Regular2; 25" halign="right" transparent="1" backgroundColor="SevenBackground" foregroundColor="SevenFont2" />
+  <widget name="feedstatusRED" position="997,557" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+  <widget name="feedstatusYELLOW" position="997,587" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+  <widget name="feedstatusGREEN" position="997,617" size="200,30" zPosition="1" font="Regular;25" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
   <widget name="a_off" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/aoff.png" position="954,551" zPosition="1" size="36,97" alphatest="on" />
   <widget name="a_red" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/ared.png" position="954,551" zPosition="1" size="36,97" alphatest="on" />
   <widget name="a_yellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/ayellow.png" position="954,551" zPosition="1" size="36,97" alphatest="on" />
   <widget name="a_green" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/agreen.png" position="954,551" zPosition="1" size="36,97" alphatest="on" />
-<panel name="template_colorkey_text" />
-    <panel name="template_menu_left_button" />
-    <panel name="template_menu_right" />
+  <panel name="template_colorkey_text" />
+  <panel name="template_menu_left_button" />
+  <panel name="template_menu_right" />
 </screen>
 
 <!-- SoftcamPanel -->

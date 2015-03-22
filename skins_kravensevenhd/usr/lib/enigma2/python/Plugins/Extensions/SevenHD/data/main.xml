@@ -125,10 +125,10 @@
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
-  <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="lab1" render="Label" position="70,120" size="708,35" font="Regular2; 30" transparent="1" zPosition="2" foregroundColor="SevenFont2" />
-    <widget source="lab2" render="Label" position="70,165" size="708,25" font="Regular2; 19" transparent="1" zPosition="2" foregroundColor="SevenFont2" />
-    <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" position="70,210" size="708,390" font="Regular;20" transparent="1" zPosition="1" foregroundColor="SevenFont1" />
+   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="lab1" render="Label" position="70,120" size="708,35" font="Regular2; 30" backgroundColor="SevenBackground" transparent="1" zPosition="2" foregroundColor="SevenFont2" />
+    <widget source="lab2" render="Label" position="70,165" size="708,25" font="Regular2; 19" backgroundColor="SevenBackground" transparent="1" zPosition="2" foregroundColor="SevenFont2" />
+    <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" position="70,210" size="708,390" font="Regular;20" backgroundColor="SevenBackground" transparent="1" zPosition="1" foregroundColor="SevenFont1" />
     <panel name="template_menu_left" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UnhandledKey" position="49,40" size="70,70" title="UnhandledKey" zPosition="100">
@@ -351,7 +351,7 @@
   <widget source="Service" render="Picon" position="6,18" size="70,42" transparent="0" zPosition="2" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="SevenHD/buttons_white/ico_rec_on.png" position="848,235" size="32,32" zPosition="2" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="SevenHD/buttons/ico_rec_on.png" position="848,235" size="32,32" zPosition="2" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <widget name="lab1" position="9,75" size="1256,145" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="SevenBackground" transparent="1" />
@@ -389,7 +389,7 @@
   <widget source="global.CurrentTime" render="Label" position="1135,232" size="126,40" backgroundColor="SevenBackground" zPosition="1" SevenBackground="1" font="Regular; 38" valign="center" halign="center">
     <convert type="SevenHDClockToText">Default</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="SevenHD/buttons_white/ico_rec_on.png" zPosition="2" position="840,235" size="32,32" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="SevenHD/buttons/ico_rec_on.png" zPosition="2" position="840,235" size="32,32" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <widget name="list" position="17,95" size="715,120" font="Regular; 24" foregroundColor="SevenFont1" backgroundColor="SevenBackground" />
@@ -1063,27 +1063,239 @@
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
-  <!-- SystemNetworkInfo -->
+    <!-- SystemNetworkInfo -->
   <screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="AboutScrollLabel" position="70,80" size="708,200" font="Regular;20" foregroundColor="SevenFont1" transparent="1" zPosition="1" />
-    <widget source="LabelBSSID" render="Label" position="70,294" size="200,25" valign="left" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="LabelESSID" render="Label" position="70,329" size="200,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="LabelQuality" render="Label" position="70,364" size="200,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="LabelSignal" render="Label" position="70,399" size="200,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="LabelBitrate" render="Label" position="70,435" size="200,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="LabelEnc" render="Label" position="70,469" size="200,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="BSSID" render="Label" position="245,294" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="ESSID" render="Label" position="245,329" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="quality" render="Label" position="245,364" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="signal" render="Label" position="245,399" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="bitrate" render="Label" position="245,434" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="enc" render="Label" position="245,469" size="310,25" valign="center" font="Regular;20" foregroundColor="SevenFont1" transparent="1" />
-    <widget source="IFtext" render="Label" position="70,504" size="120,21" zPosition="10" font="Regular;20" foregroundColor="SevenFont1" halign="left" transparent="1" />
-    <widget source="IF" render="Label" position="181,504" size="375,21" zPosition="10" font="Regular;20" foregroundColor="SevenFont1" halign="left" transparent="1" />
-    <widget source="Statustext" render="Label" position="70,534" size="116,28" zPosition="10" font="Regular2;22" foregroundColor="SevenFont2" halign="left" transparent="1" />
-    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="194,540" zPosition="10" size="15,16" transparent="1" alphatest="on" />
+    <widget name="AboutScrollLabel" position="70,80" size="708,200" font="Regular;20" foregroundColor="SevenFont1" backgroundColor="SevenBackground" transparent="1" zPosition="1" />
+    <widget source="LabelBSSID" render="Label" position="70,294" size="200,25" valign="left" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="LabelESSID" render="Label" position="70,329" size="200,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="LabelQuality" render="Label" position="70,364" size="200,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="LabelSignal" render="Label" position="70,399" size="200,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="LabelBitrate" render="Label" position="70,435" size="200,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="LabelEnc" render="Label" position="70,469" size="200,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="BSSID" render="Label" position="245,294" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="ESSID" render="Label" position="245,329" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="quality" render="Label" position="245,364" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="signal" render="Label" position="245,399" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="bitrate" render="Label" position="245,434" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="enc" render="Label" position="245,469" size="310,25" valign="center" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <widget source="IFtext" render="Label" position="70,504" size="120,25" zPosition="10" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" halign="left" transparent="1" />
+    <widget source="IF" render="Label" position="181,504" size="375,25" zPosition="10" font="Regular;20" backgroundColor="SevenBackground" foregroundColor="SevenFont1" halign="left" transparent="1" />
+    <widget source="Statustext" render="Label" position="70,544" size="150,28" zPosition="10" font="Regular2;22" backgroundColor="SevenBackground" foregroundColor="SevenFont2" halign="left" transparent="1" />
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="220,550" zPosition="10" size="15,16" transparent="1" alphatest="on" />
     <panel name="template_menu_left" />
   </screen>
+  <!-- NetworkMountsMenu -->
+<screen name="NetworkMountsMenu" position="0,0" size="1280,720" title="Mounts Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="menulist" position="70,80" size="708,510" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkAfp -->
+<screen name="NetworkAfp" position="0,0" size="1280,720" title="AFP Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkFtp -->
+<screen name="NetworkFtp" title="FTP Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="708,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkInadyn -->
+<screen name="NetworkInadyn" title="Inadyn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="autostart" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="status" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="time" position="70,200" size="240,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labtime" position="320,200" size="100,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="username" position="70,260" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labuser" position="320,260" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="password" position="70,320" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labpass" position="320,320" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="alias" position="70,380" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labalias" position="320,380" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="sinactive" position="70,440" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="sactive" position="70,440" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="system" position="110,440" size="100,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labsys" position="320,440" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkInadynSetup -->
+<screen name="NetworkInadynSetup" title="Inadyn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="config" position="70,80" size="708,510" backgroundColor="SevenBackground" foregroundColor="SevenFont1" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+	<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="SevenBackground" transparent="0" alphatest="on" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkInadynLog -->
+<screen name="NetworkInadynLog" title="Inadyn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="infotext" position="70,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+
+<!-- NetworkMiniDLNA -->
+<screen name="NetworkMiniDLNA" title="MiniDLNA Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="autostart" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="status" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="username" position="70,200" size="240,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labuser" position="320,200" size="100,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="iface" position="70,260" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labiface" position="320,260" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="port" position="70,320" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labport" position="320,320" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="serialno" position="70,380" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labserialno" position="320,380" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="sharedir" position="70,440" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labsharedir" position="320,440" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="inotify" position="110,500" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="inotifyactive" position="70,500" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="inotifyinactive" position="70,500" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="tivo" position="440,500" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="tivoactive" position="400,500" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="tivoinactive" position="400,500" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="dlna" position="110,530" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="dlnaactive" position="70,530" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="dlnainactive" position="70,530" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkNfs -->
+<screen name="NetworkNfs" title="NFS Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkOpenvpn -->
+<screen name="NetworkOpenvpn" title="OpenVpn Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkSABnzbd -->
+<screen name="NetworkSABnzbd" title="SABnzbd Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkSamba -->
+<screen name="NetworkSamba" title="Samba Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="lab2" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkSambaLog -->
+<screen name="NetworkSambaLog" title="Samba Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="infotext" position="70,80" size="708,500" zPosition="3" itemHeight="25" font="Regular; 18" scrollbarMode="showOnDemand" backgroundColor="SevenBackground" foregroundColor="SevenFont1" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" transparent="0" />
+    <panel name="template_menu_left" />
+</screen>
+
+<!-- NetworkTelnet -->
+<screen name="NetworkTelnet" title="Telnet Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="lab1" position="70,80" size="708,60" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="lab2" position="70,170" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkuShareSetup -->
+<screen name="NetworkuShareSetup" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="config" position="70,80" size="708,510" backgroundColor="SevenBackground" foregroundColor="SevenFont1" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" transparent="1" />
+	<widget name="HelpWindow" position="120,405" size="708,160" zPosition="1" backgroundColor="SevenBackground" transparent="0" alphatest="on" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- uShareSelection -->
+<screen name="uShareSelection" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="checkList" position="70,80" size="708,510" backgroundColor="SevenBackground" foregroundColor="SevenFont1" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" transparent="1" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- ScanIP -->
+<screen name="ScanIP" title="Scan IP" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="config" position="70,80" size="708,500" font="Regular;22" zPosition="3" backgroundColorSelected="SevenSelection" foregroundColorSelected="SevenFont1" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
+
+<!-- NetworkuShare -->
+<screen name="NetworkuShare" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="autostart" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labdisabled" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labactive" position="320,80" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="status" position="70,140" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labstop" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="SevenFont1" zPosition="1" />
+	<widget name="labrun" position="320,140" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="SevenFont1" zPosition="2" />
+	<widget name="username" position="70,200" size="240,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labuser" position="320,200" size="100,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="iface" position="70,260" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labiface" position="320,260" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="port" position="70,320" size="220,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labport" position="320,320" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="telnetport" position="70,380" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labtelnetport" position="320,380" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="sharedir" position="70,440" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="labsharedir" position="320,440" size="350,30" font="Regular;22" valign="center" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="web" position="110,500" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="webactive" position="70,500" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="webinactive" position="70,500" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="telnet" position="440,500" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="telnetactive" position="400,500" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="telnetinactive" position="400,500" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="xbox" position="110,530" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="xboxactive" position="70,530" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="xboxinactive" position="70,530" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+	<widget name="dlna" position="440,530" size="300,30" font="Regular;22" valign="center" halign="left" backgroundColor="SevenBackground" foregroundColor="SevenFont1" transparent="1" />
+	<widget name="dlnaactive" position="400,530" zPosition="1" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+	<widget name="dlnainactive" position="400,530" zPosition="2" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
   <!-- ********** Timer ********** -->
   <!-- TimeInput -->
   <screen backgroundColor="SevenBackground" flags="wfNoBorder" name="TimeInput" position="148,281" size="500,155" title="Time Input">
@@ -1593,7 +1805,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget alphatest="blend" position="14,448" render="SevenHDXPicon" size="100,60" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget alphatest="blend" pixmap="SevenHD/buttons_white/ico_rec_on.png" position="19,537" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+    <widget alphatest="blend" pixmap="SevenHD/buttons/ico_rec_on.png" position="19,537" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>

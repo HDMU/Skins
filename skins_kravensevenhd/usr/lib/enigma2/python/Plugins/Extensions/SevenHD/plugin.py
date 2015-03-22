@@ -287,7 +287,7 @@ class SevenHD(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#1A000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
   <widget name="config" position="70,73" scrollbarMode="showOnDemand" size="708,574" transparent="1" />
   <eLabel position="70,12" size="708,46" text="SevenHD - Konfigurationstool" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#1A000000" foregroundColor="#00ffffff" name="," />
-<eLabel position="891,88" size="372,46" text="Version: 1.0" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#1A000000" foregroundColor="#00ffffff" name="," />
+<eLabel position="891,88" size="372,46" text="Version: 1.1" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#1A000000" foregroundColor="#00ffffff" name="," />
   <widget name="helperimage" position="891,178" size="372,328" zPosition="1" backgroundColor="#1A000000" />
   <eLabel backgroundColor="#1A000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <widget backgroundColor="#1A000000" font="Regular2; 34" foregroundColor="#00ffffff" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="center" valign="center" noWrap="1" />

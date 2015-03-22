@@ -3,36 +3,36 @@
 <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1280,720" title="InfoBar">
   <eLabel backgroundColor="SevenBackground" name="new eLabel" position="14,534" size="1250,168" />
   <eLabel backgroundColor="SevenBackground" position="0,718" size="1284,7" transparent="0" zPosition="-5" />
-  <widget backgroundColor="SevenBackground" font="Regular; 22" halign="right" position="1157,483" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1" alphatest="blend">
+  <widget backgroundColor="SevenBackground" font="Regular;24" halign="right" position="1144,476" render="Label" size="120,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1" alphatest="blend">
     <convert type="SevenHDEventTime">Remaining</convert>
     <convert type="SevenHDRemainingToText">InMinutes</convert>
   </widget>
-  <widget position="14,515" render="Progress" size="1250,3" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="SevenProgress">
+  <widget position="14,514" render="Progress" size="1250,6" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="SevenProgress">
     <convert type="SevenHDEventTime">Progress</convert>
   </widget>
-  <widget font="Regular;54" halign="center" noWrap="1" position="433,556" render="Label" size="632,70" source="session.Event_Now" backgroundColor="SevenBackground" transparent="1" zPosition="1" foregroundColor="SevenFont1">
-    <convert type="SevenHDEventName">Name</convert>
-  </widget>
-  <widget backgroundColor="SevenBackground" font="Regular;24" halign="right" noWrap="1" position="256,573" render="Label" size="76,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1">
+  <widget backgroundColor="SevenBackground" font="Regular;24" halign="right" noWrap="1" position="256,572" render="Label" size="76,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1">
     <convert type="SevenHDEventTime">StartTime</convert>
     <convert type="SevenHDClockToText">Default</convert>
   </widget>
-  <eLabel backgroundColor="SevenBackground" font="Regular;24" halign="center" noWrap="1" position="332,573" size="16,35" text="-" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1" />
-  <widget backgroundColor="SevenBackground" font="Regular;24" halign="left" noWrap="1" position="348,573" render="Label" size="76,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1">
+  <eLabel backgroundColor="SevenBackground" font="Regular;24" halign="center" noWrap="1" position="332,572" size="16,36" text="-" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1" />
+  <widget backgroundColor="SevenBackground" font="Regular;24" halign="left" noWrap="1" position="348,572" render="Label" size="76,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="SevenFont1">
     <convert type="SevenHDEventTime">EndTime</convert>
     <convert type="SevenHDClockToText">Default</convert>
   </widget>
-  <widget font="Regular2; 40" foregroundColor="SevenFont2" halign="center" position="433,631" render="Label" size="632,55" source="session.Event_Next" valign="center" backgroundColor="SevenBackground" transparent="1" zPosition="1">
+  <widget font="Regular;48" halign="center" valign="center" noWrap="1" position="433,558" render="Label" size="632,64" source="session.Event_Now" backgroundColor="SevenBackground" transparent="1" zPosition="1" foregroundColor="SevenFont1">
     <convert type="SevenHDEventName">Name</convert>
   </widget>
-  <widget backgroundColor="SevenBackground" font="Regular2; 22" foregroundColor="SevenFont2" halign="left" noWrap="1" position="348,642" render="Label" size="72,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+  <widget backgroundColor="SevenBackground" foregroundColor="SevenFont2" font="Regular2; 22" halign="right" noWrap="1" position="260,636" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="SevenHDEventTime">StartTime</convert>
+    <convert type="SevenHDClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="SevenBackground" foregroundColor="SevenFont2" font="Regular2;22" halign="center" noWrap="1" position="332,636" size="16,36" text="-" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="SevenBackground" font="Regular2; 22" foregroundColor="SevenFont2" halign="left" noWrap="1" position="348,636" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
     <convert type="SevenHDEventTime">EndTime</convert>
     <convert type="SevenHDClockToText">Default</convert>
   </widget>
-  <eLabel backgroundColor="SevenBackground" foregroundColor="SevenFont2" font="Regular2;22" halign="center" noWrap="1" position="332,642" size="16,35" text="-" transparent="1" valign="center" zPosition="1" />
-  <widget backgroundColor="SevenBackground" foregroundColor="SevenFont2" font="Regular2; 22" halign="right" noWrap="1" position="260,642" render="Label" size="72,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
-    <convert type="SevenHDEventTime">StartTime</convert>
-    <convert type="SevenHDClockToText">Default</convert>
+  <widget font="Regular2;36" halign="center" valign="center" noWrap="1" position="430,630" render="Label" size="632,48" source="session.Event_Next" backgroundColor="SevenBackground" transparent="1" zPosition="1" foregroundColor="SevenFont2">
+    <convert type="SevenHDEventName">Name</convert>
   </widget>
   <widget font="Regular; 40" foregroundColor="SevenFont1" halign="left" noWrap="1" position="14,450" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend">
     <convert type="ServiceName">Name</convert>
@@ -41,8 +41,8 @@
   <eLabel backgroundColor="SevenBorder" position="14,533" size="2,170" zPosition="2" />
   <eLabel backgroundColor="SevenBorder" position="14,533" size="1250,2" zPosition="2" />
   <eLabel backgroundColor="SevenBorder" position="14,701" size="1250,2" zPosition="2" />
-  <eLabel backgroundColor="SevenProgress" position="14,516" size="1250,1" zPosition="2" />
-  <widget alphatest="blend" position="26,556" render="SevenHDXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+  <eLabel backgroundColor="SevenProgress" position="14,516" size="1250,2" zPosition="2" />
+  <widget alphatest="blend" position="26,552" render="SevenHDXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget alphatest="blend" pixmap="SevenHD/buttons/ico_rec_on.png" position="1119,480" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">

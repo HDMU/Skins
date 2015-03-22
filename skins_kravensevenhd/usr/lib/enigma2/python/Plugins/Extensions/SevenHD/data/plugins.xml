@@ -390,7 +390,7 @@
   <widget backgroundColor="SevenBackground" font="Regular; 20" halign="right" position="926,629" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
-  <widget alphatest="blend" pixmap="SevenHD/buttons_white/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+  <widget alphatest="blend" pixmap="SevenHD/buttons/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <ePixmap alphatest="blend" pixmap="SevenHD/buttons_white/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
@@ -418,7 +418,7 @@
   <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="orange">
+  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="SevenProgress">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <eLabel backgroundColor="SevenBackground" font="Regular; 20" halign="right" position="1017,629" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
@@ -928,7 +928,7 @@
   <widget backgroundColor="SevenBackground" font="Regular; 20" halign="right" position="926,629" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
-  <widget alphatest="blend" pixmap="SevenHD/buttons_white/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+  <widget alphatest="blend" pixmap="SevenHD/buttons/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <ePixmap alphatest="blend" pixmap="SevenHD/buttons_white/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
@@ -956,7 +956,7 @@
   <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="orange">
+  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="SevenProgress">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <eLabel backgroundColor="SevenBackground" font="Regular; 20" halign="right" position="1017,629" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
@@ -1663,22 +1663,22 @@
   </screen>
   <!-- CoolTVGuide */-->
   <!--/* NumberZapExt -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapExt" position="264,216" size="714,243" title="QuickZap">
-    <widget name="chPicon" position="377,43" size="225,138" transparent="1" zPosition="1" alphatest="blend" />
-    <widget font="Regular; 80" halign="center" name="chNum" position="97,72" size="136,100" transparent="0" zPosition="0" />
-    <widget font="Regular; 20" halign="center" name="chName" noWrap="1" position="295,179" size="387,26" transparent="0" zPosition="0" />
-    <eLabel halign="center" position="271,32" size="427,181" zPosition="-1" />
-    <eLabel backgroundColor="SevenBorder" position="694,35" size="1,175" />
-    <eLabel backgroundColor="SevenBorder" position="274,35" size="420,1" />
-    <eLabel halign="center" position="46,46" size="225,154" zPosition="-1" />
-    <eLabel backgroundColor="SevenBorder" position="49,49" size="1,147" />
-    <eLabel backgroundColor="SevenBorder" position="49,49" size="235,1" />
-    <eLabel backgroundColor="SevenBorder" position="284,49" size="1,147" />
-    <eLabel backgroundColor="SevenBorder" position="49,195" size="235,1" />
-    <eLabel backgroundColor="SevenBorder" position="274,209" size="420,1" />
-    <eLabel backgroundColor="SevenBorder" position="274,196" size="1,14" />
-    <eLabel backgroundColor="SevenBorder" position="274,35" size="1,14" />
-  </screen>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapExt" position="264,216" size="714,243" title="QuickZap">
+  <widget name="chPicon" position="377,43" size="225,138" transparent="1" zPosition="1" alphatest="blend" />
+  <widget font="Regular; 80" halign="center" name="chNum" position="67,72" size="200,100" transparent="0" zPosition="0" />
+  <widget font="Regular; 20" halign="center" name="chName" noWrap="1" position="295,179" size="387,26" transparent="0" zPosition="0" />
+  <eLabel halign="center" position="271,32" size="427,181" zPosition="-1" />
+  <eLabel backgroundColor="SevenBorder" position="694,35" size="1,175" />
+  <eLabel backgroundColor="SevenBorder" position="274,35" size="420,1" />
+  <eLabel halign="center" position="46,46" size="225,154" zPosition="-1" />
+  <eLabel backgroundColor="SevenBorder" position="49,49" size="1,147" />
+  <eLabel backgroundColor="SevenBorder" position="49,49" size="235,1" />
+  <eLabel backgroundColor="SevenBorder" position="284,49" size="1,147" />
+  <eLabel backgroundColor="SevenBorder" position="49,195" size="235,1" />
+  <eLabel backgroundColor="SevenBorder" position="274,209" size="420,1" />
+  <eLabel backgroundColor="SevenBorder" position="274,196" size="1,14" />
+  <eLabel backgroundColor="SevenBorder" position="274,35" size="1,14" />
+</screen>
   <!-- NumberZapExt */-->
   <!-- WebcamViewer -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WebcamViewer" position="0,0" size="1280,720" title="WebcamViewer">
