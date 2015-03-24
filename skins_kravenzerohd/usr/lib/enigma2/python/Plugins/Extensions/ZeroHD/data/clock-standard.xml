@@ -1,0 +1,11 @@
+
+<!-- Clock Standard */-->
+<widget source="global.CurrentTime" position="1090,642" size="148,35" font="Regular2; 22" render="Label" halign="center" zPosition="12" backgroundColor="ZeroBackground" foregroundColor="ZeroFont2" transparent="1">
+    <convert type="ZeroHDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1090,568" size="148,45" font="Regular; 40" render="Label" halign="center" zPosition="12" backgroundColor="ZeroBackground" foregroundColor="ZeroFont1" transparent="1">
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+ <!-- Clock Standard */-->
+ 
+ 

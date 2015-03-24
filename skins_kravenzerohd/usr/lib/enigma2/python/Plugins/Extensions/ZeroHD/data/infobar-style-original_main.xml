@@ -1,0 +1,56 @@
+
+<!-- /* InfoBar Original -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1280,720" title="InfoBar">
+  <ePixmap position="2,488" size="1280,234" zPosition="-9" pixmap="ZeroHD/infobar/infobar.png" transparent="1" />
+  <eLabel backgroundColor="ZeroBackground" position="0,718" size="1284,7" transparent="0" zPosition="-5" />
+  <widget alphatest="blend" position="22,572" render="ZeroHDXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget font="Regular; 45" halign="center" noWrap="1" position="440,590" size="528,50" render="Label" source="session.Event_Now" backgroundColor="ZeroBackground" transparent="1" zPosition="1" valign="top">
+    <convert type="ZeroHDEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="ZeroBackground" font="Regular; 22" halign="right" position="970,605" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+    <convert type="ZeroHDEventTime">Remaining</convert>
+    <convert type="ZeroHDRemainingToText">InMinutes</convert>
+  </widget>
+  <widget position="263,650" render="Progress" size="815,5" source="session.Event_Now" transparent="1" zPosition="7">
+    <convert type="ZeroHDEventTime">Progress</convert>
+  </widget>
+  <eLabel backgroundColor="ZeroProgress" position="263,652" size="815,1" zPosition="2" />
+  <widget backgroundColor="ZeroBackground" font="Regular; 22" halign="right" noWrap="1" position="253,605" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+    <convert type="ZeroHDEventTime">StartTime</convert>
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="ZeroBackground" font="Regular; 20" halign="center" noWrap="1" position="325,605" size="40,35" text="bis" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="ZeroBackground" font="Regular; 22" halign="left" noWrap="1" position="368,605" render="Label" size="70,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+    <convert type="ZeroHDEventTime">EndTime</convert>
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+  <widget font="Regular2; 30" noWrap="1" foregroundColor="ZeroFont2" halign="center" position="440,663" render="Label" size="528,40" source="session.Event_Next" valign="top" backgroundColor="ZeroBackground" transparent="1" zPosition="1">
+    <convert type="ZeroHDEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="ZeroBackground" font="Regular2; 22" foregroundColor="ZeroFont2" valign="center" halign="right" position="970,669" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
+    <convert type="ZeroHDEventTime">Duration</convert>
+    <convert type="ZeroHDClockToText">InMinutes</convert>
+  </widget>
+  <widget backgroundColor="ZeroBackground" font="Regular2; 22" foregroundColor="ZeroFont2" halign="right" noWrap="1" position="253,669" render="Label" size="70,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="ZeroHDEventTime">StartTime</convert>
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+  <widget backgroundColor="ZeroBackground" font="Regular2; 22" foregroundColor="ZeroFont2" halign="left" noWrap="1" position="368,669" render="Label" size="70,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="ZeroHDEventTime">EndTime</convert>
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="ZeroBackground" font="Regular2; 20" foregroundColor="ZeroFont2" halign="center" noWrap="1" position="325,669" size="40,35" text="bis" transparent="1" valign="center" zPosition="1" />
+  <widget source="global.CurrentTime" position="1112,669" size="148,35" font="Regular2; 22" render="Label" halign="center" zPosition="12" backgroundColor="ZeroBackground" foregroundColor="ZeroFont2" transparent="1">
+    <convert type="ZeroHDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1112,590" size="148,50" font="Regular; 45" render="Label" halign="center" zPosition="12" backgroundColor="ZeroBackground" foregroundColor="ZeroFont1" transparent="1">
+    <convert type="ZeroHDClockToText">Default</convert>
+  </widget>
+  <widget font="Regular; 40" foregroundColor="ZeroFont1" halign="left" noWrap="1" position="24,512" render="Label" size="1260,45" source="session.CurrentService" transparent="1" valign="top" zPosition="1" alphatest="on">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+<widget alphatest="blend" pixmap="ZeroHD/buttons/ico_rec_on.png" position="1241,518" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>

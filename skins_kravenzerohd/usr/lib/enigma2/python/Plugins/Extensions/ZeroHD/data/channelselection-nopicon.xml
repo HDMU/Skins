@@ -1,0 +1,23 @@
+
+ <!-- /* ChannelSelection NoPicon-->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="-1,0" size="1280,720" title="Channel Selection">
+    <widget backgroundColor="ZeroBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="ZeroFont1" colorEventProgressbarBorder="ZeroLine" colorEventProgressbarBorderSelected="ZeroLine" colorServiceDescription="ZeroFont2" colorServiceDescriptionSelected="ZeroFont2" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="70,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="708,564" transparent="1" />
+    <widget source="ServiceEvent" render="ZeroHDSingleEpgList" position="891,541" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="ZeroFont2" backgroundColor="ZeroBackground" transparent="1">
+    </widget>
+    <widget source="ServiceEvent" render="Progress" position="891,125" size="362,3" borderWidth="0" backgroundColor="ZeroBackground" foregroundColor="ZeroProgress" transparent="1" zPosition="1">
+      <convert type="ZeroHDEventTime">Progress</convert>
+    </widget>
+    <eLabel position="891,126" size="362,1" backgroundColor="ZeroProgress" foregroundColor="ZeroProgress" />
+    <widget font="Regular; 22" foregroundColor="ZeroFont1" position="891,135" render="Label" size="362,393" source="ServiceEvent" valign="top" backgroundColor="ZeroBackground" zPosition="-8">
+      <convert type="ZeroHDEventName">BothDescriptionsFiltered</convert>
+    </widget>
+    <widget font="Regular2; 30" foregroundColor="ZeroFont2" position="891,78" halign="center" render="Label" size="362,40" source="ServiceEvent" backgroundColor="ZeroBackground" zPosition="-8" valign="left">
+      <convert type="ZeroHDEventName">Name</convert>
+    </widget>
+    <ePixmap pixmap="ZeroHD/line/line362.png" position="891,534" size="362,2" backgroundColor="ZeroBackground" alphatest="blend" />
+<panel name="template_cs" />
+    <panel name="template_colorkey_text" />
+  </screen>
+  <!-- /* ChannelSelection NoPicon -->
+  
+  

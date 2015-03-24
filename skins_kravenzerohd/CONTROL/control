@@ -1,0 +1,10 @@
+Package: enigma2-plugin-skins-kravenzerohd
+Version: 1.0
+Description: kravenzerohd
+Section: skins
+Priority: optional
+Maintainer: xxx
+Architecture: all
+Depends: enigma2-plugin-extensions-weatherplugin, enigma2-plugin-skincomponents-weathercomponent, enigma2-plugin-systemplugins-extnumberzap, enigma2-plugin-systemplugins-weathercomponenthandler
+Homepage: http://www.hdmedia-universe.com
+Source: http://www.hdmedia-universe.com

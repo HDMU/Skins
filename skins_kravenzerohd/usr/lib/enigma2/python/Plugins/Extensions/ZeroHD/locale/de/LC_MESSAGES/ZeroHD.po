@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kraven <kravenhd@web.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ZeroHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-23 18:48+0100\n"
+"PO-Revision-Date: 2015-03-23 20:08+0100\n"
+"Last-Translator: mike99 <mike99@mail.to>\n"
+"Language-Team: kraven & mike99\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: plugin.py:71
+msgid "Atemio4You"
+msgstr ""
+
+#: plugin.py:72
+msgid "HDMU"
+msgstr ""
+
+#: plugin.py:73
+msgid "openATV"
+msgstr ""
+
+#: plugin.py:74
+msgid "openHDF"
+msgstr ""
+
+#: plugin.py:75
+msgid "openMIPS"
+msgstr ""
+
+#: plugin.py:79 plugin.py:97 plugin.py:115 plugin.py:137
+msgid "Amber"
+msgstr ""
+
+#: plugin.py:80 plugin.py:98 plugin.py:116 plugin.py:138
+msgid "Blue"
+msgstr "Blau"
+
+#: plugin.py:81 plugin.py:99 plugin.py:117 plugin.py:139
+msgid "Brown"
+msgstr "Braun"
+
+#: plugin.py:82 plugin.py:100 plugin.py:118 plugin.py:140
+msgid "Cobalt"
+msgstr ""
+
+#: plugin.py:83 plugin.py:101 plugin.py:119 plugin.py:141
+msgid "Cyan"
+msgstr ""
+
+#: plugin.py:84 plugin.py:102 plugin.py:120 plugin.py:142
+msgid "Grey"
+msgstr "Grau"
+
+#: plugin.py:85 plugin.py:103 plugin.py:121 plugin.py:143
+msgid "Green"
+msgstr "Grün"
+
+#: plugin.py:86 plugin.py:104 plugin.py:122 plugin.py:144
+msgid "Medium Blue"
+msgstr "Mittel Blau"
+
+#: plugin.py:87 plugin.py:105 plugin.py:123 plugin.py:145
+msgid "Orange"
+msgstr ""
+
+#: plugin.py:88 plugin.py:106 plugin.py:124 plugin.py:146
+msgid "Pink"
+msgstr ""
+
+#: plugin.py:89 plugin.py:107 plugin.py:125 plugin.py:147
+msgid "Red"
+msgstr "Rot"
+
+#: plugin.py:90 plugin.py:108 plugin.py:126 plugin.py:148
+msgid "Steel"
+msgstr ""
+
+#: plugin.py:91 plugin.py:109 plugin.py:127 plugin.py:149
+msgid "Violet"
+msgstr ""
+
+#: plugin.py:92 plugin.py:110 plugin.py:128 plugin.py:150
+msgid "Yellow"
+msgstr "Gelb"
+
+#: plugin.py:93 plugin.py:111 plugin.py:129 plugin.py:133 plugin.py:151
+msgid "White"
+msgstr "Weiß"
+
+#: plugin.py:155
+msgid "Original"
+msgstr ""
+
+#: plugin.py:159
+msgid "Picon"
+msgstr ""
+
+#: plugin.py:160
+msgid "no Picon"
+msgstr "kein Picon"
+
+#: plugin.py:203
+msgid "______________________ System __________________________________"
+msgstr ""
+
+#: plugin.py:204
+msgid "Image"
+msgstr ""
+
+#: plugin.py:205
+msgid "______________________ Colors __________________________________"
+msgstr "______________________ Farben __________________________________"
+
+#: plugin.py:206
+msgid "Listselection"
+msgstr "Auswahlbalken"
+
+#: plugin.py:207
+msgid "Progress-/Volumebar"
+msgstr "Fortschritts-/Lautstärkebalken"
+
+#: plugin.py:208
+msgid "Font 1"
+msgstr "Schrift 1"
+
+#: plugin.py:209
+msgid "Font 2"
+msgstr "Schrift 2"
+
+#: plugin.py:210
+msgid "______________________ Infobar _________________________________"
+msgstr "______________________ Infobar __________________________________"
+
+#: plugin.py:211
+msgid "Weather"
+msgstr "Wetter"
+
+#: plugin.py:212
+msgid "______________________ ChannelSelection ________________________"
+msgstr "______________________ Kanalliste _______________________________"
+
+#: plugin.py:213
+msgid "Style"
+msgstr ""
+
+#: plugin.py:270
+msgid "Do you really want to reboot now?"
+msgstr "Wollen Sie jetzt neu starten?"
+
+#: plugin.py:271 plugin.py:349
+msgid "Restart GUI"
+msgstr "GUI neu starten"
+
+#: plugin.py:274
+msgid "Information"
+msgstr ""
+
+#: plugin.py:345
+msgid "Error creating Skin!"
+msgstr "Fehler beim Erstellen des Skin!"
+
+#: plugin.py:348
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Zur Übernahme der Oberfläche muss die GUI\n"
+"neu gestartet werden. Jetzt neu starten?"
+
+#: plugin.py:398
+msgid "Configuration tool for ZeroHD"
+msgstr "Konfigurationstool für ZeroHD"
