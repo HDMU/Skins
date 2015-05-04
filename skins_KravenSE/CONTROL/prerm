@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "removing KravenSE Skin"
+exit 0

@@ -1,0 +1,32 @@
+
+<!-- /* InfoBar ZZZPicon -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1280,720" title="InfoBar">
+  <widget backgroundColor="KravenBackground" font="Regular;24" halign="right" noWrap="1" position="426,572" render="Label" size="76,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="KravenFont1">
+    <convert type="KravenSEEventTime">StartTime</convert>
+    <convert type="KravenSEClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="KravenBackground" font="Regular;24" halign="center" noWrap="1" position="502,572" size="16,36" text="-" transparent="1" valign="center" zPosition="1" foregroundColor="KravenFont1" />
+  <widget backgroundColor="KravenBackground" font="Regular;24" halign="left" noWrap="1" position="518,572" render="Label" size="76,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="KravenFont1">
+    <convert type="KravenSEEventTime">EndTime</convert>
+    <convert type="KravenSEClockToText">Default</convert>
+  </widget>
+  <widget font="Regular;48" halign="center" valign="center" noWrap="1" position="606,558" render="KravenSERunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="460,64" source="session.Event_Now" backgroundColor="KravenBackground" transparent="1" zPosition="1" foregroundColor="KravenFont1">
+    <convert type="KravenSEEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="KravenBackground" foregroundColor="KravenFont2" font="Regular2; 22" halign="right" noWrap="1" position="430,636" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="KravenSEEventTime">StartTime</convert>
+    <convert type="KravenSEClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="KravenBackground" foregroundColor="KravenFont2" font="Regular2;22" halign="center" noWrap="1" position="502,636" size="16,36" text="-" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="KravenBackground" font="Regular2; 22" foregroundColor="KravenFont2" halign="left" noWrap="1" position="518,636" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="KravenSEEventTime">EndTime</convert>
+    <convert type="KravenSEClockToText">Default</convert>
+  </widget>
+  <widget font="Regular2;36" halign="center" valign="center" noWrap="1" position="606,630" render="KravenSERunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="460,48" source="session.Event_Next" backgroundColor="KravenBackground" transparent="1" zPosition="1" foregroundColor="KravenFont2">
+    <convert type="KravenSEEventName">Name</convert>
+  </widget>
+  <widget alphatest="blend" position="23,455" render="KravenSEXPicon" size="400,240" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+<panel name="template_menu_ib3" />
+  

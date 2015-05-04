@@ -1,0 +1,26 @@
+
+ <!-- /* ChannelSelection ZZPicon-->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+  <widget backgroundColor="KravenBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="KravenFont1" colorEventProgressbarBorder="KravenLine" colorEventProgressbarBorderSelected="KravenLine" colorServiceDescription="KravenFont2" colorServiceDescriptionSelected="KravenSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+  <widget source="ServiceEvent" render="KravenSESingleEpgList" position="868,561" size="400,113" noWrap="1" font="Regular2;22" foregroundColor="KravenFont2" backgroundColor="KravenBackground" transparent="1">
+  </widget>
+  <widget alphatest="blend" position="868,100" render="KravenSEXPicon" size="400,170" source="ServiceEvent" transparent="1" zPosition="4">
+    <convert type="KravenSERefString">ServicelistRef</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="868,279" size="400,3" borderWidth="0" backgroundColor="KravenBackground" foregroundColor="KravenProgress" transparent="1" zPosition="1">
+    <convert type="KravenSEEventTime">Progress</convert>
+  </widget>
+  <eLabel position="868,280" size="400,1" backgroundColor="KravenLine" />
+  <widget font="Regular; 22" foregroundColor="KravenFont1" position="868,283" render="KravenSERunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="400,270" source="ServiceEvent" valign="top" backgroundColor="KravenBackground" transparent="1" zPosition="-8">
+    <convert type="KravenSEEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <widget font="Regular2; 30" foregroundColor="KravenFont2" position="868,53" halign="center" render="Label" size="400,40" source="ServiceEvent" backgroundColor="KravenBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
+    <convert type="KravenSEEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="KravenBackground" font="Regular;22" foregroundColor="KravenFont1" position="868,680" render="Label" size="400,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
+    <convert type="KravenSENextEvents">PrimeTime,noDuration</convert>
+  </widget>
+    <panel name="template_menu_cs2_button" />
+    <panel name="template_colorkey_text" />
+</screen>
+  <!-- /* ChannelSelection ZZPicon -->

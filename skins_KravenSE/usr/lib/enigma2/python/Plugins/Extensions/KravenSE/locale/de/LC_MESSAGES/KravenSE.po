@@ -1,0 +1,738 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kraven <kravenhd@web.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KravenSD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-19 22:06+0200\n"
+"PO-Revision-Date: 2015-05-02 22:31+0100\n"
+"Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
+"Language-Team: kraven & mike99\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: plugin.py:72
+msgid "Atemio4You"
+msgstr ""
+
+#: plugin.py:73
+msgid "HDMU"
+msgstr ""
+
+#: plugin.py:74
+msgid "openATV"
+msgstr ""
+
+#: plugin.py:75
+msgid "openHDF"
+msgstr ""
+
+#: plugin.py:76
+msgid "openMIPS"
+msgstr ""
+
+#: plugin.py:80
+msgid "Seven"
+msgstr ""
+
+#: plugin.py:81 plugin.py:366
+msgid "Zero"
+msgstr ""
+
+#: plugin.py:82 plugin.py:365
+msgid "Kraven"
+msgstr ""
+
+#: plugin.py:86 plugin.py:325
+msgid "Original"
+msgstr ""
+
+#: plugin.py:87
+msgid "with Border"
+msgstr "mit Rahmen"
+
+#: plugin.py:88
+msgid "left"
+msgstr "links"
+
+#: plugin.py:89
+msgid "right"
+msgstr "rechts"
+
+#: plugin.py:90
+msgid "top"
+msgstr "oben"
+
+#: plugin.py:91
+msgid "center"
+msgstr "mittig"
+
+#: plugin.py:95
+msgid "low"
+msgstr "niedrig"
+
+#: plugin.py:96
+msgid "medium"
+msgstr "mittel"
+
+#: plugin.py:97
+msgid "high"
+msgstr "hoch"
+
+#: plugin.py:101 plugin.py:134 plugin.py:153 plugin.py:172 plugin.py:191
+#: plugin.py:210 plugin.py:229 plugin.py:249 plugin.py:268 plugin.py:287
+#: plugin.py:306
+msgid "Amber"
+msgstr ""
+
+#: plugin.py:102 plugin.py:120 plugin.py:135 plugin.py:154 plugin.py:173
+#: plugin.py:192 plugin.py:211 plugin.py:230 plugin.py:250 plugin.py:269
+#: plugin.py:288 plugin.py:307
+msgid "Black"
+msgstr "Schwarz"
+
+#: plugin.py:103 plugin.py:121 plugin.py:136 plugin.py:155 plugin.py:174
+#: plugin.py:193 plugin.py:212 plugin.py:231 plugin.py:251 plugin.py:270
+#: plugin.py:289 plugin.py:308
+msgid "Blue"
+msgstr "Blau"
+
+#: plugin.py:104 plugin.py:122 plugin.py:137 plugin.py:156 plugin.py:175
+#: plugin.py:194 plugin.py:213 plugin.py:232 plugin.py:252 plugin.py:271
+#: plugin.py:290 plugin.py:309
+msgid "Brown"
+msgstr "Braun"
+
+#: plugin.py:105 plugin.py:138 plugin.py:157 plugin.py:176 plugin.py:195
+#: plugin.py:214 plugin.py:233 plugin.py:253 plugin.py:272 plugin.py:291
+#: plugin.py:310
+msgid "Cobalt"
+msgstr ""
+
+#: plugin.py:106 plugin.py:139 plugin.py:158 plugin.py:177 plugin.py:196
+#: plugin.py:215 plugin.py:234 plugin.py:254 plugin.py:273 plugin.py:292
+#: plugin.py:311
+msgid "Cyan"
+msgstr ""
+
+#: plugin.py:107 plugin.py:123 plugin.py:140 plugin.py:159 plugin.py:178
+#: plugin.py:197 plugin.py:216 plugin.py:235 plugin.py:255 plugin.py:274
+#: plugin.py:293 plugin.py:312
+msgid "Grey"
+msgstr "Grau"
+
+#: plugin.py:108 plugin.py:124 plugin.py:141 plugin.py:160 plugin.py:179
+#: plugin.py:198 plugin.py:217 plugin.py:236 plugin.py:256 plugin.py:275
+#: plugin.py:294 plugin.py:313
+msgid "Green"
+msgstr "Grün"
+
+#: plugin.py:109 plugin.py:142 plugin.py:161 plugin.py:180 plugin.py:199
+#: plugin.py:218 plugin.py:237 plugin.py:257 plugin.py:276 plugin.py:295
+#: plugin.py:314
+msgid "Medium Blue"
+msgstr "Mittel Blau"
+
+#: plugin.py:110 plugin.py:125 plugin.py:143 plugin.py:162 plugin.py:181
+#: plugin.py:200 plugin.py:219 plugin.py:238 plugin.py:258 plugin.py:277
+#: plugin.py:296 plugin.py:315
+msgid "Orange"
+msgstr ""
+
+#: plugin.py:111 plugin.py:126 plugin.py:144 plugin.py:163 plugin.py:182
+#: plugin.py:201 plugin.py:220 plugin.py:239 plugin.py:259 plugin.py:278
+#: plugin.py:297 plugin.py:316
+msgid "Pink"
+msgstr ""
+
+#: plugin.py:112 plugin.py:127 plugin.py:145 plugin.py:164 plugin.py:183
+#: plugin.py:202 plugin.py:221 plugin.py:240 plugin.py:260 plugin.py:279
+#: plugin.py:298 plugin.py:317
+msgid "Red"
+msgstr "Rot"
+
+#: plugin.py:113 plugin.py:146 plugin.py:165 plugin.py:184 plugin.py:203
+#: plugin.py:222 plugin.py:241 plugin.py:261 plugin.py:280 plugin.py:299
+#: plugin.py:318
+msgid "Steel"
+msgstr ""
+
+#: plugin.py:114 plugin.py:128 plugin.py:147 plugin.py:166 plugin.py:185
+#: plugin.py:204 plugin.py:223 plugin.py:242 plugin.py:262 plugin.py:281
+#: plugin.py:300 plugin.py:319
+msgid "Violet"
+msgstr ""
+
+#: plugin.py:115 plugin.py:129 plugin.py:148 plugin.py:167 plugin.py:186
+#: plugin.py:205 plugin.py:224 plugin.py:243 plugin.py:263 plugin.py:282
+#: plugin.py:301 plugin.py:320
+msgid "Yellow"
+msgstr "Gelb"
+
+#: plugin.py:116 plugin.py:130 plugin.py:149 plugin.py:168 plugin.py:187
+#: plugin.py:206 plugin.py:225 plugin.py:244 plugin.py:264 plugin.py:283
+#: plugin.py:302 plugin.py:321
+msgid "White"
+msgstr "Weiß"
+
+#: plugin.py:245 plugin.py:343 plugin.py:359 plugin.py:379
+msgid "Off"
+msgstr "Aus"
+
+#: plugin.py:326 plugin.py:335
+msgid "ZPicon"
+msgstr ""
+
+#: plugin.py:327 plugin.py:336
+msgid "XPicon"
+msgstr ""
+
+#: plugin.py:328 plugin.py:337
+msgid "ZZPicon"
+msgstr ""
+
+#: plugin.py:329 plugin.py:338
+msgid "ZZZPicon"
+msgstr ""
+
+#: plugin.py:333
+msgid "Two Columns"
+msgstr "zwei Spalten"
+
+#: plugin.py:334
+msgid "Three Columns"
+msgstr "drei Spalten"
+
+#: plugin.py:339
+msgid "MiniTV"
+msgstr ""
+
+#: plugin.py:344
+msgid "ZPicons"
+msgstr ""
+
+#: plugin.py:345
+msgid "XPicons"
+msgstr ""
+
+#: plugin.py:346
+msgid "ZZPicons"
+msgstr ""
+
+#: plugin.py:347
+msgid "ZZZPicons"
+msgstr ""
+
+#: plugin.py:351
+msgid "No Cover"
+msgstr "Kein Cover"
+
+#: plugin.py:352
+msgid "Small Cover"
+msgstr "Kleines Cover"
+
+#: plugin.py:353
+msgid "Big Cover"
+msgstr "Großes Cover"
+
+#: plugin.py:354
+msgid "Very Big Cover"
+msgstr "Sehr großes Cover"
+
+#: plugin.py:358
+msgid "On"
+msgstr "Ein"
+
+#: plugin.py:363
+msgid "Seven white"
+msgstr "Seven weiß"
+
+#: plugin.py:364
+msgid "Seven black"
+msgstr "Seven schwarz"
+
+#: plugin.py:367
+msgid "stony"
+msgstr ""
+
+#: plugin.py:371
+msgid "Standard"
+msgstr ""
+
+#: plugin.py:372
+msgid "with Seconds"
+msgstr "mit Sekunden"
+
+#: plugin.py:373
+msgid "Analog"
+msgstr ""
+
+#: plugin.py:374 plugin.py:482
+msgid "Weather"
+msgstr "Wetter"
+
+#: plugin.py:375
+msgid "Android"
+msgstr ""
+
+#: plugin.py:380
+msgid "Big"
+msgstr "Groß"
+
+#: plugin.py:381
+msgid "Small"
+msgstr "Klein"
+
+#: plugin.py:384
+msgid "HandelGotD"
+msgstr ""
+
+#: plugin.py:385
+msgid "Campton"
+msgstr ""
+
+#: plugin.py:386
+msgid "Proxima Nova"
+msgstr ""
+
+#: plugin.py:387
+msgid "OpenSans"
+msgstr ""
+
+#: plugin.py:449
+msgid "______________________ System __________________________________"
+msgstr ""
+
+#: plugin.py:450
+msgid "Image"
+msgstr ""
+
+#: plugin.py:451 plugin.py:476
+msgid "Style"
+msgstr ""
+
+#: plugin.py:452
+msgid "Font Style"
+msgstr "Schriftart"
+
+#: plugin.py:453
+msgid "Button Style"
+msgstr ""
+
+#: plugin.py:454
+msgid "Running Text"
+msgstr ""
+
+#: plugin.py:455
+msgid "Background Transparency"
+msgstr "Hintergrund Transparenz"
+
+#: plugin.py:456
+msgid "Weather ID"
+msgstr "Wetter ID"
+
+#: plugin.py:457
+msgid "______________________ Colors __________________________________"
+msgstr "______________________ Farben __________________________________"
+
+#: plugin.py:458
+msgid "Line"
+msgstr "Linie"
+
+#: plugin.py:461
+msgid "Infobar"
+msgstr ""
+
+#: plugin.py:463
+msgid "Background"
+msgstr "Hintergrund"
+
+#: plugin.py:466
+msgid "Border"
+msgstr "Rahmen"
+
+#: plugin.py:467
+msgid "Listselection Border"
+msgstr "Auswahlbalken Rahmen"
+
+#: plugin.py:469
+msgid "Listselection"
+msgstr "Auswahlbalken"
+
+#: plugin.py:470
+msgid "Progress-/Volumebar"
+msgstr "Fortschritts-/Lautstärkebalken"
+
+#: plugin.py:471
+msgid "Font 1"
+msgstr "Schrift 1"
+
+#: plugin.py:472
+msgid "Font 2"
+msgstr "Schrift 2"
+
+#: plugin.py:473
+msgid "Selection Font"
+msgstr "Ausgewählte Schrift"
+
+#: plugin.py:474
+msgid "Button Text"
+msgstr ""
+
+#: plugin.py:475
+msgid "______________________ Infobar __________________________________"
+msgstr ""
+
+#: plugin.py:477
+msgid "Clock"
+msgstr "Uhr"
+
+#: plugin.py:480
+msgid "Clock Analog Color"
+msgstr "Farbe Analoguhr"
+
+#: plugin.py:483
+msgid "______________________ General __________________________________"
+msgstr ""
+
+#: plugin.py:484
+msgid "Channel Selection"
+msgstr "Kanalauswahl"
+
+#: plugin.py:485
+msgid "EMC"
+msgstr ""
+
+#: plugin.py:486
+msgid "ExtNumberZap"
+msgstr ""
+
+#: plugin.py:487
+msgid "Volume Style"
+msgstr ""
+
+#: plugin.py:540
+msgid "Do you really want to reboot now?"
+msgstr "Wollen Sie jetzt neu starten?"
+
+#: plugin.py:541 plugin.py:689
+msgid "Restart GUI"
+msgstr "GUI neu starten"
+
+#: plugin.py:544
+msgid "Information"
+msgstr ""
+
+#: plugin.py:682
+msgid "Error creating Skin!"
+msgstr "Fehler beim Erstellen des Skin!"
+
+#: plugin.py:688
+msgid ""
+"GUI needs a restart to download files and apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Zum herunterladen der Dateien und schreiben des Skin,\n"
+"muss die Oberfläche neu gestartet werden.\n"
+"\n"
+"Wollen Sie jetzt neu starten?"
+
+#: plugin.py:803 plugin.py:805
+msgid "Configuration tool for KravenSE"
+msgstr "Konfigurationstool für KravenSE"
+
+msgid ""
+"Tropical\n"
+" storm"
+msgstr ""
+"Tropischer\n"
+" Sturm"
+
+msgid "Hurricane"
+msgstr "Hurrikan"
+
+msgid ""
+"Severe\n"
+" thunderstorms"
+msgstr ""
+"Schwere\n"
+" Gewitter"
+
+msgid "Thunderstorms"
+msgstr "Gewitter"
+
+msgid ""
+"Mixed rain\n"
+" and snow"
+msgstr ""
+"Regen\n"
+" und Schnee"
+
+msgid ""
+"Mixed rain\n"
+" and sleet"
+msgstr ""
+"Regen\n"
+" und Schneeregen"
+
+msgid ""
+"Mixed snow\n"
+" and sleet"
+msgstr ""
+"Schnee\n"
+" und Graupel"
+
+msgid ""
+"Freezing\n"
+" drizzle"
+msgstr ""
+"Frierender\n"
+" Nieselregen"
+
+msgid "Drizzle"
+msgstr "Nieselregen"
+
+msgid ""
+"Freezing\n"
+" rain"
+msgstr "Eisregen"
+
+msgid "Showers"
+msgstr "Regen"
+
+msgid "Rain"
+msgstr "Regen"
+
+msgid ""
+"Snow\n"
+" flurries"
+msgstr "Schneetreiben"
+
+msgid ""
+"Light\n"
+" snow showers"
+msgstr ""
+"Leichte\n"
+" Schneeschauer"
+
+msgid ""
+"Blowing\n"
+" snow"
+msgstr "Schneetreiben"
+
+msgid "Snow"
+msgstr "Schnee"
+
+msgid "Hail"
+msgstr "Hagel"
+
+msgid "Sleet"
+msgstr "Schneeregen"
+
+msgid "Dust"
+msgstr "Staub"
+
+msgid "Foggy"
+msgstr "Nebelig"
+
+msgid "Haze"
+msgstr "Nebel"
+
+msgid "Smoky"
+msgstr "Qualmig"
+
+msgid "Blustery"
+msgstr "Stürmisch"
+
+msgid "Windy"
+msgstr "Windig"
+
+msgid "Cold"
+msgstr "Kalt"
+
+msgid "Cloudy"
+msgstr "Wolkig"
+
+msgid ""
+"Mostly\n"
+" cloudy"
+msgstr ""
+"Überwiegend\n"
+" bewölkt"
+
+msgid ""
+"Partly\n"
+" cloudy"
+msgstr ""
+"Teilweise\n"
+" bewölkt"
+
+msgid "Clear"
+msgstr "Klar"
+
+msgid "Sunny"
+msgstr "Sonnig"
+
+msgid "Fair"
+msgstr "Heiter"
+
+msgid ""
+"Mixed rain\n"
+" and hail"
+msgstr ""
+"Regen\n"
+" und Hagel"
+
+msgid "Hot"
+msgstr "Heiss"
+
+msgid ""
+"Isolated\n"
+" thunderstorms"
+msgstr ""
+"Vereinzelte\n"
+" Gewitter"
+
+msgid ""
+"Scattered\n"
+" thunderstorms"
+msgstr ""
+"Vereinzelte\n"
+" Gewitter"
+
+msgid ""
+"Scattered\n"
+" showers"
+msgstr ""
+"Vereinzelte\n"
+" Regenschauer"
+
+msgid "Heavy snow"
+msgstr ""
+"Starker\n"
+" Schneefall"
+
+msgid ""
+"Scattered\n"
+" snow showers"
+msgstr ""
+"Vereinzelte\n"
+" Schneeschauer"
+
+msgid "Thundershowers"
+msgstr "Gewitter"
+
+msgid "Snow showers"
+msgstr "Schneeschauer"
+
+msgid ""
+"Isolated\n"
+" thundershowers"
+msgstr ""
+"Vereinzelt\n"
+" Gewitter"
+
+msgid ""
+"Not\n"
+" available"
+msgstr ""
+"Nicht\n"
+" verfügbar"
+
+msgid "Mon"
+msgstr "MO"
+
+msgid "Tue"
+msgstr "DI"
+
+msgid "Wed"
+msgstr "MI"
+
+msgid "Thu"
+msgstr "DO"
+
+msgid "Fri"
+msgstr "FR"
+
+msgid "Sat"
+msgstr "SA"
+
+msgid "Sun"
+msgstr "SO"
+
+msgid "N-NE"
+msgstr "N-NO"
+
+msgid "NE"
+msgstr "NO"
+
+msgid "E-NE"
+msgstr "O-NO"
+
+msgid "E"
+msgstr "O"
+
+msgid "E-SE"
+msgstr "O-SO"
+
+msgid "SE"
+msgstr "SO"
+
+msgid "S-SE"
+msgstr "S-SO"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Center"
+#~ msgstr "Mitte"
+
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgid "______________________ Weather __________________________________"
+#~ msgstr "______________________ Wetter ___________________________________"
+
+#~ msgid "Refresh Interval in minutes"
+#~ msgstr "Aktualisierungs-Interval in Minuten"
+
+#~ msgid "Unit"
+#~ msgstr "Einheit"
+
+#~ msgid ""
+#~ "GUI needs a restart to apply a new skin.\n"
+#~ "Do you want to Restart the GUI now?"
+#~ msgstr ""
+#~ "Zur Übernahme der Oberfläche muss die GUI\n"
+#~ "neu gestartet werden. Jetzt neu starten?"
+
+#~ msgid "Clock Standard"
+#~ msgstr "Standard Uhr"
+
+#~ msgid "Clock Standard + Weather"
+#~ msgstr "Standard Uhr und Wetter"
+
+#~ msgid "Clock with Seconds"
+#~ msgstr "Uhr mit Sekunden"
+
+#~ msgid "Clock with Seconds + Weather"
+#~ msgstr "Uhr mit Sekunden und Wetter"
+
+#~ msgid "Clock with Weather"
+#~ msgstr "Uhr mit Wetter"
+
+#~ msgid "Clock with Weather + Weather"
+#~ msgstr "Uhr mit Wetter/Wetter"
+
+#~ msgid "Clock Analog"
+#~ msgstr "Analog Uhr"
+
+#~ msgid "Clock Analog + Weather"
+#~ msgstr "Analog Uhr und Wetter"

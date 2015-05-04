@@ -1,0 +1,11 @@
+
+<!-- Clock Standard */-->
+<widget source="global.CurrentTime" position="1090,636" size="148,36" font="Regular2; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="KravenBackground" foregroundColor="KravenFont2" transparent="1">
+    <convert type="KravenSEClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1090,568" size="148,44" font="Regular; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="KravenBackground" foregroundColor="KravenFont1" transparent="1">
+    <convert type="KravenSEClockToText">Default</convert>
+  </widget>
+ <!-- Clock Standard */-->
+ 
+ 

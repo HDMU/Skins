@@ -1,0 +1,23 @@
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+    <widget backgroundColor="KravenBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" colorEventProgressbarBorder="KravenBorder" colorEventProgressbarBorderSelected="KravenBorder" colorServiceDescription="KravenFont2" colorServiceDescriptionSelected="KravenSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="581,74" serviceInfoFont="Regular2;22" serviceItemHeight="37" serviceNameFont="Regular;26" serviceNumberFont="Regular;26" size="672,564" transparent="1" />
+    <widget font="Regular; 22" foregroundColor="KravenFont1" position="30,402" render="KravenSERunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="505,160" source="ServiceEvent" valign="top" backgroundColor="KravenBackground" zPosition="1" transparent="1">
+      <convert type="KravenSEEventName">BothDescriptionsFiltered</convert>
+    </widget>
+    <widget font="Regular; 30" foregroundColor="KravenFont2" position="30,16" halign="center" render="Label" size="505,40" source="ServiceEvent" backgroundColor="KravenBackground" zPosition="1" valign="bottom" noWrap="1" transparent="1">
+      <convert type="KravenSEEventName">Name</convert>
+    </widget>
+    <eLabel backgroundColor="KravenBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+    <widget source="session.VideoPicture" render="Pig" position="30,114" size="505,282" zPosition="3" backgroundColor="transparent" />
+    
+    <widget backgroundColor="KravenBackground" font="Regular; 18" halign="right" position="459,80" render="Label" size="77,25" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="KravenFont1">
+      <convert type="KravenSEEventTime">Remaining</convert>
+      <convert type="KravenSERemainingToText">InMinutes</convert>
+    </widget>
+<eLabel position="30,93" size="426,1" backgroundColor="KravenLine" />
+    <widget source="ServiceEvent" render="Progress" position="30,91" size="426,5" borderWidth="0" backgroundColor="KravenBackground" foregroundColor="KravenProgress" transparent="1" zPosition="1">
+      <convert type="KravenSEEventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="KravenSESingleEpgList" position="30,575" size="505,74" font="Regular2;19" backgroundColor="transparent" foregroundColor="KravenFont2" transparent="1">
+    </widget>
+<panel name="template_menu_cs4_button" />
+</screen>

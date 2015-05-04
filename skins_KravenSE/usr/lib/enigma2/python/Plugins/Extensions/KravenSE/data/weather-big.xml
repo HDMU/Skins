@@ -1,0 +1,95 @@
+
+<!-- /* Weather -->
+  <widget backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="22,22" size="60,25" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="KravenSEYWeather">fweekday0</convert>
+  </widget>
+  <widget alphatest="blend" render="KravenSEPiconUni" position="83,10" size="50,50" source="session.CurrentService" path="WetterIcons" transparent="1" zPosition="8">
+    <convert type="KravenSEYWeather">fpicon0</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" render="Label" position="50,60" size="118,38" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="center">
+    <convert type="KravenSEYWeather">ftext0</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="133,10" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_high0</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="133,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_low0</convert>
+  </widget>
+  <widget backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="209,22" size="60,25" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="KravenSEYWeather">fweekday1</convert>
+  </widget>
+  <widget alphatest="blend" render="KravenSEPiconUni" position="269,10" size="50,50" source="session.CurrentService" path="WetterIcons" transparent="1" zPosition="5">
+    <convert type="KravenSEYWeather">fpicon1</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" render="Label" position="235,61" size="118,38" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="center">
+    <convert type="KravenSEYWeather">ftext1</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="319,10" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_high1</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="319,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_low1</convert>
+  </widget>
+ <widget backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="395,22" size="60,25" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="KravenSEYWeather">fweekday2</convert>
+  </widget>
+  <widget alphatest="blend" render="KravenSEPiconUni" position="456,10" size="50,50" source="session.CurrentService" path="WetterIcons" transparent="1" zPosition="5">
+    <convert type="KravenSEYWeather">fpicon2</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" render="Label" position="424,61" size="118,38" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="center">
+    <convert type="KravenSEYWeather">ftext2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="505,10" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_high2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="505,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_low2</convert>
+  </widget>
+  <widget backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="580,22" size="60,25" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="KravenSEYWeather">fweekday3</convert>
+  </widget>
+  <widget alphatest="blend" render="KravenSEPiconUni" position="641,10" size="50,50" source="session.CurrentService" path="WetterIcons" transparent="1" zPosition="5">
+    <convert type="KravenSEYWeather">fpicon3</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" render="Label" position="609,61" size="118,38" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="center">
+    <convert type="KravenSEYWeather">ftext3</convert>
+  </widget>
+<widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="691,10" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_high3</convert>
+  </widget>
+<widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="691,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_low3</convert>
+  </widget>
+  <widget backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="765,22" size="60,25" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <convert type="KravenSEYWeather">fweekday4</convert>
+ </widget>
+  <widget alphatest="blend" render="KravenSEPiconUni" position="826,10" size="50,50" source="session.CurrentService" path="WetterIcons" transparent="1" zPosition="5">
+    <convert type="KravenSEYWeather">fpicon4</convert>
+  </widget>
+  <widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" render="Label" position="794,61" size="118,38" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="center">
+    <convert type="KravenSEYWeather">ftext4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="876,10" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_high4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular; 18" foregroundColor="KravenFont1" render="Label" position="876,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+    <convert type="KravenSEYWeather">ftemp_low4</convert>
+  </widget>
+<eLabel text="Aktuelle Temp:" position="1000,10" size="170,22" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="KravenBackground" transparent="1" foregroundColor="KravenFont2" />
+<widget noWrap="1" backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="1170,10" size="70,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+    <convert type="KravenSEYWeather">temp</convert>
+  </widget>
+<eLabel text="Wind:" position="1000,40" size="70,22" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="KravenBackground" transparent="1" foregroundColor="KravenFont2" />
+<widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="1070,40" size="90,22" source="session.CurrentService" zPosition="3" halign="right" transparent="1">
+  <convert type="KravenSEYWeather">speed</convert>
+  </widget>
+<widget Wrap="1" backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="1165,40" size="75,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+  <convert type="KravenSEYWeather">direction</convert>
+  </widget>
+ <eLabel text="Luftfeuchtigkeit:" position="1000,70" size="180,25" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="KravenBackground" transparent="1" foregroundColor="KravenFont2" />
+  <widget noWrap="1" backgroundColor="KravenBackground" font="Regular2; 20" foregroundColor="KravenFont2" render="Label" position="1180,70" size="60,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+    <convert type="KravenSEYWeather">humidity</convert>
+  </widget>
+  <panel name="template_weather_big" />
+<!-- Weather */-->
+
