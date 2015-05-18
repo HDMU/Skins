@@ -6,7 +6,7 @@
   <widget backgroundColor="KravenBackground" font="Regular; 26" halign="center" position="1129,608" render="Label" size="53,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="2" foregroundColor="black">
     <convert type="KravenSEClockToText">Format:%M</convert>
   </widget>
-  <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="KravenFont2" halign="center" position="1074,669" render="Label" size="180,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="2">
+  <widget backgroundColor="KravenBackground" font="Regular2; 16" foregroundColor="KravenFont2" halign="center" position="1074,669" render="Label" size="180,30" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
     <convert type="KravenSEClockToText">Format:%A, %d.%m.%Y</convert>
   </widget>
   <widget alphatest="blend" render="KravenSEPiconAndroid" position="1074,558" size="180,110" source="session.CurrentService" path="clock" transparent="1" zPosition="1">

@@ -1,0 +1,13 @@
+
+ <!-- Clock Weekday */-->
+<widget source="global.CurrentTime" position="1090,605" size="148,36" font="Regular2; 22" render="Label" halign="center" zPosition="12" backgroundColor="KravenBackground" foregroundColor="KravenFont2" transparent="1">
+    <convert type="KravenSEClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1090,569" size="148,36" font="Regular; 24" render="Label" halign="center" zPosition="12" backgroundColor="KravenBackground" transparent="1">
+    <convert type="KravenSEClockToText">WithSeconds</convert>
+  </widget>
+<widget source="global.CurrentTime" position="1090,641" size="148,36" font="Regular; 22" render="Label" halign="center" zPosition="12" backgroundColor="KravenBackground" foregroundColor="KravenFont1" transparent="1">
+    <convert type="KravenSEClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+<!-- Clock Weekday */-->
+

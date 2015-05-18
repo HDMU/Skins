@@ -66,7 +66,7 @@ def translateBlock(block):
 #############################################################
 
 config.plugins.KravenSE = ConfigSubsection()
-config.plugins.KravenSE.weather_city = ConfigText(default="924938", visible_width = 70, fixed_size = False)
+config.plugins.KravenSE.weather_city = ConfigNumber(default="924938")
 
 config.plugins.KravenSE.Image = ConfigSelection(default="main-custom-openatv", choices = [
 				("main-custom-atemio4you", _("Atemio4You")),
@@ -78,9 +78,10 @@ config.plugins.KravenSE.Image = ConfigSelection(default="main-custom-openatv", c
 				])
 				
 config.plugins.KravenSE.Header = ConfigSelection(default="header-seven", choices = [
-				("header-seven", _("Seven")),
-				("header-zero", _("Zero")),
-				("header-kraven", _("Kraven"))
+				("header-seven", _("SevenHD")),
+				("header-zero", _("ZeroHD")),
+				("header-kravenhd", _("KravenHD")),
+				("header-kravense", _("KravenSE"))
 				])
 				
 config.plugins.KravenSE.Volume = ConfigSelection(default="volume-border", choices = [
@@ -114,6 +115,8 @@ config.plugins.KravenSE.Background = ConfigSelection(default="000000", choices =
 				("3F3F3F", _("Grey Dark")),
 				("70AD11", _("Green")),
 				("213305", _("Green Dark")),
+				("6D8764", _("Olive")),
+				("313D2D", _("Olive Dark")),
 				("C3461B", _("Orange")),
 				("892E13", _("Orange Dark")),
 				("F472D0", _("Pink")),
@@ -166,6 +169,8 @@ config.plugins.KravenSE.SelectionBackground = ConfigSelection(default="000050EF"
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -195,6 +200,8 @@ config.plugins.KravenSE.Font1 = ConfigSelection(default="00fffff3", choices = [
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -224,6 +231,8 @@ config.plugins.KravenSE.Font2 = ConfigSelection(default="00fffff4", choices = [
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -253,6 +262,8 @@ config.plugins.KravenSE.SelectionFont = ConfigSelection(default="00fffff7", choi
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -282,6 +293,8 @@ config.plugins.KravenSE.ButtonText = ConfigSelection(default="00fffff2", choices
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -311,6 +324,8 @@ config.plugins.KravenSE.Border = ConfigSelection(default="00fffff1", choices = [
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -341,6 +356,8 @@ config.plugins.KravenSE.Progress = ConfigSelection(default="00fffff6", choices =
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -370,6 +387,8 @@ config.plugins.KravenSE.Line = ConfigSelection(default="00fffff5", choices = [
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -399,6 +418,8 @@ config.plugins.KravenSE.SelectionBorder = ConfigSelection(default="00ffffff", ch
 				("003F3F3F", _("Grey Dark")),
 				("0070AD11", _("Green")),
 				("00213305", _("Green Dark")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive Dark")),
 				("00C3461B", _("Orange")),
 				("00892E13", _("Orange Dark")),
 				("00F472D0", _("Pink")),
@@ -437,6 +458,13 @@ config.plugins.KravenSE.InfobarStyle = ConfigSelection(default="infobar-style-or
 				("infobar-style-zzzpicon", _("ZZZPicon"))
 				])
 				
+config.plugins.KravenSE.InfobarStyle2 = ConfigSelection(default="infobar-style-xpicon", choices = [
+				("infobar-style-zpicon", _("ZPicon")),
+				("infobar-style-xpicon", _("XPicon")),
+				("infobar-style-zzpicon", _("ZZPicon")),
+				("infobar-style-zzzpicon", _("ZZZPicon"))
+				])
+				
 config.plugins.KravenSE.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices = [
 				("channelselection-twocolumns", _("Two Columns")),
 				("channelselection-threecolumns", _("Three Columns")),
@@ -462,7 +490,7 @@ config.plugins.KravenSE.CoolTVGuide = ConfigSelection(default="cooltv-minitv", c
 				
 config.plugins.KravenSE.EMCStyle = ConfigSelection(default="emc-bigcover", choices = [
 				("emc-nocover", _("No Cover")),
-				("emc-smallcover", _("Small Cover")),				
+				("emc-smallcover", _("Small Cover")),
 				("emc-bigcover", _("Big Cover")),
 				("emc-verybigcover", _("Very Big Cover"))
 				])
@@ -473,19 +501,26 @@ config.plugins.KravenSE.RunningText = ConfigSelection(default="movetype=running"
 				])
 				
 config.plugins.KravenSE.ButtonStyle = ConfigSelection(default="buttons_seven_white", choices = [
-				("buttons_seven_white", _("Seven white")),
-				("buttons_seven_black", _("Seven black")),
-				("buttons_kraven", _("Kraven")),
-				("buttons_zero", _("Zero")),
+				("buttons_seven_white", _("SevenHD white")),
+				("buttons_seven_black", _("SevenHD black")),
+				("buttons_kravenhd", _("KravenHD")),
+				("buttons_kravense", _("KravenSE")),
+				("buttons_zero", _("ZeroHD")),
 				("buttons_stony", _("stony"))
 				])
 # .:TBX:.
 config.plugins.KravenSE.ClockStyle = ConfigSelection(default="clock-standard", choices = [
 				("clock-standard", _("Standard")),
 				("clock-seconds", _("with Seconds")),
-                ("clock-analog", _("Analog")),
+				("clock-weekday", _("with Weekday")),
+				("clock-analog", _("Analog")),
 				("clock-weather", _("Weather")),
 				("clock-android", _("Android"))
+				])
+				
+config.plugins.KravenSE.ClockStyle2 = ConfigSelection(default="clock-standard2", choices = [
+				("clock-standard2", _("Standard")),
+				("clock-seconds2", _("with Seconds"))
 				])
 				
 config.plugins.KravenSE.WeatherStyle = ConfigSelection(default="weather-off", choices = [
@@ -494,17 +529,22 @@ config.plugins.KravenSE.WeatherStyle = ConfigSelection(default="weather-off", ch
 				("weather-small", _("Small"))
 				])
 				
-config.plugins.KravenSE.FontStyle = ConfigSelection(default="campton", choices = [	
+config.plugins.KravenSE.FontStyle = ConfigSelection(default="campton", choices = [
 				("handel", _("HandelGotD")),
 				("campton", _("Campton")),
 				("proxima", _("Proxima Nova")),
 				("opensans", _("OpenSans"))
 				])
-
-config.plugins.KravenSE.SatInfo = ConfigSelection(default="satinfo-off", choices = [	
+config.plugins.KravenSE.SatInfo = ConfigSelection(default="satinfo-off", choices = [
 				("satinfo-off", _("Off")),
 				("satinfo-on", _("On"))
-				])			
+				])
+				
+config.plugins.KravenSE.ECMInfo = ConfigSelection(default="ecminfo-off", choices = [
+				("ecminfo-off", _("Off")),
+				("ecminfo-on", _("On"))
+				])
+				
 #######################################################################
 
 class KravenSE(ConfigListScreen, Screen):
@@ -515,7 +555,7 @@ class KravenSE(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
   <widget name="config" position="18,72" size="816,575" transparent="1" zPosition="1" backgroundColor="#00000000" />
   <eLabel position="70,12" size="708,46" text="KravenSE - Konfigurationstool" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-<eLabel position="891,88" size="372,46" text="Version: 1.4" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+<eLabel position="891,657" size="372,46" text="Thanks to http://www.gigablue-support.org/" font="Regular; 12" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
   <widget name="helperimage" position="891,178" size="372,328" zPosition="1" backgroundColor="#00000000" />
   <eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <widget backgroundColor="#00000000" font="Regular2; 34" foregroundColor="#00ffffff" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="center" valign="center" noWrap="1" />
@@ -538,6 +578,7 @@ class KravenSE(ConfigListScreen, Screen):
     <eLabel backgroundColor="#00ffffff" position="878,714" size="396,2" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="878,6" size="2,708" zPosition="2" />
     <eLabel backgroundColor="#00ffffff" position="1274,6" size="2,708" zPosition="2" />
+<eLabel position="891,88" size="372,46" text="Version: 1.6" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
 </screen>
 """
 
@@ -554,18 +595,16 @@ class KravenSE(ConfigListScreen, Screen):
 		self.PicLoad = ePicLoad()
 		self["helperimage"] = Pixmap()
 		
-                list = []
+		list = []
 		ConfigListScreen.__init__(self, list)
 		
-                self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
-                self.UpdatePicture()
-                self.onLayoutFinish.append(self.mylist)
-        
-        
-        def mylist(self):
-                
-                list = []
-                list.append(getConfigListEntry(_("______________________ System __________________________________"), ))
+		self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
+		self.UpdatePicture()
+		self.onLayoutFinish.append(self.mylist)
+
+	def mylist(self):
+		list = []
+		list.append(getConfigListEntry(_("______________________ System __________________________________"), ))
 		list.append(getConfigListEntry(_("Image"), config.plugins.KravenSE.Image))
 		list.append(getConfigListEntry(_("Style"), config.plugins.KravenSE.Header))
 		list.append(getConfigListEntry(_("Font Style"), config.plugins.KravenSE.FontStyle))
@@ -574,18 +613,15 @@ class KravenSE(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.KravenSE.BackgroundColorTrans))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.KravenSE.weather_city))
 		list.append(getConfigListEntry(_("______________________ Colors __________________________________"), ))
-                list.append(getConfigListEntry(_("Line"), config.plugins.KravenSE.Line))
-		
-                if config.plugins.KravenSE.Header.value == "header-kraven":
-                   list.append(getConfigListEntry(_("Infobar"), config.plugins.KravenSE.SkinColorInfobar))
-		
-                list.append(getConfigListEntry(_("Background"), config.plugins.KravenSE.Background))
-		
-                if config.plugins.KravenSE.Header.value == "header-seven":
-                   list.append(getConfigListEntry(_("Border"), config.plugins.KravenSE.Border))
-		
-		
-                list.append(getConfigListEntry(_("Listselection"), config.plugins.KravenSE.SelectionBackground))
+		list.append(getConfigListEntry(_("Line"), config.plugins.KravenSE.Line))
+
+		if config.plugins.KravenSE.Header.value == "header-kravense" or config.plugins.KravenSE.Header.value == "header-kravenhd":
+			list.append(getConfigListEntry(_("Infobar"), config.plugins.KravenSE.SkinColorInfobar))
+
+		list.append(getConfigListEntry(_("Background"), config.plugins.KravenSE.Background))
+		if config.plugins.KravenSE.Header.value == "header-seven":
+			list.append(getConfigListEntry(_("Border"), config.plugins.KravenSE.Border))
+		list.append(getConfigListEntry(_("Listselection"), config.plugins.KravenSE.SelectionBackground))
 		list.append(getConfigListEntry(_("Listselection Border"), config.plugins.KravenSE.SelectionBorder))
 		list.append(getConfigListEntry(_("Progress-/Volumebar"), config.plugins.KravenSE.Progress))
 		list.append(getConfigListEntry(_("Font 1"), config.plugins.KravenSE.Font1))
@@ -593,15 +629,20 @@ class KravenSE(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Selection Font"), config.plugins.KravenSE.SelectionFont))
 		list.append(getConfigListEntry(_("Button Text"), config.plugins.KravenSE.ButtonText))
 		list.append(getConfigListEntry(_("______________________ Infobar __________________________________"), ))
-		list.append(getConfigListEntry(_("Style"), config.plugins.KravenSE.InfobarStyle))
-		list.append(getConfigListEntry(_("Clock"), config.plugins.KravenSE.ClockStyle))
-		
-                if config.plugins.KravenSE.ClockStyle.value == "clock-analog":
-                   list.append(getConfigListEntry(_("Clock Analog Color"), config.plugins.KravenSE.AnalogStyle))
-				
+		if config.plugins.KravenSE.Header.value == "header-seven" or config.plugins.KravenSE.Header.value == "header-zero":
+			list.append(getConfigListEntry(_("Style"), config.plugins.KravenSE.InfobarStyle))
+		elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense":
+			list.append(getConfigListEntry(_("Style"), config.plugins.KravenSE.InfobarStyle2))
+		if config.plugins.KravenSE.Header.value == "header-zero":
+			list.append(getConfigListEntry(_("Clock"), config.plugins.KravenSE.ClockStyle2))
+		elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense" or config.plugins.KravenSE.Header.value == "header-seven":
+			list.append(getConfigListEntry(_("Clock"), config.plugins.KravenSE.ClockStyle))
+		if config.plugins.KravenSE.ClockStyle.value == "clock-analog":
+			list.append(getConfigListEntry(_("Clock Analog Color"), config.plugins.KravenSE.AnalogStyle))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.KravenSE.WeatherStyle))
 		list.append(getConfigListEntry(_("Sat-Info"), config.plugins.KravenSE.SatInfo))
-                list.append(getConfigListEntry(_("______________________ General __________________________________"), ))
+		list.append(getConfigListEntry(_("ECM-Info"), config.plugins.KravenSE.ECMInfo))
+		list.append(getConfigListEntry(_("______________________ General __________________________________"), ))
 		list.append(getConfigListEntry(_("Channel Selection"), config.plugins.KravenSE.ChannelSelectionStyle))
 		list.append(getConfigListEntry(_("EMC"), config.plugins.KravenSE.EMCStyle))
 		list.append(getConfigListEntry(_("ExtNumberZap"), config.plugins.KravenSE.NumberZapExt))
@@ -611,8 +652,8 @@ class KravenSE(ConfigListScreen, Screen):
 		self["config"].list = list
 		self["config"].l.setList(list)
 		
-                self.ShowPicture()
-                
+		self.ShowPicture()
+
 	def GetPicturePath(self):
 		try:
 			returnValue = self["config"].getCurrent()[1].value
@@ -630,7 +671,7 @@ class KravenSE(ConfigListScreen, Screen):
 		self.PicLoad.PictureData.get().append(self.DecodePicture)
 		self.onLayoutFinish.append(self.ShowPicture)
 	
-        def ShowPicture(self):
+	def ShowPicture(self):
 		self.PicLoad.setPara([self["helperimage"].instance.size().width(),self["helperimage"].instance.size().height(),self.Scale[0],self.Scale[1],0,1,"#002C2C39"])
 		self.PicLoad.startDecode(self.GetPicturePath())
 
@@ -639,23 +680,19 @@ class KravenSE(ConfigListScreen, Screen):
 		self["helperimage"].instance.setPixmap(ptr)
 
 	def keyLeft(self):
-		
-                ConfigListScreen.keyLeft(self)
-                self.mylist()
+		ConfigListScreen.keyLeft(self)
+		self.mylist()
 
 	def keyRight(self):
-		
-                ConfigListScreen.keyRight(self)
-	        self.mylist()
+		ConfigListScreen.keyRight(self)
+		self.mylist()
 
 	def keyDown(self):
-		
-                self["config"].instance.moveSelection(self["config"].instance.moveDown)
+		self["config"].instance.moveSelection(self["config"].instance.moveDown)
 		self.mylist()
 
 	def keyUp(self):
-		
-                self["config"].instance.moveSelection(self["config"].instance.moveUp)
+		self["config"].instance.moveSelection(self["config"].instance.moveUp)
 		self.mylist()
 
 	def reboot(self):
@@ -679,8 +716,8 @@ class KravenSE(ConfigListScreen, Screen):
 
 	def save(self):
 		if fileExists("/tmp/KravenSEweather.xml"):
-                        remove('/tmp/KravenSEweather.xml')
-			
+			remove('/tmp/KravenSEweather.xml')
+
 		for x in self["config"].list:
 			if len(x) > 1:
 					x[1].save()
@@ -688,9 +725,9 @@ class KravenSE(ConfigListScreen, Screen):
 					pass
 
 		try:
-		    #global tag search and replace in all skin elements
+			#global tag search and replace in all skin elements
 			self.set_font()
-                        self.skinSearchAndReplace = []
+			self.skinSearchAndReplace = []
 			self.skinSearchAndReplace.append(["0A", config.plugins.KravenSE.BackgroundColorTrans.value])
 			self.skinSearchAndReplace.append(["000000", config.plugins.KravenSE.Background.value])
 			self.skinSearchAndReplace.append(["000050EF", config.plugins.KravenSE.SelectionBackground.value])
@@ -724,6 +761,10 @@ class KravenSE(ConfigListScreen, Screen):
 			self.ibar = ("ibaro3_" + self.skincolorinfobarcolor + ".png")
 			self.skinSearchAndReplace.append(["ibaro3.png", self.ibar])
 			
+			self.skincolorinfobarcolor = config.plugins.KravenSE.SkinColorInfobar.value
+			self.ibar = ("ibaro4_" + self.skincolorinfobarcolor + ".png")
+			self.skinSearchAndReplace.append(["ibaro4.png", self.ibar])
+			
 			self.analogstylecolor = config.plugins.KravenSE.AnalogStyle.value
 			self.analog = ("analog_" + self.analogstylecolor + ".png")
 			self.skinSearchAndReplace.append(["analog.png", self.analog])
@@ -738,44 +779,62 @@ class KravenSE(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + config.plugins.KravenSE.ChannelSelectionStyle.value + ".xml")
 
 			###Infobar_main
-			self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_main.xml")
-			
+			if config.plugins.KravenSE.Header.value == "header-seven" or config.plugins.KravenSE.Header.value == "header-zero":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_main.xml")
+			elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle2.value + "_main.xml")
+
 			###clock-style xml
-                        self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle.value + ".xml")
-                        
-            ###weather-style
-                        self.appendSkinFile(self.daten + config.plugins.KravenSE.WeatherStyle.value + ".xml")
-						
-		    ###Sat-Info
-                        self.appendSkinFile(self.daten + config.plugins.KravenSE.SatInfo.value + ".xml")
-                        
-                        ###Infobar_middle
-			self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_middle.xml")
-                        
-                        ###clock-style xml
-                        self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle.value + ".xml")
-                        
-                        ###Infobar_end
-			self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_end.xml")
-			
-                        ###Main XML
+			if config.plugins.KravenSE.Header.value == "header-zero":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle2.value + ".xml")
+			elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense" or config.plugins.KravenSE.Header.value == "header-seven":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle.value + ".xml")
+
+			###sat-info
+			self.appendSkinFile(self.daten + config.plugins.KravenSE.SatInfo.value + ".xml")
+
+			###ecm-info
+			self.appendSkinFile(self.daten + config.plugins.KravenSE.ECMInfo.value + ".xml")
+
+			###weather-style
+			self.appendSkinFile(self.daten + config.plugins.KravenSE.WeatherStyle.value + ".xml")
+
+			###Infobar_middle
+			if config.plugins.KravenSE.Header.value == "header-seven" or config.plugins.KravenSE.Header.value == "header-zero":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_middle.xml")
+			elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle2.value + "_middle.xml")
+
+			###clock-style xml
+			if config.plugins.KravenSE.Header.value == "header-zero":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle2.value + ".xml")
+			elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense" or config.plugins.KravenSE.Header.value == "header-seven":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.ClockStyle.value + ".xml")
+
+			###Infobar_end
+			if config.plugins.KravenSE.Header.value == "header-seven" or config.plugins.KravenSE.Header.value == "header-zero":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle.value + "_end.xml")
+			elif config.plugins.KravenSE.Header.value == "header-kravenhd" or config.plugins.KravenSE.Header.value == "header-kravense":
+				self.appendSkinFile(self.daten + config.plugins.KravenSE.InfobarStyle2.value + "_end.xml")
+
+			###Main XML
 			self.appendSkinFile(self.daten + "main.xml")
-			
+
 			###Plugins XML
 			self.appendSkinFile(self.daten + "plugins.xml")
-			
+
 			#EMCSTYLE
 			self.appendSkinFile(self.daten + config.plugins.KravenSE.EMCStyle.value +".xml")			
-			
-            #NumberZapExtStyle
+
+			#NumberZapExtStyle
 			self.appendSkinFile(self.daten + config.plugins.KravenSE.NumberZapExt.value + ".xml")
-			
+
 			###custom-main XML
 			self.appendSkinFile(self.daten + config.plugins.KravenSE.Image.value + ".xml")
-			
+
 			###cooltv XML
 			self.appendSkinFile(self.daten + config.plugins.KravenSE.CoolTVGuide.value + ".xml")
-                           
+
 			###skin-user
 			try:
 				self.appendSkinFile(self.daten + "skin-user.xml")
@@ -792,31 +851,31 @@ class KravenSE(ConfigListScreen, Screen):
 			move(self.dateiTMP, self.datei)
 
 			#system('rm -rf ' + self.dateiTMP)
-                        
-                        console1 = eConsoleAppContainer()
-                        console2 = eConsoleAppContainer()
-                        console3 = eConsoleAppContainer()
-                        console4 = eConsoleAppContainer()
-                        console5 = eConsoleAppContainer()
-                        
-                        #volume
-                        console1.execute("rm -rf /usr/share/enigma2/KravenSE/volume/*.*; rm -rf /usr/share/enigma2/KravenSE/volume; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.Volume.value), str(config.plugins.KravenSE.Volume.value), str(config.plugins.KravenSE.Volume.value)))
-                        #buttons
-                        console2.execute("rm -rf /usr/share/enigma2/KravenSE/buttons/*.*; rm -rf /usr/share/enigma2/KravenSE/buttons; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.ButtonStyle.value), str(config.plugins.KravenSE.ButtonStyle.value), str(config.plugins.KravenSE.ButtonStyle.value)))
-                        #infobar
-                        console3.execute("wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.Header.value), str(config.plugins.KravenSE.Header.value), str(config.plugins.KravenSE.Header.value)))
-                        #weather
-                        console4.execute("rm -rf /usr/share/enigma2/KravenSE/WetterIcons/*.*; rm -rf /usr/share/enigma2/KravenSE/WetterIcons; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.WeatherStyle.value), str(config.plugins.KravenSE.WeatherStyle.value), str(config.plugins.KravenSE.WeatherStyle.value)))
-                        #clock
-                        console5.execute("rm -rf /usr/share/enigma2/KravenSE/clock/*.*; rm -rf /usr/share/enigma2/KravenSE/clock; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.ClockStyle.value), str(config.plugins.KravenSE.ClockStyle.value), str(config.plugins.KravenSE.ClockStyle.value)))
+			
+			console1 = eConsoleAppContainer()
+			console2 = eConsoleAppContainer()
+			console3 = eConsoleAppContainer()
+			console4 = eConsoleAppContainer()
+			console5 = eConsoleAppContainer()
+			
+			#volume
+			console1.execute("rm -rf /usr/share/enigma2/KravenSE/volume/*.*; rm -rf /usr/share/enigma2/KravenSE/volume; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.Volume.value), str(config.plugins.KravenSE.Volume.value), str(config.plugins.KravenSE.Volume.value)))
+			#buttons
+			console2.execute("rm -rf /usr/share/enigma2/KravenSE/buttons/*.*; rm -rf /usr/share/enigma2/KravenSE/buttons; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.ButtonStyle.value), str(config.plugins.KravenSE.ButtonStyle.value), str(config.plugins.KravenSE.ButtonStyle.value)))
+			#infobar
+			console3.execute("wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.Header.value), str(config.plugins.KravenSE.Header.value), str(config.plugins.KravenSE.Header.value)))
+			#weather
+			console4.execute("rm -rf /usr/share/enigma2/KravenSE/WetterIcons/*.*; rm -rf /usr/share/enigma2/KravenSE/WetterIcons; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.WeatherStyle.value), str(config.plugins.KravenSE.WeatherStyle.value), str(config.plugins.KravenSE.WeatherStyle.value)))
+			#clock
+			console5.execute("rm -rf /usr/share/enigma2/KravenSE/clock/*.*; rm -rf /usr/share/enigma2/KravenSE/clock; wget -q http://www.gigablue-support.org/skins/KravenSE/%s.tar.gz -O /tmp/%s.tar.gz; tar xf /tmp/%s.tar.gz -C /usr/share/enigma2/KravenSE/" % (str(config.plugins.KravenSE.ClockStyle.value), str(config.plugins.KravenSE.ClockStyle.value), str(config.plugins.KravenSE.ClockStyle.value)))
 						
 		except:
 			self.session.open(MessageBox, _("Error creating Skin!"), MessageBox.TYPE_ERROR)
 
 		self.restart()
-                
-        def restart(self):                
-                configfile.save()
+
+	def restart(self):
+		configfile.save()
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("GUI needs a restart to download files and apply a new skin.\nDo you want to Restart the GUI now?"), MessageBox.TYPE_YESNO)
 		restartbox.setTitle(_("Restart GUI"))
 
@@ -845,67 +904,64 @@ class KravenSE(ConfigListScreen, Screen):
 			for item in tmpSearchAndReplace:
 				skinLine = skinLine.replace(item[0], item[1])
 			self.skin_lines.append(skinLine)
-        
-        
-        def set_font(self):
-                '''header-kraven.xml; header-seven; header-zero
-                handel = 97
-                campton= 93
-                opensans= 93
-                proxima = 103'''
-                #config.plugins.KravenSE.Header.value
-                
-                new_font = config.plugins.KravenSE.FontStyle.value
-                
-                if new_font == "campton":
-                   new_scale = 'scale="93"'
-                   new_font_name1 = 'Campton Light.otf'
-                   new_font_name2 = 'Campton Medium.otf'
-                elif new_font == "handel":
-                   new_scale = 'scale="97"'
-                   new_font_name1 = 'HandelGotD.ttf'
-                   new_font_name2 = 'HandelGotDBol.ttf'
-                elif new_font == "proxima":
-                   new_scale = 'scale="103"'
-                   new_font_name1 = 'Proxima Nova Regular.otf'
-                   new_font_name2 = 'Proxima Nova Bold.otf'
-                elif new_font == "opensans":
-                   new_scale = 'scale="93"'
-                   new_font_name1 = 'setrixHD.ttf'
-                   new_font_name2 = 'OpenSans-Regular.ttf'
-                   
-                old_xml = self.daten + config.plugins.KravenSE.Header.value + ".xml"
-                new_xml = self.daten + config.plugins.KravenSE.Header.value + ".xml_new"
-                
-                fin = open(old_xml)
-                fout = open(new_xml, "wt")
-                
-                for line in fin.readlines():
-                   if line.find('Campton Light.otf')>= 0:
-                      fout.write( line.replace('Campton Light.otf', new_font_name1).replace('scale="93"', new_scale))
-                   elif line.find('Campton Medium.otf')>= 0:
-                      fout.write( line.replace('Campton Medium.otf', new_font_name2).replace('scale="93"', new_scale))
-                   elif line.find('HandelGotD.ttf')>= 0:
-                      fout.write( line.replace('HandelGotD.ttf', new_font_name1).replace('scale="97"', new_scale))
-                   elif line.find('HandelGotDBol.ttf')>= 0:
-                      fout.write( line.replace('HandelGotDBol.ttf', new_font_name2).replace('scale="97"', new_scale))
-                   elif line.find('Proxima Nova Regular.otf')>= 0:
-                      fout.write( line.replace('Proxima Nova Regular.otf', new_font_name1).replace('scale="103"', new_scale))
-                   elif line.find('Proxima Nova Bold.otf')>= 0: 
-                      fout.write( line.replace('Proxima Nova Bold.otf', new_font_name2).replace('scale="103"', new_scale)) 
-                   elif line.find('setrixHD.ttf')>= 0:
-                      fout.write( line.replace('setrixHD.ttf', new_font_name1).replace('scale="93"', new_scale))
-                   elif line.find('OpenSans-Regular.ttf')>= 0: 
-                      fout.write( line.replace('OpenSans-Regular.ttf', new_font_name2).replace('scale="93"', new_scale))
-                   else:
-                      fout.write( line )
-                
-                fin.close()
-                fout.close()
-                
-                remove(old_xml)
-                rename(new_xml, old_xml)
-                
+
+	def set_font(self):
+		'''header-kraven.xml; header-seven; header-zero
+		handel = 97
+		campton= 93
+		opensans= 93
+		proxima = 103'''
+		#config.plugins.KravenSE.Header.value
+		new_font = config.plugins.KravenSE.FontStyle.value
+		if new_font == "campton":
+			new_scale = 'scale="93"'
+			new_font_name1 = 'Campton Light.otf'
+			new_font_name2 = 'Campton Medium.otf'
+		elif new_font == "handel":
+			new_scale = 'scale="97"'
+			new_font_name1 = 'HandelGotD.ttf'
+			new_font_name2 = 'HandelGotDBol.ttf'
+		elif new_font == "proxima":
+			new_scale = 'scale="103"'
+			new_font_name1 = 'Proxima Nova Regular.otf'
+			new_font_name2 = 'Proxima Nova Bold.otf'
+		elif new_font == "opensans":
+			new_scale = 'scale="93"'
+			new_font_name1 = 'setrixHD.ttf'
+			new_font_name2 = 'OpenSans-Regular.ttf'
+			
+		old_xml = self.daten + config.plugins.KravenSE.Header.value + ".xml"
+		new_xml = self.daten + config.plugins.KravenSE.Header.value + ".xml_new"
+		
+		fin = open(old_xml)
+		fout = open(new_xml, "wt")
+		
+		for line in fin.readlines():
+			if line.find('Campton Light.otf')>= 0:
+				fout.write( line.replace('Campton Light.otf', new_font_name1).replace('scale="93"', new_scale))
+			elif line.find('Campton Medium.otf')>= 0:
+				fout.write( line.replace('Campton Medium.otf', new_font_name2).replace('scale="93"', new_scale))
+			elif line.find('HandelGotD.ttf')>= 0:
+				fout.write( line.replace('HandelGotD.ttf', new_font_name1).replace('scale="97"', new_scale))
+			elif line.find('HandelGotDBol.ttf')>= 0:
+				fout.write( line.replace('HandelGotDBol.ttf', new_font_name2).replace('scale="97"', new_scale))
+			elif line.find('Proxima Nova Regular.otf')>= 0:
+				fout.write( line.replace('Proxima Nova Regular.otf', new_font_name1).replace('scale="103"', new_scale))
+			elif line.find('Proxima Nova Bold.otf')>= 0: 
+				fout.write( line.replace('Proxima Nova Bold.otf', new_font_name2).replace('scale="103"', new_scale)) 
+			elif line.find('setrixHD.ttf')>= 0:
+				fout.write( line.replace('setrixHD.ttf', new_font_name1).replace('scale="93"', new_scale))
+			elif line.find('OpenSans-Regular.ttf')>= 0: 
+				fout.write( line.replace('OpenSans-Regular.ttf', new_font_name2).replace('scale="93"', new_scale))
+			else:
+				fout.write( line )
+		
+		fin.close()
+		fout.close()
+		
+		remove(old_xml)
+		rename(new_xml, old_xml)
+		
 
 	def restartGUI(self, answer):
 		if answer is True:
@@ -930,8 +986,8 @@ def main(session, **kwargs):
 	session.open(KravenSE,"/usr/lib/enigma2/python/Plugins/Extensions/KravenSE/images/kravencolors.jpg")
 
 def Plugins(**kwargs):
-    screenwidth = getDesktop(0).size().width()
-    if screenwidth and screenwidth == 1920:
+	screenwidth = getDesktop(0).size().width()
+	if screenwidth and screenwidth == 1920:
 		return [PluginDescriptor(name="KravenSE", description=_("Configuration tool for KravenSE"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='pluginfhd.png', fnc=main)]
-    else:
+	else:
 		return [PluginDescriptor(name="KravenSE", description=_("Configuration tool for KravenSE"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='plugin.png', fnc=main)]

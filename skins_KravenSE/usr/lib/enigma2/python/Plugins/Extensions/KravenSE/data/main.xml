@@ -151,15 +151,15 @@
     <eLabel backgroundColor="KravenBorder" position="713,0" size="2,350" zPosition="2" />
   </screen>
   <!-- ********** EPG ********** -->
-  <!-- EPGSelection -->
-<screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
+    <!-- EPGSelection -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
     <widget backgroundColor="KravenBackground" itemHeight="30" foregroundColor="KravenFont1" font="Regular; 22" name="list" scrollbarMode="showNever" position="70,120" size="708,511" transparent="1" zPosition="3" />
-    <widget backgroundColor="KravenBackground" font="Regular2; 22" foregroundColor="KravenFont2" position="897,76" render="Label" size="366,572" source="Event" valign="top" zPosition="-8">
+    <widget backgroundColor="KravenBackground" font="Regular2; 22" foregroundColor="KravenFont2" position="897,76" render="KravenSERunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="366,572" source="Event" valign="top" transparent="1" zPosition="-8">
       <convert type="KravenSEEventName">BothDescriptionsFiltered</convert>
     </widget>
     <panel name="template_menu_left_right_button" />
     <panel name="template_colorkey_text" />
-</screen>
+  </screen>
   <!-- EPGSelectionEPGBar_HD -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelectionEPGBar_HD" position="0,0" size="1280,720" title="EPG Selection">
     <widget source="global.CurrentTime" render="Label" position="1154,670" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1" valign="center" foregroundColor="KravenFont1">

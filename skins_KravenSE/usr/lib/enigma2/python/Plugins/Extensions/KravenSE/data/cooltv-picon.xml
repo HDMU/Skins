@@ -262,19 +262,11 @@
     </widget>
     <panel name="template_cool" />
   </screen>
-  <!-- CoolTVGuideSetup -->
-  <screen backgroundColor="KravenBackground" flags="wfNoBorder" name="CoolTVGuideSetup" position="center,center" size="660,530">
-    <eLabel backgroundColor="KravenBackground" font="Regular2;30" foregroundColor="KravenFont2" halign="center" position="15,10" size="610,55" text="Cool TV Guide Setup" transparent="1" valign="center" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" halign="left" valign="center" name="key_red" position="58,472" size="140,48" transparent="1" zPosition="1" foregroundColor="KravenButtonText" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" halign="left" valign="center" name="key_green" position="218,472" size="140,48" transparent="1" zPosition="1" foregroundColor="KravenButtonText" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" halign="left" valign="center" name="key_yellow" position="378,472" size="140,48" transparent="1" zPosition="1" foregroundColor="KravenButtonText" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" halign="left" valign="center" name="key_blue" position="538,472" size="140,48" transparent="1" zPosition="1" foregroundColor="KravenButtonText" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" foregroundColor="KravenFont1" halign="center" name="Coolwhite" position="10,435" size="620,26" transparent="1" />
-    <widget backgroundColor="KravenBackground" font="Regular;20" foregroundColor="KravenFont1" halign="center" name="Coolwhite" position="10,467" size="620,26" transparent="1" />
-    <widget backgroundColor="KravenBackground" enableWrapAround="1" name="config" position="15,69" size="630,350" transparent="1" foregroundColor="KravenFont1" />
-    <ePixmap alphatest="blend" pixmap="KravenSE/buttons/key_red1.png" position="16,480" size="32,32" />
-    <ePixmap alphatest="blend" pixmap="KravenSE/buttons/key_green1.png" position="176,480" size="32,32" />
-    <ePixmap alphatest="blend" pixmap="KravenSE/buttons/key_yellow1.png" position="336,480" size="32,32" />
-    <ePixmap alphatest="blend" pixmap="KravenSE/buttons/key_blue1.png" position="496,480" size="32,32" />
+    <!-- CoolTVGuideSetup -->
+  <screen backgroundColor="KravenBackground" flags="wfNoBorder" name="CoolTVGuideSetup" position="0,0" size="1280,720">
+    <eLabel backgroundColor="KravenBackground" font="Regular2; 34" foregroundColor="KravenFont2" position="70,12" text="Cool TV Guide Setup" size="708,46" transparent="1" halign="center" valign="center" noWrap="1" />
+    <widget backgroundColor="KravenBackground" enableWrapAround="1" name="config" position="70,80" size="708,350" transparent="1" foregroundColor="KravenFont1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text" />
   </screen>
   <!-- CoolTVGuide */-->
