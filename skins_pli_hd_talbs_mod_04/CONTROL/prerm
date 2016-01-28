@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "removing Pli HD talbsmod Skin"
+rm -rf /usr/local/share/enigma2/PLi-HD-talbs-mod-SHD-picon > /dev/null 2>&1
+rm -rf /usr/local/share/enigma2/PLi-HD-talbs-mod-SHD-picon_mod-2next-nopig > /dev/null 2>&1
+rm -rf /usr/local/share/enigma2/PLi-HD-talbs-mod-SHD-picon_mod-4next-nopig > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Converter/talbsClkInfo.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/talbsNext2Events.pyo > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Components/Renderer/talbsNext4Events.pyo > /dev/null 2>&1
+exit 0
