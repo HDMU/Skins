@@ -18,7 +18,8 @@
     <resolution bpp="32" xres="1280" yres="720"></resolution>
   </output>
 
-  <fonts> 
+  <fonts>
+    <!--<font name="Regular" filename="nmsbd.ttf" scale="100"></font> --> 
     <font name="Regular" filename="PLi-HD-talbs-mod-SHD-picon/fonts/hdthin.ttf" scale="100"></font>
     <font name="LCD" filename="lcd.ttf" scale="100"></font>
     <font name="Console" filename="tuxtxt.ttf" scale="100"></font>
@@ -93,9 +94,17 @@
       <pixmap filename="PLi-HD-talbs-mod-SHD-picon/border/line.png" pos="bpBottom"></pixmap>
     </borderset>
   </windowstyle>
-
+  
+  <!--include filename="PLi-HD-talbs-mod-SHD-picon/skin_templates.xml"/-->
   <!-- Templates -->
 
+  <screen name="PiconTemplateCh">
+    <widget source="ServiceEvent" render="talbsPicon2" position="567,23" size="100,60" zPosition="3" transparent="1" alphatest="blend" />
+    <ePixmap position="554,12" size="127,81" pixmap="PLi-HD-talbs-mod-SHD-picon/infobar/frame_picons.png" zPosition="2" alphatest="on" transparent="0" />
+    <widget source="ServiceEvent" render="talbsTransponder" position="687,29" size="345,21" font="Regular; 18" halign="left" backgroundColor="black" zPosition="3" transparent="1" foregroundColor="uncccccc" />
+    <widget source="ServiceEvent" render="talbsReference" position="687,52" size="345,21" font="Regular;18" halign="left" backgroundColor="black" zPosition="3" transparent="1" foregroundColor="white" />
+  </screen>
+  
   <screen name="PlayerTemplate">
     <widget source="session.CurrentService" render="Label" position="c-416,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
@@ -151,9 +160,13 @@
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  
-  <screen name="SelectionPigLessTemplate">
+
+  <screen name="SelectionTemplateCh">
     <panel name="BasicTemplateCh"/>
+    <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="85,89" size="417,20" zPosition="1" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
   </screen>
 
   <screen name="BasicTemplateCh">
@@ -540,8 +553,6 @@
       <convert type="ServiceOrbitalPosition"/>
     </widget>
   </screen>
-  
-  <!-- PartnerBox -->
 
   <screen name="CurrentRemoteTV" position="fill" flags="wfNoBorder"> <!--remote info -->
     <panel name="PigTemplate"/>
@@ -2083,6 +2094,27 @@
     <panel name="InfoBarTemplate"/>
   </screen>
 
+  <screen name="EventInfoBar" title="Event InfoBar" position="40,40" size="1200,55" zPosition="1" backgroundColor="infobarBG" transparent="1" flags="wfNoBorder">
+    <widget source="session.CurrentService" render="Picon" position="5,5" size="75,45" borderWidth="1" zPosition="2" alphatest="blend" backgroundColor="secondBG">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="89,2" size="100,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="center" halign="left" />
+    <!--widget source="session.CurrentService" render="Label" borderWidth="2" position="325,573" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="center" halign="left">
+      <convert type="ServiceName">Name</convert>
+    </widget-->
+    <widget source="session.Event_Now" render="Label" position="199,14" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="273,14" size="620,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="895,14" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+  </screen>
+  
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
     <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
     <widget source="session.CurrentService" render="Label" position="60,45" size="679,80" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
@@ -2159,38 +2191,34 @@
   <!-- Channel,EPG,EventInfo -->
 
   <screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
-    <panel name="SelectionPigLessTemplate"/>
+    <panel name="PiconTemplateCh"/>
+    <panel name="SelectionTemplateCh"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <eLabel position="1220,109" size="25,514" backgroundColor="black" />
     <eLabel position="1220,110" size="1,512" backgroundColor="white" />
-    <widget name="list" position="530,110" size="700,512" itemHeight="32" colorServiceDescription="secondFG" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;24" serviceNameFont="Regular;27" serviceItemHeight="32" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel.png" />
-    <widget source="ServiceEvent" render="Label" position="402,185" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
+    <widget name="list" position="530,110" size="700,512" itemHeight="32" colorServiceDescription="secondFG" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;24" serviceNameFont="Regular;27" serviceItemHeight="32" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel-darkbluenew.png" />
+    <widget source="ServiceEvent" render="Label" position="402,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,110" size="435,42" transparent="1" foregroundColor="blue" noWrap="1" font="Regular;22" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="85,145" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="ServiceEvent" render="Label" position="85,360" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,185" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+    <widget source="ServiceEvent" render="Label" position="85,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="350,185" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="ServiceEvent" render="Label" position="350,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-talbs-mod-SHD-picon/window/progress.png" position="155,190" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-talbs-mod-SHD-picon/window/progress.png" position="155,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,219" size="435,253" transparent="1" font="Regular; 20">
+    <widget source="ServiceEvent" render="Label" position="85,420" size="435,160" transparent="1" font="Regular; 20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel name="new eLabel" position="85,486" size="435,26" text="Next:" foregroundColor="blue" font="Regular;22" />
-    <widget source="ServiceEvent" render="talbsNext4Events" position="85,514" size="435,104" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22">
-    </widget>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="85,590" size="435,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -2244,7 +2272,7 @@
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyInfoTemplate"/>
     <panel name="ScrollbarTemplate"/>
-    <widget name="list" position="530,110" size="700,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand"  selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel.png" />
+    <widget name="list" position="530,110" size="700,510" itemHeight="30" transparent="1"  scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
     </widget>

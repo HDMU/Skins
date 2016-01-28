@@ -96,6 +96,13 @@
 
   <!-- Templates -->
 
+  <screen name="PiconTemplateCh">
+    <widget source="ServiceEvent" render="talbsPicon2" position="567,23" size="100,60" zPosition="3" transparent="1" alphatest="blend" />
+    <ePixmap position="554,12" size="127,81" pixmap="PLi-HD-talbs-mod-SHD-picon/infobar/frame_picons.png" zPosition="2" alphatest="on" transparent="0" />
+    <widget source="ServiceEvent" render="talbsTransponder" position="687,29" size="345,21" font="Regular; 18" halign="left" backgroundColor="black" zPosition="3" transparent="1" foregroundColor="uncccccc" />
+    <widget source="ServiceEvent" render="talbsReference" position="687,52" size="345,21" font="Regular;18" halign="left" backgroundColor="black" zPosition="3" transparent="1" foregroundColor="white" />
+  </screen>
+  
   <screen name="PlayerTemplate">
     <widget source="session.CurrentService" render="Label" position="c-416,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
@@ -2159,12 +2166,13 @@
   <!-- Channel,EPG,EventInfo -->
 
   <screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
+    <panel name="PiconTemplateCh"/>
     <panel name="SelectionPigLessTemplate"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
     <eLabel position="1220,109" size="25,514" backgroundColor="black" />
     <eLabel position="1220,110" size="1,512" backgroundColor="white" />
-    <widget name="list" position="530,110" size="700,512" itemHeight="32" colorServiceDescription="secondFG" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;24" serviceNameFont="Regular;27" serviceItemHeight="32" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel.png" />
+    <widget name="list" position="530,110" size="700,512" itemHeight="32" colorServiceDescription="secondFG" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;24" serviceNameFont="Regular;27" serviceItemHeight="32" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel-darkbluenew.png" />
     <widget source="ServiceEvent" render="Label" position="402,185" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
@@ -2185,11 +2193,11 @@
     <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-talbs-mod-SHD-picon/window/progress.png" position="155,190" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="85,219" size="435,253" transparent="1" font="Regular; 20">
+    <widget source="ServiceEvent" render="Label" position="85,221" size="435,303" transparent="1" font="Regular; 20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel name="new eLabel" position="85,486" size="435,26" text="Next:" foregroundColor="blue" font="Regular;22" />
-    <widget source="ServiceEvent" render="talbsNext4Events" position="85,514" size="435,104" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22">
+    <eLabel name="new eLabel" position="85,537" size="435,26" text="Next:" foregroundColor="blue" font="Regular;22" />
+    <widget source="ServiceEvent" render="talbsNext2Events" position="85,565" size="435,52" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22">
     </widget>
   </screen>
 
