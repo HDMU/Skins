@@ -2195,6 +2195,7 @@
     <panel name="SelectionTemplateCh"/>
     <panel name="ButtonTemplate_RGYB"/>
     <panel name="KeyMenuInfoTemplate"/>
+	<panel name="TopTemplate"/>	
     <eLabel position="1220,109" size="25,514" backgroundColor="black" />
     <eLabel position="1220,110" size="1,512" backgroundColor="white" />
     <widget name="list" position="530,110" size="700,512" itemHeight="32" colorServiceDescription="secondFG" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Regular;24" serviceNameFont="Regular;27" serviceItemHeight="32" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="white" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" selectionPixmap="PLi-HD-talbs-mod-SHD-picon/buttons/sel.png" />
